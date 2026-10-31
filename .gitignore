@@ -1,0 +1,36 @@
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+data/
+artifacts/
+models/
+runs/
+logs/
+web/node_modules/
+web/dist/
+*.egg-info/
+.env
+*.tmp
+data_ingest*.log
+data_ingest*.err.log
+
+archive/
+
+# Local course source materials; keep these outside a public source repository.
+COMP5523*.docx
+数据源评估.md
+
+# Local screenshots and OS/editor files.
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.tsbuildinfo
+.env.*
+!.env.example
+docs/source_text/
+docs/dsh_session_snapshot.json
+talk_with_dsh.txt
+bae42c1b75f431bbbba9c2db8b4e5c50.png

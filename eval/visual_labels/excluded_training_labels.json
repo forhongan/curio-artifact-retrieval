@@ -1,0 +1,156 @@
+[
+  {
+    "alias": "T225",
+    "item_id": "cma_125799",
+    "pool": "train",
+    "actual_split": "test",
+    "reason": "object_family_moved_to_holdout"
+  },
+  {
+    "alias": "T234",
+    "item_id": "cma_132003",
+    "pool": "train",
+    "actual_split": "test",
+    "reason": "object_family_moved_to_holdout"
+  },
+  {
+    "alias": "T105",
+    "item_id": "cma_519083",
+    "pool": "train",
+    "actual_split": "dev",
+    "reason": "object_family_moved_to_holdout"
+  },
+  {
+    "alias": "T115",
+    "item_id": "cma_132187",
+    "pool": "train",
+    "actual_split": "test",
+    "reason": "object_family_moved_to_holdout"
+  },
+  {
+    "alias": "T120",
+    "item_id": "cma_125795",
+    "pool": "train",
+    "actual_split": "dev",
+    "reason": "object_family_moved_to_holdout"
+  },
+  {
+    "alias": "T001",
+    "item_id": "cma_121911",
+    "pool": "train",
+    "actual_split": "test",
+    "reason": "object_family_moved_to_holdout"
+  },
+  {
+    "alias": "T049",
+    "item_id": "cma_121905",
+    "pool": "train",
+    "actual_split": "test",
+    "reason": "object_family_moved_to_holdout"
+  },
+  {
+    "alias": "T051",
+    "item_id": "cma_132173",
+    "pool": "train",
+    "actual_split": "test",
+    "reason": "object_family_moved_to_holdout"
+  },
+  {
+    "alias": "T060",
+    "item_id": "cma_101805",
+    "pool": "train",
+    "actual_split": "test",
+    "reason": "object_family_moved_to_holdout"
+  },
+  {
+    "alias": "T064",
+    "item_id": "cma_144932",
+    "pool": "train",
+    "actual_split": "dev",
+    "reason": "object_family_moved_to_holdout"
+  },
+  {
+    "alias": "T129",
+    "item_id": "cma_147054",
+    "pool": "train",
+    "actual_split": "dev",
+    "reason": "object_family_moved_to_holdout"
+  },
+  {
+    "alias": "T145",
+    "item_id": "cma_101738",
+    "pool": "train",
+    "actual_split": "dev",
+    "reason": "object_family_moved_to_holdout"
+  },
+  {
+    "alias": "T148",
+    "item_id": "cma_123620",
+    "pool": "train",
+    "actual_split": "dev",
+    "reason": "object_family_moved_to_holdout"
+  },
+  {
+    "alias": "T157",
+    "item_id": "cma_101765",
+    "pool": "train",
+    "actual_split": "dev",
+    "reason": "object_family_moved_to_holdout"
+  },
+  {
+    "alias": "T160",
+    "item_id": "cma_132179",
+    "pool": "train",
+    "actual_split": "test",
+    "reason": "object_family_moved_to_holdout"
+  },
+  {
+    "alias": "T173",
+    "item_id": "cma_147065",
+    "pool": "train",
+    "actual_split": "dev",
+    "reason": "object_family_moved_to_holdout"
+  },
+  {
+    "alias": "T176",
+    "item_id": "cma_101801",
+    "pool": "train",
+    "actual_split": "dev",
+    "reason": "object_family_moved_to_holdout"
+  },
+  {
+    "alias": "T179",
+    "item_id": "cma_132174",
+    "pool": "train",
+    "actual_split": "test",
+    "reason": "object_family_moved_to_holdout"
+  },
+  {
+    "alias": "T201",
+    "item_id": "cma_132196",
+    "pool": "train",
+    "actual_split": "test",
+    "reason": "object_family_moved_to_holdout"
+  },
+  {
+    "alias": "T203",
+    "item_id": "cma_132206",
+    "pool": "train",
+    "actual_split": "test",
+    "reason": "object_family_moved_to_holdout"
+  },
+  {
+    "alias": "T206",
+    "item_id": "cma_101713",
+    "pool": "train",
+    "actual_split": "test",
+    "reason": "object_family_moved_to_holdout"
+  },
+  {
+    "alias": "T207",
+    "item_id": "cma_161919",
+    "pool": "train",
+    "actual_split": "test",
+    "reason": "object_family_moved_to_holdout"
+  }
+]

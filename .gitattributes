@@ -1,0 +1,9 @@
+* text=auto eol=lf
+# Frozen labels/protocols and evidence must retain byte hashes across machines.
+eval/** -text whitespace=cr-at-eol,-blank-at-eof
+docs/*evidence.json -text whitespace=cr-at-eol,-blank-at-eof
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.webp binary
+*.docx binary

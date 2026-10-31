@@ -1,0 +1,21 @@
+{
+  "data_sha256": "c3237f12472741bd5055adafd15c3808262fecd611b34daa41b5ba8c5ccd228d",
+  "split": "train",
+  "seed": "5523",
+  "count": 240,
+  "source_counts": {
+    "cleveland": 120,
+    "met": 120
+  },
+  "selection": "SHA256(seed + item_id), source-balanced then backfilled; transitive duplicate groups",
+  "image_hashes": "blind_map.raw_sha256 is the original/raw image hash (catalog sha256); blind_map.processed_sha256 is the exact rendered source file hash (catalog image_sha256 when present)",
+  "deduplication_fields": [
+    "sha256",
+    "phash",
+    "phash_group",
+    "duplicate_group",
+    "duplicate_sha256_of",
+    "near_duplicate_of"
+  ],
+  "label_source": "unlabeled; AI-generated judgments must be labeled AI, not human"
+}

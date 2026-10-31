@@ -1,0 +1,832 @@
+{
+  "items": 4692,
+  "ontology_counts": {
+    "object_type": 28,
+    "material": 18,
+    "motifs": 15,
+    "colors": 11,
+    "shape": 9
+  },
+  "concepts": {
+    "object_type": [
+      {
+        "value": "vase",
+        "catalogue_support": 889,
+        "probe_support": true
+      },
+      {
+        "value": "figure",
+        "catalogue_support": 517,
+        "probe_support": true
+      },
+      {
+        "value": "bowl",
+        "catalogue_support": 455,
+        "probe_support": true
+      },
+      {
+        "value": "lid",
+        "catalogue_support": 350,
+        "probe_support": false
+      },
+      {
+        "value": "plate",
+        "catalogue_support": 326,
+        "probe_support": true
+      },
+      {
+        "value": "jar",
+        "catalogue_support": 325,
+        "probe_support": true
+      },
+      {
+        "value": "bottle",
+        "catalogue_support": 316,
+        "probe_support": false
+      },
+      {
+        "value": "textile",
+        "catalogue_support": 230,
+        "probe_support": true
+      },
+      {
+        "value": "cup",
+        "catalogue_support": 213,
+        "probe_support": true
+      },
+      {
+        "value": "fragment",
+        "catalogue_support": 171,
+        "probe_support": false
+      },
+      {
+        "value": "box",
+        "catalogue_support": 157,
+        "probe_support": false
+      },
+      {
+        "value": "mirror",
+        "catalogue_support": 147,
+        "probe_support": true
+      },
+      {
+        "value": "ring",
+        "catalogue_support": 83,
+        "probe_support": false
+      },
+      {
+        "value": "jewelry",
+        "catalogue_support": 82,
+        "probe_support": false
+      },
+      {
+        "value": "censer",
+        "catalogue_support": 67,
+        "probe_support": true
+      },
+      {
+        "value": "ewer",
+        "catalogue_support": 62,
+        "probe_support": false
+      },
+      {
+        "value": "garment",
+        "catalogue_support": 58,
+        "probe_support": false
+      },
+      {
+        "value": "tile",
+        "catalogue_support": 56,
+        "probe_support": false
+      },
+      {
+        "value": "saucer",
+        "catalogue_support": 48,
+        "probe_support": false
+      },
+      {
+        "value": "pot",
+        "catalogue_support": 47,
+        "probe_support": true
+      },
+      {
+        "value": "ornament",
+        "catalogue_support": 44,
+        "probe_support": true
+      },
+      {
+        "value": "teapot",
+        "catalogue_support": 44,
+        "probe_support": true
+      },
+      {
+        "value": "pendant",
+        "catalogue_support": 19,
+        "probe_support": true
+      },
+      {
+        "value": "cong",
+        "catalogue_support": 10,
+        "probe_support": false
+      },
+      {
+        "value": "bi",
+        "catalogue_support": 8,
+        "probe_support": false
+      },
+      {
+        "value": "book",
+        "catalogue_support": 7,
+        "probe_support": false
+      },
+      {
+        "value": "stele",
+        "catalogue_support": 7,
+        "probe_support": false
+      },
+      {
+        "value": "ritual vessel",
+        "catalogue_support": 1,
+        "probe_support": true
+      }
+    ],
+    "material": [
+      {
+        "value": "ceramic",
+        "catalogue_support": 2951,
+        "probe_support": true
+      },
+      {
+        "value": "porcelain",
+        "catalogue_support": 2107,
+        "probe_support": true
+      },
+      {
+        "value": "earthenware",
+        "catalogue_support": 606,
+        "probe_support": false
+      },
+      {
+        "value": "stoneware",
+        "catalogue_support": 541,
+        "probe_support": false
+      },
+      {
+        "value": "silk",
+        "catalogue_support": 317,
+        "probe_support": false
+      },
+      {
+        "value": "jade",
+        "catalogue_support": 309,
+        "probe_support": true
+      },
+      {
+        "value": "bronze",
+        "catalogue_support": 301,
+        "probe_support": true
+      },
+      {
+        "value": "textile",
+        "catalogue_support": 245,
+        "probe_support": true
+      },
+      {
+        "value": "gold",
+        "catalogue_support": 150,
+        "probe_support": false
+      },
+      {
+        "value": "glass",
+        "catalogue_support": 132,
+        "probe_support": true
+      },
+      {
+        "value": "wood",
+        "catalogue_support": 132,
+        "probe_support": true
+      },
+      {
+        "value": "copper",
+        "catalogue_support": 126,
+        "probe_support": false
+      },
+      {
+        "value": "lacquer",
+        "catalogue_support": 117,
+        "probe_support": true
+      },
+      {
+        "value": "silver",
+        "catalogue_support": 113,
+        "probe_support": true
+      },
+      {
+        "value": "ivory",
+        "catalogue_support": 91,
+        "probe_support": false
+      },
+      {
+        "value": "ink",
+        "catalogue_support": 87,
+        "probe_support": false
+      },
+      {
+        "value": "stone",
+        "catalogue_support": 78,
+        "probe_support": true
+      },
+      {
+        "value": "iron",
+        "catalogue_support": 64,
+        "probe_support": false
+      }
+    ],
+    "motifs": [
+      {
+        "value": "floral",
+        "catalogue_support": 734,
+        "probe_support": false
+      },
+      {
+        "value": "dragon",
+        "catalogue_support": 295,
+        "probe_support": false
+      },
+      {
+        "value": "bird",
+        "catalogue_support": 246,
+        "probe_support": false
+      },
+      {
+        "value": "leaf",
+        "catalogue_support": 160,
+        "probe_support": false
+      },
+      {
+        "value": "lotus",
+        "catalogue_support": 114,
+        "probe_support": false
+      },
+      {
+        "value": "horse",
+        "catalogue_support": 113,
+        "probe_support": false
+      },
+      {
+        "value": "landscape",
+        "catalogue_support": 81,
+        "probe_support": false
+      },
+      {
+        "value": "lion",
+        "catalogue_support": 76,
+        "probe_support": false
+      },
+      {
+        "value": "cloud",
+        "catalogue_support": 66,
+        "probe_support": false
+      },
+      {
+        "value": "butterfly",
+        "catalogue_support": 60,
+        "probe_support": false
+      },
+      {
+        "value": "figure_scene",
+        "catalogue_support": 60,
+        "probe_support": false
+      },
+      {
+        "value": "tiger",
+        "catalogue_support": 58,
+        "probe_support": false
+      },
+      {
+        "value": "phoenix",
+        "catalogue_support": 49,
+        "probe_support": false
+      },
+      {
+        "value": "fish",
+        "catalogue_support": 43,
+        "probe_support": false
+      },
+      {
+        "value": "geometric",
+        "catalogue_support": 12,
+        "probe_support": false
+      }
+    ],
+    "colors": [
+      {
+        "value": "blue",
+        "catalogue_support": 794,
+        "probe_support": false
+      },
+      {
+        "value": "green",
+        "catalogue_support": 394,
+        "probe_support": false
+      },
+      {
+        "value": "white",
+        "catalogue_support": 283,
+        "probe_support": false
+      },
+      {
+        "value": "red",
+        "catalogue_support": 202,
+        "probe_support": false
+      },
+      {
+        "value": "black",
+        "catalogue_support": 151,
+        "probe_support": false
+      },
+      {
+        "value": "brown",
+        "catalogue_support": 138,
+        "probe_support": false
+      },
+      {
+        "value": "yellow",
+        "catalogue_support": 102,
+        "probe_support": false
+      },
+      {
+        "value": "gray",
+        "catalogue_support": 54,
+        "probe_support": false
+      },
+      {
+        "value": "purple",
+        "catalogue_support": 27,
+        "probe_support": false
+      },
+      {
+        "value": "pink",
+        "catalogue_support": 9,
+        "probe_support": false
+      },
+      {
+        "value": "orange",
+        "catalogue_support": 3,
+        "probe_support": false
+      }
+    ],
+    "shape": [
+      {
+        "value": "handles",
+        "catalogue_support": 58,
+        "probe_support": false
+      },
+      {
+        "value": "double_gourd",
+        "catalogue_support": 23,
+        "probe_support": false
+      },
+      {
+        "value": "rectangular",
+        "catalogue_support": 19,
+        "probe_support": false
+      },
+      {
+        "value": "long_neck",
+        "catalogue_support": 5,
+        "probe_support": false
+      },
+      {
+        "value": "footed",
+        "catalogue_support": 3,
+        "probe_support": false
+      },
+      {
+        "value": "round_body",
+        "catalogue_support": 1,
+        "probe_support": false
+      },
+      {
+        "value": "narrow_mouth",
+        "catalogue_support": 0,
+        "probe_support": false
+      },
+      {
+        "value": "trumpet_mouth",
+        "catalogue_support": 0,
+        "probe_support": false
+      },
+      {
+        "value": "wide_mouth",
+        "catalogue_support": 0,
+        "probe_support": false
+      }
+    ]
+  },
+  "top_object_names": [
+    [
+      "Vase",
+      678
+    ],
+    [
+      "Ceramic",
+      524
+    ],
+    [
+      "Figure",
+      313
+    ],
+    [
+      "Bowl",
+      295
+    ],
+    [
+      "Metalwork",
+      206
+    ],
+    [
+      "Textile",
+      178
+    ],
+    [
+      "Jade",
+      169
+    ],
+    [
+      "Jar",
+      162
+    ],
+    [
+      "Dish",
+      160
+    ],
+    [
+      "Sculpture",
+      133
+    ],
+    [
+      "Cup",
+      120
+    ],
+    [
+      "Glass",
+      101
+    ],
+    [
+      "Plate",
+      93
+    ],
+    [
+      "Bottle",
+      91
+    ],
+    [
+      "Miscellaneous",
+      89
+    ],
+    [
+      "Jewelry",
+      77
+    ],
+    [
+      "Covered jar",
+      52
+    ],
+    [
+      "Bottle vase",
+      51
+    ],
+    [
+      "Garment",
+      47
+    ],
+    [
+      "Ring",
+      44
+    ],
+    [
+      "Lacquer",
+      41
+    ],
+    [
+      "Ewer",
+      40
+    ],
+    [
+      "Incense burner",
+      40
+    ],
+    [
+      "Embroidery",
+      35
+    ],
+    [
+      "Tile",
+      33
+    ],
+    [
+      "Water coupe",
+      28
+    ],
+    [
+      "Saucer",
+      27
+    ],
+    [
+      "Box",
+      25
+    ],
+    [
+      "Vessel",
+      25
+    ],
+    [
+      "Covered box",
+      24
+    ],
+    [
+      "Wood",
+      22
+    ],
+    [
+      "Furniture and woodwork",
+      22
+    ],
+    [
+      "Teapot",
+      21
+    ],
+    [
+      "Ivory",
+      20
+    ],
+    [
+      "Arms and Armor",
+      19
+    ],
+    [
+      "Tea bowl",
+      17
+    ],
+    [
+      "Stone",
+      16
+    ],
+    [
+      "Brush washer",
+      15
+    ],
+    [
+      "Covered bowl",
+      15
+    ],
+    [
+      "Pillow",
+      13
+    ],
+    [
+      "Enamel",
+      11
+    ],
+    [
+      "Architectural model",
+      11
+    ],
+    [
+      "Votive tablet",
+      11
+    ],
+    [
+      "Handscroll",
+      10
+    ],
+    [
+      "Brush holder",
+      10
+    ],
+    [
+      "Stem cup",
+      10
+    ],
+    [
+      "Seal paste box",
+      10
+    ],
+    [
+      "Piece",
+      9
+    ],
+    [
+      "Ornament",
+      9
+    ],
+    [
+      "Figures",
+      9
+    ]
+  ],
+  "top_medium_terms": [
+    [
+      "Porcelain painted in underglaze cobalt blue (Jingdezhen ware)",
+      227
+    ],
+    [
+      "bronze",
+      174
+    ],
+    [
+      "Porcelain painted in overglaze polychrome enamels (Jingdezhen ware)",
+      160
+    ],
+    [
+      "jade",
+      145
+    ],
+    [
+      "glass",
+      98
+    ],
+    [
+      "porcelain",
+      96
+    ],
+    [
+      "Porcelain",
+      72
+    ],
+    [
+      "Earthenware with traces of pigment",
+      68
+    ],
+    [
+      "Earthenware",
+      64
+    ],
+    [
+      "silk",
+      57
+    ],
+    [
+      "Earthenware with pigment",
+      54
+    ],
+    [
+      "Porcelain with peachbloom glaze (Jingdezhen ware)",
+      34
+    ],
+    [
+      "Porcelain painted with cobalt blue under transparent glaze (Jingdezhen ware)",
+      31
+    ],
+    [
+      "ink cake",
+      30
+    ],
+    [
+      "Porcelain painted in underglaze cobalt blue and overglaze polychrome enamels (Jingdezhen ware)",
+      30
+    ],
+    [
+      "gilt bronze",
+      29
+    ],
+    [
+      "Earthenware with green lead glaze",
+      29
+    ],
+    [
+      "Porcelain with copper red glaze (Jingdezhen ware)",
+      29
+    ],
+    [
+      "Porcelain with crackled green glaze (Jingdezhen ware)",
+      28
+    ],
+    [
+      "porcelain with underglaze blue decoration",
+      23
+    ],
+    [
+      "ivory",
+      21
+    ],
+    [
+      "Porcelain painted in polychrome enamels on the biscuit (Jingdezhen ware)",
+      18
+    ],
+    [
+      "Porcelain painted with colored enamels over transparent glaze (Jingdezhen ware)",
+      17
+    ],
+    [
+      "wood",
+      16
+    ],
+    [
+      "embroidery, silk",
+      16
+    ],
+    [
+      "white jade",
+      16
+    ],
+    [
+      "Earthenware with colored glaze (sancai ware)",
+      16
+    ],
+    [
+      "Jade (nephrite)",
+      16
+    ],
+    [
+      "Porcelain with incised decoration under peachbloom glaze (Jingdezhen ware)",
+      16
+    ],
+    [
+      "Porcelain with ox-blood glaze (Jingdezhen ware)",
+      16
+    ],
+    [
+      "Porcelain painted in underglaze blue",
+      16
+    ],
+    [
+      "Unglazed pottery",
+      16
+    ],
+    [
+      "porcelain with famille rose overglaze enamel decoration",
+      15
+    ],
+    [
+      "stoneware",
+      15
+    ],
+    [
+      "Soft-paste porcelain painted in underglaze cobalt blue (Jingdezhen ware)",
+      15
+    ],
+    [
+      "jade (nephrite)",
+      14
+    ],
+    [
+      "tabby weave",
+      14
+    ],
+    [
+      "Earthenware with painted decoration",
+      14
+    ],
+    [
+      "Porcelain painted with overglaze polychrome enamels (Jingdezhen ware)",
+      14
+    ],
+    [
+      "limestone",
+      13
+    ],
+    [
+      "carved cinnabar lacquer",
+      13
+    ],
+    [
+      "gray earthenware with traces of slip",
+      13
+    ],
+    [
+      "Earthenware with three-color (sancai) glaze",
+      13
+    ],
+    [
+      "Earthenware with green glaze",
+      13
+    ],
+    [
+      "Bronze",
+      13
+    ],
+    [
+      "glazed porcelain",
+      12
+    ],
+    [
+      "Earthenware with lead green glaze",
+      12
+    ],
+    [
+      "Pottery",
+      12
+    ],
+    [
+      "Copper-silver alloy, gilding, kingfisher feathers, glass beads",
+      11
+    ],
+    [
+      "Porcelain with yellow glaze (Jingdezhen ware)",
+      11
+    ]
+  ],
+  "warning": "Catalogue support is weak text supervision; it does not prove image visibility. Probe support is false for newly added classes until independently trained."
+}

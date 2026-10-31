@@ -1,0 +1,19 @@
+{
+  "protocol_version": "metadata-silver-v2-informative-qrels-groups",
+  "data_sha256": "4dbb5e4045bbab4fd245f7fce2d2fc363aabfe41a45d31b91703ddaac5ebee68",
+  "items": 4692,
+  "dev_queries": 40,
+  "test_queries": 80,
+  "languages_per_intent": [
+    "zh",
+    "en"
+  ],
+  "label_source": "metadata_silver",
+  "independence_warning": "Metadata-based systems share information with these labels; this evaluates catalog constraint compliance, not independently judged visual relevance. Incomplete museum fields cause false negatives.",
+  "split_policy": "one representative per distinct informative graded-qrels group, deterministic SHA256 order; bilingual forms stay together; do not tune on test",
+  "raw_supported_predicates": 210,
+  "distinct_graded_qrels": 210,
+  "equivalent_predicate_groups": [],
+  "excluded_all_relevant_predicates": [],
+  "human_annotations": 0
+}
