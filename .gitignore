@@ -8,6 +8,7 @@ artifacts/
 models/
 runs/
 logs/
+_release/
 web/node_modules/
 web/dist/
 *.egg-info/

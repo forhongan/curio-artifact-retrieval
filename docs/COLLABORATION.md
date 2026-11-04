@@ -1,16 +1,16 @@
 # Collaboration workflow
 
-The repository is the shared source of truth for code, tests, documentation, and small reproducibility manifests. Large image collections, model weights, indexes, and generated reports stay outside Git and are identified by SHA256 in the documentation.
+The repository is the shared source of truth for code, tests, documentation, and small reproducibility manifests. Images, model weights, indexes and experiment records are shared as versioned **GitHub Release assets in this repository** rather than Git blobs. See [RESOURCES.md](RESOURCES.md) for restoration and SHA256 verification.
 
 ## Recommended GitHub setup
 
-Create a **private** repository first and invite every group member with write access. Change it to public only after checking course-material rights, image redistribution terms, credentials, and generated artifacts. Enable pull requests and require one review for changes to `src/`, `scripts/`, `tests/`, or `web/`.
+The repository is public following the owner's authorization. Anyone can read, clone, fork and open pull requests. Invite group members as collaborators only if they need direct write access. Keep course source documents, credentials and local conversation snapshots outside Git and Release assets. Use pull requests and a reviewer for changes to `src/`, `scripts/`, `tests/`, or `web/`.
 
 Protect the default branch. Work on feature branches, open a pull request, run the checks in `CONTRIBUTING.md`, and merge only after review. Use Issues for bugs and experiments; label them `backend`, `frontend`, `data`, `evaluation`, or `docs`.
 
 ## What belongs in Git
 
-Commit source code, tests, documentation, small protocol files, and lockfiles. Keep downloaded data, indexes, checkpoints, logs, and virtual environments local. The current `.gitignore` enforces this boundary. If a large asset must be shared, publish a separately versioned release artifact or use an approved storage service and record its URL, license, size, and SHA256 in `docs/`.
+Commit source code, tests, documentation, small protocol files, and lockfiles. The current `.gitignore` keeps data, indexes, checkpoints, logs and environments out of Git history. Download shared resources with `python scripts/download_resources.py` or `--all`. New resource versions should use a new Release tag and manifest; do not replace frozen assets to hide changed experimental results.
 
 ## Suggested roles for the next phase
 

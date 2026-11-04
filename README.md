@@ -2,7 +2,15 @@
 
 面向中国古代文物的中英文**文本到图像检索系统**。默认使用领域适配图文模型，当前生产属性头排序权重为0；馆藏描述用于展示、训练弱监督和单独的元数据辅助对照。默认在线图像排序不读取馆藏文本匹配分数。
 
-**组员先读：[组内讨论板 DISCUSSION.md](DISCUSSION.md)**，包含当前思路、算法与模型、实测效果、局限、待讨论议题及留言模板。团队协作流程见 [docs/COLLABORATION.md](docs/COLLABORATION.md)，贡献和拉取请求检查见 [CONTRIBUTING.md](CONTRIBUTING.md)。源码仓库不包含本地数据、模型权重和生成索引；这些资源按文档中的版本号与 SHA256 管理。
+**组员先读：[组内讨论板 DISCUSSION.md](DISCUSSION.md)**，包含当前思路、算法与模型、实测效果、局限、待讨论议题及留言模板。团队协作流程见 [docs/COLLABORATION.md](docs/COLLABORATION.md)，贡献和拉取请求检查见 [CONTRIBUTING.md](CONTRIBUTING.md)。
+
+**完整资源下载：[GitHub Release：图片、底模、训练权重、索引与实验日志](https://github.com/forhongan/curio-artifact-retrieval/releases/tag/curio-resources-v2-20261104)**。资源作为同仓库 Release 附件共享，避免把约11.11 GiB二进制文件写入Git历史。默认运行资源约2.81 GiB；全部原图、CLIP和作废历史另有可选包。安装、分包说明和许可见 [RESOURCES.md](docs/RESOURCES.md)，固定哈希见 [resources_manifest.json](docs/resources_manifest.json)。
+
+```powershell
+# 克隆后先恢复默认运行资源；仅需要Python 3.11+，可断点续传和校验
+python scripts/download_resources.py
+# 若需要原图、CLIP对照与历史实验，改用 --all
+```
 
 本地已准备 **4,692 件 CC0 图像**（Met 2,954、Cleveland 1,738）、冻结数据、两个预训练编码器、训练和评测脚本、FastAPI 后端和 React 界面。正式结果见 [docs/RESULTS.md](docs/RESULTS.md)；原始日志和模型权重保存在本地 `artifacts/` 与 `logs/`。v2 的正式视觉/元数据评测、失败分析和系统验收已完成，课程报告与真人复核留到下一阶段。
 

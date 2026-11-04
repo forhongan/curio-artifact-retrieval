@@ -15,6 +15,10 @@ param(
 $ErrorActionPreference = 'Stop'
 $repoRoot = Split-Path -Parent $PSScriptRoot
 Set-Location -LiteralPath $repoRoot
+$bundledModelCache = Join-Path $repoRoot 'models/huggingface/hub'
+if (-not $env:HF_HUB_CACHE -and (Test-Path -LiteralPath $bundledModelCache -PathType Container)) {
+    $env:HF_HUB_CACHE = $bundledModelCache
+}
 $pythonPath = Join-Path $repoRoot '.venv/Scripts/python.exe'
 if (-not (Test-Path -LiteralPath $pythonPath -PathType Leaf)) {
     throw 'Missing .venv. Run uv sync --extra dev from the repository root.'
