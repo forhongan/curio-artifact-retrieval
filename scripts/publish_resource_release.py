@@ -89,7 +89,25 @@ def main():
             started = time.monotonic()
             try:
                 with (args.directory / name).open("rb") as data:
-                    response = requests.post(upload_url, params={"name": name}, data=data,
+                    class ProgressReader:
+                        def __init__(self, stream):
+                            self.stream = stream
+                            self.sent = 0
+                            self.reported = time.monotonic()
+
+                        def __getattr__(self, key):
+                            return getattr(self.stream, key)
+
+                        def read(self, size=-1):
+                            block = self.stream.read(size)
+                            self.sent += len(block)
+                            now = time.monotonic()
+                            if now - self.reported >= 45:
+                                print(f"Progress {name}: {self.sent / 1024**2:.0f}/{entry['bytes'] / 1024**2:.0f} MiB", flush=True)
+                                self.reported = now
+                            return block
+
+                    response = requests.post(upload_url, params={"name": name}, data=ProgressReader(data),
                                              headers={**headers, "Content-Type": "application/octet-stream",
                                                       "Content-Length": str(entry["bytes"])}, timeout=(30, 300))
                 if response.status_code != 201:

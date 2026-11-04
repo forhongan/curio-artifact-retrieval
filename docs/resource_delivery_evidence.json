@@ -1,0 +1,107 @@
+{
+  "date": "2026-11-04",
+  "release_tag": "curio-resources-v2-20261104",
+  "packaged_files": 28976,
+  "assets_in_manifest": 23,
+  "archive_count": 22,
+  "total_asset_bytes": 11924801183,
+  "full_restore": "passed; every restored file SHA256 matched release inventory",
+  "credential_scan": {
+    "text_files": 8361,
+    "findings": 0,
+    "method": "common credential patterns plus secret assignments and credential headers"
+  },
+  "tests": {
+    "pytest_passed": 362,
+    "warnings": 7,
+    "ruff": "passed"
+  },
+  "offline_models": [
+    {
+      "model": "siglip",
+      "offline": true,
+      "dimension": 768,
+      "index_cosine": 0.9999967217445374,
+      "text_dimension": 768
+    },
+    {
+      "model": "clip",
+      "offline": true,
+      "dimension": 512,
+      "index_cosine": 0.9999977350234985,
+      "text_dimension": 512
+    },
+    {
+      "model": "dinov2",
+      "offline": true,
+      "dimension": 384,
+      "index_cosine": 1.0000001192092896
+    }
+  ],
+  "restored_api": {
+    "health": {
+      "status": "ok",
+      "items": 4692,
+      "indexed_images": 4692,
+      "dense_available": true,
+      "encoder_loaded": true,
+      "model_version": "75de2d55ec2d0b4efc50b3e9ad70dba96a7b2fa2",
+      "index_version": "d7fb9f1d47dafbd1",
+      "retrieval_mode": "image_embeddings",
+      "unindexed_items": 0,
+      "probes_configured": true,
+      "probes_available": true,
+      "probe_tasks": [
+        "material",
+        "object_type"
+      ],
+      "probe_weight": 0,
+      "probe_load_ms": 93.02,
+      "warnings": [],
+      "expanded_catalogue_count": 4793,
+      "reference_count": 45
+    },
+    "checks": [
+      {
+        "route": "/api/search",
+        "status": 200,
+        "results": 5
+      },
+      {
+        "route": "/api/search/reference",
+        "status": 200,
+        "results": 5
+      },
+      {
+        "route": "/api/search/expanded",
+        "status": 200,
+        "results": 5
+      },
+      {
+        "route": "/api/search/image",
+        "status": 200,
+        "results": 5
+      }
+    ],
+    "offline": true,
+    "status": "passed"
+  },
+  "remote_publication": {
+    "status": "passed",
+    "anonymous": true,
+    "release_url": "https://github.com/forhongan/curio-artifact-retrieval/releases/tag/curio-resources-v2-20261104",
+    "verified_assets": 25,
+    "total_bytes": 11924810427,
+    "published_at": "2026-11-04T14:28:52Z",
+    "release_id": 434006224
+  },
+  "release_source_commit": "22f3f2fedf290dd2c6893c0f62086fc0b5a2a7af",
+  "anonymous_download_restore": {
+    "status": "passed",
+    "group": "records",
+    "files": 7816,
+    "credential_required": false,
+    "command": "python scripts/download_resources.py --groups records --archives-dir _release/anonymous-download-check --root _release/anonymous-restore-check"
+  },
+  "release_inventory_sha256": "3ecd15d011980e946b006f623f653d4f7fced2df004daf636e68df4d69046221"
+}

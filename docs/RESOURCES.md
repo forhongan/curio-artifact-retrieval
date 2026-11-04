@@ -70,3 +70,9 @@ Linux/macOS可设置 `export HF_HUB_CACHE="$PWD/models/huggingface/hub"`。CLIP�
 图库及参考照片只重新分发已接受、标为CC0的文件；未接受的候选图片不上传，候选API记录及失败原因保留。逐件来源、credit和rights证据仍在 `data/licenses.csv`、原API响应与参考manifest中。SigLIP2和DINOv2遵循Apache-2.0，CLIP遵循其MIT许可；官方模型卡、许可文本及获取URL/hash在 `models/licenses/`。它们不因发布到本仓库而改换许可。
 
 不上传：凭据、授权页面截图、私人会话快照、课程原始Word文件、活跃服务PID、虚拟环境和node_modules。测试/性能日志中记录的本地路径、硬件及时间戳作为复现信息保留。
+
+## 本次交付验证
+
+2026-11-04已完成发布，Release固定源码提交为 `22f3f2fedf290dd2c6893c0f62086fc0b5a2a7af`。25个附件均通过GitHub返回的大小与SHA256核验，匿名API可读取完整附件清单。全部22个ZIP在空目录恢复28,976个文件并逐文件校验通过；三套底模均使用恢复缓存离线加载，图像编码与原索引余弦一致性≥0.99999。恢复后的默认文本、参考图、扩展图库和图片上传检索均通过真实模型API检查。
+
+另外从公开Release匿名重新下载inventory与records包，恢复7,816文件并校验通过，验证下载脚本无需凭据即可使用。本次交付版本362项测试通过、Ruff通过；不把这些工程验收当作检索正确率。机器可读记录见 [resource_delivery_evidence.json](resource_delivery_evidence.json)。后续并行开发的新算法和新产物不自动进入本资源快照。
