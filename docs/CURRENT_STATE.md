@@ -35,3 +35,7 @@
 先读本页与HANDOFF。历史文档在history/research_before_showcase_v6/；早期v5状态/评测在history/docs_before_relevance_v5/与history/evaluation_v5_initial/。本地组员仓库与权重research/teammate_review/不进入Git。
 
 生产启动scripts/run.ps1；环境CURIO_ENCODER=siglip、CURIO_INDEX=artifacts/siglip_adapted、CURIO_DATA=data/snapshots/collection_v2.jsonl、CURIO_PROBE_WEIGHT=0。
+
+## GitHub交付
+
+源码已推送codex/research-showcase-v6，草稿PR #1已附到当前聊天。Release `curio-showcase-v6-20261109`已发布，6个附件远端哈希通过。验收记录见[qa/SHOWCASE_V6.md](qa/SHOWCASE_V6.md)，发布收据见showcase_upload_receipt.json。

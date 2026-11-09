@@ -1055,4 +1055,3 @@ def load_gallery(root: Path) -> tuple[list[dict], GalleryExclusions]:
                 with Image.open(path) as image:
                     exclusions.add_gallery_phash(row["item_id"], image_fingerprints(image)["phash64"])
     return rows, exclusions
-
