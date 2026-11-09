@@ -1,0 +1,201 @@
+review_id	form	visible_tags	note
+R001	ring	white,brown,cylindrical	Thick hollow jade ring; no neck or handles.
+R002	jar	brown,round_body,handles,animal,dragon	Painted dragon and cloud scrolls; short neck.
+R003	mirror	black,round,geometric	Circular back with knob and geometric relief.
+R004	mask	brown,figures	Face fragment, not a whole human statue.
+R005	vase	red,long_neck,round_body	Narrow neck and red pear-shaped body.
+R006	pipe	black,long	Silver ornament is secondary to lacquer pipe.
+R007	vase	white,long_neck,round_body	Narrow white neck; rounded bulbous mouth.
+R008	jacket	green,floral,rectangular	Green garment with large flower embroidery.
+R009	vase	blue,white,blue_white,landscape,cylindrical	Blue landscape dominates with minor other enamels; not monochrome blue-white technique.
+R010	mirror	black,round,animal	Four mythical animal reliefs.
+R011	lid	white,lotus_shape	Separate ivory lotus-leaf lid; shaped leaf is not automatically surface lotus decoration.
+R012	figure	color_unknown,figures	Monochrome seated man image; original green glaze not visible as colour.
+R013	jewelry	red,brown,round	Amber rings and fasteners as a multi-piece set.
+R014	vase	green,floral,round_body	Celadon meiping has short neck; shallow floral relief clearly visible.
+R015	box	red,rectangular,floral	Open drawer; not a lidded whole box.
+R016	vase	red,long_neck,round_body	Ox-blood vase with long straight neck.
+R017	bottle	red,white,floral,round_body	Glass snuff bottle; short neck and raised red flowers.
+R018	lid	brown,round,landscape,figures	Separate lid shows landscape and people.
+R019	bottle	blue,gourd	Turquoise double-gourd form; short upper neck.
+R020	brushrest	blue,white,blue_white,rectangular,geometric	Blue-white brush rest with inscriptions.
+R021	figure	color_unknown,figures	Seated official in monochrome photo.
+R022	animal_sculpture	brown,animal	Recumbent deer; museum case background.
+R023	saucer	white,landscape,figures,round	Townscape saucer; small people visible.
+R024	bowl	color_unknown,floral,round	Monochrome Ding bowl; incised flower sprays visible.
+R025	textile	green,rectangular,geometric	Long narrow woven strip.
+R026	jar	blue,white,blue_white,floral	Broad mouth and scrolling vines with gourds; not a long-neck vase.
+R027	animal_sculpture	color_unknown,animal	Camel statuette in monochrome photo.
+R028	ornament	red,black,rectangular,geometric	Mixed-media hanging ornament; no single primary material inferred.
+R029	inkcake	black,rectangular,figures	Gold painted human figure on a rectangular ink cake.
+R030	skirt	blue,white,floral	Textile garment with multicolour flowers.
+R031	saucer	color_unknown,floral,round	Monochrome image; fine floral painting.
+R032	bottle	red,long_neck,cylindrical	Long cylindrical neck and bell-shaped lower body.
+R033	bowl	color_unknown,floral,round	Monochrome photo of famille verte; cannot judge actual colours.
+R034	waterpot	red,round_body,geometric	Squat peachbloom water pot with medallions.
+R035	stele	brown,figures	Buddha relief rather than a free-standing vessel.
+R036	basin	blue,white,blue_white,animal,floral	Oxen and flowers coexist on lobed basin.
+R037	head	brown,figures	Separate bodhisattva head.
+R038	jar	color_unknown,lidded,animal,floral	Dragon and birds relief and painted leaves; full covered vessel.
+R039	lid	brown,round,figures,landscape	Separate tortoiseshell lid; figures and buildings.
+R040	vase	blue,green	Dappled blue-green glaze, short neck.
+R041	vase	color_unknown,long_neck,round_body,lotus_shape	Monochrome vase with neck cut off at mouth; lotus petals on lower body are form relief.
+R042	figure	color_unknown,figures	Standing Bodhidharma in monochrome photo.
+R043	bottle	color_unknown,long_neck,round_body,floral	Blue-white official technique; monochrome photograph cannot satisfy visual colour query.
+R044	buckle	red,brown	Bronze frame with stones; not primary jade body.
+R045	vase	color_unknown,floral,animal	Flowers and bird on a black ground; actual palette unknown from mono image.
+R046	ewer	green,long_neck,handles,round_body	Handled ceramic ewer; prominent mouth but no long spout.
+R047	inkcake	green,figures	Green figure-shaped ink cake; material is ink not jade.
+R048	dish	blue,white,blue_white,round	Two dishes shown; broad dish category permits pairs.
+R049	book	blue,rectangular	Bound book closed; landscape hidden on edges not asserted visible.
+R050	textile	yellow,animal,geometric,rectangular	Birds and patterned ground visible.
+R051	dish	white,red,figures,floral,round	Two women with flowers; figure scene and floral coexist.
+R052	box	blue,white,blue_white,lidded,round_body,landscape	Closed pill box; top and base shown together.
+R053	vase	blue,yellow,handles,floral,animal	Cloisonne on metal; rams heads are structural handles.
+R054	knife	green,long	Jade blade; not a vase.
+R055	mirror	color_unknown,animal,figures,round	Monochrome bronze mirror with deities and beasts.
+R056	textile	brown,floral,landscape,rectangular	Flowers and rock garden embroidery; not paper painting.
+R057	box	green,lidded,round,floral	Celadon covered box with carved flower top.
+R058	textile	red,rectangular,geometric	Woven fragment with symbolic medallions; no clear single botanical motif.
+R059	ornament	yellow,animal	Gold phoenix cutout; textile use does not mean textile material.
+R060	figure	white,brown,figures	Standing woman; small flower held but not a floral-decorated vessel.
+R061	vase	blue,white,blue_white,floral,long_neck,faceted	Six-sided faceted flower vase.
+R062	animal_sculpture	brown,green,animal,figures	Horse and boy are co-primary subjects.
+R063	jar	blue,white,blue_white,lidded,animal,floral,lotus_motif,round_body	Ducks among lotus leaves; full lid visible.
+R064	box	red,lidded,round	Peachbloom seal-paste box.
+R065	saucer	color_unknown,round	Monochrome plain lobed saucer.
+R066	vase	color_unknown,rectangular	Cong-shaped ceramic vase, not actual jade cong.
+R067	cauldron	color_unknown,tripod	Lobed three-legged cooking pot.
+R068	bowl	color_unknown,motif_unknown,round	Birds catalogued but difficult to see in this view.
+R069	model	color_unknown,rectangular,animal	Model animal pen rather than a box.
+R070	bottle	white,long_neck,round_body,floral	Faint incised floral scrolls on spherical lower body.
+R071	textile	yellow,rectangular,motif_unknown	Very faded cloth pattern cannot be identified reliably.
+R072	cup	white,red,animal,dragon,round	Red dragon on white porcelain cup.
+R073	mirror	color_unknown,round,animal,floral	Ceramic mirror model; motifs visible but no bronze material.
+R074	vase	white,cylindrical	Long cylindrical body with short neck.
+R075	jar	white,brown,round_body	Crackle network is surface texture, not floral motif.
+R076	jar	color_unknown,lidded,figures,landscape,round_body	Scholar scene on complete covered vessel.
+R077	brushpot	blue,white,blue_white,cylindrical,figures,animal	People and elephant coexist.
+R078	plate	white,red,figures,floral,lotus_motif,faceted	People and lotus painted on octagonal plate.
+R079	waterpot	color_unknown,floral,round_body	Broad water pot; bowl-compatible only under broad open-vessel query.
+R080	bell	green,brown	Bronze bell; corrosion green does not make ceramic green vase.
+R081	bottle	white,red,figures,lidded,cylindrical	Glass snuff bottle with red stopper; cylindrical short-neck body.
+R082	relief	white,rectangular,animal	Taotie marble mask relief; no human figure inferred.
+R083	fragment	white	Only sherd photographed; not a complete bowl.
+R084	flask	green,yellow,handles,animal	Mythical birds; olive-yellow glaze, short neck.
+R085	jar	white,blue,green,red,lidded,figures,round_body	Polychrome scene; underglaze blue alone does not make a blue-white visual match.
+R086	jar	green,round_body	Glazed hu with flared mouth and short neck.
+R087	textile	brown,rectangular,motif_unknown	Faded geometric/symbolic textile; avoid guessing details.
+R088	vase	black,green,white,floral,animal	Black-ground flowers and birds.
+R089	figure	color_unknown,figures	Monochrome standing dancer.
+R090	bowl	green,yellow,white,round	Sancai miniature open bowl.
+R091	vase	green,blue,round_body	Flared mouth and short waist; no long narrow neck.
+R092	mirror	black,round,animal,floral	Birds and grapes relief on circular bronze back.
+R093	vase	color_unknown,floral,round_body	Meiping with vegetal scrolls; short neck.
+R094	cauldron	brown,green,round_body,geometric	Bronze ritual water container with ring foot.
+R095	mirror	brown,round,animal,floral	Animals and grape scrolls on bronze.
+R096	inkcake	red,animal,dragon	Only dragon-shaped ink cake photographed, not its box.
+R097	jar	color_unknown,lidded,figures,landscape,round_body	Covered jar with figures and landscape panels.
+R098	plate	color_unknown,landscape,round	Townscape monochrome photo.
+R099	brushpot	white,green,figures,landscape,cylindrical	Children scene on cylindrical pot; official Qianlong dating explicitly uncertain.
+R100	bottle	red,long_neck,round_body	Red globular bottle vase.
+R101	vessel	black,red,cylindrical,handles,floral,animal	Long lacquer vessel with raised back and handle.
+R102	ewer	brown,white,handles,spout	Crackled glazed pouring vessel; distinct long spout.
+R103	inkcake	black,rectangular,landscape	Molded lake and temple image; not a wooden box.
+R104	ewer	yellow,green,handles,spout,animal,floral	Bird-headed spout and loop handle, applied floral medallions.
+R105	bowl	white,green,floral,figures,round	Carved floral pattern and babies according to official record; low contrast visually.
+R106	textile	red,floral	Velvet fragment, irregular triangular outline.
+R107	dish	white,green,animal,floral,round	Bird perched on fruit tree; both subjects present.
+R108	textile	green,rectangular,animal,dragon	Large dragon with clouds.
+R109	textile	red,green,floral,lotus_motif	Lotus flower-shaped embroidered fragment; actual flower subject visible.
+R110	bowl	white,round	Plain grey-white bowl.
+R111	vase	red,blue,handles	Two side lugs and mottled glaze; neck not long.
+R112	bottle	green,white,long_neck,round_body,floral	Long green neck and bulbous floral body.
+R113	stopper	brown,red	Separate stopper with spoon; no bottle body photographed.
+R114	mug	white,green,red,handles,animal,cylindrical	Handled mug painted with fish.
+R115	block	brown,rectangular	Wood type block; not a textile or ceramic.
+R116	textile	brown,white,rectangular,geometric	Narrow cloth strip with vertical pale pattern.
+R117	pipe	white,blue,long	Jade pipe with metal ferrules secondary.
+R118	fitting	green,brown,rectangular,animal	Jade scabbard fitting with animal relief.
+R119	vase	green	Side tubes are spouts rather than handles; cover named but absent from this particular image.
+R120	bowl	white,floral,round	Molded flower-petal decoration inside bowl.
+R121	animal_sculpture	color_unknown,animal,figures	Equestrian figure; animal and rider both visible.
+R122	bowl	white,red,green,floral,round	Peony on stoneware; white appearance does not change material to porcelain.
+R123	vase	color_unknown,long_neck,round_body	Monochrome spherical vase with long narrow neck.
+R124	bowl	white,animal,round	Incised paired fish faintly visible at centre.
+R125	pipe	brown,long	Brass ribbed stem and small pottery bowl; ivory mouthpiece secondary.
+R126	bowl	brown,black,round	Jian tea bowl with iron-slip colour gradient.
+R127	bowl	black,brown,round	Tortoiseshell glaze pattern; no animal depiction implied.
+R128	censer	color_unknown,lidded,tripod,handles,floral	Ceramic body; wood cover and jade knob secondary.
+R129	necklace	brown,red	Metal chain and pendant primary, coral secondary.
+R130	necklace	white,green,red	Jade/coral beads primary, mount secondary.
+R131	bottle	red,brown,round_body	Short-neck glass snuff bottle, no stopper shown.
+R132	hairornament	blue,brown,animal	Kingfisher feathers form a bird ornament on metal frame.
+R133	belt	green,yellow,rectangular	Metal plaques backed by silk; not a textile object.
+R134	lid	brown,rectangular,floral	Separate ivory lid with engraved decoration.
+R135	pipe	black,brown,long	Lacquer pipe with secondary ivory and silver.
+R136	fan	white,red,green,figures,landscape	Paper painted fan with rigid ivory frame; mixed-media primary material uncertain.
+R137	cup	red,brown,round_body,geometric	Guri lacquer cup; no ceramic body.
+R138	cabinet	red,rectangular,floral,animal	Lacquer-coated wooden cabinet.
+R139	buckle	yellow,rectangular,animal,dragon	Perforated dragons in brass.
+R140	pendant	red,yellow,floral	Textile pendant; paper and metallic threads are secondary components.
+R141	buckle	white,brown,animal	Jade and rose quartz in brass frame; primary body brass.
+R142	apron	black,yellow,animal,geometric	Silk/velvet apron with metal embroidery; mask motif is not human figure.
+R143	paper	brown,rectangular	Buddhist text on dyed paper; no people depicted.
+R144	figure	brown,figures	Wood Guanyin with child.
+R145	box	white,green,round,animal,dragon	Jade box component with dragon relief; no visible lid seam so lidded unknown.
+R146	shawl	white,yellow,blue,floral	Triangular silk shawl with contrasting floral fields.
+R147	bracelet	brown,round	Two wooden bangles.
+R148	tile	color_unknown,figures	Clay relief tile with three Buddhist figures.
+R149	bowl	color_unknown,round	Monochrome Jian bowl; no actual colour from photo.
+R150	vase	red,long_neck,round_body	Coral red vase with narrow neck.
+R151	bowl	white,round	Plain ivory-white Ding bowl.
+R152	candlestick	white	Porcelain body with secondary metal rims.
+R153	bottle	brown,red,floral,round_body	Amber-coloured glass snuff bottle with incised leaves.
+R154	figure	yellow,figures	Gilt bronze newborn Buddha; glass inlays secondary.
+R155	vase	brown,red,gourd,floral	Lacquered wooden gourd vase; body is not ceramic.
+R156	mirror	green,round,lotus_motif,floral,geometric	Lotus and mantra cast on bronze mirror back.
+R157	buckle	green,red,white	Brass body with jade veneer and stone inlays.
+R158	textile	red,rectangular,animal	Chair strip with antiquities and fish; not a ceramic vase itself.
+R159	lid	green,white,animal	Carved jade phoenix lid on separate light-colour support.
+R160	textile	yellow,rectangular,floral,geometric	Brocaded floral/symbolic medallions on yellow ground.
+R161	figure	brown,figures	Standing wood Guanyin.
+R162	ornament	brown,figures,landscape	Amber carved rock grove with small Guanyin figure; not wood.
+R163	plate	blue,white,blue_white,floral,round	Dense vegetal blue-white pattern.
+R164	dish	white,round	Plain shallow Dehua dish.
+R165	dish	color_unknown,round	Monochrome photograph of copper-red dish.
+R166	bottle	red,handles,lidded,round_body	Glass snuff bottle with two cylindrical side lugs and stopper.
+R167	figure	brown,figures	Dancing dry-lacquer figure; cloth layers do not make textile retrieval positive.
+R168	plate	white,yellow,round,animal,floral	Silver platter with gilt animals and grapevines.
+R169	bowl	green,black,round	Pair of dark-green jade bowls; not ceramic despite vessel shape.
+R170	textile	blue,rectangular,floral,animal	Sleeve panel with phoenix and flowers.
+R171	instrument	brown,long	Wood three-string guitar.
+R172	stupa	brown,cylindrical,figures	Stone stupa with small visible figures; not a free-standing person class.
+R173	bottle	color_unknown,long_neck,round_body,floral	Monochrome flower-scroll bottle.
+R174	figure	white,figures,animal	Porcelain deity with turtle on base.
+R175	vase	red	Flared trumpet mouth; no long narrow neck.
+R176	bottle	white,floral,round_body	Glass snuff bottle with dark bamboo/flower engraving.
+R177	mirror	brown,round,animal,dragon	Single large dragon on bronze mirror.
+R178	ornament	blue,green,figures,animal	Turquoise boy and dog co-subjects.
+R179	robe	blue,white,floral,animal	Embroidered robe with floral and animal medallions.
+R180	figure	brown,figures	Standing wood figure with sword.
+R181	figure	color_unknown,figures	Monochrome standing woman.
+R182	cup	green,round	Celadon open cup, bowl-shaped but official small cup retained.
+R183	vase	color_unknown,long_neck,geometric	Bell-inspired body; original red not inferred from monochrome.
+R184	bottle	white,red,animal,lidded,round_body	Glass bottle painted with fish and fitted stopper.
+R185	plate	white,blue,floral,animal,round	Copper-alloy enamel plate; porcelain-like appearance does not make porcelain positive.
+R186	buckle	white	Jade buckle of leaf/vegetal form.
+R187	textile	blue,brown,rectangular,animal	Phoenix brocade with clouds.
+R188	cap	brown,cylindrical,floral,animal	Separate carved bamboo brush cap; not the full brush.
+R189	box	black,brown,lidded,rectangular,floral,animal	Closed lacquer box with finches and flowers.
+R190	plate	blue,white,blue_white,floral,round	Chrysanthemums and peonies; not lotus.
+R191	bottle	yellow,brown,floral,round_body	Iron-brown flower motifs on Cizhou stoneware bottle.
+R192	vase	white,brown,handles,animal	Glass vase resembles jade; official glass kept.
+R193	ewer	brown,green,handles,spout,animal	Bronze pouring vessel with broad spout and animal handle.
+R194	scepter	green,long,animal	Jade scepter with animal mask decoration.
+R195	textile	red,white,rectangular,floral	Repeated floral medallions on silk.
+R196	inkcake	black,rectangular,landscape	Architectural relief on ink, not a wooden box.
+R197	figure	white,green,figures,geometric	Porcelain lohan in patchwork robe; peach held is not floral surface motif.
+R198	vase	brown,long_neck,round_body	Photo appears brown-red rather than saturated red; colour query permits red-brown only as partial.
+R199	bottle	green,lidded,round_body	Green glass body with purple stopper.
+R200	censer	yellow,black,round_body,lotus_shape	Bronze censer on lotus pedestal; pedestal shape not surface lotus motif.

@@ -1,0 +1,15 @@
+{
+  "key": "moonflask",
+  "query": "Chinese blue and white moon flask",
+  "label": "青花抱月瓶",
+  "status": "no_qualified_references",
+  "references": 0,
+  "elapsed_s": 1.183579300006386,
+  "acquisition": {
+    "request_summary": {
+      "live": 2,
+      "cached": 2
+    },
+    "failures": []
+  }
+}

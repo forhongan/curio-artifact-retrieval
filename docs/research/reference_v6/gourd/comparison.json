@@ -1,0 +1,308 @@
+{
+  "key": "gourd",
+  "query": "Chinese double gourd vase",
+  "label": "葫芦瓶",
+  "status": "ranked",
+  "references": 6,
+  "elapsed_s": 25.50072270000237,
+  "acquisition": {
+    "request_summary": {
+      "live": 6,
+      "cached": 7
+    },
+    "failures": []
+  },
+  "rankings": {
+    "production_text": [
+      "met_48686",
+      "cma_94798",
+      "met_48516",
+      "met_47511",
+      "met_50963",
+      "met_46815",
+      "met_51192",
+      "met_50898",
+      "met_39527",
+      "met_42241"
+    ],
+    "single_best": [
+      "met_50026",
+      "met_48624",
+      "met_47531",
+      "met_48571",
+      "met_51064",
+      "met_53901",
+      "met_50037",
+      "met_48702",
+      "met_48670",
+      "met_52813"
+    ],
+    "uniform_mean": [
+      "met_48284",
+      "met_48559",
+      "met_42550",
+      "met_49855",
+      "met_42551",
+      "cma_84460",
+      "met_42356",
+      "met_461497",
+      "met_49857",
+      "met_42531"
+    ],
+    "max": [
+      "met_48572",
+      "met_48559",
+      "met_42531",
+      "met_48284",
+      "met_51019",
+      "met_51018",
+      "met_42427",
+      "cma_120168",
+      "met_51016",
+      "met_48594"
+    ],
+    "diverse": [
+      "met_48284",
+      "met_48559",
+      "met_42550",
+      "met_49855",
+      "met_461497",
+      "met_42551",
+      "cma_84460",
+      "met_49857",
+      "met_42531",
+      "met_42356"
+    ],
+    "query_aligned": [
+      "met_48284",
+      "met_48559",
+      "met_42550",
+      "met_49855",
+      "met_42551",
+      "cma_84460",
+      "met_49857",
+      "met_42531",
+      "met_42356",
+      "met_461497"
+    ],
+    "production_rewritten": [
+      "cma_94798",
+      "met_48686",
+      "met_48516",
+      "met_50963",
+      "met_50898",
+      "met_46815",
+      "met_51192",
+      "met_42241",
+      "met_39527",
+      "met_47511"
+    ],
+    "production_zh_rewritten": [
+      "met_48516",
+      "met_48686",
+      "cma_94798",
+      "met_50898",
+      "met_42241",
+      "met_39527",
+      "cma_95077",
+      "met_50963",
+      "met_51016",
+      "met_51192"
+    ]
+  },
+  "review_pool": [
+    {
+      "item_id": "cma_94798",
+      "title": "Double Gourd-shaped Bottle: Ding ware",
+      "medium": "porcelain",
+      "period": "1368–1644",
+      "description": "",
+      "source_url": "https://clevelandart.org/art/1915.361",
+      "image_path": "data/processed/images/cma_94798.jpg"
+    },
+    {
+      "item_id": "met_42241",
+      "title": "Vase in Shape of Double Gourd",
+      "medium": "Porcelain with yellow glaze (Jingdezhen ware)",
+      "period": "Qing dynasty (1644–1911), Yongzheng period (1723–35)",
+      "description": "",
+      "source_url": "https://www.metmuseum.org/art/collection/search/42241",
+      "image_path": "data/processed/images/met_42241.jpg"
+    },
+    {
+      "item_id": "met_42531",
+      "title": "Gourd-Shaped Bottle with Deer and Crane in Landscape",
+      "medium": "Porcelain painted in cobalt blue under clear glaze (Jingdezhen ware)",
+      "period": "Ming dynasty (1368–1644), Jiajing mark and period (1522–66)",
+      "description": "",
+      "source_url": "https://www.metmuseum.org/art/collection/search/42531",
+      "image_path": "data/processed/images/met_42531.jpg"
+    },
+    {
+      "item_id": "met_42550",
+      "title": "Vase",
+      "medium": "Porcelain painted in underglaze blue and overglaze yellow and red enamels",
+      "period": "Ming dynasty (1368–1644), Jiajing mark and period (1522–66)",
+      "description": "",
+      "source_url": "https://www.metmuseum.org/art/collection/search/42550",
+      "image_path": "data/processed/images/met_42550.jpg"
+    },
+    {
+      "item_id": "met_42551",
+      "title": "Gourd-shaped bottle with floral scrolls",
+      "medium": "Porcelain painted in underglaze cobalt blue and yellow glaze (Jingdezhen ware)",
+      "period": "Ming dynasty (1368–1644), Jiajing mark and period (1522–66)",
+      "description": "",
+      "source_url": "https://www.metmuseum.org/art/collection/search/42551",
+      "image_path": "data/processed/images/met_42551.jpg"
+    },
+    {
+      "item_id": "met_461497",
+      "title": "Small vase",
+      "medium": "Porcelain painted in underglaze blue.",
+      "period": "",
+      "description": "",
+      "source_url": "https://www.metmuseum.org/art/collection/search/461497",
+      "image_path": "data/processed/images/met_461497.jpg"
+    },
+    {
+      "item_id": "met_47511",
+      "title": "Gourd-shaped bottle",
+      "medium": "Stoneware with green glaze",
+      "period": "Ming dynasty (1368–1644)",
+      "description": "",
+      "source_url": "https://www.metmuseum.org/art/collection/search/47511",
+      "image_path": "data/processed/images/met_47511.jpg"
+    },
+    {
+      "item_id": "met_47531",
+      "title": "Bottle with floral scrolls",
+      "medium": "Porcelain painted in underglaze cobalt  blue (Jingdezhen ware)",
+      "period": "Qing dynasty (1644–1911)",
+      "description": "",
+      "source_url": "https://www.metmuseum.org/art/collection/search/47531",
+      "image_path": "data/processed/images/met_47531.jpg"
+    },
+    {
+      "item_id": "met_48284",
+      "title": "Double gourd bottle with vegetal scrolls",
+      "medium": "Porcelain painted in underglaze cobalt  blue (Jingdezhen ware)",
+      "period": "Qing dynasty (1644–1911)",
+      "description": "",
+      "source_url": "https://www.metmuseum.org/art/collection/search/48284",
+      "image_path": "data/processed/images/met_48284.jpg"
+    },
+    {
+      "item_id": "met_48516",
+      "title": "Double gourd shaped vase",
+      "medium": "Porcelain with incised decoration under cream white glaze (Jingdezhen ware)",
+      "period": "Qing dynasty (1644–1911)",
+      "description": "",
+      "source_url": "https://www.metmuseum.org/art/collection/search/48516",
+      "image_path": "data/processed/images/met_48516.jpg"
+    },
+    {
+      "item_id": "met_48559",
+      "title": "Gourd-shaped vase with gourds and bats",
+      "medium": "Porcelain painted in underglaze cobalt blue (Jingdezhen ware)",
+      "period": "Qing dynasty (1644–1911), Kangxi period (1662–1722)",
+      "description": "",
+      "source_url": "https://www.metmuseum.org/art/collection/search/48559",
+      "image_path": "data/processed/images/met_48559.jpg"
+    },
+    {
+      "item_id": "met_48571",
+      "title": "Vase with vegetal scrolls",
+      "medium": "Porcelain painted in underglaze cobalt blue (Jingdezhen ware)",
+      "period": "Qing dynasty (1644–1911), Kangxi period (1662–1722)",
+      "description": "",
+      "source_url": "https://www.metmuseum.org/art/collection/search/48571",
+      "image_path": "data/processed/images/met_48571.jpg"
+    },
+    {
+      "item_id": "met_48572",
+      "title": "Vase with scenes from Romance of the West Chamber",
+      "medium": "Porcelain painted in underglaze cobalt blue (Jingdezhen ware)",
+      "period": "Qing dynasty (1644–1911), Kangxi period (1662–1722)",
+      "description": "",
+      "source_url": "https://www.metmuseum.org/art/collection/search/48572",
+      "image_path": "data/processed/images/met_48572.jpg"
+    },
+    {
+      "item_id": "met_48624",
+      "title": "Double gourd bottle with flowers",
+      "medium": "Porcelain with raised slip and polychrome enamels (Jingdezhen Fahua ware)",
+      "period": "Ming dynasty (1368–1644)",
+      "description": "",
+      "source_url": "https://www.metmuseum.org/art/collection/search/48624",
+      "image_path": "data/processed/images/met_48624.jpg"
+    },
+    {
+      "item_id": "met_48686",
+      "title": "Double gourd shaped vase",
+      "medium": "Soft paste porcelain (Jingdezhen ware)",
+      "period": "Qing dynasty (1644–1911)",
+      "description": "",
+      "source_url": "https://www.metmuseum.org/art/collection/search/48686",
+      "image_path": "data/processed/images/met_48686.jpg"
+    },
+    {
+      "item_id": "met_49855",
+      "title": "Flask with Lotus Pond",
+      "medium": "Porcelain painted with cobalt blue under transparent glaze (Jingdezhen ware)",
+      "period": "Yuan dynasty (1271–1368)",
+      "description": "",
+      "source_url": "https://www.metmuseum.org/art/collection/search/49855",
+      "image_path": "data/processed/images/met_49855.jpg"
+    },
+    {
+      "item_id": "met_50026",
+      "title": "Double-gourd bottle",
+      "medium": "Porcelain painted in underglaze cobalt blue (Jingdezhen ware), metal lid",
+      "period": "Ming dynasty (1368–1644), Chongzhen period",
+      "description": "",
+      "source_url": "https://www.metmuseum.org/art/collection/search/50026",
+      "image_path": "data/processed/images/met_50026.jpg"
+    },
+    {
+      "item_id": "met_50898",
+      "title": "Gourd-Shaped Bottle (one of a pair)",
+      "medium": "Porcelain with celadon glaze (Jingdezhen ware)",
+      "period": "Qing dynasty (1644–1911), Qianlong period (1736–95)",
+      "description": "",
+      "source_url": "https://www.metmuseum.org/art/collection/search/50898",
+      "image_path": "data/processed/images/met_50898.jpg"
+    },
+    {
+      "item_id": "met_50963",
+      "title": "Gourd-shaped bottle vase with floral scrolls",
+      "medium": "Porcelain with incised decoration under white glaze (Jingdezhen ware)",
+      "period": "Qing dynasty (1644–1911)",
+      "description": "",
+      "source_url": "https://www.metmuseum.org/art/collection/search/50963",
+      "image_path": "data/processed/images/met_50963.jpg"
+    },
+    {
+      "item_id": "met_51019",
+      "title": "Vase",
+      "medium": "Porcelain with blue glaze",
+      "period": "Qing dynasty (1644–1911), Jiaqing period (1796–1820)",
+      "description": "",
+      "source_url": "https://www.metmuseum.org/art/collection/search/51019",
+      "image_path": "data/processed/images/met_51019.jpg"
+    },
+    {
+      "item_id": "met_51064",
+      "title": "Bottle vase with openwork scenes of ladies and children over a floral ground",
+      "medium": "Porcelain painted in underglaze cobalt blue and copper red, light green glaze (Jingdezhen ware)",
+      "period": "Qing dynasty (1644–1911), Kangxi period (1662–1722)",
+      "description": "",
+      "source_url": "https://www.metmuseum.org/art/collection/search/51064",
+      "image_path": "data/processed/images/met_51064.jpg"
+    }
+  ],
+  "control_texts": {
+    "production_rewritten": "Chinese double gourd vase vase double gourd",
+    "production_zh_rewritten": "葫芦瓶 vase double gourd"
+  }
+}

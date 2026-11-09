@@ -1,0 +1,802 @@
+[
+  {
+    "item_id": "cma_122448",
+    "title": "Vase",
+    "source": "cleveland",
+    "source_url": "https://clevelandart.org/art/1942.719",
+    "license": "CC0",
+    "credit_line": "Bequest of John L. Severance"
+  },
+  {
+    "item_id": "met_52024",
+    "title": "Vase with magnolia, crab apple, and peony",
+    "source": "met",
+    "source_url": "https://www.metmuseum.org/art/collection/search/52024",
+    "license": "CC0",
+    "credit_line": "Bequest of Benjamin Altman, 1913"
+  },
+  {
+    "item_id": "met_52976",
+    "title": "Vase with landscape decoration",
+    "source": "met",
+    "source_url": "https://www.metmuseum.org/art/collection/search/52976",
+    "license": "CC0",
+    "credit_line": "Mr. and Mrs. Isaac D. Fletcher Collection, Bequest of Isaac D. Fletcher, 1917"
+  },
+  {
+    "item_id": "met_42144",
+    "title": "Tool bottle (from incense set)",
+    "source": "met",
+    "source_url": "https://www.metmuseum.org/art/collection/search/42144",
+    "license": "CC0",
+    "credit_line": "Bequest of Stephen Whitney Phoenix, 1881"
+  },
+  {
+    "item_id": "met_52765",
+    "title": "Jar with Mythical Qilin amidst Tree Peonies",
+    "source": "met",
+    "source_url": "https://www.metmuseum.org/art/collection/search/52765",
+    "license": "CC0",
+    "credit_line": "Bequest of Edmund C. Converse, 1921"
+  },
+  {
+    "item_id": "met_48686",
+    "title": "Double gourd shaped vase",
+    "source": "met",
+    "source_url": "https://www.metmuseum.org/art/collection/search/48686",
+    "license": "CC0",
+    "credit_line": "H. O. Havemeyer Collection, Bequest of Mrs. H. O. Havemeyer, 1929"
+  },
+  {
+    "item_id": "cma_94798",
+    "title": "Double Gourd-shaped Bottle: Ding ware",
+    "source": "cleveland",
+    "source_url": "https://clevelandart.org/art/1915.361",
+    "license": "CC0",
+    "credit_line": "Gift of Ralph King"
+  },
+  {
+    "item_id": "met_48516",
+    "title": "Double gourd shaped vase",
+    "source": "met",
+    "source_url": "https://www.metmuseum.org/art/collection/search/48516",
+    "license": "CC0",
+    "credit_line": "H. O. Havemeyer Collection, Bequest of Mrs. H. O. Havemeyer, 1929"
+  },
+  {
+    "item_id": "met_47511",
+    "title": "Gourd-shaped bottle",
+    "source": "met",
+    "source_url": "https://www.metmuseum.org/art/collection/search/47511",
+    "license": "CC0",
+    "credit_line": "H. O. Havemeyer Collection, Bequest of Mrs. H. O. Havemeyer, 1929"
+  },
+  {
+    "item_id": "met_50963",
+    "title": "Gourd-shaped bottle vase with floral scrolls",
+    "source": "met",
+    "source_url": "https://www.metmuseum.org/art/collection/search/50963",
+    "license": "CC0",
+    "credit_line": "Purchase by subscription, 1879"
+  },
+  {
+    "item_id": "met_50026",
+    "title": "Double-gourd bottle",
+    "source": "met",
+    "source_url": "https://www.metmuseum.org/art/collection/search/50026",
+    "license": "CC0",
+    "credit_line": "Purchase by subscription, 1879"
+  },
+  {
+    "item_id": "met_48624",
+    "title": "Double gourd bottle with flowers",
+    "source": "met",
+    "source_url": "https://www.metmuseum.org/art/collection/search/48624",
+    "license": "CC0",
+    "credit_line": "Bequest of Jacob Ruppert, 1939"
+  },
+  {
+    "item_id": "met_47531",
+    "title": "Bottle with floral scrolls",
+    "source": "met",
+    "source_url": "https://www.metmuseum.org/art/collection/search/47531",
+    "license": "CC0",
+    "credit_line": "Bequest of William Rhinelander Stewart, 1929"
+  },
+  {
+    "item_id": "met_48571",
+    "title": "Vase with vegetal scrolls",
+    "source": "met",
+    "source_url": "https://www.metmuseum.org/art/collection/search/48571",
+    "license": "CC0",
+    "credit_line": "Bequest of Mary Clark Thompson, 1923"
+  },
+  {
+    "item_id": "met_51064",
+    "title": "Bottle vase with openwork scenes of ladies and children over a floral ground",
+    "source": "met",
+    "source_url": "https://www.metmuseum.org/art/collection/search/51064",
+    "license": "CC0",
+    "credit_line": "Bequest of Jacob Ruppert, 1939"
+  },
+  {
+    "item_id": "met_48284",
+    "title": "Double gourd bottle with vegetal scrolls",
+    "source": "met",
+    "source_url": "https://www.metmuseum.org/art/collection/search/48284",
+    "license": "CC0",
+    "credit_line": "Bequest of William Rhinelander Stewart, 1929"
+  },
+  {
+    "item_id": "met_48559",
+    "title": "Gourd-shaped vase with gourds and bats",
+    "source": "met",
+    "source_url": "https://www.metmuseum.org/art/collection/search/48559",
+    "license": "CC0",
+    "credit_line": "Purchase by subscription, 1879"
+  },
+  {
+    "item_id": "met_42550",
+    "title": "Vase",
+    "source": "met",
+    "source_url": "https://www.metmuseum.org/art/collection/search/42550",
+    "license": "CC0",
+    "credit_line": "Purchase by subscription, 1879"
+  },
+  {
+    "item_id": "met_49855",
+    "title": "Flask with Lotus Pond",
+    "source": "met",
+    "source_url": "https://www.metmuseum.org/art/collection/search/49855",
+    "license": "CC0",
+    "credit_line": "Gift of Irene and Earl Morse, 1984"
+  },
+  {
+    "item_id": "met_42551",
+    "title": "Gourd-shaped bottle with floral scrolls",
+    "source": "met",
+    "source_url": "https://www.metmuseum.org/art/collection/search/42551",
+    "license": "CC0",
+    "credit_line": "Edward C. Moore Collection, Bequest of Edward C. Moore, 1891"
+  },
+  {
+    "item_id": "met_48572",
+    "title": "Vase with scenes from Romance of the West Chamber",
+    "source": "met",
+    "source_url": "https://www.metmuseum.org/art/collection/search/48572",
+    "license": "CC0",
+    "credit_line": "Purchase by subscription, 1879"
+  },
+  {
+    "item_id": "met_42531",
+    "title": "Gourd-Shaped Bottle with Deer and Crane in Landscape",
+    "source": "met",
+    "source_url": "https://www.metmuseum.org/art/collection/search/42531",
+    "license": "CC0",
+    "credit_line": "Purchase, Harris Brisbane Dick Fund and Anonymous Gift, 1965"
+  },
+  {
+    "item_id": "met_51019",
+    "title": "Vase",
+    "source": "met",
+    "source_url": "https://www.metmuseum.org/art/collection/search/51019",
+    "license": "CC0",
+    "credit_line": "H. O. Havemeyer Collection, Bequest of Mrs. H. O. Havemeyer, 1929"
+  },
+  {
+    "item_id": "met_461497",
+    "title": "Small vase",
+    "source": "met",
+    "source_url": "https://www.metmuseum.org/art/collection/search/461497",
+    "license": "CC0",
+    "credit_line": "Robert Lehman Collection, 1975"
+  },
+  {
+    "item_id": "met_50898",
+    "title": "Gourd-Shaped Bottle (one of a pair)",
+    "source": "met",
+    "source_url": "https://www.metmuseum.org/art/collection/search/50898",
+    "license": "CC0",
+    "credit_line": "Gift of Stanley Herzman, in memory of Gladys Herzman, 1997"
+  },
+  {
+    "item_id": "met_42241",
+    "title": "Vase in Shape of Double Gourd",
+    "source": "met",
+    "source_url": "https://www.metmuseum.org/art/collection/search/42241",
+    "license": "CC0",
+    "credit_line": "Bequest of Benjamin Altman, 1913"
+  },
+  {
+    "item_id": "met_46958",
+    "title": "Vase with a garden scene",
+    "source": "met",
+    "source_url": "https://www.metmuseum.org/art/collection/search/46958",
+    "license": "CC0",
+    "credit_line": "Bequest of Benjamin Altman, 1913"
+  },
+  {
+    "item_id": "met_46548",
+    "title": "Prunus Vase",
+    "source": "met",
+    "source_url": "https://www.metmuseum.org/art/collection/search/46548",
+    "license": "CC0",
+    "credit_line": "Bequest of Benjamin Altman, 1913"
+  },
+  {
+    "item_id": "met_50230",
+    "title": "Vase in Meiping Shape",
+    "source": "met",
+    "source_url": "https://www.metmuseum.org/art/collection/search/50230",
+    "license": "CC0",
+    "credit_line": "Rogers Fund, 1922"
+  },
+  {
+    "item_id": "met_48340",
+    "title": "Miniature meiping vase",
+    "source": "met",
+    "source_url": "https://www.metmuseum.org/art/collection/search/48340",
+    "license": "CC0",
+    "credit_line": "Alfred W. Hoyt Collection, Bequest of Rosina H. Hoppin, 1965"
+  },
+  {
+    "item_id": "met_48314",
+    "title": "Meiping vase",
+    "source": "met",
+    "source_url": "https://www.metmuseum.org/art/collection/search/48314",
+    "license": "CC0",
+    "credit_line": "Alfred W. Hoyt Collection, Bequest of Rosina H. Hoppin, 1965"
+  },
+  {
+    "item_id": "cma_140168",
+    "title": "Meiping  Vase with Cloud Collars and Peony Sprays",
+    "source": "cleveland",
+    "source_url": "https://clevelandart.org/art/1964.167",
+    "license": "CC0",
+    "credit_line": "Severance and Greta Millikin Collection"
+  },
+  {
+    "item_id": "cma_284746",
+    "title": "Meiping Vase with Carved Floral Sprays",
+    "source": "cleveland",
+    "source_url": "https://clevelandart.org/art/2017.20",
+    "license": "CC0",
+    "credit_line": "Gift of Donna and James Reid"
+  },
+  {
+    "item_id": "met_47401",
+    "title": "Meiping vase with floral scrolls",
+    "source": "met",
+    "source_url": "https://www.metmuseum.org/art/collection/search/47401",
+    "license": "CC0",
+    "credit_line": "Gift of George D. Pratt, 1927"
+  },
+  {
+    "item_id": "met_48462",
+    "title": "Meiping vase with dragon",
+    "source": "met",
+    "source_url": "https://www.metmuseum.org/art/collection/search/48462",
+    "license": "CC0",
+    "credit_line": "Mr. and Mrs. Isaac D. Fletcher Collection, Bequest of Isaac D. Fletcher, 1917"
+  },
+  {
+    "item_id": "met_42242",
+    "title": "Vase in Meiping Shape",
+    "source": "met",
+    "source_url": "https://www.metmuseum.org/art/collection/search/42242",
+    "license": "CC0",
+    "credit_line": "Bequest of Benjamin Altman, 1913"
+  },
+  {
+    "item_id": "cma_122410",
+    "title": "Vase with peacock blue glaze",
+    "source": "cleveland",
+    "source_url": "https://clevelandart.org/art/1942.687",
+    "license": "CC0",
+    "credit_line": "Bequest of John L. Severance"
+  },
+  {
+    "item_id": "met_49836",
+    "title": "Meiping vase with dragon",
+    "source": "met",
+    "source_url": "https://www.metmuseum.org/art/collection/search/49836",
+    "license": "CC0",
+    "credit_line": "Purchase by subscription, 1879"
+  },
+  {
+    "item_id": "met_42486",
+    "title": "Bottle with vegetal scrolls",
+    "source": "met",
+    "source_url": "https://www.metmuseum.org/art/collection/search/42486",
+    "license": "CC0",
+    "credit_line": "Rogers Fund, 1923"
+  },
+  {
+    "item_id": "cma_311692",
+    "title": "Meiping Vase with carved Dragon Motif",
+    "source": "cleveland",
+    "source_url": "https://clevelandart.org/art/2020.189",
+    "license": "CC0",
+    "credit_line": "Nancy F. and Joseph P. Keithley Collection Gift"
+  },
+  {
+    "item_id": "met_51142",
+    "title": "Vase in Meiping Shape",
+    "source": "met",
+    "source_url": "https://www.metmuseum.org/art/collection/search/51142",
+    "license": "CC0",
+    "credit_line": "Purchase by subscription, 1879"
+  },
+  {
+    "item_id": "met_42234",
+    "title": "Vase in Meiping Shape",
+    "source": "met",
+    "source_url": "https://www.metmuseum.org/art/collection/search/42234",
+    "license": "CC0",
+    "credit_line": "Bequest of Benjamin Altman, 1913"
+  },
+  {
+    "item_id": "met_48309",
+    "title": "Meiping vase",
+    "source": "met",
+    "source_url": "https://www.metmuseum.org/art/collection/search/48309",
+    "license": "CC0",
+    "credit_line": "Alfred W. Hoyt Collection, Bequest of Rosina H. Hoppin, 1965"
+  },
+  {
+    "item_id": "met_46557",
+    "title": "Tripod vase",
+    "source": "met",
+    "source_url": "https://www.metmuseum.org/art/collection/search/46557",
+    "license": "CC0",
+    "credit_line": "Bequest of Benjamin Altman, 1913"
+  },
+  {
+    "item_id": "met_50235",
+    "title": "Vase",
+    "source": "met",
+    "source_url": "https://www.metmuseum.org/art/collection/search/50235",
+    "license": "CC0",
+    "credit_line": "Rogers Fund, 1917"
+  },
+  {
+    "item_id": "met_50886",
+    "title": "Vase with flowers",
+    "source": "met",
+    "source_url": "https://www.metmuseum.org/art/collection/search/50886",
+    "license": "CC0",
+    "credit_line": "Purchase by subscription, 1879"
+  },
+  {
+    "item_id": "met_48625",
+    "title": "Vase",
+    "source": "met",
+    "source_url": "https://www.metmuseum.org/art/collection/search/48625",
+    "license": "CC0",
+    "credit_line": "Rogers Fund, 1919"
+  },
+  {
+    "item_id": "cma_95076",
+    "title": "Vase",
+    "source": "cleveland",
+    "source_url": "https://clevelandart.org/art/1915.612",
+    "license": "CC0",
+    "credit_line": "Gift of the John Huntington Art and Polytechnic Trust"
+  },
+  {
+    "item_id": "cma_95077",
+    "title": "Vase",
+    "source": "cleveland",
+    "source_url": "https://clevelandart.org/art/1915.613",
+    "license": "CC0",
+    "credit_line": "Gift of the John Huntington Art and Polytechnic Trust"
+  },
+  {
+    "item_id": "cma_117443",
+    "title": "Cup",
+    "source": "cleveland",
+    "source_url": "https://clevelandart.org/art/1938.11",
+    "license": "CC0",
+    "credit_line": "Purchase from the J. H. Wade Fund"
+  },
+  {
+    "item_id": "met_48319",
+    "title": "Flask",
+    "source": "met",
+    "source_url": "https://www.metmuseum.org/art/collection/search/48319",
+    "license": "CC0",
+    "credit_line": "H. O. Havemeyer Collection, Bequest of Mrs. H. O. Havemeyer, 1929"
+  },
+  {
+    "item_id": "cma_170280",
+    "title": "Leather Bag-Shaped Flask with Cover",
+    "source": "cleveland",
+    "source_url": "https://clevelandart.org/art/2012.448.1",
+    "license": "CC0",
+    "credit_line": "Gift of Donna and James Reid"
+  },
+  {
+    "item_id": "met_64119",
+    "title": "Pilgrim’s flask with Central Asian dancers",
+    "source": "met",
+    "source_url": "https://www.metmuseum.org/art/collection/search/64119",
+    "license": "CC0",
+    "credit_line": "Purchase, Mr. and Mrs. William P. Frankenhoff and Mrs. Richard E. Linburn Gifts, 2001"
+  },
+  {
+    "item_id": "met_53855",
+    "title": "Vase",
+    "source": "met",
+    "source_url": "https://www.metmuseum.org/art/collection/search/53855",
+    "license": "CC0",
+    "credit_line": "Purchase by subscription, 1879"
+  },
+  {
+    "item_id": "met_48504",
+    "title": "Pilgrim bottle with dragons",
+    "source": "met",
+    "source_url": "https://www.metmuseum.org/art/collection/search/48504",
+    "license": "CC0",
+    "credit_line": "Gift of Mrs. Samuel T. Peters, 1926"
+  },
+  {
+    "item_id": "met_52563",
+    "title": "Flask with mythical birds",
+    "source": "met",
+    "source_url": "https://www.metmuseum.org/art/collection/search/52563",
+    "license": "CC0",
+    "credit_line": "Gift of Mrs. Samuel T. Peters, 1926"
+  },
+  {
+    "item_id": "met_42395",
+    "title": "Ewer with dancing figures",
+    "source": "met",
+    "source_url": "https://www.metmuseum.org/art/collection/search/42395",
+    "license": "CC0",
+    "credit_line": "Purchase, Friends of Asian Art Gifts, 1986"
+  },
+  {
+    "item_id": "met_48316",
+    "title": "Ewer",
+    "source": "met",
+    "source_url": "https://www.metmuseum.org/art/collection/search/48316",
+    "license": "CC0",
+    "credit_line": "Gift of Sadajiro Yamanaka, 1911"
+  },
+  {
+    "item_id": "cma_299533",
+    "title": "Covered Jar with Carved Lotus Petals",
+    "source": "cleveland",
+    "source_url": "https://clevelandart.org/art/2017.16.a",
+    "license": "CC0",
+    "credit_line": "Gift of Donna and James Reid"
+  },
+  {
+    "item_id": "met_42350",
+    "title": "Chicken-Headed Ewer",
+    "source": "met",
+    "source_url": "https://www.metmuseum.org/art/collection/search/42350",
+    "license": "CC0",
+    "credit_line": "Gift of Mrs. Richard E. Linburn, 1979"
+  },
+  {
+    "item_id": "met_42434",
+    "title": "Ewer with Parrots",
+    "source": "met",
+    "source_url": "https://www.metmuseum.org/art/collection/search/42434",
+    "license": "CC0",
+    "credit_line": "Gift of Dr. and Mrs. Roger G. Gerry, 1979"
+  },
+  {
+    "item_id": "cma_141271",
+    "title": "Jar: Cizhou ware",
+    "source": "cleveland",
+    "source_url": "https://clevelandart.org/art/1964.500",
+    "license": "CC0",
+    "credit_line": "Gift of Dr. and Mrs. Sherman E. Lee"
+  },
+  {
+    "item_id": "met_48507",
+    "title": "Ewer",
+    "source": "met",
+    "source_url": "https://www.metmuseum.org/art/collection/search/48507",
+    "license": "CC0",
+    "credit_line": "Anonymous Gift, 1965"
+  },
+  {
+    "item_id": "met_42323",
+    "title": "Teapot in the Shape of a Plum Blossom",
+    "source": "met",
+    "source_url": "https://www.metmuseum.org/art/collection/search/42323",
+    "license": "CC0",
+    "credit_line": "Purchase, Ann Eden Woodward Foundation Gift, 1982"
+  },
+  {
+    "item_id": "met_65596",
+    "title": "Jar with four lugs",
+    "source": "met",
+    "source_url": "https://www.metmuseum.org/art/collection/search/65596",
+    "license": "CC0",
+    "credit_line": "Gift of Gisèle Croës, 2003"
+  },
+  {
+    "item_id": "cma_170279",
+    "title": "Pair of Leather Bag-Shaped Flasks with Covers",
+    "source": "cleveland",
+    "source_url": "https://clevelandart.org/art/2012.448",
+    "license": "CC0",
+    "credit_line": "Gift of Donna and James Reid"
+  },
+  {
+    "item_id": "cma_165426",
+    "title": "Bird-shaped Urn",
+    "source": "cleveland",
+    "source_url": "https://clevelandart.org/art/2007.276",
+    "license": "CC0",
+    "credit_line": "Gift of Dr. Norman Zaworski in honor of Dr. Ju-hsi Chou"
+  },
+  {
+    "item_id": "met_47443",
+    "title": "Vase",
+    "source": "met",
+    "source_url": "https://www.metmuseum.org/art/collection/search/47443",
+    "license": "CC0",
+    "credit_line": "Rogers Fund, 1909"
+  },
+  {
+    "item_id": "met_48800",
+    "title": "Bottle vase",
+    "source": "met",
+    "source_url": "https://www.metmuseum.org/art/collection/search/48800",
+    "license": "CC0",
+    "credit_line": "Bequest of Benjamin Altman, 1913"
+  },
+  {
+    "item_id": "met_42246",
+    "title": "Vase",
+    "source": "met",
+    "source_url": "https://www.metmuseum.org/art/collection/search/42246",
+    "license": "CC0",
+    "credit_line": "Bequest of Benjamin Altman, 1913"
+  },
+  {
+    "item_id": "met_52611",
+    "title": "Vase",
+    "source": "met",
+    "source_url": "https://www.metmuseum.org/art/collection/search/52611",
+    "license": "CC0",
+    "credit_line": "Gift of Mrs. Samuel T. Peters, 1926"
+  },
+  {
+    "item_id": "met_49920",
+    "title": "Vase with Peony Scrolls",
+    "source": "met",
+    "source_url": "https://www.metmuseum.org/art/collection/search/49920",
+    "license": "CC0",
+    "credit_line": "Gift of Mrs. Samuel T. Peters, 1926"
+  },
+  {
+    "item_id": "met_52936",
+    "title": "Vase",
+    "source": "met",
+    "source_url": "https://www.metmuseum.org/art/collection/search/52936",
+    "license": "CC0",
+    "credit_line": "Mr. and Mrs. Isaac D. Fletcher Collection, Bequest of Isaac D. Fletcher, 1917"
+  },
+  {
+    "item_id": "met_49856",
+    "title": "Bottle with Two Handles",
+    "source": "met",
+    "source_url": "https://www.metmuseum.org/art/collection/search/49856",
+    "license": "CC0",
+    "credit_line": "Purchase by subscription, 1879"
+  },
+  {
+    "item_id": "met_51050",
+    "title": "Bottle vase",
+    "source": "met",
+    "source_url": "https://www.metmuseum.org/art/collection/search/51050",
+    "license": "CC0",
+    "credit_line": "Fletcher Fund, 1934"
+  },
+  {
+    "item_id": "cma_98165",
+    "title": "Vase:  Celadon Ware",
+    "source": "cleveland",
+    "source_url": "https://clevelandart.org/art/1917.8",
+    "license": "CC0",
+    "credit_line": "Gift of Ralph King"
+  },
+  {
+    "item_id": "met_50742",
+    "title": "Square vase",
+    "source": "met",
+    "source_url": "https://www.metmuseum.org/art/collection/search/50742",
+    "license": "CC0",
+    "credit_line": "Alfred W. Hoyt Collection, Bequest of Rosina H. Hoppin, 1965"
+  },
+  {
+    "item_id": "met_46989",
+    "title": "Vase",
+    "source": "met",
+    "source_url": "https://www.metmuseum.org/art/collection/search/46989",
+    "license": "CC0",
+    "credit_line": "Gift of Edwin C. Vogel, 1966"
+  },
+  {
+    "item_id": "met_46947",
+    "title": "Bottle vase",
+    "source": "met",
+    "source_url": "https://www.metmuseum.org/art/collection/search/46947",
+    "license": "CC0",
+    "credit_line": "Gift of Edwin C. Vogel, 1966"
+  },
+  {
+    "item_id": "met_46938",
+    "title": "Bottle",
+    "source": "met",
+    "source_url": "https://www.metmuseum.org/art/collection/search/46938",
+    "license": "CC0",
+    "credit_line": "Bequest of Benjamin Altman, 1913"
+  },
+  {
+    "item_id": "cma_123635",
+    "title": "Bottle-shaped Vase",
+    "source": "cleveland",
+    "source_url": "https://clevelandart.org/art/1944.204",
+    "license": "CC0",
+    "credit_line": "Elisabeth Severance Prentiss Collection"
+  },
+  {
+    "item_id": "met_42228",
+    "title": "Vase in Meiping Shape",
+    "source": "met",
+    "source_url": "https://www.metmuseum.org/art/collection/search/42228",
+    "license": "CC0",
+    "credit_line": "Bequest of Benjamin Altman, 1913"
+  },
+  {
+    "item_id": "cma_140167",
+    "title": "Brush Washer with Dragons",
+    "source": "cleveland",
+    "source_url": "https://clevelandart.org/art/1964.166",
+    "license": "CC0",
+    "credit_line": "Severance and Greta Millikin Collection"
+  },
+  {
+    "item_id": "met_50021",
+    "title": "Dish with Dragons and Lotuses",
+    "source": "met",
+    "source_url": "https://www.metmuseum.org/art/collection/search/50021",
+    "license": "CC0",
+    "credit_line": "Harris Brisbane Dick Fund, 1963"
+  },
+  {
+    "item_id": "met_42497",
+    "title": "Dish with dragon amid waves",
+    "source": "met",
+    "source_url": "https://www.metmuseum.org/art/collection/search/42497",
+    "license": "CC0",
+    "credit_line": "Gift of Mrs. Richard E. Linburn, in memory of Richard E. Linburn, 1975"
+  },
+  {
+    "item_id": "met_48439",
+    "title": "Bowl with dragon, characters, and Eight Immortals",
+    "source": "met",
+    "source_url": "https://www.metmuseum.org/art/collection/search/48439",
+    "license": "CC0",
+    "credit_line": "Fletcher Fund, 1924"
+  },
+  {
+    "item_id": "cma_137337",
+    "title": "Bowl with \"Land of Daoist Immortals\" Scene",
+    "source": "cleveland",
+    "source_url": "https://clevelandart.org/art/1962.260",
+    "license": "CC0",
+    "credit_line": "John L. Severance Fund"
+  },
+  {
+    "item_id": "cma_160453",
+    "title": "Saucer",
+    "source": "cleveland",
+    "source_url": "https://clevelandart.org/art/1998.283",
+    "license": "CC0",
+    "credit_line": "Bequest of Gordon K. Mott"
+  },
+  {
+    "item_id": "met_42536",
+    "title": "Dish with floral scrolls",
+    "source": "met",
+    "source_url": "https://www.metmuseum.org/art/collection/search/42536",
+    "license": "CC0",
+    "credit_line": "Rogers Fund, 1917"
+  },
+  {
+    "item_id": "met_52772",
+    "title": "Bowl decorated with flowers and beast faces",
+    "source": "met",
+    "source_url": "https://www.metmuseum.org/art/collection/search/52772",
+    "license": "CC0",
+    "credit_line": "Rogers Fund, 1919"
+  },
+  {
+    "item_id": "met_42501",
+    "title": "Plate with chrysanthemums and peonies",
+    "source": "met",
+    "source_url": "https://www.metmuseum.org/art/collection/search/42501",
+    "license": "CC0",
+    "credit_line": "Gift of Mrs. Richard E. Linburn, 1978"
+  },
+  {
+    "item_id": "met_48299",
+    "title": "Dish with lions amid flowers",
+    "source": "met",
+    "source_url": "https://www.metmuseum.org/art/collection/search/48299",
+    "license": "CC0",
+    "credit_line": "Fletcher Fund, 1924"
+  },
+  {
+    "item_id": "met_51030",
+    "title": "Plate with Camellia and Plum",
+    "source": "met",
+    "source_url": "https://www.metmuseum.org/art/collection/search/51030",
+    "license": "CC0",
+    "credit_line": "The Friedsam Collection, Bequest of Michael Friedsam, 1931"
+  },
+  {
+    "item_id": "met_48262",
+    "title": "Plate with crab and fish",
+    "source": "met",
+    "source_url": "https://www.metmuseum.org/art/collection/search/48262",
+    "license": "CC0",
+    "credit_line": "Purchase by subscription, 1879"
+  },
+  {
+    "item_id": "cma_111788",
+    "title": "Dish with Dragons, Pomegranates, and Peaches",
+    "source": "cleveland",
+    "source_url": "https://clevelandart.org/art/1930.313",
+    "license": "CC0",
+    "credit_line": "Charles W. Harkness Endowment Fund"
+  },
+  {
+    "item_id": "met_49853",
+    "title": "Plate with dragons",
+    "source": "met",
+    "source_url": "https://www.metmuseum.org/art/collection/search/49853",
+    "license": "CC0",
+    "credit_line": "Purchase by subscription, 1879"
+  },
+  {
+    "item_id": "met_52917",
+    "title": "Plate with dragons",
+    "source": "met",
+    "source_url": "https://www.metmuseum.org/art/collection/search/52917",
+    "license": "CC0",
+    "credit_line": "Rogers Fund, 1925"
+  },
+  {
+    "item_id": "met_42197",
+    "title": "Dish with flowers",
+    "source": "met",
+    "source_url": "https://www.metmuseum.org/art/collection/search/42197",
+    "license": "CC0",
+    "credit_line": "The Friedsam Collection, Bequest of Michael Friedsam, 1931"
+  },
+  {
+    "item_id": "met_39638",
+    "title": "Plate with fish",
+    "source": "met",
+    "source_url": "https://www.metmuseum.org/art/collection/search/39638",
+    "license": "CC0",
+    "credit_line": "Purchase, Mrs. Richard E. Linburn Gift, 1987"
+  },
+  {
+    "item_id": "met_49849",
+    "title": "Dish with dragon",
+    "source": "met",
+    "source_url": "https://www.metmuseum.org/art/collection/search/49849",
+    "license": "CC0",
+    "credit_line": "Purchase by subscription, 1879"
+  }
+]

@@ -1,0 +1,218 @@
+[
+  {
+    "item_id": "met_47346",
+    "image_path": "data/processed/images/met_47346.jpg",
+    "image_sha256": "5b1a7afb130aa489a92c5dc92257c213b60dff684dbd660d14acff6de7fa6a9d",
+    "truth_type": "object",
+    "width": 779,
+    "height": 1024,
+    "annotation_method": "primary-agent approximate pixel contour/rectangle; frozen before v4 comparison; complex multi-object and irregular planar boundaries are coarse"
+  },
+  {
+    "item_id": "cma_140206",
+    "image_path": "data/processed/images/cma_140206.jpg",
+    "image_sha256": "ffe40ada3353bd05b413dbdc580fdf0f4cf5a7c3b7adaafcd8dd523d0211cdc2",
+    "truth_type": "object",
+    "width": 1024,
+    "height": 682,
+    "annotation_method": "primary-agent approximate pixel contour/rectangle; frozen before v4 comparison; complex multi-object and irregular planar boundaries are coarse"
+  },
+  {
+    "item_id": "met_53844",
+    "image_path": "data/processed/images/met_53844.jpg",
+    "image_sha256": "f12829961c6c1b8add7ca5bea86063e87a4d43aed713a08aa390737ed923fc8e",
+    "truth_type": "object",
+    "width": 1024,
+    "height": 683,
+    "annotation_method": "primary-agent approximate pixel contour/rectangle; frozen before v4 comparison; complex multi-object and irregular planar boundaries are coarse"
+  },
+  {
+    "item_id": "cma_95094",
+    "image_path": "data/processed/images/cma_95094.jpg",
+    "image_sha256": "dafa08ecf2a96f2249d50bb3d97d22aa979253937906005053f1cbad70b37252",
+    "truth_type": "object",
+    "width": 1024,
+    "height": 898,
+    "annotation_method": "primary-agent pixel manual contour/rectangle; frozen before v4 comparison"
+  },
+  {
+    "item_id": "met_48364",
+    "image_path": "data/processed/images/met_48364.jpg",
+    "image_sha256": "e9376dc7700f40e76a129e041dbf829d4adab396ade710dd68f1aa6517d2589f",
+    "truth_type": "object",
+    "width": 683,
+    "height": 1024,
+    "annotation_method": "primary-agent pixel manual contour/rectangle; frozen before v4 comparison"
+  },
+  {
+    "item_id": "met_46753",
+    "image_path": "data/processed/images/met_46753.jpg",
+    "image_sha256": "14a954dcf49ca4faf875659f932afac4bc424b83c4536a976d424c0c9cfe641f",
+    "truth_type": "object",
+    "width": 1024,
+    "height": 683,
+    "annotation_method": "primary-agent pixel manual contour/rectangle; frozen before v4 comparison"
+  },
+  {
+    "item_id": "met_44358",
+    "image_path": "data/processed/images/met_44358.jpg",
+    "image_sha256": "53cb6da499071b25ae0f55cd1894e88333e95a84646297059989f63cfd48568c",
+    "truth_type": "object",
+    "width": 678,
+    "height": 1024,
+    "annotation_method": "primary-agent pixel manual contour/rectangle; frozen before v4 comparison"
+  },
+  {
+    "item_id": "cma_135586",
+    "image_path": "data/processed/images/cma_135586.jpg",
+    "image_sha256": "1e64d68fa82afadfeb35b96766fb00007696ea1e5e306e0afe17d46659fb815f",
+    "truth_type": "object",
+    "width": 768,
+    "height": 1024,
+    "annotation_method": "primary-agent pixel manual contour/rectangle; frozen before v4 comparison"
+  },
+  {
+    "item_id": "cma_156948",
+    "image_path": "data/processed/images/cma_156948.jpg",
+    "image_sha256": "0399d589cca4f139be4fe21577fc5802c452b56411b9d0455774869355d10f9e",
+    "truth_type": "object",
+    "width": 713,
+    "height": 1024,
+    "annotation_method": "primary-agent pixel manual contour/rectangle; frozen before v4 comparison"
+  },
+  {
+    "item_id": "met_460684",
+    "image_path": "data/processed/images/met_460684.jpg",
+    "image_sha256": "0bb299d5bd3ddb412154f808378f243b4b6b75ce874ce91b3be3c27be0e2b614",
+    "truth_type": "object",
+    "width": 768,
+    "height": 1024,
+    "annotation_method": "primary-agent pixel manual contour/rectangle; frozen before v4 comparison"
+  },
+  {
+    "item_id": "cma_101146",
+    "image_path": "data/processed/images/cma_101146.jpg",
+    "image_sha256": "1aed47f36fee00812c4a28b0e01752be460d4ae9c6f786a3bbe408fefd37951f",
+    "truth_type": "planar",
+    "width": 1024,
+    "height": 745,
+    "annotation_method": "primary-agent pixel manual contour/rectangle; frozen before v4 comparison"
+  },
+  {
+    "item_id": "cma_101150",
+    "image_path": "data/processed/images/cma_101150.jpg",
+    "image_sha256": "018e4998b64d8ebab88fc62a49c543ac5dc7a52d3d95989b35eb0dbbe85ecd3f",
+    "truth_type": "planar",
+    "width": 1024,
+    "height": 816,
+    "annotation_method": "primary-agent pixel manual contour/rectangle; frozen before v4 comparison"
+  },
+  {
+    "item_id": "cma_101151",
+    "image_path": "data/processed/images/cma_101151.jpg",
+    "image_sha256": "386f0a45851f37d0a174f0f4179ac3adc1113d0bd838109068cbb438a85792dc",
+    "truth_type": "planar",
+    "width": 1024,
+    "height": 761,
+    "annotation_method": "primary-agent pixel manual contour/rectangle; frozen before v4 comparison"
+  },
+  {
+    "item_id": "cma_101152",
+    "image_path": "data/processed/images/cma_101152.jpg",
+    "image_sha256": "6b4474652aea48d33d51892420cdef5e4a0f91203bcf3f868289a632e0b85299",
+    "truth_type": "planar",
+    "width": 874,
+    "height": 1024,
+    "annotation_method": "primary-agent pixel manual contour/rectangle; frozen before v4 comparison"
+  },
+  {
+    "item_id": "cma_101153",
+    "image_path": "data/processed/images/cma_101153.jpg",
+    "image_sha256": "6dae1825f34e003ef72fcb9712e2bf98430cfc8d32433d0659a90819eb97a257",
+    "truth_type": "planar",
+    "width": 600,
+    "height": 1024,
+    "annotation_method": "primary-agent pixel manual contour/rectangle; frozen before v4 comparison"
+  },
+  {
+    "item_id": "cma_101156",
+    "image_path": "data/processed/images/cma_101156.jpg",
+    "image_sha256": "d0d7ddffd06fee85d3c2c1fcacd1f67e1858b99f57e59eefe6c388808105b5e7",
+    "truth_type": "planar",
+    "width": 1024,
+    "height": 971,
+    "annotation_method": "primary-agent pixel manual contour/rectangle; frozen before v4 comparison"
+  },
+  {
+    "item_id": "cma_101159",
+    "image_path": "data/processed/images/cma_101159.jpg",
+    "image_sha256": "2aacec69734ce8822f49f8fa8fe4ccc79c39882f55d89ef64c0b3385f34b0b88",
+    "truth_type": "planar",
+    "width": 362,
+    "height": 1024,
+    "annotation_method": "primary-agent pixel manual contour/rectangle; frozen before v4 comparison"
+  },
+  {
+    "item_id": "cma_101163",
+    "image_path": "data/processed/images/cma_101163.jpg",
+    "image_sha256": "52d66635a5bddb88e827fe4ea2d4a7f53ceda363ca5117401a42c1cdf3192e2e",
+    "truth_type": "planar",
+    "width": 1024,
+    "height": 823,
+    "annotation_method": "primary-agent pixel manual contour/rectangle; frozen before v4 comparison"
+  },
+  {
+    "item_id": "cma_101165",
+    "image_path": "data/processed/images/cma_101165.jpg",
+    "image_sha256": "6e5358e51753d12266b132e2ad327fb172d9bea8a88c53413e0d57c638f45bfa",
+    "truth_type": "planar",
+    "width": 332,
+    "height": 1024,
+    "annotation_method": "primary-agent pixel manual contour/rectangle; frozen before v4 comparison"
+  },
+  {
+    "item_id": "cma_101168",
+    "image_path": "data/processed/images/cma_101168.jpg",
+    "image_sha256": "952816919278c7bcfd9181a583c2adf7637c2b0b5acd565f9cd37682f8d82b3e",
+    "truth_type": "planar",
+    "width": 639,
+    "height": 1024,
+    "annotation_method": "primary-agent pixel manual contour/rectangle; frozen before v4 comparison"
+  },
+  {
+    "item_id": "cma_101175",
+    "image_path": "data/processed/images/cma_101175.jpg",
+    "image_sha256": "ba63d975a7ce221513d0c2cbf8375a92cbbb66f220d2eb33153d76effaecb46b",
+    "truth_type": "planar",
+    "width": 1024,
+    "height": 225,
+    "annotation_method": "primary-agent pixel manual contour/rectangle; frozen before v4 comparison"
+  },
+  {
+    "item_id": "cma_101185",
+    "image_path": "data/processed/images/cma_101185.jpg",
+    "image_sha256": "6adc81378094c881f3b8bac1f2a74d0cccb0ab14574546033476e515a6057086",
+    "truth_type": "planar",
+    "width": 1024,
+    "height": 591,
+    "annotation_method": "primary-agent pixel manual contour/rectangle; frozen before v4 comparison"
+  },
+  {
+    "item_id": "cma_101192",
+    "image_path": "data/processed/images/cma_101192.jpg",
+    "image_sha256": "07fe0bfafb13a28961b925d07c9a4688374e069fe26d85b1ff9059f55361c00d",
+    "truth_type": "planar",
+    "width": 1024,
+    "height": 712,
+    "annotation_method": "primary-agent pixel manual contour/rectangle; frozen before v4 comparison"
+  },
+  {
+    "item_id": "cma_101198",
+    "image_path": "data/processed/images/cma_101198.jpg",
+    "image_sha256": "0ca3c9bc28179c94378e66a528418d3184a03e7828dd82e70943559389ed2f81",
+    "truth_type": "planar",
+    "width": 910,
+    "height": 1024,
+    "annotation_method": "primary-agent pixel manual contour/rectangle; frozen before v4 comparison"
+  }
+]

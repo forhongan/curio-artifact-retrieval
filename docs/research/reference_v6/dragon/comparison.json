@@ -1,0 +1,281 @@
+{
+  "key": "dragon",
+  "query": "Chinese blue and white dragon dish",
+  "label": "青花龙纹盘",
+  "status": "ranked",
+  "references": 4,
+  "elapsed_s": 10.040031400014414,
+  "acquisition": {
+    "request_summary": {
+      "live": 20,
+      "cached": 12
+    },
+    "failures": []
+  },
+  "rankings": {
+    "production_text": [
+      "cma_140167",
+      "met_50021",
+      "met_42497",
+      "met_48439",
+      "cma_137337",
+      "met_49849",
+      "met_50039",
+      "met_50518",
+      "met_52759",
+      "met_49229"
+    ],
+    "single_best": [
+      "cma_160453",
+      "met_42536",
+      "met_52772",
+      "met_42501",
+      "met_48299",
+      "met_42494",
+      "met_48262",
+      "met_52769",
+      "met_39638",
+      "met_42495"
+    ],
+    "uniform_mean": [
+      "met_51030",
+      "met_48299",
+      "met_42536",
+      "met_48262",
+      "cma_111788",
+      "met_42197",
+      "met_52828",
+      "met_39638",
+      "met_42532",
+      "met_40798"
+    ],
+    "max": [
+      "met_49853",
+      "cma_160453",
+      "met_42536",
+      "met_52917",
+      "met_48299",
+      "met_52772",
+      "met_42501",
+      "met_42494",
+      "met_42532",
+      "met_51030"
+    ],
+    "diverse": [
+      "met_42536",
+      "met_48299",
+      "met_51030",
+      "met_42197",
+      "met_48262",
+      "met_42532",
+      "met_42501",
+      "met_39638",
+      "cma_111788",
+      "met_52828"
+    ],
+    "query_aligned": [
+      "met_42536",
+      "met_48299",
+      "met_48262",
+      "met_42501",
+      "met_39638",
+      "cma_132010",
+      "met_50953",
+      "met_51030",
+      "met_42532",
+      "met_50021"
+    ],
+    "production_rewritten": [
+      "met_42497",
+      "met_50021",
+      "cma_140167",
+      "met_49849",
+      "met_48439",
+      "met_50039",
+      "met_50529",
+      "met_49229",
+      "met_50518",
+      "cma_137337"
+    ],
+    "production_zh_rewritten": [
+      "met_42497",
+      "met_50021",
+      "met_49849",
+      "met_48439",
+      "cma_140167",
+      "met_50529",
+      "met_50039",
+      "met_48729",
+      "met_50953",
+      "met_49229"
+    ]
+  },
+  "review_pool": [
+    {
+      "item_id": "cma_111788",
+      "title": "Dish with Dragons, Pomegranates, and Peaches",
+      "medium": "Porcelain with incised and enamel decoration, susancai ware",
+      "period": "1662–1722",
+      "description": "Various techniques are applied to the decoration of susancai or \"plain three-color\" ware. The hidden dragons are incised, over which are painted decoration of fruit and flower sprays outlined with black pigment and colored with yellow, green, turquoise, and purplish brown enamels. The ground is filled with ivory enamel over unglazed clay.",
+      "source_url": "https://clevelandart.org/art/1930.313",
+      "image_path": "data/processed/images/cma_111788.jpg"
+    },
+    {
+      "item_id": "cma_137337",
+      "title": "Bowl with \"Land of Daoist Immortals\" Scene",
+      "medium": "porcelain with underglaze blue decoration",
+      "period": "1426–35",
+      "description": "",
+      "source_url": "https://clevelandart.org/art/1962.260",
+      "image_path": "data/processed/images/cma_137337.jpg"
+    },
+    {
+      "item_id": "cma_140167",
+      "title": "Brush Washer with Dragons",
+      "medium": "porcelain with underglaze blue decoration",
+      "period": "1426–35",
+      "description": "The attractive tonal range found in the painted decoration, resulting from the irregular size of cobalt bits in the pigment, and the pocked glaze surface identify this stunning brush washer as a classic Xuande period piece despite the absence of a reign mark.",
+      "source_url": "https://clevelandart.org/art/1964.166",
+      "image_path": "data/processed/images/cma_140167.jpg"
+    },
+    {
+      "item_id": "cma_160453",
+      "title": "Saucer",
+      "medium": "porcelain with blue and white decoration",
+      "period": "c. 1690",
+      "description": "",
+      "source_url": "https://clevelandart.org/art/1998.283",
+      "image_path": "data/processed/images/cma_160453.jpg"
+    },
+    {
+      "item_id": "met_39638",
+      "title": "Plate with fish",
+      "medium": "Porcelain painted with cobalt blue under transparent glaze (Jingdezhen ware)",
+      "period": "Yuan dynasty (1271–1368)",
+      "description": "",
+      "source_url": "https://www.metmuseum.org/art/collection/search/39638",
+      "image_path": "data/processed/images/met_39638.jpg"
+    },
+    {
+      "item_id": "met_42197",
+      "title": "Dish with flowers",
+      "medium": "Porcelain painted in overglaze polychrome enamels (Jingdezhen ware)",
+      "period": "Qing dynasty (1644–1911), Kangxi period (1662–1722)",
+      "description": "",
+      "source_url": "https://www.metmuseum.org/art/collection/search/42197",
+      "image_path": "data/processed/images/met_42197.jpg"
+    },
+    {
+      "item_id": "met_42497",
+      "title": "Dish with dragon amid waves",
+      "medium": "Porcelain painted with cobalt blue under transparent glaze (Jingdezhen ware)",
+      "period": "Ming dynasty (1368–1644), Xuande mark and period (1426–35)",
+      "description": "",
+      "source_url": "https://www.metmuseum.org/art/collection/search/42497",
+      "image_path": "data/processed/images/met_42497.jpg"
+    },
+    {
+      "item_id": "met_42501",
+      "title": "Plate with chrysanthemums and peonies",
+      "medium": "Porcelain painted in underglaze cobalt blue (Jingdezhen ware)",
+      "period": "Ming dynasty (1368–1644)",
+      "description": "",
+      "source_url": "https://www.metmuseum.org/art/collection/search/42501",
+      "image_path": "data/processed/images/met_42501.jpg"
+    },
+    {
+      "item_id": "met_42536",
+      "title": "Dish with floral scrolls",
+      "medium": "Porcelain painted in underglaze cobalt blue (Jingdezhen ware)",
+      "period": "Ming dynasty (1368–1644), Wanli mark and period (1573–1620)",
+      "description": "",
+      "source_url": "https://www.metmuseum.org/art/collection/search/42536",
+      "image_path": "data/processed/images/met_42536.jpg"
+    },
+    {
+      "item_id": "met_48262",
+      "title": "Plate with crab and fish",
+      "medium": "Porcelain painted in underglaze cobalt blue (Jingdezhen ware)",
+      "period": "Qing dynasty (1644–1911), Kangxi period (1662–1722)",
+      "description": "",
+      "source_url": "https://www.metmuseum.org/art/collection/search/48262",
+      "image_path": "data/processed/images/met_48262.jpg"
+    },
+    {
+      "item_id": "met_48299",
+      "title": "Dish with lions amid flowers",
+      "medium": "Porcelain painted in underglaze cobalt blue (Jingdezhen ware)",
+      "period": "Qing dynasty (1368–1644)",
+      "description": "",
+      "source_url": "https://www.metmuseum.org/art/collection/search/48299",
+      "image_path": "data/processed/images/met_48299.jpg"
+    },
+    {
+      "item_id": "met_48439",
+      "title": "Bowl with dragon, characters, and Eight Immortals",
+      "medium": "Porcelain painted in underglaze cobalt blue (Jingdezhen ware)",
+      "period": "Ming dynasty (1368–1644), Wanli mark and period (1573–1620)",
+      "description": "",
+      "source_url": "https://www.metmuseum.org/art/collection/search/48439",
+      "image_path": "data/processed/images/met_48439.jpg"
+    },
+    {
+      "item_id": "met_49849",
+      "title": "Dish with dragon",
+      "medium": "Porcelain with incised and green enamel decoration (Jingdezhen ware)",
+      "period": "Ming dynasty (1368–1644), Zhengde mark and period (1506–21)",
+      "description": "",
+      "source_url": "https://www.metmuseum.org/art/collection/search/49849",
+      "image_path": "data/processed/images/met_49849.jpg"
+    },
+    {
+      "item_id": "met_49853",
+      "title": "Plate with dragons",
+      "medium": "Porcelain with incised decoration under a bluish purple glaze (Jingdezhen ware)",
+      "period": "Qing dynasty (1644–1911), Kangxi mark and period (1662–1722)",
+      "description": "",
+      "source_url": "https://www.metmuseum.org/art/collection/search/49853",
+      "image_path": "data/processed/images/met_49853.jpg"
+    },
+    {
+      "item_id": "met_50021",
+      "title": "Dish with Dragons and Lotuses",
+      "medium": "Porcelain painted with cobalt blue under transparent glaze (Jingdezhen ware)",
+      "period": "Ming dynasty (1368–1644), Zhengde mark and period (1506–21)",
+      "description": "",
+      "source_url": "https://www.metmuseum.org/art/collection/search/50021",
+      "image_path": "data/processed/images/met_50021.jpg"
+    },
+    {
+      "item_id": "met_51030",
+      "title": "Plate with Camellia and Plum",
+      "medium": "Porcelain painted in overglaze polychrome enamels (Jingdezhen ware)",
+      "period": "Qing dynasty (1644–1911), Kangxi period (1662–1722)",
+      "description": "",
+      "source_url": "https://www.metmuseum.org/art/collection/search/51030",
+      "image_path": "data/processed/images/met_51030.jpg"
+    },
+    {
+      "item_id": "met_52772",
+      "title": "Bowl decorated with flowers and beast faces",
+      "medium": "Porcelain painted in underglaze cobalt blue (Jingdezhen Kraak ware)",
+      "period": "Ming dynasty (1368–1644)",
+      "description": "",
+      "source_url": "https://www.metmuseum.org/art/collection/search/52772",
+      "image_path": "data/processed/images/met_52772.jpg"
+    },
+    {
+      "item_id": "met_52917",
+      "title": "Plate with dragons",
+      "medium": "Porcelain with incised decoration under a bluish purple glaze (Jingdezhen ware)",
+      "period": "Qing dynasty (1644–1911), Kangxi mark and period (1662–1722)",
+      "description": "",
+      "source_url": "https://www.metmuseum.org/art/collection/search/52917",
+      "image_path": "data/processed/images/met_52917.jpg"
+    }
+  ],
+  "control_texts": {
+    "production_rewritten": "Chinese blue and white dragon dish plate dragon blue white",
+    "production_zh_rewritten": "青花龙纹盘 plate porcelain dragon blue white blue and white porcelain decoration"
+  }
+}

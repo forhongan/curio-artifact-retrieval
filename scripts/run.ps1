@@ -16,7 +16,10 @@ $ErrorActionPreference = 'Stop'
 $repoRoot = Split-Path -Parent $PSScriptRoot
 Set-Location -LiteralPath $repoRoot
 $bundledModelCache = Join-Path $repoRoot 'models/huggingface/hub'
-if (-not $env:HF_HUB_CACHE -and (Test-Path -LiteralPath $bundledModelCache -PathType Container)) {
+$bundledSiglip = Join-Path $bundledModelCache 'models--google--siglip2-base-patch16-224'
+$bundledDino = Join-Path $bundledModelCache 'models--facebook--dinov2-small'
+if (-not $env:HF_HUB_CACHE -and (Test-Path -LiteralPath $bundledSiglip -PathType Container) -and
+    (Test-Path -LiteralPath $bundledDino -PathType Container)) {
     $env:HF_HUB_CACHE = $bundledModelCache
 }
 $pythonPath = Join-Path $repoRoot '.venv/Scripts/python.exe'

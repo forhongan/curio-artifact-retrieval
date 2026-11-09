@@ -1,0 +1,299 @@
+{
+  "key": "liao",
+  "query": "Liao dynasty leather flask",
+  "label": "辽代皮囊壶",
+  "status": "ranked",
+  "references": 3,
+  "elapsed_s": 3.4211576000088826,
+  "acquisition": {
+    "request_summary": {
+      "live": 5,
+      "cached": 5
+    },
+    "failures": []
+  },
+  "rankings": {
+    "production_text": [
+      "cma_95076",
+      "cma_95077",
+      "cma_117443",
+      "met_48319",
+      "cma_170280",
+      "met_51080",
+      "cma_111812",
+      "met_52562",
+      "cma_95431",
+      "cma_170279"
+    ],
+    "single_best": [
+      "met_64119",
+      "met_53855",
+      "met_48504",
+      "met_52563",
+      "met_42395",
+      "met_39582",
+      "met_64921",
+      "met_51080",
+      "met_48190",
+      "cma_299533"
+    ],
+    "uniform_mean": [
+      "met_48316",
+      "cma_299533",
+      "met_42350",
+      "cma_170280",
+      "met_64119",
+      "met_42395",
+      "met_42434",
+      "cma_170281",
+      "cma_164434",
+      "met_48359"
+    ],
+    "max": [
+      "met_42350",
+      "met_42434",
+      "cma_141271",
+      "met_48316",
+      "met_48507",
+      "cma_94801",
+      "cma_164434",
+      "cma_284743",
+      "cma_134235",
+      "met_42209"
+    ],
+    "diverse": [
+      "met_48316",
+      "met_42350",
+      "cma_299533",
+      "met_42434",
+      "met_64119",
+      "cma_170280",
+      "met_42395",
+      "cma_164434",
+      "cma_147587",
+      "cma_170281"
+    ],
+    "query_aligned": [
+      "met_64119",
+      "cma_299533",
+      "met_48316",
+      "met_42395",
+      "cma_170280",
+      "met_647271",
+      "cma_142317",
+      "met_48359",
+      "met_42350",
+      "met_42434"
+    ],
+    "production_rewritten": [
+      "cma_95076",
+      "cma_95077",
+      "cma_117443",
+      "met_48319",
+      "cma_170280",
+      "met_51080",
+      "cma_111812",
+      "met_52562",
+      "cma_95431",
+      "cma_170279"
+    ],
+    "production_zh_rewritten": [
+      "met_42323",
+      "met_65596",
+      "cma_170280",
+      "cma_170279",
+      "cma_165426",
+      "cma_132823",
+      "met_48211",
+      "met_49901",
+      "cma_132300",
+      "cma_284749"
+    ]
+  },
+  "review_pool": [
+    {
+      "item_id": "cma_117443",
+      "title": "Cup",
+      "medium": "lacquer",
+      "period": "c. 600–221 BCE",
+      "description": "",
+      "source_url": "https://clevelandart.org/art/1938.11",
+      "image_path": "data/processed/images/cma_117443.jpg"
+    },
+    {
+      "item_id": "cma_141271",
+      "title": "Jar: Cizhou ware",
+      "medium": "glazed light gray stoneware",
+      "period": "12th-13th Century",
+      "description": "",
+      "source_url": "https://clevelandart.org/art/1964.500",
+      "image_path": "data/processed/images/cma_141271.jpg"
+    },
+    {
+      "item_id": "cma_165426",
+      "title": "Bird-shaped Urn",
+      "medium": "earthenware with slip-painted decoration",
+      "period": "2650–2350 BCE",
+      "description": "An imaginative shape and abstract curvilinear patterns lend delightful charm to this functional jar. Its fine-grained body has a light reddish color due to the iron content in the clay, achieved by ensuring abundant air in the kiln during the firing. The surfaces were burnished before applying the painted decoration in black and red.",
+      "source_url": "https://clevelandart.org/art/2007.276",
+      "image_path": "data/processed/images/cma_165426.jpg"
+    },
+    {
+      "item_id": "cma_170279",
+      "title": "Pair of Leather Bag-Shaped Flasks with Covers",
+      "medium": "earthenware with green glaze",
+      "period": "916–1125",
+      "description": "Flasks like these derive their shapes from leather bags; even the edges are finely rouletted to resemble the seams of sewn leather. These were used by the nomadic Khitan people who established the Liao kingdom in Inner Mongolia, Manchuria, and North China. Such wares represented the Liao adoption of the Tang Chinese ceramic tradition, and yet they expressed ethnic identity and new innovations resulted from the cultural borrowing.",
+      "source_url": "https://clevelandart.org/art/2012.448",
+      "image_path": "data/processed/images/cma_170279.jpg"
+    },
+    {
+      "item_id": "cma_170280",
+      "title": "Leather Bag-Shaped Flask with Cover",
+      "medium": "earthenware with green glaze",
+      "period": "916–1125",
+      "description": "Flasks like these derive their shapes from leather bags; even the edges are finely rouletted to resemble the seams of sewn leather. These were used by the nomadic Khitan people who established the Liao kingdom in Inner Mongolia, Manchuria, and North China. Such wares represented the Liao adoption of the Tang Chinese ceramic tradition, and yet they expressed ethnic identity and new innovations resulted from the cultural borrowing.",
+      "source_url": "https://clevelandart.org/art/2012.448.1",
+      "image_path": "data/processed/images/cma_170280.jpg"
+    },
+    {
+      "item_id": "cma_299533",
+      "title": "Covered Jar with Carved Lotus Petals",
+      "medium": "Glazed stoneware",
+      "period": "386–581 CE",
+      "description": "This jar still has its original cover, which is rare among surviving examples. Its missing knob most likely had the shape of a lotus bud. Beautifully carved lotus petals cover the vessel’s shoulder and lid under a translucent green glaze. In Buddhism, the lotus is a flower symbolizing purity and detachment from worldly affairs; its presence suggests that this vessel was meant to be used in a religious context. The well-crafted double loop handles may have held a silk cloth or other textile that would have been folded over the lid to keep it in place. This aesthetic prefigures the celebrated green celadons in adjacent regions.",
+      "source_url": "https://clevelandart.org/art/2017.16.a",
+      "image_path": "data/processed/images/cma_299533.jpg"
+    },
+    {
+      "item_id": "cma_95076",
+      "title": "Vase",
+      "medium": "lacquered wood",
+      "period": "1644–1911",
+      "description": "",
+      "source_url": "https://clevelandart.org/art/1915.612",
+      "image_path": "data/processed/images/cma_95076.jpg"
+    },
+    {
+      "item_id": "cma_95077",
+      "title": "Vase",
+      "medium": "lacquered wood",
+      "period": "1644–1911",
+      "description": "",
+      "source_url": "https://clevelandart.org/art/1915.613",
+      "image_path": "data/processed/images/cma_95077.jpg"
+    },
+    {
+      "item_id": "met_42323",
+      "title": "Teapot in the Shape of a Plum Blossom",
+      "medium": "Stoneware (Yixing ware)",
+      "period": "Qing dynasty (1644–1911)",
+      "description": "",
+      "source_url": "https://www.metmuseum.org/art/collection/search/42323",
+      "image_path": "data/processed/images/met_42323.jpg"
+    },
+    {
+      "item_id": "met_42350",
+      "title": "Chicken-Headed Ewer",
+      "medium": "Stoneware with celadon glaze (Yue ware)",
+      "period": "Eastern Jin dynasty (317–420)",
+      "description": "",
+      "source_url": "https://www.metmuseum.org/art/collection/search/42350",
+      "image_path": "data/processed/images/met_42350.jpg"
+    },
+    {
+      "item_id": "met_42395",
+      "title": "Ewer with dancing figures",
+      "medium": "Stoneware with white slip, pigment, and applied decoration under straw glaze (Changsha ware)",
+      "period": "Tang dynasty (618–907)",
+      "description": "",
+      "source_url": "https://www.metmuseum.org/art/collection/search/42395",
+      "image_path": "data/processed/images/met_42395.jpg"
+    },
+    {
+      "item_id": "met_42434",
+      "title": "Ewer with Parrots",
+      "medium": "Stoneware with incised decoration under celadon glaze (Yue ware)",
+      "period": "Five Dynasties (907–960)",
+      "description": "",
+      "source_url": "https://www.metmuseum.org/art/collection/search/42434",
+      "image_path": "data/processed/images/met_42434.jpg"
+    },
+    {
+      "item_id": "met_48316",
+      "title": "Ewer",
+      "medium": "Stoneware with brown glaze",
+      "period": "Tang dynasty (618–907)",
+      "description": "",
+      "source_url": "https://www.metmuseum.org/art/collection/search/48316",
+      "image_path": "data/processed/images/met_48316.jpg"
+    },
+    {
+      "item_id": "met_48319",
+      "title": "Flask",
+      "medium": "Earthenware with green glaze",
+      "period": "Han dynasty (206 BCE–220 CE)",
+      "description": "",
+      "source_url": "https://www.metmuseum.org/art/collection/search/48319",
+      "image_path": "data/processed/images/met_48319.jpg"
+    },
+    {
+      "item_id": "met_48504",
+      "title": "Pilgrim bottle with dragons",
+      "medium": "Glazed stoneware with carved and relief decoration",
+      "period": "Sui dynasty (581–618)",
+      "description": "",
+      "source_url": "https://www.metmuseum.org/art/collection/search/48504",
+      "image_path": "data/processed/images/met_48504.jpg"
+    },
+    {
+      "item_id": "met_48507",
+      "title": "Ewer",
+      "medium": "Stoneware with celadon glaze (Yue ware)",
+      "period": "Northern Song dynasty (960–1127)",
+      "description": "",
+      "source_url": "https://www.metmuseum.org/art/collection/search/48507",
+      "image_path": "data/processed/images/met_48507.jpg"
+    },
+    {
+      "item_id": "met_52563",
+      "title": "Flask with mythical birds",
+      "medium": "Stoneware with molded decoration under dark brown glaze",
+      "period": "Northern dynasty (386–581 CE)",
+      "description": "",
+      "source_url": "https://www.metmuseum.org/art/collection/search/52563",
+      "image_path": "data/processed/images/met_52563.jpg"
+    },
+    {
+      "item_id": "met_53855",
+      "title": "Vase",
+      "medium": "Ceramic",
+      "period": "",
+      "description": "",
+      "source_url": "https://www.metmuseum.org/art/collection/search/53855",
+      "image_path": "data/processed/images/met_53855.jpg"
+    },
+    {
+      "item_id": "met_64119",
+      "title": "Pilgrim’s flask with Central Asian dancers",
+      "medium": "Earthenware with molded decoration under olive-green glaze",
+      "period": "Northern Qi dynasty (550–577)",
+      "description": "",
+      "source_url": "https://www.metmuseum.org/art/collection/search/64119",
+      "image_path": "data/processed/images/met_64119.jpg"
+    },
+    {
+      "item_id": "met_65596",
+      "title": "Jar with four lugs",
+      "medium": "Earthenware",
+      "period": "Neolithic period, Hongshan culture (ca. 4500–3000 BCE)",
+      "description": "",
+      "source_url": "https://www.metmuseum.org/art/collection/search/65596",
+      "image_path": "data/processed/images/met_65596.jpg"
+    }
+  ],
+  "control_texts": {
+    "production_rewritten": "Liao dynasty leather flask",
+    "production_zh_rewritten": "辽代皮囊壶 pot"
+  }
+}
