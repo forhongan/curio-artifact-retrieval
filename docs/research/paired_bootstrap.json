@@ -1,0 +1,62 @@
+[
+  {
+    "comparison": "teammate checkpoint",
+    "metric": "ndcg@10",
+    "delta": -0.027847500353686307,
+    "ci95": [
+      -0.08802009776104085,
+      0.028563377905979365
+    ],
+    "unit": "20 semantic intents, paired EN/ZH average; 10000 bootstrap samples"
+  },
+  {
+    "comparison": "raw HSV fusion",
+    "metric": "ndcg@10",
+    "delta": 0.006804210918793496,
+    "ci95": [
+      -0.011530900750305393,
+      0.030941638807370223
+    ],
+    "unit": "20 semantic intents, paired EN/ZH average; 10000 bootstrap samples"
+  },
+  {
+    "comparison": "GrabCut HSV fusion",
+    "metric": "ndcg@10",
+    "delta": 0.013391313900501254,
+    "ci95": [
+      -0.0038521658161528526,
+      0.03691857966653151
+    ],
+    "unit": "20 semantic intents, paired EN/ZH average; 10000 bootstrap samples"
+  },
+  {
+    "comparison": "DINO graph .1",
+    "metric": "ndcg@10",
+    "delta": 0.008111616063467619,
+    "ci95": [
+      0.00043245674281465056,
+      0.016564584195530804
+    ],
+    "unit": "20 semantic intents, paired EN/ZH average; 10000 bootstrap samples"
+  },
+  {
+    "comparison": "logistic vs adaptive GMM",
+    "metric": "set_f1",
+    "delta": 0.07922927300129894,
+    "ci95": [
+      -0.016195673509457168,
+      0.17458919387968264
+    ],
+    "unit": "20 semantic intents, paired EN/ZH average; 10000 bootstrap samples"
+  },
+  {
+    "comparison": "HSV threshold vs dense threshold",
+    "metric": "set_f1",
+    "delta": 0.02613983530079117,
+    "ci95": [
+      -0.0788196443329516,
+      0.10917677678280402
+    ],
+    "unit": "20 semantic intents, paired EN/ZH average; 10000 bootstrap samples"
+  }
+]

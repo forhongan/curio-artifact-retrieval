@@ -27,6 +27,8 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--directory", type=Path, required=True)
     parser.add_argument("--workers", type=int, default=2)
+    parser.add_argument("--name", default="Curio v2 complete resources / 完整数据、模型与实验记录")
+    parser.add_argument("--notes", type=Path, default=ROOT / "docs/RESOURCE_RELEASE_NOTES.md")
     parser.add_argument("--publish", action="store_true", help="Make the completed draft public after all checks")
     args = parser.parse_args()
     manifest_path = args.directory / "resources_manifest.json"
@@ -54,9 +56,9 @@ def main():
     release = next((item for item in releases if item["tag_name"] == tag), None)
     if release is None:
         commit = subprocess.check_output(["git", "rev-parse", "HEAD"], cwd=ROOT, text=True).strip()
-        body = (ROOT / "docs/RESOURCE_RELEASE_NOTES.md").read_text(encoding="utf-8")
+        body = args.notes.read_text(encoding="utf-8")
         release = request("POST", api + "/releases", json={"tag_name": tag, "target_commitish": commit,
-                          "name": "Curio v2 complete resources / 完整数据、模型与实验记录", "body": body, "draft": True})
+                          "name": args.name, "body": body, "draft": True})
     assets = list(manifest["assets"])
     for name in ("resources_manifest.json", "SHA256SUMS.txt"):
         path = args.directory / name

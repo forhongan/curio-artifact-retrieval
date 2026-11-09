@@ -108,6 +108,75 @@ def test_level3_research_endpoint_separates_visual_and_catalogue_evidence(tmp_pa
     assert all(entry["basis"] == "catalogue" for entry in data["results"][0]["level3_evidence"])
 
 
+def test_probe_set_endpoint_returns_explicit_yes_set_and_provenance(tmp_path):
+    items = catalog(tmp_path)
+    probes = tmp_path / "probes"
+    probes.mkdir()
+    vectors = np.array([[1, 0]], dtype=np.float32)
+    np.savez(probes / "object_type__vase.npz", weights=np.array([[2., 0.]]),
+             bias=np.array([0.]), classes=np.array([0, 1]), threshold=np.array([.5]))
+    probe_report = {
+        "index_sha256": "set-index", "artifacts_sha256": {},
+        "tasks": {"object_type": {"classes": ["vase"], "models": {"vase": {
+            "artifact": "object_type__vase.npz", "selected_threshold": .5,
+        }}}},
+    }
+    (probes / "report.json").write_text(json.dumps(probe_report))
+    report = {
+        "version": "catalogue-probe-sets-v4", "probe_report_sha256": hashlib.sha256(
+            (probes / "report.json").read_bytes()
+        ).hexdigest(), "labels_sha256": "labels",
+        "gate": {"threshold": .5, "require_class_winner": False},
+    }
+    report_path = tmp_path / "probe_sets.json"
+    report_path.write_text(json.dumps(report))
+    monkeypatch_set = pytest.MonkeyPatch()
+    monkeypatch_set.setenv("CURIO_SET_PROBES", str(probes))
+    monkeypatch_set.setenv("CURIO_SET_REPORT", str(report_path))
+    service = SearchService(items, embeddings=vectors, encoder=FakeEncoder(), root=tmp_path)
+    service.index_sha256 = "set-index"
+    client = TestClient(create_app(service=service, root=tmp_path))
+    data = client.post("/api/search/set", json={"query": "vase", "top_k": 5}).json()
+    monkeypatch_set.undo()
+    assert data["matched_count"] == 1 and data["no_match"] == 0
+    assert data["results"][0]["yes"] is True
+    assert data["atoms"][0]["source"] == "dev-frozen visual probe threshold"
+
+
+def test_probe_set_endpoint_rejects_a_dropped_visual_constraint(tmp_path):
+    items = catalog(tmp_path)
+    probes = tmp_path / "probes"
+    probes.mkdir()
+    np.savez(probes / "object_type__vase.npz", weights=np.array([[2., 0.]]),
+             bias=np.array([0.]), classes=np.array([0, 1]), threshold=np.array([.5]))
+    (probes / "report.json").write_text(json.dumps({
+        "index_sha256": "set-index", "tasks": {"object_type": {
+            "classes": ["vase"], "models": {"vase": {
+                "artifact": "object_type__vase.npz", "selected_threshold": .5,
+            }}
+        }},
+    }))
+    report_path = tmp_path / "probe_sets.json"
+    report_path.write_text(json.dumps({
+        "version": "catalogue-probe-sets-v4",
+        "probe_report_sha256": hashlib.sha256(
+            (probes / "report.json").read_bytes()
+        ).hexdigest(),
+        "gate": {"threshold": .5, "require_class_winner": False},
+    }))
+    monkeypatch = pytest.MonkeyPatch()
+    monkeypatch.setenv("CURIO_SET_PROBES", str(probes))
+    monkeypatch.setenv("CURIO_SET_REPORT", str(report_path))
+    service = SearchService(items, embeddings=np.array([[1, 0]], dtype=np.float32),
+                            encoder=FakeEncoder(), root=tmp_path)
+    service.index_sha256 = "set-index"
+    client = TestClient(create_app(service=service, root=tmp_path))
+    response = client.post("/api/search/set", json={"query": "narrow-necked vase"})
+    monkeypatch.undo()
+    assert response.status_code == 422
+    assert any(item["domain"] == "shape" for item in response.json()["detail"]["missing"])
+
+
 @pytest.mark.parametrize("mismatch", [None, "manifest", "index", "weight", "probe_files", "configured"])
 def test_api_only_exposes_evaluation_for_loaded_index_and_probe_files(tmp_path, monkeypatch, mismatch):
     items = catalog(tmp_path)

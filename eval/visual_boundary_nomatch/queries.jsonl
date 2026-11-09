@@ -1,0 +1,8 @@
+{"qid":"nm01","text_en":"A Japanese lacquer tea caddy with a gold phoenix crest.","rationale":"No catalogue object in the 96-image Chinese-object visual audit is visually established as a Japanese lacquer tea caddy."}
+{"qid":"nm02","text_en":"A Renaissance Italian marble portrait bust of a bearded man.","rationale":"No candidate in this Chinese museum-object audit is visually established as an Italian Renaissance bust."}
+{"qid":"nm03","text_en":"A pair of blue denim jeans with visible metal zipper teeth.","rationale":"The domain is Chinese museum objects; no denim jeans appear in the exhaustive visual audit."}
+{"qid":"nm04","text_en":"A modern laptop computer with a glowing screen and keyboard.","rationale":"The audit contains museum antiquities, not a modern laptop."}
+{"qid":"nm05","text_en":"A red fire extinguisher mounted on a white wall.","rationale":"No fire extinguisher is visible among the audited museum objects."}
+{"qid":"nm06","text_en":"A ceramic teapot decorated with a photographically realistic blue sports car.","rationale":"The listed motif is absent from the audit; this tests a domain-adjacent no-match query."}
+{"qid":"nm07","text_en":"A green porcelain vase with an unmistakable image of a yellow helicopter.","rationale":"No helicopter motif is visually established in the gallery; shared vase and porcelain wording prevents a purely domain-token empty result."}
+{"qid":"nm08","text_en":"A bronze mirror engraved with a modern barcode and QR code.","rationale":"No modern barcode or QR code is visible; this tests an object-adjacent negative with realistic form and material tokens."}

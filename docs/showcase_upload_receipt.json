@@ -1,0 +1,37 @@
+{
+  "url": "https://github.com/forhongan/curio-artifact-retrieval/releases/tag/curio-showcase-v6-20261109",
+  "draft": false,
+  "tag": "curio-showcase-v6-20261109",
+  "assets": [
+    {
+      "name": "curio-v6-presentation.zip",
+      "bytes": 4282793,
+      "digest": "sha256:dc37245ace5fceb448964c6736f6dbfaa4971a6e24fec1cbd6530b5608fb03b4"
+    },
+    {
+      "name": "curio-v6-research.zip",
+      "bytes": 286584187,
+      "digest": "sha256:9aa186c383d05e1cf5c19c019993b67107e08e5156cb2912384098e4748b002b"
+    },
+    {
+      "name": "curio-v6-runtime.zip",
+      "bytes": 610734,
+      "digest": "sha256:4bf44c2ef5b6e3532acfaa8dca824e5e0b311230d75a9f3ae285c58696e4075d"
+    },
+    {
+      "name": "Curio_Technical_Report_Draft.pdf",
+      "bytes": 320595,
+      "digest": "sha256:eaa579824870041f781d07a26e06ab23ccd136164cdee791fdc71f687b523721"
+    },
+    {
+      "name": "resources_manifest.json",
+      "bytes": 3854,
+      "digest": "sha256:0a9feb15454e21426a2edbdce9db75370548eafb360608d16c5c3a1d65cf4997"
+    },
+    {
+      "name": "SHA256SUMS.txt",
+      "bytes": 370,
+      "digest": "sha256:4a3bf5c76d89ff0088e2788e87d551987ae4a65625a64ebd850e02e53ceef76f"
+    }
+  ]
+}

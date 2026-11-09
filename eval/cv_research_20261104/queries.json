@@ -1,0 +1,284 @@
+[
+  {
+    "qid": "vase",
+    "zh": "瓶形器物",
+    "en": "a vase",
+    "atoms": [
+      [
+        "object_type",
+        "vase",
+        1
+      ]
+    ]
+  },
+  {
+    "qid": "bowl",
+    "zh": "碗形器物",
+    "en": "a bowl",
+    "atoms": [
+      [
+        "object_type",
+        "bowl",
+        1
+      ]
+    ]
+  },
+  {
+    "qid": "plate",
+    "zh": "盘形器物",
+    "en": "a plate",
+    "atoms": [
+      [
+        "object_type",
+        "plate",
+        1
+      ]
+    ]
+  },
+  {
+    "qid": "figure",
+    "zh": "人物或动物立体造像",
+    "en": "a three dimensional figurine",
+    "atoms": [
+      [
+        "object_type",
+        "figure",
+        1
+      ]
+    ]
+  },
+  {
+    "qid": "cup",
+    "zh": "杯形器物",
+    "en": "a cup",
+    "atoms": [
+      [
+        "object_type",
+        "cup",
+        1
+      ]
+    ]
+  },
+  {
+    "qid": "textile",
+    "zh": "平面的织物",
+    "en": "a flat textile",
+    "atoms": [
+      [
+        "object_type",
+        "textile",
+        1
+      ]
+    ]
+  },
+  {
+    "qid": "green",
+    "zh": "绿色器物",
+    "en": "a green object",
+    "atoms": [
+      [
+        "colors",
+        "green",
+        1
+      ]
+    ]
+  },
+  {
+    "qid": "blue",
+    "zh": "带蓝色的器物",
+    "en": "an object with blue color",
+    "atoms": [
+      [
+        "colors",
+        "blue",
+        1
+      ]
+    ]
+  },
+  {
+    "qid": "white",
+    "zh": "带白色的器物",
+    "en": "an object with white color",
+    "atoms": [
+      [
+        "colors",
+        "white",
+        1
+      ]
+    ]
+  },
+  {
+    "qid": "red",
+    "zh": "红色器物",
+    "en": "a red object",
+    "atoms": [
+      [
+        "colors",
+        "red",
+        1
+      ]
+    ]
+  },
+  {
+    "qid": "brown",
+    "zh": "褐色器物",
+    "en": "a brown object",
+    "atoms": [
+      [
+        "colors",
+        "brown",
+        1
+      ]
+    ]
+  },
+  {
+    "qid": "handles",
+    "zh": "有可见把手或耳的器物",
+    "en": "an object with visible handles",
+    "atoms": [
+      [
+        "shape",
+        "handles",
+        1
+      ]
+    ]
+  },
+  {
+    "qid": "narrow",
+    "zh": "窄口细颈器物",
+    "en": "a vessel with a narrow mouth or neck",
+    "atoms": [
+      [
+        "shape",
+        "narrow_mouth",
+        1
+      ]
+    ]
+  },
+  {
+    "qid": "wide",
+    "zh": "敞口器物",
+    "en": "a vessel with a wide open mouth",
+    "atoms": [
+      [
+        "shape",
+        "wide_mouth",
+        1
+      ]
+    ]
+  },
+  {
+    "qid": "round",
+    "zh": "有圆鼓器腹的器物",
+    "en": "a vessel with a rounded body",
+    "atoms": [
+      [
+        "shape",
+        "round_body",
+        1
+      ]
+    ]
+  },
+  {
+    "qid": "green_narrow",
+    "zh": "绿色窄口器物",
+    "en": "a green vessel with a narrow mouth",
+    "atoms": [
+      [
+        "colors",
+        "green",
+        1
+      ],
+      [
+        "shape",
+        "narrow_mouth",
+        1
+      ]
+    ]
+  },
+  {
+    "qid": "blue_white",
+    "zh": "蓝白双色器物",
+    "en": "a blue and white object",
+    "atoms": [
+      [
+        "colors",
+        "blue",
+        1
+      ],
+      [
+        "colors",
+        "white",
+        1
+      ]
+    ]
+  },
+  {
+    "qid": "handled_round",
+    "zh": "有耳且器腹圆鼓的器物",
+    "en": "a rounded vessel with visible handles",
+    "atoms": [
+      [
+        "shape",
+        "handles",
+        1
+      ],
+      [
+        "shape",
+        "round_body",
+        1
+      ]
+    ]
+  },
+  {
+    "qid": "vase_green",
+    "zh": "绿色瓶形器物",
+    "en": "a green vase",
+    "atoms": [
+      [
+        "object_type",
+        "vase",
+        1
+      ],
+      [
+        "colors",
+        "green",
+        1
+      ]
+    ]
+  },
+  {
+    "qid": "bowl_white",
+    "zh": "白色碗形器物",
+    "en": "a white bowl",
+    "atoms": [
+      [
+        "object_type",
+        "bowl",
+        1
+      ],
+      [
+        "colors",
+        "white",
+        1
+      ]
+    ]
+  },
+  {
+    "qid": "narrow_nohandle",
+    "zh": "窄口且没有可见把手的器物",
+    "en": "a narrow mouth vessel without visible handles",
+    "atoms": [
+      [
+        "shape",
+        "narrow_mouth",
+        1
+      ],
+      [
+        "shape",
+        "handles",
+        0
+      ]
+    ]
+  }
+]

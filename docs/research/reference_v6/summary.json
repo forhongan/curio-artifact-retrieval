@@ -1,0 +1,1219 @@
+[
+  {
+    "key": "gourd",
+    "query": "Chinese double gourd vase",
+    "label": "葫芦瓶",
+    "status": "ranked",
+    "references": 6,
+    "elapsed_s": 25.50072270000237,
+    "acquisition": {
+      "request_summary": {
+        "live": 6,
+        "cached": 7
+      },
+      "failures": []
+    },
+    "rankings": {
+      "production_text": [
+        "met_48686",
+        "cma_94798",
+        "met_48516",
+        "met_47511",
+        "met_50963",
+        "met_46815",
+        "met_51192",
+        "met_50898",
+        "met_39527",
+        "met_42241"
+      ],
+      "single_best": [
+        "met_50026",
+        "met_48624",
+        "met_47531",
+        "met_48571",
+        "met_51064",
+        "met_53901",
+        "met_50037",
+        "met_48702",
+        "met_48670",
+        "met_52813"
+      ],
+      "uniform_mean": [
+        "met_48284",
+        "met_48559",
+        "met_42550",
+        "met_49855",
+        "met_42551",
+        "cma_84460",
+        "met_42356",
+        "met_461497",
+        "met_49857",
+        "met_42531"
+      ],
+      "max": [
+        "met_48572",
+        "met_48559",
+        "met_42531",
+        "met_48284",
+        "met_51019",
+        "met_51018",
+        "met_42427",
+        "cma_120168",
+        "met_51016",
+        "met_48594"
+      ],
+      "diverse": [
+        "met_48284",
+        "met_48559",
+        "met_42550",
+        "met_49855",
+        "met_461497",
+        "met_42551",
+        "cma_84460",
+        "met_49857",
+        "met_42531",
+        "met_42356"
+      ],
+      "query_aligned": [
+        "met_48284",
+        "met_48559",
+        "met_42550",
+        "met_49855",
+        "met_42551",
+        "cma_84460",
+        "met_49857",
+        "met_42531",
+        "met_42356",
+        "met_461497"
+      ]
+    },
+    "review_pool": [
+      {
+        "item_id": "cma_94798",
+        "title": "Double Gourd-shaped Bottle: Ding ware",
+        "medium": "porcelain",
+        "period": "1368–1644",
+        "description": "",
+        "source_url": "https://clevelandart.org/art/1915.361",
+        "image_path": "data/processed/images/cma_94798.jpg"
+      },
+      {
+        "item_id": "met_42531",
+        "title": "Gourd-Shaped Bottle with Deer and Crane in Landscape",
+        "medium": "Porcelain painted in cobalt blue under clear glaze (Jingdezhen ware)",
+        "period": "Ming dynasty (1368–1644), Jiajing mark and period (1522–66)",
+        "description": "",
+        "source_url": "https://www.metmuseum.org/art/collection/search/42531",
+        "image_path": "data/processed/images/met_42531.jpg"
+      },
+      {
+        "item_id": "met_42550",
+        "title": "Vase",
+        "medium": "Porcelain painted in underglaze blue and overglaze yellow and red enamels",
+        "period": "Ming dynasty (1368–1644), Jiajing mark and period (1522–66)",
+        "description": "",
+        "source_url": "https://www.metmuseum.org/art/collection/search/42550",
+        "image_path": "data/processed/images/met_42550.jpg"
+      },
+      {
+        "item_id": "met_42551",
+        "title": "Gourd-shaped bottle with floral scrolls",
+        "medium": "Porcelain painted in underglaze cobalt blue and yellow glaze (Jingdezhen ware)",
+        "period": "Ming dynasty (1368–1644), Jiajing mark and period (1522–66)",
+        "description": "",
+        "source_url": "https://www.metmuseum.org/art/collection/search/42551",
+        "image_path": "data/processed/images/met_42551.jpg"
+      },
+      {
+        "item_id": "met_461497",
+        "title": "Small vase",
+        "medium": "Porcelain painted in underglaze blue.",
+        "period": "",
+        "description": "",
+        "source_url": "https://www.metmuseum.org/art/collection/search/461497",
+        "image_path": "data/processed/images/met_461497.jpg"
+      },
+      {
+        "item_id": "met_47511",
+        "title": "Gourd-shaped bottle",
+        "medium": "Stoneware with green glaze",
+        "period": "Ming dynasty (1368–1644)",
+        "description": "",
+        "source_url": "https://www.metmuseum.org/art/collection/search/47511",
+        "image_path": "data/processed/images/met_47511.jpg"
+      },
+      {
+        "item_id": "met_47531",
+        "title": "Bottle with floral scrolls",
+        "medium": "Porcelain painted in underglaze cobalt  blue (Jingdezhen ware)",
+        "period": "Qing dynasty (1644–1911)",
+        "description": "",
+        "source_url": "https://www.metmuseum.org/art/collection/search/47531",
+        "image_path": "data/processed/images/met_47531.jpg"
+      },
+      {
+        "item_id": "met_48284",
+        "title": "Double gourd bottle with vegetal scrolls",
+        "medium": "Porcelain painted in underglaze cobalt  blue (Jingdezhen ware)",
+        "period": "Qing dynasty (1644–1911)",
+        "description": "",
+        "source_url": "https://www.metmuseum.org/art/collection/search/48284",
+        "image_path": "data/processed/images/met_48284.jpg"
+      },
+      {
+        "item_id": "met_48516",
+        "title": "Double gourd shaped vase",
+        "medium": "Porcelain with incised decoration under cream white glaze (Jingdezhen ware)",
+        "period": "Qing dynasty (1644–1911)",
+        "description": "",
+        "source_url": "https://www.metmuseum.org/art/collection/search/48516",
+        "image_path": "data/processed/images/met_48516.jpg"
+      },
+      {
+        "item_id": "met_48559",
+        "title": "Gourd-shaped vase with gourds and bats",
+        "medium": "Porcelain painted in underglaze cobalt blue (Jingdezhen ware)",
+        "period": "Qing dynasty (1644–1911), Kangxi period (1662–1722)",
+        "description": "",
+        "source_url": "https://www.metmuseum.org/art/collection/search/48559",
+        "image_path": "data/processed/images/met_48559.jpg"
+      },
+      {
+        "item_id": "met_48571",
+        "title": "Vase with vegetal scrolls",
+        "medium": "Porcelain painted in underglaze cobalt blue (Jingdezhen ware)",
+        "period": "Qing dynasty (1644–1911), Kangxi period (1662–1722)",
+        "description": "",
+        "source_url": "https://www.metmuseum.org/art/collection/search/48571",
+        "image_path": "data/processed/images/met_48571.jpg"
+      },
+      {
+        "item_id": "met_48572",
+        "title": "Vase with scenes from Romance of the West Chamber",
+        "medium": "Porcelain painted in underglaze cobalt blue (Jingdezhen ware)",
+        "period": "Qing dynasty (1644–1911), Kangxi period (1662–1722)",
+        "description": "",
+        "source_url": "https://www.metmuseum.org/art/collection/search/48572",
+        "image_path": "data/processed/images/met_48572.jpg"
+      },
+      {
+        "item_id": "met_48624",
+        "title": "Double gourd bottle with flowers",
+        "medium": "Porcelain with raised slip and polychrome enamels (Jingdezhen Fahua ware)",
+        "period": "Ming dynasty (1368–1644)",
+        "description": "",
+        "source_url": "https://www.metmuseum.org/art/collection/search/48624",
+        "image_path": "data/processed/images/met_48624.jpg"
+      },
+      {
+        "item_id": "met_48686",
+        "title": "Double gourd shaped vase",
+        "medium": "Soft paste porcelain (Jingdezhen ware)",
+        "period": "Qing dynasty (1644–1911)",
+        "description": "",
+        "source_url": "https://www.metmuseum.org/art/collection/search/48686",
+        "image_path": "data/processed/images/met_48686.jpg"
+      },
+      {
+        "item_id": "met_49855",
+        "title": "Flask with Lotus Pond",
+        "medium": "Porcelain painted with cobalt blue under transparent glaze (Jingdezhen ware)",
+        "period": "Yuan dynasty (1271–1368)",
+        "description": "",
+        "source_url": "https://www.metmuseum.org/art/collection/search/49855",
+        "image_path": "data/processed/images/met_49855.jpg"
+      },
+      {
+        "item_id": "met_50026",
+        "title": "Double-gourd bottle",
+        "medium": "Porcelain painted in underglaze cobalt blue (Jingdezhen ware), metal lid",
+        "period": "Ming dynasty (1368–1644), Chongzhen period",
+        "description": "",
+        "source_url": "https://www.metmuseum.org/art/collection/search/50026",
+        "image_path": "data/processed/images/met_50026.jpg"
+      },
+      {
+        "item_id": "met_50963",
+        "title": "Gourd-shaped bottle vase with floral scrolls",
+        "medium": "Porcelain with incised decoration under white glaze (Jingdezhen ware)",
+        "period": "Qing dynasty (1644–1911)",
+        "description": "",
+        "source_url": "https://www.metmuseum.org/art/collection/search/50963",
+        "image_path": "data/processed/images/met_50963.jpg"
+      },
+      {
+        "item_id": "met_51019",
+        "title": "Vase",
+        "medium": "Porcelain with blue glaze",
+        "period": "Qing dynasty (1644–1911), Jiaqing period (1796–1820)",
+        "description": "",
+        "source_url": "https://www.metmuseum.org/art/collection/search/51019",
+        "image_path": "data/processed/images/met_51019.jpg"
+      },
+      {
+        "item_id": "met_51064",
+        "title": "Bottle vase with openwork scenes of ladies and children over a floral ground",
+        "medium": "Porcelain painted in underglaze cobalt blue and copper red, light green glaze (Jingdezhen ware)",
+        "period": "Qing dynasty (1644–1911), Kangxi period (1662–1722)",
+        "description": "",
+        "source_url": "https://www.metmuseum.org/art/collection/search/51064",
+        "image_path": "data/processed/images/met_51064.jpg"
+      }
+    ]
+  },
+  {
+    "key": "meiping",
+    "query": "Chinese meiping vase",
+    "label": "梅瓶",
+    "status": "ranked",
+    "references": 6,
+    "elapsed_s": 4.755739200016251,
+    "acquisition": {
+      "request_summary": {
+        "live": 5,
+        "cached": 10
+      },
+      "failures": []
+    },
+    "rankings": {
+      "production_text": [
+        "met_46958",
+        "met_46548",
+        "met_50230",
+        "met_48340",
+        "met_48314",
+        "met_48550",
+        "met_46557",
+        "met_53767",
+        "met_52610",
+        "met_48466"
+      ],
+      "single_best": [
+        "cma_140168",
+        "cma_284746",
+        "met_47401",
+        "met_48462",
+        "met_42242",
+        "cma_311692",
+        "cma_122410",
+        "met_49836",
+        "met_42228",
+        "met_42234"
+      ],
+      "uniform_mean": [
+        "cma_140168",
+        "cma_122410",
+        "cma_284746",
+        "met_49836",
+        "met_42242",
+        "met_42234",
+        "met_48311",
+        "cma_311692",
+        "met_48462",
+        "met_42228"
+      ],
+      "max": [
+        "cma_284746",
+        "met_42486",
+        "cma_140168",
+        "cma_311692",
+        "met_51142",
+        "cma_122410",
+        "met_46962",
+        "met_42234",
+        "met_48336",
+        "met_47401"
+      ],
+      "diverse": [
+        "cma_122410",
+        "cma_140168",
+        "cma_284746",
+        "met_42234",
+        "cma_311692",
+        "met_42242",
+        "met_48462",
+        "met_49836",
+        "met_42228",
+        "met_52916"
+      ],
+      "query_aligned": [
+        "cma_140168",
+        "cma_122410",
+        "cma_284746",
+        "met_49836",
+        "met_42242",
+        "met_48462",
+        "met_42234",
+        "met_52916",
+        "met_42228",
+        "cma_311692"
+      ]
+    },
+    "review_pool": [
+      {
+        "item_id": "cma_122410",
+        "title": "Vase with peacock blue glaze",
+        "medium": "porcelain",
+        "period": "1662–1722",
+        "description": "",
+        "source_url": "https://clevelandart.org/art/1942.687",
+        "image_path": "data/processed/images/cma_122410.jpg"
+      },
+      {
+        "item_id": "cma_140168",
+        "title": "Meiping  Vase with Cloud Collars and Peony Sprays",
+        "medium": "porcelain with incised decoration and white glaze",
+        "period": "1403–24",
+        "description": "This beautiful vase, called a meiping, is a testimony to the extremely high standards demanded for imperial white porcelain of the Yongle period. It is exquisitely potted and subtly decorated with \"hidden decoration\" (anhua) incised into the body. The clear glaze over the white body has a luster and purity; the white color radiates with a soft glow like melting snow, described by the Chinese connoisseurs as tianbai, or \"sweetwhite.\" Tianbai wares were produced for use in imperial offerings and have always been considered a great achievement of the Yongle period.",
+        "source_url": "https://clevelandart.org/art/1964.167",
+        "image_path": "data/processed/images/cma_140168.jpg"
+      },
+      {
+        "item_id": "cma_284746",
+        "title": "Meiping Vase with Carved Floral Sprays",
+        "medium": "Porcelain with pale bluish-white glaze, qingbai (\"blue-white\") ware",
+        "period": "960–1279",
+        "description": "This magnificent plum vase (<em>meiping</em>) derives its name from being used to hold a branch from a flowering plum tree. Vases of this shape with a round shoulder and narrow opening originally served as wine containers. Kilns in southern China that produced this ware with a transparent bluish glaze were among the first that applied underglaze blue-and-white decoration, which became popular during the Yuan (1271–1368) and Ming (1368–1644) dynasties. These elegantly carved floral sprays on a monochromatic ground reflect the refined taste of the Song dynasty emperors.",
+        "source_url": "https://clevelandart.org/art/2017.20",
+        "image_path": "data/processed/images/cma_284746.jpg"
+      },
+      {
+        "item_id": "cma_311692",
+        "title": "Meiping Vase with carved Dragon Motif",
+        "medium": "Porcelain with pale bluish-white (qingbai; 青白) glaze and carved decoration",
+        "period": "1300s",
+        "description": "A fierce coiling dragon chasing a pearl amid mist and clouds—a symbol of fertility and power—decorates this sturdy vase. Its shoulder is incised with a band of lotus flowers and the base features a border of lotus petals. <em>Meiping, </em>literally prunus vase, derives its name from being used to display a single floral spray, traditionally a branch of blossoming plum (or <em>prunus</em>), apricot, or cherry.",
+        "source_url": "https://clevelandart.org/art/2020.189",
+        "image_path": "data/processed/images/cma_311692.jpg"
+      },
+      {
+        "item_id": "met_42234",
+        "title": "Vase in Meiping Shape",
+        "medium": "Porcelain with coral-red glaze (Jingdezhen ware)",
+        "period": "Qing dynasty (1644–1911)",
+        "description": "",
+        "source_url": "https://www.metmuseum.org/art/collection/search/42234",
+        "image_path": "data/processed/images/met_42234.jpg"
+      },
+      {
+        "item_id": "met_42242",
+        "title": "Vase in Meiping Shape",
+        "medium": "Porcelain with incised decoration under yellow glaze (Jingdezhen ware)",
+        "period": "Qing dynasty (1644–1911), Kangxi period (1662–1722)",
+        "description": "",
+        "source_url": "https://www.metmuseum.org/art/collection/search/42242",
+        "image_path": "data/processed/images/met_42242.jpg"
+      },
+      {
+        "item_id": "met_42486",
+        "title": "Bottle with vegetal scrolls",
+        "medium": "Porcelain with incised and carved design under bluish glaze (Jingdezhen Qingbai ware)",
+        "period": "Southern Song (1127–1279)–Yuan (1271–1368) dynasty",
+        "description": "",
+        "source_url": "https://www.metmuseum.org/art/collection/search/42486",
+        "image_path": "data/processed/images/met_42486.jpg"
+      },
+      {
+        "item_id": "met_46548",
+        "title": "Prunus Vase",
+        "medium": "Porcelain",
+        "period": "Qing dynasty (1644–1911), Kangxi period (1662–1722)",
+        "description": "",
+        "source_url": "https://www.metmuseum.org/art/collection/search/46548",
+        "image_path": "data/processed/images/met_46548.jpg"
+      },
+      {
+        "item_id": "met_46958",
+        "title": "Vase with a garden scene",
+        "medium": "Softpaste porcelain with incised decoration (Jingdezhen ware)",
+        "period": "Qing dynasty (1644–1911)",
+        "description": "",
+        "source_url": "https://www.metmuseum.org/art/collection/search/46958",
+        "image_path": "data/processed/images/met_46958.jpg"
+      },
+      {
+        "item_id": "met_47401",
+        "title": "Meiping vase with floral scrolls",
+        "medium": "Porcelain with relief decors under a celadon glaze (Jingdezhen ware)",
+        "period": "Qing dynasty (1644–1911)",
+        "description": "",
+        "source_url": "https://www.metmuseum.org/art/collection/search/47401",
+        "image_path": "data/processed/images/met_47401.jpg"
+      },
+      {
+        "item_id": "met_48314",
+        "title": "Meiping vase",
+        "medium": "Porcelain with bluish grey glaze (Jingdezhen ware)",
+        "period": "Qing dynasty (1644–1911)",
+        "description": "",
+        "source_url": "https://www.metmuseum.org/art/collection/search/48314",
+        "image_path": "data/processed/images/met_48314.jpg"
+      },
+      {
+        "item_id": "met_48340",
+        "title": "Miniature meiping vase",
+        "medium": "Porcelain with iron rust glaze (Jingdezhen ware)",
+        "period": "Qing dynasty (1644–1911)",
+        "description": "",
+        "source_url": "https://www.metmuseum.org/art/collection/search/48340",
+        "image_path": "data/processed/images/met_48340.jpg"
+      },
+      {
+        "item_id": "met_48462",
+        "title": "Meiping vase with dragon",
+        "medium": "Stoneware with incised decoration under celadon glaze (Longquan ware)",
+        "period": "Ming dynasty (1368–1644)",
+        "description": "",
+        "source_url": "https://www.metmuseum.org/art/collection/search/48462",
+        "image_path": "data/processed/images/met_48462.jpg"
+      },
+      {
+        "item_id": "met_49836",
+        "title": "Meiping vase with dragon",
+        "medium": "Porcelain with incised decoration (Jingdezhen ware)",
+        "period": "Qing dynasty (1644–1911), Kangxi period (1662–1722)",
+        "description": "",
+        "source_url": "https://www.metmuseum.org/art/collection/search/49836",
+        "image_path": "data/processed/images/met_49836.jpg"
+      },
+      {
+        "item_id": "met_50230",
+        "title": "Vase in Meiping Shape",
+        "medium": "Stoneware with white glaze (Cizhou ware)",
+        "period": "Northern Song dynasty (960–1127)",
+        "description": "",
+        "source_url": "https://www.metmuseum.org/art/collection/search/50230",
+        "image_path": "data/processed/images/met_50230.jpg"
+      },
+      {
+        "item_id": "met_51142",
+        "title": "Vase in Meiping Shape",
+        "medium": "Porcelain with iron-red glaze (Jingdezhen ware)",
+        "period": "Qing dynasty (1644–1911)",
+        "description": "",
+        "source_url": "https://www.metmuseum.org/art/collection/search/51142",
+        "image_path": "data/processed/images/met_51142.jpg"
+      }
+    ]
+  },
+  {
+    "key": "moonflask",
+    "query": "Chinese blue and white moon flask",
+    "label": "青花抱月瓶",
+    "status": "no_qualified_references",
+    "references": 0,
+    "elapsed_s": 1.183579300006386,
+    "acquisition": {
+      "request_summary": {
+        "live": 2,
+        "cached": 2
+      },
+      "failures": []
+    }
+  },
+  {
+    "key": "liao",
+    "query": "Liao dynasty leather flask",
+    "label": "辽代皮囊壶",
+    "status": "ranked",
+    "references": 3,
+    "elapsed_s": 3.4211576000088826,
+    "acquisition": {
+      "request_summary": {
+        "live": 5,
+        "cached": 5
+      },
+      "failures": []
+    },
+    "rankings": {
+      "production_text": [
+        "cma_95076",
+        "cma_95077",
+        "cma_117443",
+        "met_48319",
+        "cma_170280",
+        "met_51080",
+        "cma_111812",
+        "met_52562",
+        "cma_95431",
+        "cma_170279"
+      ],
+      "single_best": [
+        "met_64119",
+        "met_53855",
+        "met_48504",
+        "met_52563",
+        "met_42395",
+        "met_39582",
+        "met_64921",
+        "met_51080",
+        "met_48190",
+        "cma_299533"
+      ],
+      "uniform_mean": [
+        "met_48316",
+        "cma_299533",
+        "met_42350",
+        "cma_170280",
+        "met_64119",
+        "met_42395",
+        "met_42434",
+        "cma_170281",
+        "cma_164434",
+        "met_48359"
+      ],
+      "max": [
+        "met_42350",
+        "met_42434",
+        "cma_141271",
+        "met_48316",
+        "met_48507",
+        "cma_94801",
+        "cma_164434",
+        "cma_284743",
+        "cma_134235",
+        "met_42209"
+      ],
+      "diverse": [
+        "met_48316",
+        "met_42350",
+        "cma_299533",
+        "met_42434",
+        "met_64119",
+        "cma_170280",
+        "met_42395",
+        "cma_164434",
+        "cma_147587",
+        "cma_170281"
+      ],
+      "query_aligned": [
+        "met_64119",
+        "cma_299533",
+        "met_48316",
+        "met_42395",
+        "cma_170280",
+        "met_647271",
+        "cma_142317",
+        "met_48359",
+        "met_42350",
+        "met_42434"
+      ]
+    },
+    "review_pool": [
+      {
+        "item_id": "cma_117443",
+        "title": "Cup",
+        "medium": "lacquer",
+        "period": "c. 600–221 BCE",
+        "description": "",
+        "source_url": "https://clevelandart.org/art/1938.11",
+        "image_path": "data/processed/images/cma_117443.jpg"
+      },
+      {
+        "item_id": "cma_141271",
+        "title": "Jar: Cizhou ware",
+        "medium": "glazed light gray stoneware",
+        "period": "12th-13th Century",
+        "description": "",
+        "source_url": "https://clevelandart.org/art/1964.500",
+        "image_path": "data/processed/images/cma_141271.jpg"
+      },
+      {
+        "item_id": "cma_170280",
+        "title": "Leather Bag-Shaped Flask with Cover",
+        "medium": "earthenware with green glaze",
+        "period": "916–1125",
+        "description": "Flasks like these derive their shapes from leather bags; even the edges are finely rouletted to resemble the seams of sewn leather. These were used by the nomadic Khitan people who established the Liao kingdom in Inner Mongolia, Manchuria, and North China. Such wares represented the Liao adoption of the Tang Chinese ceramic tradition, and yet they expressed ethnic identity and new innovations resulted from the cultural borrowing.",
+        "source_url": "https://clevelandart.org/art/2012.448.1",
+        "image_path": "data/processed/images/cma_170280.jpg"
+      },
+      {
+        "item_id": "cma_299533",
+        "title": "Covered Jar with Carved Lotus Petals",
+        "medium": "Glazed stoneware",
+        "period": "386–581 CE",
+        "description": "This jar still has its original cover, which is rare among surviving examples. Its missing knob most likely had the shape of a lotus bud. Beautifully carved lotus petals cover the vessel’s shoulder and lid under a translucent green glaze. In Buddhism, the lotus is a flower symbolizing purity and detachment from worldly affairs; its presence suggests that this vessel was meant to be used in a religious context. The well-crafted double loop handles may have held a silk cloth or other textile that would have been folded over the lid to keep it in place. This aesthetic prefigures the celebrated green celadons in adjacent regions.",
+        "source_url": "https://clevelandart.org/art/2017.16.a",
+        "image_path": "data/processed/images/cma_299533.jpg"
+      },
+      {
+        "item_id": "cma_95076",
+        "title": "Vase",
+        "medium": "lacquered wood",
+        "period": "1644–1911",
+        "description": "",
+        "source_url": "https://clevelandart.org/art/1915.612",
+        "image_path": "data/processed/images/cma_95076.jpg"
+      },
+      {
+        "item_id": "cma_95077",
+        "title": "Vase",
+        "medium": "lacquered wood",
+        "period": "1644–1911",
+        "description": "",
+        "source_url": "https://clevelandart.org/art/1915.613",
+        "image_path": "data/processed/images/cma_95077.jpg"
+      },
+      {
+        "item_id": "met_42350",
+        "title": "Chicken-Headed Ewer",
+        "medium": "Stoneware with celadon glaze (Yue ware)",
+        "period": "Eastern Jin dynasty (317–420)",
+        "description": "",
+        "source_url": "https://www.metmuseum.org/art/collection/search/42350",
+        "image_path": "data/processed/images/met_42350.jpg"
+      },
+      {
+        "item_id": "met_42395",
+        "title": "Ewer with dancing figures",
+        "medium": "Stoneware with white slip, pigment, and applied decoration under straw glaze (Changsha ware)",
+        "period": "Tang dynasty (618–907)",
+        "description": "",
+        "source_url": "https://www.metmuseum.org/art/collection/search/42395",
+        "image_path": "data/processed/images/met_42395.jpg"
+      },
+      {
+        "item_id": "met_42434",
+        "title": "Ewer with Parrots",
+        "medium": "Stoneware with incised decoration under celadon glaze (Yue ware)",
+        "period": "Five Dynasties (907–960)",
+        "description": "",
+        "source_url": "https://www.metmuseum.org/art/collection/search/42434",
+        "image_path": "data/processed/images/met_42434.jpg"
+      },
+      {
+        "item_id": "met_48316",
+        "title": "Ewer",
+        "medium": "Stoneware with brown glaze",
+        "period": "Tang dynasty (618–907)",
+        "description": "",
+        "source_url": "https://www.metmuseum.org/art/collection/search/48316",
+        "image_path": "data/processed/images/met_48316.jpg"
+      },
+      {
+        "item_id": "met_48319",
+        "title": "Flask",
+        "medium": "Earthenware with green glaze",
+        "period": "Han dynasty (206 BCE–220 CE)",
+        "description": "",
+        "source_url": "https://www.metmuseum.org/art/collection/search/48319",
+        "image_path": "data/processed/images/met_48319.jpg"
+      },
+      {
+        "item_id": "met_48504",
+        "title": "Pilgrim bottle with dragons",
+        "medium": "Glazed stoneware with carved and relief decoration",
+        "period": "Sui dynasty (581–618)",
+        "description": "",
+        "source_url": "https://www.metmuseum.org/art/collection/search/48504",
+        "image_path": "data/processed/images/met_48504.jpg"
+      },
+      {
+        "item_id": "met_48507",
+        "title": "Ewer",
+        "medium": "Stoneware with celadon glaze (Yue ware)",
+        "period": "Northern Song dynasty (960–1127)",
+        "description": "",
+        "source_url": "https://www.metmuseum.org/art/collection/search/48507",
+        "image_path": "data/processed/images/met_48507.jpg"
+      },
+      {
+        "item_id": "met_52563",
+        "title": "Flask with mythical birds",
+        "medium": "Stoneware with molded decoration under dark brown glaze",
+        "period": "Northern dynasty (386–581 CE)",
+        "description": "",
+        "source_url": "https://www.metmuseum.org/art/collection/search/52563",
+        "image_path": "data/processed/images/met_52563.jpg"
+      },
+      {
+        "item_id": "met_53855",
+        "title": "Vase",
+        "medium": "Ceramic",
+        "period": "",
+        "description": "",
+        "source_url": "https://www.metmuseum.org/art/collection/search/53855",
+        "image_path": "data/processed/images/met_53855.jpg"
+      },
+      {
+        "item_id": "met_64119",
+        "title": "Pilgrim’s flask with Central Asian dancers",
+        "medium": "Earthenware with molded decoration under olive-green glaze",
+        "period": "Northern Qi dynasty (550–577)",
+        "description": "",
+        "source_url": "https://www.metmuseum.org/art/collection/search/64119",
+        "image_path": "data/processed/images/met_64119.jpg"
+      }
+    ]
+  },
+  {
+    "key": "celadon",
+    "query": "Chinese celadon vase",
+    "label": "青瓷瓶",
+    "status": "ranked",
+    "references": 6,
+    "elapsed_s": 0.4768552999885287,
+    "acquisition": {
+      "request_summary": {
+        "live": 0,
+        "cached": 15
+      },
+      "failures": []
+    },
+    "rankings": {
+      "production_text": [
+        "met_47443",
+        "met_46548",
+        "met_48800",
+        "met_42246",
+        "met_52611",
+        "cma_134979",
+        "met_52936",
+        "met_46557",
+        "met_46989",
+        "met_46546"
+      ],
+      "single_best": [
+        "cma_140168",
+        "cma_284746",
+        "met_47401",
+        "met_48462",
+        "met_42242",
+        "cma_311692",
+        "cma_122410",
+        "met_49836",
+        "met_42228",
+        "met_42234"
+      ],
+      "uniform_mean": [
+        "met_49920",
+        "met_52936",
+        "met_49856",
+        "met_51050",
+        "cma_98165",
+        "met_42510",
+        "met_50773",
+        "met_47911",
+        "met_42424",
+        "met_42246"
+      ],
+      "max": [
+        "cma_140168",
+        "cma_284746",
+        "met_47401",
+        "met_48462",
+        "met_42242",
+        "cma_311692",
+        "cma_122410",
+        "met_49836",
+        "met_42228",
+        "met_42226"
+      ],
+      "diverse": [
+        "met_52936",
+        "met_49920",
+        "cma_98165",
+        "met_49856",
+        "met_51050",
+        "met_42246",
+        "cma_140168",
+        "met_42424",
+        "met_50773",
+        "cma_122410"
+      ],
+      "query_aligned": [
+        "met_52936",
+        "met_49856",
+        "met_49920",
+        "cma_98165",
+        "met_51050",
+        "met_50773",
+        "met_42246",
+        "met_42424",
+        "met_47911",
+        "met_42510"
+      ]
+    },
+    "review_pool": [
+      {
+        "item_id": "cma_140168",
+        "title": "Meiping  Vase with Cloud Collars and Peony Sprays",
+        "medium": "porcelain with incised decoration and white glaze",
+        "period": "1403–24",
+        "description": "This beautiful vase, called a meiping, is a testimony to the extremely high standards demanded for imperial white porcelain of the Yongle period. It is exquisitely potted and subtly decorated with \"hidden decoration\" (anhua) incised into the body. The clear glaze over the white body has a luster and purity; the white color radiates with a soft glow like melting snow, described by the Chinese connoisseurs as tianbai, or \"sweetwhite.\" Tianbai wares were produced for use in imperial offerings and have always been considered a great achievement of the Yongle period.",
+        "source_url": "https://clevelandart.org/art/1964.167",
+        "image_path": "data/processed/images/cma_140168.jpg"
+      },
+      {
+        "item_id": "cma_284746",
+        "title": "Meiping Vase with Carved Floral Sprays",
+        "medium": "Porcelain with pale bluish-white glaze, qingbai (\"blue-white\") ware",
+        "period": "960–1279",
+        "description": "This magnificent plum vase (<em>meiping</em>) derives its name from being used to hold a branch from a flowering plum tree. Vases of this shape with a round shoulder and narrow opening originally served as wine containers. Kilns in southern China that produced this ware with a transparent bluish glaze were among the first that applied underglaze blue-and-white decoration, which became popular during the Yuan (1271–1368) and Ming (1368–1644) dynasties. These elegantly carved floral sprays on a monochromatic ground reflect the refined taste of the Song dynasty emperors.",
+        "source_url": "https://clevelandart.org/art/2017.20",
+        "image_path": "data/processed/images/cma_284746.jpg"
+      },
+      {
+        "item_id": "cma_98165",
+        "title": "Vase:  Celadon Ware",
+        "medium": "stoneware",
+        "period": "1368–1644",
+        "description": "",
+        "source_url": "https://clevelandart.org/art/1917.8",
+        "image_path": "data/processed/images/cma_98165.jpg"
+      },
+      {
+        "item_id": "met_42242",
+        "title": "Vase in Meiping Shape",
+        "medium": "Porcelain with incised decoration under yellow glaze (Jingdezhen ware)",
+        "period": "Qing dynasty (1644–1911), Kangxi period (1662–1722)",
+        "description": "",
+        "source_url": "https://www.metmuseum.org/art/collection/search/42242",
+        "image_path": "data/processed/images/met_42242.jpg"
+      },
+      {
+        "item_id": "met_42246",
+        "title": "Vase",
+        "medium": "Porcelain with celadon glaze (Jingdezhen ware)",
+        "period": "Qing dynasty (1644–1911), Kangxi period (1662–1722)",
+        "description": "",
+        "source_url": "https://www.metmuseum.org/art/collection/search/42246",
+        "image_path": "data/processed/images/met_42246.jpg"
+      },
+      {
+        "item_id": "met_46548",
+        "title": "Prunus Vase",
+        "medium": "Porcelain",
+        "period": "Qing dynasty (1644–1911), Kangxi period (1662–1722)",
+        "description": "",
+        "source_url": "https://www.metmuseum.org/art/collection/search/46548",
+        "image_path": "data/processed/images/met_46548.jpg"
+      },
+      {
+        "item_id": "met_47401",
+        "title": "Meiping vase with floral scrolls",
+        "medium": "Porcelain with relief decors under a celadon glaze (Jingdezhen ware)",
+        "period": "Qing dynasty (1644–1911)",
+        "description": "",
+        "source_url": "https://www.metmuseum.org/art/collection/search/47401",
+        "image_path": "data/processed/images/met_47401.jpg"
+      },
+      {
+        "item_id": "met_47443",
+        "title": "Vase",
+        "medium": "Stoneware with celadon glaze (Longquan ware)",
+        "period": "Ming dynasty (1368–1644)",
+        "description": "",
+        "source_url": "https://www.metmuseum.org/art/collection/search/47443",
+        "image_path": "data/processed/images/met_47443.jpg"
+      },
+      {
+        "item_id": "met_48462",
+        "title": "Meiping vase with dragon",
+        "medium": "Stoneware with incised decoration under celadon glaze (Longquan ware)",
+        "period": "Ming dynasty (1368–1644)",
+        "description": "",
+        "source_url": "https://www.metmuseum.org/art/collection/search/48462",
+        "image_path": "data/processed/images/met_48462.jpg"
+      },
+      {
+        "item_id": "met_48800",
+        "title": "Bottle vase",
+        "medium": "Porcelain with crackled green glaze (Jingdezhen ware)",
+        "period": "Qing dynasty (1644–1911), Kangxi period (1662–1722)",
+        "description": "",
+        "source_url": "https://www.metmuseum.org/art/collection/search/48800",
+        "image_path": "data/processed/images/met_48800.jpg"
+      },
+      {
+        "item_id": "met_49856",
+        "title": "Bottle with Two Handles",
+        "medium": "Porcelain with celadon glaze",
+        "period": "Qing dynasty (1644–1911), Kangxi period (1662–1722)",
+        "description": "",
+        "source_url": "https://www.metmuseum.org/art/collection/search/49856",
+        "image_path": "data/processed/images/met_49856.jpg"
+      },
+      {
+        "item_id": "met_49920",
+        "title": "Vase with Peony Scrolls",
+        "medium": "Porcelain with molded decoration under celadon glaze (Longquan ware)",
+        "period": "Yuan dynasty (1271–1368)",
+        "description": "",
+        "source_url": "https://www.metmuseum.org/art/collection/search/49920",
+        "image_path": "data/processed/images/met_49920.jpg"
+      },
+      {
+        "item_id": "met_51050",
+        "title": "Bottle vase",
+        "medium": "Stoneware with celadon glaze (Longquan ware); gold lacquer repairs",
+        "period": "Southern Song dynasty (1127–1279)",
+        "description": "",
+        "source_url": "https://www.metmuseum.org/art/collection/search/51050",
+        "image_path": "data/processed/images/met_51050.jpg"
+      },
+      {
+        "item_id": "met_52611",
+        "title": "Vase",
+        "medium": "Stoneware with crackled celadon glaze (Guan ware)",
+        "period": "Southern Song dynasty (1127–1279)",
+        "description": "",
+        "source_url": "https://www.metmuseum.org/art/collection/search/52611",
+        "image_path": "data/processed/images/met_52611.jpg"
+      },
+      {
+        "item_id": "met_52936",
+        "title": "Vase",
+        "medium": "Porcelain",
+        "period": "Qing dynasty (1644–1911), Kangxi period (1662–1722)",
+        "description": "",
+        "source_url": "https://www.metmuseum.org/art/collection/search/52936",
+        "image_path": "data/processed/images/met_52936.jpg"
+      }
+    ]
+  },
+  {
+    "key": "dragon",
+    "query": "Chinese blue and white dragon dish",
+    "label": "青花龙纹盘",
+    "status": "ranked",
+    "references": 4,
+    "elapsed_s": 10.040031400014414,
+    "acquisition": {
+      "request_summary": {
+        "live": 20,
+        "cached": 12
+      },
+      "failures": []
+    },
+    "rankings": {
+      "production_text": [
+        "cma_140167",
+        "met_50021",
+        "met_42497",
+        "met_48439",
+        "cma_137337",
+        "met_49849",
+        "met_50039",
+        "met_50518",
+        "met_52759",
+        "met_49229"
+      ],
+      "single_best": [
+        "cma_160453",
+        "met_42536",
+        "met_52772",
+        "met_42501",
+        "met_48299",
+        "met_42494",
+        "met_48262",
+        "met_52769",
+        "met_39638",
+        "met_42495"
+      ],
+      "uniform_mean": [
+        "met_51030",
+        "met_48299",
+        "met_42536",
+        "met_48262",
+        "cma_111788",
+        "met_42197",
+        "met_52828",
+        "met_39638",
+        "met_42532",
+        "met_40798"
+      ],
+      "max": [
+        "met_49853",
+        "cma_160453",
+        "met_42536",
+        "met_52917",
+        "met_48299",
+        "met_52772",
+        "met_42501",
+        "met_42494",
+        "met_42532",
+        "met_51030"
+      ],
+      "diverse": [
+        "met_42536",
+        "met_48299",
+        "met_51030",
+        "met_42197",
+        "met_48262",
+        "met_42532",
+        "met_42501",
+        "met_39638",
+        "cma_111788",
+        "met_52828"
+      ],
+      "query_aligned": [
+        "met_42536",
+        "met_48299",
+        "met_48262",
+        "met_42501",
+        "met_39638",
+        "cma_132010",
+        "met_50953",
+        "met_51030",
+        "met_42532",
+        "met_50021"
+      ]
+    },
+    "review_pool": [
+      {
+        "item_id": "cma_111788",
+        "title": "Dish with Dragons, Pomegranates, and Peaches",
+        "medium": "Porcelain with incised and enamel decoration, susancai ware",
+        "period": "1662–1722",
+        "description": "Various techniques are applied to the decoration of susancai or \"plain three-color\" ware. The hidden dragons are incised, over which are painted decoration of fruit and flower sprays outlined with black pigment and colored with yellow, green, turquoise, and purplish brown enamels. The ground is filled with ivory enamel over unglazed clay.",
+        "source_url": "https://clevelandart.org/art/1930.313",
+        "image_path": "data/processed/images/cma_111788.jpg"
+      },
+      {
+        "item_id": "cma_137337",
+        "title": "Bowl with \"Land of Daoist Immortals\" Scene",
+        "medium": "porcelain with underglaze blue decoration",
+        "period": "1426–35",
+        "description": "",
+        "source_url": "https://clevelandart.org/art/1962.260",
+        "image_path": "data/processed/images/cma_137337.jpg"
+      },
+      {
+        "item_id": "cma_140167",
+        "title": "Brush Washer with Dragons",
+        "medium": "porcelain with underglaze blue decoration",
+        "period": "1426–35",
+        "description": "The attractive tonal range found in the painted decoration, resulting from the irregular size of cobalt bits in the pigment, and the pocked glaze surface identify this stunning brush washer as a classic Xuande period piece despite the absence of a reign mark.",
+        "source_url": "https://clevelandart.org/art/1964.166",
+        "image_path": "data/processed/images/cma_140167.jpg"
+      },
+      {
+        "item_id": "cma_160453",
+        "title": "Saucer",
+        "medium": "porcelain with blue and white decoration",
+        "period": "c. 1690",
+        "description": "",
+        "source_url": "https://clevelandart.org/art/1998.283",
+        "image_path": "data/processed/images/cma_160453.jpg"
+      },
+      {
+        "item_id": "met_39638",
+        "title": "Plate with fish",
+        "medium": "Porcelain painted with cobalt blue under transparent glaze (Jingdezhen ware)",
+        "period": "Yuan dynasty (1271–1368)",
+        "description": "",
+        "source_url": "https://www.metmuseum.org/art/collection/search/39638",
+        "image_path": "data/processed/images/met_39638.jpg"
+      },
+      {
+        "item_id": "met_42197",
+        "title": "Dish with flowers",
+        "medium": "Porcelain painted in overglaze polychrome enamels (Jingdezhen ware)",
+        "period": "Qing dynasty (1644–1911), Kangxi period (1662–1722)",
+        "description": "",
+        "source_url": "https://www.metmuseum.org/art/collection/search/42197",
+        "image_path": "data/processed/images/met_42197.jpg"
+      },
+      {
+        "item_id": "met_42497",
+        "title": "Dish with dragon amid waves",
+        "medium": "Porcelain painted with cobalt blue under transparent glaze (Jingdezhen ware)",
+        "period": "Ming dynasty (1368–1644), Xuande mark and period (1426–35)",
+        "description": "",
+        "source_url": "https://www.metmuseum.org/art/collection/search/42497",
+        "image_path": "data/processed/images/met_42497.jpg"
+      },
+      {
+        "item_id": "met_42501",
+        "title": "Plate with chrysanthemums and peonies",
+        "medium": "Porcelain painted in underglaze cobalt blue (Jingdezhen ware)",
+        "period": "Ming dynasty (1368–1644)",
+        "description": "",
+        "source_url": "https://www.metmuseum.org/art/collection/search/42501",
+        "image_path": "data/processed/images/met_42501.jpg"
+      },
+      {
+        "item_id": "met_42536",
+        "title": "Dish with floral scrolls",
+        "medium": "Porcelain painted in underglaze cobalt blue (Jingdezhen ware)",
+        "period": "Ming dynasty (1368–1644), Wanli mark and period (1573–1620)",
+        "description": "",
+        "source_url": "https://www.metmuseum.org/art/collection/search/42536",
+        "image_path": "data/processed/images/met_42536.jpg"
+      },
+      {
+        "item_id": "met_48262",
+        "title": "Plate with crab and fish",
+        "medium": "Porcelain painted in underglaze cobalt blue (Jingdezhen ware)",
+        "period": "Qing dynasty (1644–1911), Kangxi period (1662–1722)",
+        "description": "",
+        "source_url": "https://www.metmuseum.org/art/collection/search/48262",
+        "image_path": "data/processed/images/met_48262.jpg"
+      },
+      {
+        "item_id": "met_48299",
+        "title": "Dish with lions amid flowers",
+        "medium": "Porcelain painted in underglaze cobalt blue (Jingdezhen ware)",
+        "period": "Qing dynasty (1368–1644)",
+        "description": "",
+        "source_url": "https://www.metmuseum.org/art/collection/search/48299",
+        "image_path": "data/processed/images/met_48299.jpg"
+      },
+      {
+        "item_id": "met_48439",
+        "title": "Bowl with dragon, characters, and Eight Immortals",
+        "medium": "Porcelain painted in underglaze cobalt blue (Jingdezhen ware)",
+        "period": "Ming dynasty (1368–1644), Wanli mark and period (1573–1620)",
+        "description": "",
+        "source_url": "https://www.metmuseum.org/art/collection/search/48439",
+        "image_path": "data/processed/images/met_48439.jpg"
+      },
+      {
+        "item_id": "met_49853",
+        "title": "Plate with dragons",
+        "medium": "Porcelain with incised decoration under a bluish purple glaze (Jingdezhen ware)",
+        "period": "Qing dynasty (1644–1911), Kangxi mark and period (1662–1722)",
+        "description": "",
+        "source_url": "https://www.metmuseum.org/art/collection/search/49853",
+        "image_path": "data/processed/images/met_49853.jpg"
+      },
+      {
+        "item_id": "met_50021",
+        "title": "Dish with Dragons and Lotuses",
+        "medium": "Porcelain painted with cobalt blue under transparent glaze (Jingdezhen ware)",
+        "period": "Ming dynasty (1368–1644), Zhengde mark and period (1506–21)",
+        "description": "",
+        "source_url": "https://www.metmuseum.org/art/collection/search/50021",
+        "image_path": "data/processed/images/met_50021.jpg"
+      },
+      {
+        "item_id": "met_51030",
+        "title": "Plate with Camellia and Plum",
+        "medium": "Porcelain painted in overglaze polychrome enamels (Jingdezhen ware)",
+        "period": "Qing dynasty (1644–1911), Kangxi period (1662–1722)",
+        "description": "",
+        "source_url": "https://www.metmuseum.org/art/collection/search/51030",
+        "image_path": "data/processed/images/met_51030.jpg"
+      },
+      {
+        "item_id": "met_52772",
+        "title": "Bowl decorated with flowers and beast faces",
+        "medium": "Porcelain painted in underglaze cobalt blue (Jingdezhen Kraak ware)",
+        "period": "Ming dynasty (1368–1644)",
+        "description": "",
+        "source_url": "https://www.metmuseum.org/art/collection/search/52772",
+        "image_path": "data/processed/images/met_52772.jpg"
+      },
+      {
+        "item_id": "met_52917",
+        "title": "Plate with dragons",
+        "medium": "Porcelain with incised decoration under a bluish purple glaze (Jingdezhen ware)",
+        "period": "Qing dynasty (1644–1911), Kangxi mark and period (1662–1722)",
+        "description": "",
+        "source_url": "https://www.metmuseum.org/art/collection/search/52917",
+        "image_path": "data/processed/images/met_52917.jpg"
+      }
+    ]
+  }
+]

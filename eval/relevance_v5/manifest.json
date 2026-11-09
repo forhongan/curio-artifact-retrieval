@@ -1,0 +1,8 @@
+{
+  "version": "relevance-v5",
+  "dev": 60,
+  "test": 140,
+  "sampling": "Original 60 dev + 60 test; 80 deterministic material-stratified test additions; one new object/group.",
+  "scope": "AI image plus complete official record review; historical holdouts reused; no claim of fresh blind test.",
+  "items_sha256": "7afa947e5e5fb77bc2c5cf7bdf26c93462ed2307a233d071cbfbbae2dfe16428"
+}

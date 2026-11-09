@@ -1,0 +1,48 @@
+{
+  "status": "passed",
+  "text_batch_vs_single_cosine": 0.9999998807907104,
+  "dense_numerical_error_bound": 0.00045827871474809947,
+  "set_checks": [
+    {
+      "method": "dev_cutoff",
+      "matched": 980,
+      "matches_single_query_replay": true,
+      "offline_batch_decision_differences": [],
+      "max_score_difference_from_offline_batch": 5.231797695159912e-05,
+      "top_k_is_preview_only": true
+    },
+    {
+      "method": "dev_color",
+      "matched": 442,
+      "matches_single_query_replay": true,
+      "offline_batch_decision_differences": [
+        "met_53844"
+      ],
+      "max_score_difference_from_offline_batch": 0.0007341951131820679,
+      "top_k_is_preview_only": true
+    },
+    {
+      "method": "dev_calibrated",
+      "matched": 389,
+      "matches_single_query_replay": true,
+      "offline_batch_decision_differences": [],
+      "max_score_difference_from_offline_batch": 0.00023690684124028083,
+      "top_k_is_preview_only": true
+    }
+  ],
+  "reference": {
+    "audit_id": "757c0458d627441a9a970aed9464a161",
+    "reference_count": 8,
+    "gallery_count": 4692,
+    "status": "ranked",
+    "acquisition": {
+      "request_summary": {
+        "live": 0,
+        "cached": 17
+      },
+      "failures": []
+    }
+  },
+  "reference_images_served_and_verified": 8,
+  "catalogue_ranking": false
+}

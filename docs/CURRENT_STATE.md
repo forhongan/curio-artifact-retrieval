@@ -1,23 +1,41 @@
-# 2026-11-04 资源共享交付
+# 当前状态 · 2026-11-09 · showcase v6
 
-完整资源已发布到本仓库GitHub Release `curio-resources-v2-20261104`，对应源码提交 `22f3f2f`。25个附件（22个ZIP）约11.11 GiB，包含4,793张批准的图库原图及处理图、45参考图、三套固定revision底模、训练适配器、索引、来源记录、评测与日志；默认运行下载约2.81 GiB。见 [RESOURCES.md](RESOURCES.md) 和 [resources_manifest.json](resources_manifest.json)。`python scripts/download_resources.py` 恢复默认运行资源，`--all` 恢复全部。不要因Git目录未含大文件而再误判为资源未共享。
+本轮完成普通前端重设计、专业实测图表、11页HTML演示、60秒实际界面剪辑、六个外部参考图场景与五个研究交接包。没有调用子代理。
 
-资源打包未改变原正式v2字节或分区。空目录完整恢复28,976文件后逐项SHA256通过，SigLIP2/CLIP/DINO离线加载及图像向量一致性通过，恢复后的文本/参考图/扩展/上传API通过。362项测试及Ruff通过。后续新增研究应使用新产物目录和资源版本，不能把未进入本次快照的改动冒称为该Release内容。作废v1归档位于可选history组。
+## 交付入口
 
-# 开发连续性：2026-10-30 参考图改进阶段
+首页 `http://127.0.0.1:8000/`；专业模式 `/#research`；实验档案 `/#experiments`；演示 `/assets/presentation/index.html`。
 
-用户要求必须落实四项：真实类别扩展；专业文本找到外部参考图再做图图匹配；可信性；器型/纹理等专门视觉方法的实际比较。不要再把元数据重排或上传图片入口替代完整第二项。
+- [五个研究模块](HANDOFF.md)、[短讲稿与时间分配](PRESENTATION_GUIDE.md)：讲述390秒+视频60秒=7分30秒。
+- [冻结研究结论](RESEARCH_V5_RESULTS.md)、[评测协议](RELEVANCE_V5.md)、[组员审计](TEAMMATE_MODEL_AUDIT.md)、[技术稿](TECHNICAL_REPORT_DRAFT.md)。
+- [六个新参考图场景](REFERENCE_SCENARIOS_V6.md)、[本轮发布附件](SHOWCASE_RELEASE.md)。
 
-新增实现：`retrieve/image_search.py`、`retrieve/references.py`、`represent/image_encoder.py`、`represent/visual_parts.py`、`represent/patch_match.py`。FastAPI端点 `/api/search/reference`、`/api/search/image`、`/api/search/expanded`。前端三种输入和研究方法选择、实际参考图来源、扩展图库选择。默认 `/api/search` 不改为元数据排名。
+## 当前算法
 
-冻结4692保持原 SHA；扩展101/66家族已下载并建成4793索引。参考bank43与两类图库隔离，来源及审计见 `REFERENCE_SOURCES.md`，负结果及实验边界见 `REFERENCE_RETRIEVAL_RESULTS.md`。原模型训练、选择、v2指标不作废，也不外推至扩展库。
+文字和上传图片：`artifacts/siglip_adapted`的SigLIP2视觉LoRA；文字image_only，探针权重0，中英文有限查询展开。全库4,692图，候选评分使用像素衍生特征。
 
-本轮实际运行8意图×13方法全4692召回，244张不同图片、257条查询/图片对做AI像素盲判。所有真实排名/分数/grade/protocol/哈希在 `artifacts/reference_eval/`；不是全库真人gold。多参考/DINO在部分器型有效，传统遮罩仅888图有效、单通道表现差，不能称专门模型普遍提升。冻结DINO patch另以独立弱标签集评测，结果见 `PATCH_MATCH.md`。
+完整集合：中文推荐dev_cutoff，英文推荐dev_color；可切换dev_calibrated。全部接受对象保存在results并完整分页，preview单独截断。边界在60张dev选择，质量计分在140张test核心。
 
-DSH已实际咨询，`dsh_reference_review_response.txt`保存回复；须结合代码甄别其事实错误。它建议参考分组及patch，不是把任务改为只做评测/报告。用户未给外部LLM密钥，当前规则不伪称调用LLM。专业补充参考写 `data/references/supplemental.jsonl`，不改bank43实验。
+外部参考：qualified模式，实际文本API→来源与照片核验→去重和同物隔离→SigLIP2+DINO图像匹配。默认6参考、uniform_mean；该路径用原始SigLIP2与DINO图库，文字/上传使用领域LoRA图库。
 
-服务启动：`scripts/run.ps1`，当前本机8000，原有模型和DINO都已缓存。启动脚本离线；专门参考采集CLI联网。不应修改冻结选择文件来伪造新方法经过原dev选择。Python `.venv/Scripts/python.exe`；`pnpm --dir web build`可用（也可本地tsc/vite.cmd）。所有文件未跟踪，不能用空git diff判断“没有修改”。
+## 新补测
 
-本阶段后续研究：学习式可靠分割、独立器型/细纹饰数据、语义局部纹样识别、参考按属性分组及可靠性估计、如有实际API配置才接入LLM规划。它们不能冒记为已实现。课程报告、成员工作归属、真人核验属于用户指定的下一阶段。
+预列六个场景：葫芦瓶、梅瓶、抱月瓶、辽代皮囊壶、青瓷瓶、青花龙纹盘。实际查看参考/结果图与官方记录。梅瓶：中文生产0/5、英文原始4/5、6参考均值5/5；这是探索案例，完整结果留在docs/research/reference_v6。
 
-最终验收（2026-10-30）：pytest353 passed/7warnings，Ruff、TypeScript/Vite build通过。真实HTTP `scripts/verify_reference_service.py` 通过，报告 `artifacts/reference_eval/api_acceptance.json`；默认检索、参考选择、DINO与patch、严格不足返回空、qualified警告、扩展4793、上传及非法输入、图片路由均通过。8000服务本轮由 `scripts/run.ps1` 启动（PID53316，启动工具session51955）。运行时参考45=bank43+supplement2；默认probe weight0。浏览器已重新加载最新bundle并实际运行康熙梅瓶的DINO patch路径，3参考、召回100、6可用候选、2/3可用参考，返回12结果，来源和边界说明显示正确。
+修复Vase标题遗漏正文meiping/gourd专业器型；正文器型还须标题器物族支持。原文搜索优先，最多追加两种有限发现查询。新增防止画中器物误收的回归测试。
+
+## 验收
+
+完整后端511 passed（10 warnings），Ruff全src/tests/scripts通过，TypeScript/Vite构建通过。浏览器实际检查文字、完整集合分页、梅瓶6参考、上传、来源详情、专业中英文统计和11页演示。截图/日志：artifacts/frontend_v6/、artifacts/frontend_v6_pytest.log。
+
+图表数据：web/public/assets/research-v6.json；公开小型结果：docs/research/；大资源使用Release。模型和预处理未变时复用缓存，不逐次重编码图库。
+
+## 工作区
+
+先读本页与HANDOFF。历史文档在history/research_before_showcase_v6/；早期v5状态/评测在history/docs_before_relevance_v5/与history/evaluation_v5_initial/。本地组员仓库与权重research/teammate_review/不进入Git。
+
+生产启动scripts/run.ps1；环境CURIO_ENCODER=siglip、CURIO_INDEX=artifacts/siglip_adapted、CURIO_DATA=data/snapshots/collection_v2.jsonl、CURIO_PROBE_WEIGHT=0。
+
+## GitHub交付
+
+源码已推送codex/research-showcase-v6，草稿PR #1已附到当前聊天。Release `curio-showcase-v6-20261109`已发布，6个附件远端哈希通过。验收记录见[qa/SHOWCASE_V6.md](qa/SHOWCASE_V6.md)，发布收据见showcase_upload_receipt.json。

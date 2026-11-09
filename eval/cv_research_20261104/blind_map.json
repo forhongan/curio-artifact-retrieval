@@ -1,0 +1,1298 @@
+[
+  {
+    "alias": "D001",
+    "item_id": "met_48852",
+    "split": "dev",
+    "object_group": "met_48852",
+    "image_path": "data/processed/images/met_48852.jpg",
+    "image_sha256": "c5213af1ff379a4d2a5dbc789f59d43a512439ff0b7e0915c7403c9f41d1a389",
+    "source": "met"
+  },
+  {
+    "alias": "D002",
+    "item_id": "met_141619",
+    "split": "dev",
+    "object_group": "met_141619",
+    "image_path": "data/processed/images/met_141619.jpg",
+    "image_sha256": "01db3474fa51e24194f939ba1c4d9d59c7d5e6a7a28d3a5ba81a1d0da0900614",
+    "source": "met"
+  },
+  {
+    "alias": "D003",
+    "item_id": "met_48208",
+    "split": "dev",
+    "object_group": "met_48208",
+    "image_path": "data/processed/images/met_48208.jpg",
+    "image_sha256": "af2c5a8206224da64c9572997c6eef5d201b3bc2dcbb517052764bba969b1c97",
+    "source": "met"
+  },
+  {
+    "alias": "D004",
+    "item_id": "met_13824",
+    "split": "dev",
+    "object_group": "met_13824",
+    "image_path": "data/processed/images/met_13824.jpg",
+    "image_sha256": "cd8c3806f508edfe7f1ea314f0040b9ea0ab12c51091810cda7942f7f5c0c34f",
+    "source": "met"
+  },
+  {
+    "alias": "D005",
+    "item_id": "met_51148",
+    "split": "dev",
+    "object_group": "met_51148",
+    "image_path": "data/processed/images/met_51148.jpg",
+    "image_sha256": "9f4c7c85599066ac4717f095ff27aaef0754598ee1001dc7ca109e4d3f0997fe",
+    "source": "met"
+  },
+  {
+    "alias": "D006",
+    "item_id": "cma_125633",
+    "split": "dev",
+    "object_group": "cma_125633",
+    "image_path": "data/processed/images/cma_125633.jpg",
+    "image_sha256": "0164484a2a1850ff37cdb8a73ea97cccaa77c8cd777e5186fe0e2ed970cd805e",
+    "source": "cleveland"
+  },
+  {
+    "alias": "D007",
+    "item_id": "cma_154673",
+    "split": "dev",
+    "object_group": "cma_154673",
+    "image_path": "data/processed/images/cma_154673.jpg",
+    "image_sha256": "972676aa55bf64e9856e36a697b32a2c95cac8cc38c2572de1ea76c3d39a44b1",
+    "source": "cleveland"
+  },
+  {
+    "alias": "D008",
+    "item_id": "met_46554",
+    "split": "dev",
+    "object_group": "met_46554",
+    "image_path": "data/processed/images/met_46554.jpg",
+    "image_sha256": "3e6277ae134cccd640c77f0f3f43f739bd9c947debe904ce9529282efa918174",
+    "source": "met"
+  },
+  {
+    "alias": "D009",
+    "item_id": "met_40747",
+    "split": "dev",
+    "object_group": "met_40747",
+    "image_path": "data/processed/images/met_40747.jpg",
+    "image_sha256": "c3fda99d85e2c56e5fd3714a932c0d03926efa54323cb37f9235b0b72437efe0",
+    "source": "met"
+  },
+  {
+    "alias": "D010",
+    "item_id": "cma_101252",
+    "split": "dev",
+    "object_group": "cma_101252",
+    "image_path": "data/processed/images/cma_101252.jpg",
+    "image_sha256": "dbe365eb02710c55878a5aa50c0e201ae41645b3faf13717d8abc11b47fa550d",
+    "source": "cleveland"
+  },
+  {
+    "alias": "D011",
+    "item_id": "cma_130084",
+    "split": "dev",
+    "object_group": "cma_130084",
+    "image_path": "data/processed/images/cma_130084.jpg",
+    "image_sha256": "04df5df5842dea35e60384afeccfa32af4b4ff1cc4943f41bcfc53f7b106a226",
+    "source": "cleveland"
+  },
+  {
+    "alias": "D012",
+    "item_id": "cma_140270",
+    "split": "dev",
+    "object_group": "cma_140268",
+    "image_path": "data/processed/images/cma_140270.jpg",
+    "image_sha256": "026c896ce52804b5a883ee564418bd4704b299ea97ca2ab7e45758b16eb66476",
+    "source": "cleveland"
+  },
+  {
+    "alias": "D013",
+    "item_id": "met_53685",
+    "split": "dev",
+    "object_group": "met_53685",
+    "image_path": "data/processed/images/met_53685.jpg",
+    "image_sha256": "f0ceb079ec65e7a5817d34465110acd3d26b096d7820c8fdeb4e5b3d2fb02aa0",
+    "source": "met"
+  },
+  {
+    "alias": "D014",
+    "item_id": "cma_448070",
+    "split": "dev",
+    "object_group": "cma_380118",
+    "image_path": "data/processed/images/cma_448070.jpg",
+    "image_sha256": "8cc21ee3c1773d9b48bfc74e67c574abe23ed49da60acf59ab27e3ba53140bed",
+    "source": "cleveland"
+  },
+  {
+    "alias": "D015",
+    "item_id": "met_52037",
+    "split": "dev",
+    "object_group": "met_52037",
+    "image_path": "data/processed/images/met_52037.jpg",
+    "image_sha256": "f85dc9fb7b38e7d6d8a04667a01339a83ff0ab58a10ae5c6e2477a11e3993a26",
+    "source": "met"
+  },
+  {
+    "alias": "D016",
+    "item_id": "met_42705",
+    "split": "dev",
+    "object_group": "met_42705",
+    "image_path": "data/processed/images/met_42705.jpg",
+    "image_sha256": "93016ac06bb852c642172b833b924c6854b23f70f3641625e2660b2d7aee7759",
+    "source": "met"
+  },
+  {
+    "alias": "D017",
+    "item_id": "met_461338",
+    "split": "dev",
+    "object_group": "met_461338",
+    "image_path": "data/processed/images/met_461338.jpg",
+    "image_sha256": "7ab1d07992bed223eaa2b4332d1aa30ff3fb23e79f4412fbaa3b5504a826d02f",
+    "source": "met"
+  },
+  {
+    "alias": "D018",
+    "item_id": "cma_98201",
+    "split": "dev",
+    "object_group": "cma_98201",
+    "image_path": "data/processed/images/cma_98201.jpg",
+    "image_sha256": "815a2a80a16c8becce9830578a18bf06f559f7f2ecfd5c6586b7e6d3d2252deb",
+    "source": "cleveland"
+  },
+  {
+    "alias": "D019",
+    "item_id": "met_62926",
+    "split": "dev",
+    "object_group": "met_62926",
+    "image_path": "data/processed/images/met_62926.jpg",
+    "image_sha256": "e788c0857d502f59a760aaa36967802dab2e904fbdd0970dd62e26c62c873785",
+    "source": "met"
+  },
+  {
+    "alias": "D020",
+    "item_id": "met_49867",
+    "split": "dev",
+    "object_group": "met_49867",
+    "image_path": "data/processed/images/met_49867.jpg",
+    "image_sha256": "2738cf15359d09e9da9918cc5f33d52d4091a470d9405c7530f1012d97c87c9a",
+    "source": "met"
+  },
+  {
+    "alias": "D021",
+    "item_id": "met_52955",
+    "split": "dev",
+    "object_group": "met_52955",
+    "image_path": "data/processed/images/met_52955.jpg",
+    "image_sha256": "872731350c28fcf92ba8be99c70fb22e58ed738630b7e59cd2b0d75176275b2b",
+    "source": "met"
+  },
+  {
+    "alias": "D022",
+    "item_id": "cma_147064",
+    "split": "dev",
+    "object_group": "cma_147053",
+    "image_path": "data/processed/images/cma_147064.jpg",
+    "image_sha256": "73ddcf7c0215eaa0cfc918c2007b9b05131af776829bd65294276d04f868edaf",
+    "source": "cleveland"
+  },
+  {
+    "alias": "D023",
+    "item_id": "met_50976",
+    "split": "dev",
+    "object_group": "met_50976",
+    "image_path": "data/processed/images/met_50976.jpg",
+    "image_sha256": "a89d3b7377cbfb11b6571520ed732f966f79dd7e2371eec1de09995a2a50d9d3",
+    "source": "met"
+  },
+  {
+    "alias": "D024",
+    "item_id": "cma_95646",
+    "split": "dev",
+    "object_group": "cma_95646",
+    "image_path": "data/processed/images/cma_95646.jpg",
+    "image_sha256": "3af13989fb9fd02b57e668b1bae596d4aa55a8b6195dc0c6f9c129ba763d6842",
+    "source": "cleveland"
+  },
+  {
+    "alias": "D025",
+    "item_id": "met_51210",
+    "split": "dev",
+    "object_group": "met_51210",
+    "image_path": "data/processed/images/met_51210.jpg",
+    "image_sha256": "d08c404851cabdc5ce74249812e78353d2c9ebea0bd11c1fe5ee93e85a9c8d42",
+    "source": "met"
+  },
+  {
+    "alias": "D026",
+    "item_id": "met_46652",
+    "split": "dev",
+    "object_group": "met_46652",
+    "image_path": "data/processed/images/met_46652.jpg",
+    "image_sha256": "6e12ed4a383a961391a319330e665e9af2c0a5693e5c7c7c0682b313d3b69f6a",
+    "source": "met"
+  },
+  {
+    "alias": "D027",
+    "item_id": "cma_94675",
+    "split": "dev",
+    "object_group": "cma_94675",
+    "image_path": "data/processed/images/cma_94675.jpg",
+    "image_sha256": "b5ccd98287346644f0d16596d321a9482bbab9da6ca8cab6e5e849cbff250206",
+    "source": "cleveland"
+  },
+  {
+    "alias": "D028",
+    "item_id": "cma_125684",
+    "split": "dev",
+    "object_group": "cma_125684",
+    "image_path": "data/processed/images/cma_125684.jpg",
+    "image_sha256": "1549b0269942338cae3d3ea6cb9ab714c27591039bcab7fe8db8f2aadb02d109",
+    "source": "cleveland"
+  },
+  {
+    "alias": "D029",
+    "item_id": "cma_106090",
+    "split": "dev",
+    "object_group": "cma_106089",
+    "image_path": "data/processed/images/cma_106090.jpg",
+    "image_sha256": "0f9e95c15ff7ef20020ee1e20a24ae207e4c7111f746a846aecb21c5796cc219",
+    "source": "cleveland"
+  },
+  {
+    "alias": "D030",
+    "item_id": "met_46814",
+    "split": "dev",
+    "object_group": "met_46814",
+    "image_path": "data/processed/images/met_46814.jpg",
+    "image_sha256": "8996482688f68af437484613ffd8ab4a66d94712cf1d3ca57d75a6f2032772df",
+    "source": "met"
+  },
+  {
+    "alias": "D031",
+    "item_id": "cma_97950",
+    "split": "dev",
+    "object_group": "cma_97950",
+    "image_path": "data/processed/images/cma_97950.jpg",
+    "image_sha256": "811613198349d632c8844febe6cda0623ee6d32f23fb017f420da578420b0ecc",
+    "source": "cleveland"
+  },
+  {
+    "alias": "D032",
+    "item_id": "met_50815",
+    "split": "dev",
+    "object_group": "met_50815",
+    "image_path": "data/processed/images/met_50815.jpg",
+    "image_sha256": "2d77484bf61b99ea77665b6067c955d9caebbb8aba7bbf2bc7252d6fe3c6956d",
+    "source": "met"
+  },
+  {
+    "alias": "D033",
+    "item_id": "cma_122386",
+    "split": "dev",
+    "object_group": "cma_122385",
+    "image_path": "data/processed/images/cma_122386.jpg",
+    "image_sha256": "ec30a6495b88fec6df119259b77142ef48227eca18db7187df78f6cb0c0ffdcf",
+    "source": "cleveland"
+  },
+  {
+    "alias": "D034",
+    "item_id": "cma_146136",
+    "split": "dev",
+    "object_group": "cma_146136",
+    "image_path": "data/processed/images/cma_146136.jpg",
+    "image_sha256": "da4c5e53080945a74ba7d795b8f894c82957481b42c67df60220817ccbb75138",
+    "source": "cleveland"
+  },
+  {
+    "alias": "D035",
+    "item_id": "cma_151531",
+    "split": "dev",
+    "object_group": "cma_151531",
+    "image_path": "data/processed/images/cma_151531.jpg",
+    "image_sha256": "33769b3643b10f8ec5d38f59c12d04783648e6a4c17f34fde59cf574b8abc3b4",
+    "source": "cleveland"
+  },
+  {
+    "alias": "D036",
+    "item_id": "cma_101765",
+    "split": "dev",
+    "object_group": "cma_101765",
+    "image_path": "data/processed/images/cma_101765.jpg",
+    "image_sha256": "ad57ed37ccf8793772ddf151199281d38115f63263c017dd88050c6389d736b4",
+    "source": "cleveland"
+  },
+  {
+    "alias": "D037",
+    "item_id": "met_47660",
+    "split": "dev",
+    "object_group": "met_47660",
+    "image_path": "data/processed/images/met_47660.jpg",
+    "image_sha256": "1e05bad77aaa4574f454420d8f3c53249848b59daf0adb86d929401362892d99",
+    "source": "met"
+  },
+  {
+    "alias": "D038",
+    "item_id": "met_77154",
+    "split": "dev",
+    "object_group": "met_77154",
+    "image_path": "data/processed/images/met_77154.jpg",
+    "image_sha256": "4efa739791ee8baf6d2f88fa99ca39401e7648993b4f9b50bc821f07090d4d82",
+    "source": "met"
+  },
+  {
+    "alias": "D039",
+    "item_id": "met_52684",
+    "split": "dev",
+    "object_group": "met_52684",
+    "image_path": "data/processed/images/met_52684.jpg",
+    "image_sha256": "f819c202e612038fcfa35734635e81ad0c0dd323a2ee5438dc7fdee4e2585136",
+    "source": "met"
+  },
+  {
+    "alias": "D040",
+    "item_id": "cma_132307",
+    "split": "dev",
+    "object_group": "cma_132307",
+    "image_path": "data/processed/images/cma_132307.jpg",
+    "image_sha256": "fbebe599cd3683dcfadb4d59740cfd7af836766d6929e13ee346d559389d583b",
+    "source": "cleveland"
+  },
+  {
+    "alias": "D041",
+    "item_id": "met_42519",
+    "split": "dev",
+    "object_group": "met_42519",
+    "image_path": "data/processed/images/met_42519.jpg",
+    "image_sha256": "fe9aeb0f3825ac8b869a6d3e1f8de20d46f9396853ae2aeabc82f7292b901e67",
+    "source": "met"
+  },
+  {
+    "alias": "D042",
+    "item_id": "cma_147576",
+    "split": "dev",
+    "object_group": "cma_147576",
+    "image_path": "data/processed/images/cma_147576.jpg",
+    "image_sha256": "08f2de98c6b9c6424929ee43ebb9581516ebbb32d10b21aa8f35ec280c404ee3",
+    "source": "cleveland"
+  },
+  {
+    "alias": "D043",
+    "item_id": "cma_134999",
+    "split": "dev",
+    "object_group": "cma_134999",
+    "image_path": "data/processed/images/cma_134999.jpg",
+    "image_sha256": "f0e50399eeb898f1b9d994825945fa6559ff74fcc58fb6ac47be3e43271aaeb3",
+    "source": "cleveland"
+  },
+  {
+    "alias": "D044",
+    "item_id": "cma_134792",
+    "split": "dev",
+    "object_group": "cma_134791",
+    "image_path": "data/processed/images/cma_134792.jpg",
+    "image_sha256": "5ebe4287e1d6aaaa52bda695afa43a6aaf6d6fc387f0e9e70b241fbcaa03ca02",
+    "source": "cleveland"
+  },
+  {
+    "alias": "D045",
+    "item_id": "cma_103828",
+    "split": "dev",
+    "object_group": "cma_103828",
+    "image_path": "data/processed/images/cma_103828.jpg",
+    "image_sha256": "d6f53cb16dfbf8e4822105ef6f2340f668654651030fdf867c6873a6082b382d",
+    "source": "cleveland"
+  },
+  {
+    "alias": "D046",
+    "item_id": "cma_144298",
+    "split": "dev",
+    "object_group": "cma_144295",
+    "image_path": "data/processed/images/cma_144298.jpg",
+    "image_sha256": "ea521556b4e17cb75f7fc589804a76d59e2b0c13f05e45d68539e2c53095c908",
+    "source": "cleveland"
+  },
+  {
+    "alias": "D047",
+    "item_id": "met_54381",
+    "split": "dev",
+    "object_group": "met_54381",
+    "image_path": "data/processed/images/met_54381.jpg",
+    "image_sha256": "0cc99f5e8abbf8eae48e71667a2f0cd01507333a5d1763bfc7150d9fe0fe09f7",
+    "source": "met"
+  },
+  {
+    "alias": "D048",
+    "item_id": "cma_142503",
+    "split": "dev",
+    "object_group": "cma_142503",
+    "image_path": "data/processed/images/cma_142503.jpg",
+    "image_sha256": "0c4778562671d7352cc99b80cdfc28e5513d3cf836b2b3c702fad798af155076",
+    "source": "cleveland"
+  },
+  {
+    "alias": "V001",
+    "item_id": "met_40518",
+    "split": "test",
+    "object_group": "met_40518",
+    "image_path": "data/processed/images/met_40518.jpg",
+    "image_sha256": "5b87a9eb68c30c4440a1257901d2eee49333462261622f1e1e6db36e85b75d0d",
+    "source": "met"
+  },
+  {
+    "alias": "V002",
+    "item_id": "met_461264",
+    "split": "test",
+    "object_group": "met_461264",
+    "image_path": "data/processed/images/met_461264.jpg",
+    "image_sha256": "bd962bef7bc3b031f0187710e63b0fbc837ae6b888884a3b15ef32766cc272fc",
+    "source": "met"
+  },
+  {
+    "alias": "V003",
+    "item_id": "cma_104006",
+    "split": "test",
+    "object_group": "cma_104004",
+    "image_path": "data/processed/images/cma_104006.jpg",
+    "image_sha256": "ebf2c487b709ec557521648f196a6f810ffc375eefc14821674cb34953abd770",
+    "source": "cleveland"
+  },
+  {
+    "alias": "V004",
+    "item_id": "cma_130636",
+    "split": "test",
+    "object_group": "cma_130636",
+    "image_path": "data/processed/images/cma_130636.jpg",
+    "image_sha256": "b01153e580ad14b3f7fd2ff1c56c72ce077d4bd30741172f941cbf7f03fd0277",
+    "source": "cleveland"
+  },
+  {
+    "alias": "V005",
+    "item_id": "met_48438",
+    "split": "test",
+    "object_group": "met_48438",
+    "image_path": "data/processed/images/met_48438.jpg",
+    "image_sha256": "c0f751607cbdc8fc00f96609a52a70a6ec357ef0108bcf80dfe6e3c4fc52b545",
+    "source": "met"
+  },
+  {
+    "alias": "V006",
+    "item_id": "met_48508",
+    "split": "test",
+    "object_group": "met_48508",
+    "image_path": "data/processed/images/met_48508.jpg",
+    "image_sha256": "bc392456320ecd2c11f5acfcd9926def4e7796b1218e2b02f57e332bba01cdba",
+    "source": "met"
+  },
+  {
+    "alias": "V007",
+    "item_id": "cma_135014",
+    "split": "test",
+    "object_group": "cma_135014",
+    "image_path": "data/processed/images/cma_135014.jpg",
+    "image_sha256": "15bd563356c29a50ee8df967fb2087640bd1304ae483a48c6f0bf49e142c29a8",
+    "source": "cleveland"
+  },
+  {
+    "alias": "V008",
+    "item_id": "met_40798",
+    "split": "test",
+    "object_group": "met_40798",
+    "image_path": "data/processed/images/met_40798.jpg",
+    "image_sha256": "96e5ecbf91d31f849e50eaba4bf0acdb2a60fc3f6e998270582b9f655d156e90",
+    "source": "met"
+  },
+  {
+    "alias": "V009",
+    "item_id": "cma_155644",
+    "split": "test",
+    "object_group": "cma_155644",
+    "image_path": "data/processed/images/cma_155644.jpg",
+    "image_sha256": "5badb11a5cf6d8365585231faf2e9be090077d1bae53f2be49b3df0b2b085dcb",
+    "source": "cleveland"
+  },
+  {
+    "alias": "V010",
+    "item_id": "met_50565",
+    "split": "test",
+    "object_group": "met_50565",
+    "image_path": "data/processed/images/met_50565.jpg",
+    "image_sha256": "b29324cc3b0a0bb5114e9c6025b620800f243a487aa814adb53e3cf552834ed4",
+    "source": "met"
+  },
+  {
+    "alias": "V011",
+    "item_id": "met_460717",
+    "split": "test",
+    "object_group": "met_460717",
+    "image_path": "data/processed/images/met_460717.jpg",
+    "image_sha256": "1047972f406b9c5668a6e01706d6cd5600e403ebac1695435b5246f4df778094",
+    "source": "met"
+  },
+  {
+    "alias": "V012",
+    "item_id": "cma_101807",
+    "split": "test",
+    "object_group": "cma_101805",
+    "image_path": "data/processed/images/cma_101807.jpg",
+    "image_sha256": "700c22eff660e3b1e8a08ade3aa522d78b868fbc3c2f58021dfe23e32fb5a697",
+    "source": "cleveland"
+  },
+  {
+    "alias": "V013",
+    "item_id": "met_48058",
+    "split": "test",
+    "object_group": "met_48058",
+    "image_path": "data/processed/images/met_48058.jpg",
+    "image_sha256": "2d815180e3d0f1e09c49da962ee411ffd5df8b3864cfd201fd43825f255a2495",
+    "source": "met"
+  },
+  {
+    "alias": "V014",
+    "item_id": "met_51072",
+    "split": "test",
+    "object_group": "met_51072",
+    "image_path": "data/processed/images/met_51072.jpg",
+    "image_sha256": "837befdf9f3f00bde544fbee6f9ad667946e0ad6cbc1c2c84b19911d97236580",
+    "source": "met"
+  },
+  {
+    "alias": "V015",
+    "item_id": "cma_101784",
+    "split": "test",
+    "object_group": "cma_101784",
+    "image_path": "data/processed/images/cma_101784.jpg",
+    "image_sha256": "dacbe141204433e380d09cb60d6282af5eb0c2222cf7189fbb2487ee0cf649d0",
+    "source": "cleveland"
+  },
+  {
+    "alias": "V016",
+    "item_id": "cma_95069",
+    "split": "test",
+    "object_group": "cma_95069",
+    "image_path": "data/processed/images/cma_95069.jpg",
+    "image_sha256": "b945e4edbaa4f76c8805e1400d3acb4072ca978024f1f0e73a20d9bf5f62c739",
+    "source": "cleveland"
+  },
+  {
+    "alias": "V017",
+    "item_id": "cma_126727",
+    "split": "test",
+    "object_group": "cma_126727",
+    "image_path": "data/processed/images/cma_126727.jpg",
+    "image_sha256": "028f9733267dcd20e618d054bcba2f818e0d28d17c8833f2bef7dbe0381c183a",
+    "source": "cleveland"
+  },
+  {
+    "alias": "V018",
+    "item_id": "met_48211",
+    "split": "test",
+    "object_group": "met_48211",
+    "image_path": "data/processed/images/met_48211.jpg",
+    "image_sha256": "b8df03e9dc11f31c2f19db4f414d793f94d947cd9ae481a7cf40857744488957",
+    "source": "met"
+  },
+  {
+    "alias": "V019",
+    "item_id": "cma_125731",
+    "split": "test",
+    "object_group": "cma_125731",
+    "image_path": "data/processed/images/cma_125731.jpg",
+    "image_sha256": "6403b92ddf23de760d0415ea2e83932c41ed96aa3f8d5ab2893c8f78437ed421",
+    "source": "cleveland"
+  },
+  {
+    "alias": "V020",
+    "item_id": "cma_160453",
+    "split": "test",
+    "object_group": "cma_160453",
+    "image_path": "data/processed/images/cma_160453.jpg",
+    "image_sha256": "774e3062e5b6e425272b39c6684ddec763eb8ec00dd889952c11e50067d73f2d",
+    "source": "cleveland"
+  },
+  {
+    "alias": "V021",
+    "item_id": "met_42363",
+    "split": "test",
+    "object_group": "met_42363",
+    "image_path": "data/processed/images/met_42363.jpg",
+    "image_sha256": "25af3d9c212c7603f2063123b933a2bd1f147dc5b80afd69c8f01e1066f573f8",
+    "source": "met"
+  },
+  {
+    "alias": "V022",
+    "item_id": "cma_154707",
+    "split": "test",
+    "object_group": "cma_154707",
+    "image_path": "data/processed/images/cma_154707.jpg",
+    "image_sha256": "efc5c0e891ff49b74653bf8207f3bfee41784346c11c0099b7fb71231ef31a18",
+    "source": "cleveland"
+  },
+  {
+    "alias": "V023",
+    "item_id": "met_52714",
+    "split": "test",
+    "object_group": "met_52714",
+    "image_path": "data/processed/images/met_52714.jpg",
+    "image_sha256": "f4df79e336f95e0da39af75ac35389579a01ad0ce49d2ae7f67b4281436be5ca",
+    "source": "met"
+  },
+  {
+    "alias": "V024",
+    "item_id": "met_51163",
+    "split": "test",
+    "object_group": "met_51163",
+    "image_path": "data/processed/images/met_51163.jpg",
+    "image_sha256": "a900fea983c54bed12f11531d31290b4058fa13f8080f99b3282ace5edceb12b",
+    "source": "met"
+  },
+  {
+    "alias": "V025",
+    "item_id": "cma_101746",
+    "split": "test",
+    "object_group": "cma_101746",
+    "image_path": "data/processed/images/cma_101746.jpg",
+    "image_sha256": "dbd431103b8473351f5e587685f083c8bdd1499ebdeb0e1aa440ac905d16f1bf",
+    "source": "cleveland"
+  },
+  {
+    "alias": "V026",
+    "item_id": "met_50483",
+    "split": "test",
+    "object_group": "met_50483",
+    "image_path": "data/processed/images/met_50483.jpg",
+    "image_sha256": "7f3e055902030e9ba5699c619fa0624d94deba60aea9ea333d85118eecfe67d3",
+    "source": "met"
+  },
+  {
+    "alias": "V027",
+    "item_id": "met_48675",
+    "split": "test",
+    "object_group": "met_48675",
+    "image_path": "data/processed/images/met_48675.jpg",
+    "image_sha256": "1ae6456651beddb12ec7a0407e94eb1ab06b7d76c721db6084eae28fe90a015f",
+    "source": "met"
+  },
+  {
+    "alias": "V028",
+    "item_id": "met_49205",
+    "split": "test",
+    "object_group": "met_49205",
+    "image_path": "data/processed/images/met_49205.jpg",
+    "image_sha256": "5d1e13d55d40854f140f3abab1ba4ede59d9e9695fb2a3625ec9f28716216560",
+    "source": "met"
+  },
+  {
+    "alias": "V029",
+    "item_id": "cma_101773",
+    "split": "test",
+    "object_group": "cma_101771",
+    "image_path": "data/processed/images/cma_101773.jpg",
+    "image_sha256": "9ea0e47d52d4cd29567f275948d0ee5ffe033c91c286126d4f8e9aeb9c925d7b",
+    "source": "cleveland"
+  },
+  {
+    "alias": "V030",
+    "item_id": "cma_134229",
+    "split": "test",
+    "object_group": "cma_134229",
+    "image_path": "data/processed/images/cma_134229.jpg",
+    "image_sha256": "08b76a166be36e87b1495359597877248bfecbeb0004b0cdf23edc9af91924f5",
+    "source": "cleveland"
+  },
+  {
+    "alias": "V031",
+    "item_id": "cma_159176",
+    "split": "test",
+    "object_group": "cma_159176",
+    "image_path": "data/processed/images/cma_159176.jpg",
+    "image_sha256": "da78f5f6b9cfa87c9899baff6c67e65bd15696701ce3cb0e3c8f5a824ff85de8",
+    "source": "cleveland"
+  },
+  {
+    "alias": "V032",
+    "item_id": "met_48605",
+    "split": "test",
+    "object_group": "met_48605",
+    "image_path": "data/processed/images/met_48605.jpg",
+    "image_sha256": "916b5f0610f2fd6182fc17b1aae0f436a8a3816cc1153f8216c8a0b8d03d9113",
+    "source": "met"
+  },
+  {
+    "alias": "V033",
+    "item_id": "cma_160954",
+    "split": "test",
+    "object_group": "cma_160954",
+    "image_path": "data/processed/images/cma_160954.jpg",
+    "image_sha256": "26b94a94196a18dda99a93dc73eca77efe8e4a914b63461ac4b3763fdbe0c4c4",
+    "source": "cleveland"
+  },
+  {
+    "alias": "V034",
+    "item_id": "cma_111507",
+    "split": "test",
+    "object_group": "cma_111507",
+    "image_path": "data/processed/images/cma_111507.jpg",
+    "image_sha256": "2db9d586ff9a90ce5a27c891729f446717fb8eb04bff8fa3b4c97e9bcea69a2d",
+    "source": "cleveland"
+  },
+  {
+    "alias": "V035",
+    "item_id": "met_47957",
+    "split": "test",
+    "object_group": "met_47957",
+    "image_path": "data/processed/images/met_47957.jpg",
+    "image_sha256": "890d582556fcc3fffced7e13a53c4cdf1106d30afda633f57ea66710d677ff3a",
+    "source": "met"
+  },
+  {
+    "alias": "V036",
+    "item_id": "cma_170279",
+    "split": "test",
+    "object_group": "cma_170279",
+    "image_path": "data/processed/images/cma_170279.jpg",
+    "image_sha256": "93f5109fa13f194d34e36189c8482b97f5029ad0db50ab65a9fc8a535f436aa0",
+    "source": "cleveland"
+  },
+  {
+    "alias": "V037",
+    "item_id": "cma_120173",
+    "split": "test",
+    "object_group": "cma_120172",
+    "image_path": "data/processed/images/cma_120173.jpg",
+    "image_sha256": "24dfd24ce819a8496b2cf522a0ba598b7bf9dc206c0b52e185600cf037af4d8d",
+    "source": "cleveland"
+  },
+  {
+    "alias": "V038",
+    "item_id": "cma_125736",
+    "split": "test",
+    "object_group": "cma_125736",
+    "image_path": "data/processed/images/cma_125736.jpg",
+    "image_sha256": "ac6206e5ca819818e2d70b975646bb3c96145cc5fd2d86dc5ce360f59c594614",
+    "source": "cleveland"
+  },
+  {
+    "alias": "V039",
+    "item_id": "met_44361",
+    "split": "test",
+    "object_group": "met_44361",
+    "image_path": "data/processed/images/met_44361.jpg",
+    "image_sha256": "61d4c97d9c4068d2cab06127cd526e26e08c51fc314b6ebf273480288e6a0311",
+    "source": "met"
+  },
+  {
+    "alias": "V040",
+    "item_id": "cma_101714",
+    "split": "test",
+    "object_group": "cma_101713",
+    "image_path": "data/processed/images/cma_101714.jpg",
+    "image_sha256": "e205ed77ada920ec017d7133e754ebff5a1bc5bcb4ada2bad08331abd6ae7221",
+    "source": "cleveland"
+  },
+  {
+    "alias": "V041",
+    "item_id": "met_50773",
+    "split": "test",
+    "object_group": "met_50773",
+    "image_path": "data/processed/images/met_50773.jpg",
+    "image_sha256": "c3c0275a0e8f6db5302745487c520af7d46448449cc86ab4ca763c49c21260a0",
+    "source": "met"
+  },
+  {
+    "alias": "V042",
+    "item_id": "met_42388",
+    "split": "test",
+    "object_group": "met_42388",
+    "image_path": "data/processed/images/met_42388.jpg",
+    "image_sha256": "3a52a52228706cd7b31d504a23bb3f0de0e5aa13bcbe8884f79ca91129f8ab27",
+    "source": "met"
+  },
+  {
+    "alias": "V043",
+    "item_id": "cma_98891",
+    "split": "test",
+    "object_group": "cma_368608",
+    "image_path": "data/processed/images/cma_98891.jpg",
+    "image_sha256": "a9f4de9cd48b89210e388ecde9a29c7bd0796a921947fa28b8ea0e8a92f90256",
+    "source": "cleveland"
+  },
+  {
+    "alias": "V044",
+    "item_id": "cma_138614",
+    "split": "test",
+    "object_group": "cma_138614",
+    "image_path": "data/processed/images/cma_138614.jpg",
+    "image_sha256": "dea61923a29d54e4c49e45260523e7a247506244a596047d67820997fb7ebf70",
+    "source": "cleveland"
+  },
+  {
+    "alias": "V045",
+    "item_id": "met_44359",
+    "split": "test",
+    "object_group": "met_44359",
+    "image_path": "data/processed/images/met_44359.jpg",
+    "image_sha256": "a3e6d60d69955dcdee087c1581c8187896f27419f666d4b36b875b5cb6bc251a",
+    "source": "met"
+  },
+  {
+    "alias": "V046",
+    "item_id": "cma_159206",
+    "split": "test",
+    "object_group": "cma_159206",
+    "image_path": "data/processed/images/cma_159206.jpg",
+    "image_sha256": "3564bee8cadea0d832bd02b21003bf210599a1ad49694982367116b9ff0dd2dc",
+    "source": "cleveland"
+  },
+  {
+    "alias": "V047",
+    "item_id": "met_42320",
+    "split": "test",
+    "object_group": "met_42320",
+    "image_path": "data/processed/images/met_42320.jpg",
+    "image_sha256": "cd3c7d9db5bdb96a0ff9c01958b1a20835752b4459389d526f8c6f9279fc0d18",
+    "source": "met"
+  },
+  {
+    "alias": "V048",
+    "item_id": "met_47550",
+    "split": "test",
+    "object_group": "met_47550",
+    "image_path": "data/processed/images/met_47550.jpg",
+    "image_sha256": "2f39fcee6f84121578b67edc5f08734abcf30d2480eb098eb6d0a2d41a181776",
+    "source": "met"
+  },
+  {
+    "alias": "V049",
+    "item_id": "met_47531",
+    "split": "test",
+    "object_group": "met_47531",
+    "image_path": "data/processed/images/met_47531.jpg",
+    "image_sha256": "6387a54a11fa75fd8a6e334f2595d845d8b516f9a309b1892e83664396410aa7",
+    "source": "met"
+  },
+  {
+    "alias": "V050",
+    "item_id": "met_141708",
+    "split": "test",
+    "object_group": "met_141708",
+    "image_path": "data/processed/images/met_141708.jpg",
+    "image_sha256": "830a3a89572babb672893970736b26d613b6b7c345e738c68838b1d6389e47da",
+    "source": "met"
+  },
+  {
+    "alias": "V051",
+    "item_id": "cma_134223",
+    "split": "test",
+    "object_group": "cma_134223",
+    "image_path": "data/processed/images/cma_134223.jpg",
+    "image_sha256": "6bbcb3933389f171bab4499875dc05908c9b23ecd5bae3f3af06789338d0103e",
+    "source": "cleveland"
+  },
+  {
+    "alias": "V052",
+    "item_id": "cma_125743",
+    "split": "test",
+    "object_group": "cma_125743",
+    "image_path": "data/processed/images/cma_125743.jpg",
+    "image_sha256": "48e514d4073dd123822da8a833bb831e98dd496fe4a0b92e0558efb04369ca0e",
+    "source": "cleveland"
+  },
+  {
+    "alias": "V053",
+    "item_id": "cma_154710",
+    "split": "test",
+    "object_group": "cma_154710",
+    "image_path": "data/processed/images/cma_154710.jpg",
+    "image_sha256": "c11b0c631c8ac625a6f8178da4cfe1906b0a0737f0411963df3126ca028770b5",
+    "source": "cleveland"
+  },
+  {
+    "alias": "V054",
+    "item_id": "cma_136587",
+    "split": "test",
+    "object_group": "cma_136587",
+    "image_path": "data/processed/images/cma_136587.jpg",
+    "image_sha256": "e8771a4bf45a1eee1a0ee8aa043290758566737eb65159af94b0ba1a09fee874",
+    "source": "cleveland"
+  },
+  {
+    "alias": "V055",
+    "item_id": "met_41469",
+    "split": "test",
+    "object_group": "met_41469",
+    "image_path": "data/processed/images/met_41469.jpg",
+    "image_sha256": "56bd1c217dd993b4275e886c0a7d0b43e5229c2d42d9467eb654a057799405fe",
+    "source": "met"
+  },
+  {
+    "alias": "V056",
+    "item_id": "met_42518",
+    "split": "test",
+    "object_group": "met_42518",
+    "image_path": "data/processed/images/met_42518.jpg",
+    "image_sha256": "7978015660bb2f06ebe8622f502ba7853df8a50e71a9207904f4d4b4a57e8f01",
+    "source": "met"
+  },
+  {
+    "alias": "V057",
+    "item_id": "met_42501",
+    "split": "test",
+    "object_group": "met_42501",
+    "image_path": "data/processed/images/met_42501.jpg",
+    "image_sha256": "74e0910691a89af7172bcf3bcb1cf0fad3691e031eee86782529bacbab23ae50",
+    "source": "met"
+  },
+  {
+    "alias": "V058",
+    "item_id": "met_52761",
+    "split": "test",
+    "object_group": "met_52761",
+    "image_path": "data/processed/images/met_52761.jpg",
+    "image_sha256": "9a52f23a93b092c7fad7e5dde66098dbec3d8e393ca58e6857447fd306308bdf",
+    "source": "met"
+  },
+  {
+    "alias": "V059",
+    "item_id": "met_48569",
+    "split": "test",
+    "object_group": "met_48569",
+    "image_path": "data/processed/images/met_48569.jpg",
+    "image_sha256": "9afa81b949f050588e10313b9d93aca0cbb5ffe17dad66443d8f4ff9136abf97",
+    "source": "met"
+  },
+  {
+    "alias": "V060",
+    "item_id": "met_109742",
+    "split": "test",
+    "object_group": "met_109742",
+    "image_path": "data/processed/images/met_109742.jpg",
+    "image_sha256": "6baa70fe9f361afbb9ff01e7e41e08ab455f4dd1ca29389687bfbadff46a03c9",
+    "source": "met"
+  },
+  {
+    "alias": "V061",
+    "item_id": "met_49139",
+    "split": "test",
+    "object_group": "met_49139",
+    "image_path": "data/processed/images/met_49139.jpg",
+    "image_sha256": "d81f68ae76a05dc4271c2c7f9dfcfb47befa0c197a597db80b747701b9cfed58",
+    "source": "met"
+  },
+  {
+    "alias": "V062",
+    "item_id": "cma_95459",
+    "split": "test",
+    "object_group": "cma_95459",
+    "image_path": "data/processed/images/cma_95459.jpg",
+    "image_sha256": "1e2d636557443360018f2390a8d87c0ee39d0b3d074872c19ff113a7f85bc506",
+    "source": "cleveland"
+  },
+  {
+    "alias": "V063",
+    "item_id": "cma_125807",
+    "split": "test",
+    "object_group": "cma_125798",
+    "image_path": "data/processed/images/cma_125807.jpg",
+    "image_sha256": "fd79459a3a11999aabbc65c75ef25ac1fe008f563f290b04fc49a70d52f80ca0",
+    "source": "cleveland"
+  },
+  {
+    "alias": "V064",
+    "item_id": "met_48451",
+    "split": "test",
+    "object_group": "met_48451",
+    "image_path": "data/processed/images/met_48451.jpg",
+    "image_sha256": "fb1710907f9219464efc35b4d3a864a4c39034b641c93754193a31b3e2860c58",
+    "source": "met"
+  },
+  {
+    "alias": "V065",
+    "item_id": "met_46563",
+    "split": "test",
+    "object_group": "met_46563",
+    "image_path": "data/processed/images/met_46563.jpg",
+    "image_sha256": "72af12d76e49f0b8ab34aad3a5daeda39189340c88db0209fdb92a755197112e",
+    "source": "met"
+  },
+  {
+    "alias": "V066",
+    "item_id": "met_48666",
+    "split": "test",
+    "object_group": "met_48666",
+    "image_path": "data/processed/images/met_48666.jpg",
+    "image_sha256": "5d806a67f5c2e26a947938aaf8c1cc0041ce69397fd819f1686a5aeaff4db1f9",
+    "source": "met"
+  },
+  {
+    "alias": "V067",
+    "item_id": "met_50027",
+    "split": "test",
+    "object_group": "met_50027",
+    "image_path": "data/processed/images/met_50027.jpg",
+    "image_sha256": "7ff571542764970454d10c8da274bebcbcedb804465ed368c751b6d0f1f0e113",
+    "source": "met"
+  },
+  {
+    "alias": "V068",
+    "item_id": "met_42250",
+    "split": "test",
+    "object_group": "met_42250",
+    "image_path": "data/processed/images/met_42250.jpg",
+    "image_sha256": "bb2acf3213558639278ce1ef4838cf649e5a50d8f0655a7c95945f829c41f84d",
+    "source": "met"
+  },
+  {
+    "alias": "V069",
+    "item_id": "cma_125730",
+    "split": "test",
+    "object_group": "cma_125730",
+    "image_path": "data/processed/images/cma_125730.jpg",
+    "image_sha256": "e14c43108f795b29647a0312035f2ac73ac37b54417bcc0f66ca32b78ae168db",
+    "source": "cleveland"
+  },
+  {
+    "alias": "V070",
+    "item_id": "met_53686",
+    "split": "test",
+    "object_group": "met_53686",
+    "image_path": "data/processed/images/met_53686.jpg",
+    "image_sha256": "d9e2d4cfff56d827cdce3cca28d6117813c44e336d7416ae01e7083d21dc35c8",
+    "source": "met"
+  },
+  {
+    "alias": "V071",
+    "item_id": "met_46551",
+    "split": "test",
+    "object_group": "met_46551",
+    "image_path": "data/processed/images/met_46551.jpg",
+    "image_sha256": "44be8b41e194c0c2e2f6d10d0e957f9c8ea32c79d53645f472326544db16374d",
+    "source": "met"
+  },
+  {
+    "alias": "V072",
+    "item_id": "met_47723",
+    "split": "test",
+    "object_group": "met_47723",
+    "image_path": "data/processed/images/met_47723.jpg",
+    "image_sha256": "0f21a416d0243fe24516d887641d9c6be54e91400f3a25d1770647f031b57e3b",
+    "source": "met"
+  },
+  {
+    "alias": "V073",
+    "item_id": "cma_135013",
+    "split": "test",
+    "object_group": "cma_135013",
+    "image_path": "data/processed/images/cma_135013.jpg",
+    "image_sha256": "7238fd1f389164069c461b6e72dfad452309258467122dfb0b3214b595c4ff44",
+    "source": "cleveland"
+  },
+  {
+    "alias": "V074",
+    "item_id": "cma_94646",
+    "split": "test",
+    "object_group": "cma_94646",
+    "image_path": "data/processed/images/cma_94646.jpg",
+    "image_sha256": "b4bfc507ef9ca4df8c18d09a621c1ac9a5c95700ce0179460aeb00cfe9be7531",
+    "source": "cleveland"
+  },
+  {
+    "alias": "V075",
+    "item_id": "cma_143251",
+    "split": "test",
+    "object_group": "cma_143249",
+    "image_path": "data/processed/images/cma_143251.jpg",
+    "image_sha256": "d1a796ab6ba2bc2c291ded19ea3e60065bded2d7156ade922761d380f1f3f59e",
+    "source": "cleveland"
+  },
+  {
+    "alias": "V076",
+    "item_id": "met_48787",
+    "split": "test",
+    "object_group": "met_48787",
+    "image_path": "data/processed/images/met_48787.jpg",
+    "image_sha256": "6e57b7a043cd8b17f6a62efd7fabc63aa9d13650dd2309eb458d1dcbe274c0ea",
+    "source": "met"
+  },
+  {
+    "alias": "V077",
+    "item_id": "met_48103",
+    "split": "test",
+    "object_group": "met_48103",
+    "image_path": "data/processed/images/met_48103.jpg",
+    "image_sha256": "9afc1d84ae08b209633e5ea80f0d156c3caebda9db5b016d70dc5b474c2e84ea",
+    "source": "met"
+  },
+  {
+    "alias": "V078",
+    "item_id": "cma_121903",
+    "split": "test",
+    "object_group": "cma_121903",
+    "image_path": "data/processed/images/cma_121903.jpg",
+    "image_sha256": "826db98ff8bf9f4bb8d8fc012b454efc878042241eaac3c1bc7fbce38c8b1ff0",
+    "source": "cleveland"
+  },
+  {
+    "alias": "V079",
+    "item_id": "met_48855",
+    "split": "test",
+    "object_group": "met_48855",
+    "image_path": "data/processed/images/met_48855.jpg",
+    "image_sha256": "df3a5494b3cd001cb23b4cfd589fe53eb5d8952f276b530c1a4945741d5c1a9a",
+    "source": "met"
+  },
+  {
+    "alias": "V080",
+    "item_id": "cma_117454",
+    "split": "test",
+    "object_group": "cma_117454",
+    "image_path": "data/processed/images/cma_117454.jpg",
+    "image_sha256": "44f97d074d1f4547ba7f38156e30c7e0a07c3ca4669958e0cb76ce04ba1afba6",
+    "source": "cleveland"
+  },
+  {
+    "alias": "V081",
+    "item_id": "met_42355",
+    "split": "test",
+    "object_group": "met_42355",
+    "image_path": "data/processed/images/met_42355.jpg",
+    "image_sha256": "e9f53b27e956f3e567d39f99132be43e474dc7c6ea8f0dfd1361471c269b2635",
+    "source": "met"
+  },
+  {
+    "alias": "V082",
+    "item_id": "cma_125611",
+    "split": "test",
+    "object_group": "cma_125610",
+    "image_path": "data/processed/images/cma_125611.jpg",
+    "image_sha256": "ec16e8ca355b750bcd2c22c55882f499b06715449b6b9b2d10921eb6e2bb8629",
+    "source": "cleveland"
+  },
+  {
+    "alias": "V083",
+    "item_id": "met_46623",
+    "split": "test",
+    "object_group": "met_46623",
+    "image_path": "data/processed/images/met_46623.jpg",
+    "image_sha256": "ec882fa8b337af2212f93becacb2ca4ca909d2c6cd058228875dad3d103f2f21",
+    "source": "met"
+  },
+  {
+    "alias": "V084",
+    "item_id": "cma_159753",
+    "split": "test",
+    "object_group": "cma_159753",
+    "image_path": "data/processed/images/cma_159753.jpg",
+    "image_sha256": "f86f92ae237345236591d27fe125e65972944f06a51a47cc787eb94cade15624",
+    "source": "cleveland"
+  },
+  {
+    "alias": "V085",
+    "item_id": "met_60754",
+    "split": "test",
+    "object_group": "met_60754",
+    "image_path": "data/processed/images/met_60754.jpg",
+    "image_sha256": "c914a8a69f6ec1f3f67e404afab1812736f04d471cb5592fa3eb6a95eec6018a",
+    "source": "met"
+  },
+  {
+    "alias": "V086",
+    "item_id": "cma_149028",
+    "split": "test",
+    "object_group": "cma_149028",
+    "image_path": "data/processed/images/cma_149028.jpg",
+    "image_sha256": "320668f251adec2605e1cc94fd20cced09e60050d9f1ef3dea460c4431bf1df7",
+    "source": "cleveland"
+  },
+  {
+    "alias": "V087",
+    "item_id": "cma_122382",
+    "split": "test",
+    "object_group": "cma_122382",
+    "image_path": "data/processed/images/cma_122382.jpg",
+    "image_sha256": "eb14cd1ccd6e26f662c0e306d9f6bec5f0f0edccfe6c4850da1e7ab57c473d18",
+    "source": "cleveland"
+  },
+  {
+    "alias": "V088",
+    "item_id": "cma_134758",
+    "split": "test",
+    "object_group": "cma_134758",
+    "image_path": "data/processed/images/cma_134758.jpg",
+    "image_sha256": "72d0186c20609008095d18aac32bb7b905c7d9ae552c01bd08158fe96e3777e6",
+    "source": "cleveland"
+  },
+  {
+    "alias": "V089",
+    "item_id": "cma_161925",
+    "split": "test",
+    "object_group": "cma_161917",
+    "image_path": "data/processed/images/cma_161925.jpg",
+    "image_sha256": "49ce3921ab17ce5eb62d339308bfac18a916e928b0d8f2704e8c9d3a69928d45",
+    "source": "cleveland"
+  },
+  {
+    "alias": "V090",
+    "item_id": "cma_125699",
+    "split": "test",
+    "object_group": "cma_125699",
+    "image_path": "data/processed/images/cma_125699.jpg",
+    "image_sha256": "5e445abf5d101b798ec1481e3043289762a5d495055e4d8994cb33f61b14e5c5",
+    "source": "cleveland"
+  },
+  {
+    "alias": "V091",
+    "item_id": "cma_140247",
+    "split": "test",
+    "object_group": "cma_140247",
+    "image_path": "data/processed/images/cma_140247.jpg",
+    "image_sha256": "87f750180419ed0a9dd9f72681a2d613f2df6f5f625e4509dde10d0036545714",
+    "source": "cleveland"
+  },
+  {
+    "alias": "V092",
+    "item_id": "cma_159179",
+    "split": "test",
+    "object_group": "cma_159179",
+    "image_path": "data/processed/images/cma_159179.jpg",
+    "image_sha256": "4fdd0dc6a5e792b2d3414a6fe8c274eed92927786bef5d3da35b515483359fa7",
+    "source": "cleveland"
+  },
+  {
+    "alias": "V093",
+    "item_id": "met_52937",
+    "split": "test",
+    "object_group": "met_52937",
+    "image_path": "data/processed/images/met_52937.jpg",
+    "image_sha256": "0fe2aaeb2b66a0acc4e1f08fb02e1744ab0987d2363a9e8e2caf649798fce2c4",
+    "source": "met"
+  },
+  {
+    "alias": "V094",
+    "item_id": "cma_101729",
+    "split": "test",
+    "object_group": "cma_101728",
+    "image_path": "data/processed/images/cma_101729.jpg",
+    "image_sha256": "c2e26bf30c3257e0bdfdb3f7cd4e48d558bc420f6081417f74e6921318fd649d",
+    "source": "cleveland"
+  },
+  {
+    "alias": "V095",
+    "item_id": "cma_95619",
+    "split": "test",
+    "object_group": "cma_95619",
+    "image_path": "data/processed/images/cma_95619.jpg",
+    "image_sha256": "45bfe99c1731782f5a21b8c0e9604f86590f3128642a1ee4027d94f0b063721c",
+    "source": "cleveland"
+  },
+  {
+    "alias": "V096",
+    "item_id": "cma_154743",
+    "split": "test",
+    "object_group": "cma_154743",
+    "image_path": "data/processed/images/cma_154743.jpg",
+    "image_sha256": "b29e35664273b3d55f6c005d9b4664fa1abfb35c4e9f40f38a435ba6542d5839",
+    "source": "cleveland"
+  }
+]

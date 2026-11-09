@@ -1,0 +1,44 @@
+{
+  "reviewer": "root_ai",
+  "method": "actual reference and target contact sheets plus official cached target/source fields; not independent blind expert annotation",
+  "cases": {
+    "gourd": "Text already returns five visually compatible double-gourd vessels. Diverse references favour decorated variants and introduce elongated single-bulb forms. Keep as a counterexample to automatic improvement.",
+    "meiping": "All six reference photographs show the rounded shoulder, short neck and tapered body of the meiping family. Chinese rewritten text returns five non-meiping silhouettes. English raw text returns four meiping and one long-neck garden-scene vase. Uniform reference mean returns five meiping-family silhouettes, including four explicitly named in source title/description and a compatible peacock-blue vase.",
+    "liao": "The three actual Liao references are correct leather-derived vessels. Multireference fusion drifts toward ewers/jars from other dynasties. Source dates disprove these historical matches. Chinese text also retrieves a relevant pair photograph. Keep full failure results.",
+    "celadon": "References include European gilt mounts, painted enamel and several vase shapes. Both text and reference results are green vessels. References bias towards trumpet-neck forms; no clear gain over text.",
+    "dragon": "Source-supported references do not reliably show a blue-white dragon on the photographed face. Reference results include floral and polychrome dishes. Text is the stronger route here.",
+    "moonflask": "No qualified reference photographs acquired. No image matching score is invented."
+  },
+  "showcase_selection": "meiping chosen after exploratory comparison, not a held-out aggregate estimate",
+  "meiping": {
+    "criterion": "visible meiping-family silhouette: short neck/small mouth, rounded broad shoulder, tapering body; source form checked when explicit",
+    "raw_english_text": {
+      "relevant": 4,
+      "total": 5
+    },
+    "production_chinese_rewritten": {
+      "relevant": 0,
+      "total": 5
+    },
+    "uniform_mean": {
+      "relevant": 5,
+      "total": 5
+    },
+    "compatible_visual_form": [
+      "cma_122410"
+    ],
+    "explicit_source_positive": [
+      "cma_140168",
+      "cma_284746",
+      "met_49836",
+      "met_42242"
+    ],
+    "chinese_non_meiping": [
+      "met_50235",
+      "met_46958",
+      "met_46557",
+      "met_50886",
+      "met_48625"
+    ]
+  }
+}

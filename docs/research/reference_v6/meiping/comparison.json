@@ -1,0 +1,308 @@
+{
+  "key": "meiping",
+  "query": "Chinese meiping vase",
+  "label": "梅瓶",
+  "status": "ranked",
+  "references": 6,
+  "elapsed_s": 4.755739200016251,
+  "acquisition": {
+    "request_summary": {
+      "live": 5,
+      "cached": 10
+    },
+    "failures": []
+  },
+  "rankings": {
+    "production_text": [
+      "met_46958",
+      "met_46548",
+      "met_50230",
+      "met_48340",
+      "met_48314",
+      "met_48550",
+      "met_46557",
+      "met_53767",
+      "met_52610",
+      "met_48466"
+    ],
+    "single_best": [
+      "cma_140168",
+      "cma_284746",
+      "met_47401",
+      "met_48462",
+      "met_42242",
+      "cma_311692",
+      "cma_122410",
+      "met_49836",
+      "met_42228",
+      "met_42234"
+    ],
+    "uniform_mean": [
+      "cma_140168",
+      "cma_122410",
+      "cma_284746",
+      "met_49836",
+      "met_42242",
+      "met_42234",
+      "met_48311",
+      "cma_311692",
+      "met_48462",
+      "met_42228"
+    ],
+    "max": [
+      "cma_284746",
+      "met_42486",
+      "cma_140168",
+      "cma_311692",
+      "met_51142",
+      "cma_122410",
+      "met_46962",
+      "met_42234",
+      "met_48336",
+      "met_47401"
+    ],
+    "diverse": [
+      "cma_122410",
+      "cma_140168",
+      "cma_284746",
+      "met_42234",
+      "cma_311692",
+      "met_42242",
+      "met_48462",
+      "met_49836",
+      "met_42228",
+      "met_52916"
+    ],
+    "query_aligned": [
+      "cma_140168",
+      "cma_122410",
+      "cma_284746",
+      "met_49836",
+      "met_42242",
+      "met_48462",
+      "met_42234",
+      "met_52916",
+      "met_42228",
+      "cma_311692"
+    ],
+    "production_rewritten": [
+      "met_46958",
+      "met_48309",
+      "met_48314",
+      "met_48340",
+      "met_46557",
+      "met_46550",
+      "met_53767",
+      "met_50230",
+      "met_48550",
+      "met_52922"
+    ],
+    "production_zh_rewritten": [
+      "met_50235",
+      "met_46958",
+      "met_46557",
+      "met_50886",
+      "met_48625",
+      "met_46928",
+      "met_47600",
+      "met_52027",
+      "met_48341",
+      "met_48333"
+    ]
+  },
+  "review_pool": [
+    {
+      "item_id": "cma_122410",
+      "title": "Vase with peacock blue glaze",
+      "medium": "porcelain",
+      "period": "1662–1722",
+      "description": "",
+      "source_url": "https://clevelandart.org/art/1942.687",
+      "image_path": "data/processed/images/cma_122410.jpg"
+    },
+    {
+      "item_id": "cma_140168",
+      "title": "Meiping  Vase with Cloud Collars and Peony Sprays",
+      "medium": "porcelain with incised decoration and white glaze",
+      "period": "1403–24",
+      "description": "This beautiful vase, called a meiping, is a testimony to the extremely high standards demanded for imperial white porcelain of the Yongle period. It is exquisitely potted and subtly decorated with \"hidden decoration\" (anhua) incised into the body. The clear glaze over the white body has a luster and purity; the white color radiates with a soft glow like melting snow, described by the Chinese connoisseurs as tianbai, or \"sweetwhite.\" Tianbai wares were produced for use in imperial offerings and have always been considered a great achievement of the Yongle period.",
+      "source_url": "https://clevelandart.org/art/1964.167",
+      "image_path": "data/processed/images/cma_140168.jpg"
+    },
+    {
+      "item_id": "cma_284746",
+      "title": "Meiping Vase with Carved Floral Sprays",
+      "medium": "Porcelain with pale bluish-white glaze, qingbai (\"blue-white\") ware",
+      "period": "960–1279",
+      "description": "This magnificent plum vase (<em>meiping</em>) derives its name from being used to hold a branch from a flowering plum tree. Vases of this shape with a round shoulder and narrow opening originally served as wine containers. Kilns in southern China that produced this ware with a transparent bluish glaze were among the first that applied underglaze blue-and-white decoration, which became popular during the Yuan (1271–1368) and Ming (1368–1644) dynasties. These elegantly carved floral sprays on a monochromatic ground reflect the refined taste of the Song dynasty emperors.",
+      "source_url": "https://clevelandart.org/art/2017.20",
+      "image_path": "data/processed/images/cma_284746.jpg"
+    },
+    {
+      "item_id": "cma_311692",
+      "title": "Meiping Vase with carved Dragon Motif",
+      "medium": "Porcelain with pale bluish-white (qingbai; 青白) glaze and carved decoration",
+      "period": "1300s",
+      "description": "A fierce coiling dragon chasing a pearl amid mist and clouds—a symbol of fertility and power—decorates this sturdy vase. Its shoulder is incised with a band of lotus flowers and the base features a border of lotus petals. <em>Meiping, </em>literally prunus vase, derives its name from being used to display a single floral spray, traditionally a branch of blossoming plum (or <em>prunus</em>), apricot, or cherry.",
+      "source_url": "https://clevelandart.org/art/2020.189",
+      "image_path": "data/processed/images/cma_311692.jpg"
+    },
+    {
+      "item_id": "met_42234",
+      "title": "Vase in Meiping Shape",
+      "medium": "Porcelain with coral-red glaze (Jingdezhen ware)",
+      "period": "Qing dynasty (1644–1911)",
+      "description": "",
+      "source_url": "https://www.metmuseum.org/art/collection/search/42234",
+      "image_path": "data/processed/images/met_42234.jpg"
+    },
+    {
+      "item_id": "met_42242",
+      "title": "Vase in Meiping Shape",
+      "medium": "Porcelain with incised decoration under yellow glaze (Jingdezhen ware)",
+      "period": "Qing dynasty (1644–1911), Kangxi period (1662–1722)",
+      "description": "",
+      "source_url": "https://www.metmuseum.org/art/collection/search/42242",
+      "image_path": "data/processed/images/met_42242.jpg"
+    },
+    {
+      "item_id": "met_42486",
+      "title": "Bottle with vegetal scrolls",
+      "medium": "Porcelain with incised and carved design under bluish glaze (Jingdezhen Qingbai ware)",
+      "period": "Southern Song (1127–1279)–Yuan (1271–1368) dynasty",
+      "description": "",
+      "source_url": "https://www.metmuseum.org/art/collection/search/42486",
+      "image_path": "data/processed/images/met_42486.jpg"
+    },
+    {
+      "item_id": "met_46548",
+      "title": "Prunus Vase",
+      "medium": "Porcelain",
+      "period": "Qing dynasty (1644–1911), Kangxi period (1662–1722)",
+      "description": "",
+      "source_url": "https://www.metmuseum.org/art/collection/search/46548",
+      "image_path": "data/processed/images/met_46548.jpg"
+    },
+    {
+      "item_id": "met_46557",
+      "title": "Tripod vase",
+      "medium": "Porcelain with clair de lune glaze (Jingdezhen ware)",
+      "period": "Qing dynasty (1644–1911)",
+      "description": "",
+      "source_url": "https://www.metmuseum.org/art/collection/search/46557",
+      "image_path": "data/processed/images/met_46557.jpg"
+    },
+    {
+      "item_id": "met_46958",
+      "title": "Vase with a garden scene",
+      "medium": "Softpaste porcelain with incised decoration (Jingdezhen ware)",
+      "period": "Qing dynasty (1644–1911)",
+      "description": "",
+      "source_url": "https://www.metmuseum.org/art/collection/search/46958",
+      "image_path": "data/processed/images/met_46958.jpg"
+    },
+    {
+      "item_id": "met_47401",
+      "title": "Meiping vase with floral scrolls",
+      "medium": "Porcelain with relief decors under a celadon glaze (Jingdezhen ware)",
+      "period": "Qing dynasty (1644–1911)",
+      "description": "",
+      "source_url": "https://www.metmuseum.org/art/collection/search/47401",
+      "image_path": "data/processed/images/met_47401.jpg"
+    },
+    {
+      "item_id": "met_48309",
+      "title": "Meiping vase",
+      "medium": "Porcelain painted with coral red glaze (Jingdezhen ware)",
+      "period": "Qing dynasty (1644–1911)",
+      "description": "",
+      "source_url": "https://www.metmuseum.org/art/collection/search/48309",
+      "image_path": "data/processed/images/met_48309.jpg"
+    },
+    {
+      "item_id": "met_48314",
+      "title": "Meiping vase",
+      "medium": "Porcelain with bluish grey glaze (Jingdezhen ware)",
+      "period": "Qing dynasty (1644–1911)",
+      "description": "",
+      "source_url": "https://www.metmuseum.org/art/collection/search/48314",
+      "image_path": "data/processed/images/met_48314.jpg"
+    },
+    {
+      "item_id": "met_48340",
+      "title": "Miniature meiping vase",
+      "medium": "Porcelain with iron rust glaze (Jingdezhen ware)",
+      "period": "Qing dynasty (1644–1911)",
+      "description": "",
+      "source_url": "https://www.metmuseum.org/art/collection/search/48340",
+      "image_path": "data/processed/images/met_48340.jpg"
+    },
+    {
+      "item_id": "met_48462",
+      "title": "Meiping vase with dragon",
+      "medium": "Stoneware with incised decoration under celadon glaze (Longquan ware)",
+      "period": "Ming dynasty (1368–1644)",
+      "description": "",
+      "source_url": "https://www.metmuseum.org/art/collection/search/48462",
+      "image_path": "data/processed/images/met_48462.jpg"
+    },
+    {
+      "item_id": "met_48625",
+      "title": "Vase",
+      "medium": "Porcelain with crackled glaze",
+      "period": "Ming dynasty (1368–1644)",
+      "description": "",
+      "source_url": "https://www.metmuseum.org/art/collection/search/48625",
+      "image_path": "data/processed/images/met_48625.jpg"
+    },
+    {
+      "item_id": "met_49836",
+      "title": "Meiping vase with dragon",
+      "medium": "Porcelain with incised decoration (Jingdezhen ware)",
+      "period": "Qing dynasty (1644–1911), Kangxi period (1662–1722)",
+      "description": "",
+      "source_url": "https://www.metmuseum.org/art/collection/search/49836",
+      "image_path": "data/processed/images/met_49836.jpg"
+    },
+    {
+      "item_id": "met_50230",
+      "title": "Vase in Meiping Shape",
+      "medium": "Stoneware with white glaze (Cizhou ware)",
+      "period": "Northern Song dynasty (960–1127)",
+      "description": "",
+      "source_url": "https://www.metmuseum.org/art/collection/search/50230",
+      "image_path": "data/processed/images/met_50230.jpg"
+    },
+    {
+      "item_id": "met_50235",
+      "title": "Vase",
+      "medium": "Stoneware with crackled glaze (Longquan ware)",
+      "period": "Southern Song dynasty (1127–1279)",
+      "description": "",
+      "source_url": "https://www.metmuseum.org/art/collection/search/50235",
+      "image_path": "data/processed/images/met_50235.jpg"
+    },
+    {
+      "item_id": "met_50886",
+      "title": "Vase with flowers",
+      "medium": "Porcelain painted in gold over blue glaze (Jingdezhen ware)",
+      "period": "Qing dynasty (1644–1911)",
+      "description": "",
+      "source_url": "https://www.metmuseum.org/art/collection/search/50886",
+      "image_path": "data/processed/images/met_50886.jpg"
+    },
+    {
+      "item_id": "met_51142",
+      "title": "Vase in Meiping Shape",
+      "medium": "Porcelain with iron-red glaze (Jingdezhen ware)",
+      "period": "Qing dynasty (1644–1911)",
+      "description": "",
+      "source_url": "https://www.metmuseum.org/art/collection/search/51142",
+      "image_path": "data/processed/images/met_51142.jpg"
+    }
+  ],
+  "control_texts": {
+    "production_rewritten": "Chinese meiping vase vase",
+    "production_zh_rewritten": "梅瓶 vase"
+  }
+}

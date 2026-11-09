@@ -1,0 +1,295 @@
+{
+  "hashes": {
+    "items.jsonl": "7afa947e5e5fb77bc2c5cf7bdf26c93462ed2307a233d071cbfbbae2dfe16428",
+    "visual_review.tsv": "bd1a42faaef82eecb80fc8ce77afcb2982ba09e592dffb401d7a5dc6b928ac49",
+    "facts.jsonl": "dd1b22bf7bbf3154b3ba9628d8e8dd7c37b8367b0ec47f6172b9864fc5da0596",
+    "queries.jsonl": "7f6b289ddb0994d452f6158a1d8d8fb7c20b32ca1de23021a26c6fc273cf5d16",
+    "qrels.jsonl": "a0202895769bc16d4be697e10bf8fd90b7e2e1462bd1c014835f082fe6220e30"
+  },
+  "query_counts": {
+    "v5_porcelain": {
+      "dev": {
+        "relevant": 24,
+        "partial": 0,
+        "irrelevant": 35,
+        "unknown": 1
+      },
+      "test": {
+        "relevant": 43,
+        "partial": 0,
+        "irrelevant": 96,
+        "unknown": 1
+      }
+    },
+    "v5_bronze": {
+      "dev": {
+        "relevant": 4,
+        "partial": 0,
+        "irrelevant": 54,
+        "unknown": 2
+      },
+      "test": {
+        "relevant": 10,
+        "partial": 0,
+        "irrelevant": 127,
+        "unknown": 3
+      }
+    },
+    "v5_textile": {
+      "dev": {
+        "relevant": 6,
+        "partial": 0,
+        "irrelevant": 53,
+        "unknown": 1
+      },
+      "test": {
+        "relevant": 15,
+        "partial": 0,
+        "irrelevant": 124,
+        "unknown": 1
+      }
+    },
+    "v5_glass": {
+      "dev": {
+        "relevant": 1,
+        "partial": 0,
+        "irrelevant": 58,
+        "unknown": 1
+      },
+      "test": {
+        "relevant": 9,
+        "partial": 0,
+        "irrelevant": 130,
+        "unknown": 1
+      }
+    },
+    "v5_bottle": {
+      "dev": {
+        "relevant": 13,
+        "partial": 0,
+        "irrelevant": 47,
+        "unknown": 0
+      },
+      "test": {
+        "relevant": 27,
+        "partial": 0,
+        "irrelevant": 113,
+        "unknown": 0
+      }
+    },
+    "v5_bowl": {
+      "dev": {
+        "relevant": 3,
+        "partial": 0,
+        "irrelevant": 57,
+        "unknown": 0
+      },
+      "test": {
+        "relevant": 13,
+        "partial": 0,
+        "irrelevant": 127,
+        "unknown": 0
+      }
+    },
+    "v5_plate": {
+      "dev": {
+        "relevant": 5,
+        "partial": 0,
+        "irrelevant": 55,
+        "unknown": 0
+      },
+      "test": {
+        "relevant": 10,
+        "partial": 0,
+        "irrelevant": 130,
+        "unknown": 0
+      }
+    },
+    "v5_people": {
+      "dev": {
+        "relevant": 14,
+        "partial": 0,
+        "irrelevant": 46,
+        "unknown": 0
+      },
+      "test": {
+        "relevant": 24,
+        "partial": 0,
+        "irrelevant": 113,
+        "unknown": 3
+      }
+    },
+    "v5_green_vase": {
+      "dev": {
+        "relevant": 2,
+        "partial": 14,
+        "irrelevant": 41,
+        "unknown": 3
+      },
+      "test": {
+        "relevant": 5,
+        "partial": 46,
+        "irrelevant": 84,
+        "unknown": 5
+      }
+    },
+    "v5_red_vase": {
+      "dev": {
+        "relevant": 4,
+        "partial": 13,
+        "irrelevant": 40,
+        "unknown": 3
+      },
+      "test": {
+        "relevant": 10,
+        "partial": 32,
+        "irrelevant": 93,
+        "unknown": 5
+      }
+    },
+    "v5_long_neck": {
+      "dev": {
+        "relevant": 6,
+        "partial": 8,
+        "irrelevant": 46,
+        "unknown": 0
+      },
+      "test": {
+        "relevant": 9,
+        "partial": 18,
+        "irrelevant": 113,
+        "unknown": 0
+      }
+    },
+    "v5_handles": {
+      "dev": {
+        "relevant": 3,
+        "partial": 17,
+        "irrelevant": 40,
+        "unknown": 0
+      },
+      "test": {
+        "relevant": 10,
+        "partial": 51,
+        "irrelevant": 79,
+        "unknown": 0
+      }
+    },
+    "v5_covered_jar": {
+      "dev": {
+        "relevant": 1,
+        "partial": 4,
+        "irrelevant": 55,
+        "unknown": 0
+      },
+      "test": {
+        "relevant": 4,
+        "partial": 9,
+        "irrelevant": 127,
+        "unknown": 0
+      }
+    },
+    "v5_blue_white": {
+      "dev": {
+        "relevant": 6,
+        "partial": 18,
+        "irrelevant": 25,
+        "unknown": 11
+      },
+      "test": {
+        "relevant": 5,
+        "partial": 40,
+        "irrelevant": 74,
+        "unknown": 21
+      }
+    },
+    "v5_flowers": {
+      "dev": {
+        "relevant": 17,
+        "partial": 0,
+        "irrelevant": 43,
+        "unknown": 0
+      },
+      "test": {
+        "relevant": 40,
+        "partial": 0,
+        "irrelevant": 97,
+        "unknown": 3
+      }
+    },
+    "v5_lotus": {
+      "dev": {
+        "relevant": 0,
+        "partial": 0,
+        "irrelevant": 60,
+        "unknown": 0
+      },
+      "test": {
+        "relevant": 4,
+        "partial": 0,
+        "irrelevant": 133,
+        "unknown": 3
+      }
+    },
+    "v5_dragon": {
+      "dev": {
+        "relevant": 1,
+        "partial": 0,
+        "irrelevant": 59,
+        "unknown": 0
+      },
+      "test": {
+        "relevant": 6,
+        "partial": 0,
+        "irrelevant": 131,
+        "unknown": 3
+      }
+    },
+    "v5_pouring": {
+      "dev": {
+        "relevant": 0,
+        "partial": 3,
+        "irrelevant": 57,
+        "unknown": 0
+      },
+      "test": {
+        "relevant": 3,
+        "partial": 7,
+        "irrelevant": 130,
+        "unknown": 0
+      }
+    },
+    "v5_ming_blue_white": {
+      "dev": {
+        "relevant": 3,
+        "partial": 23,
+        "irrelevant": 34,
+        "unknown": 0
+      },
+      "test": {
+        "relevant": 3,
+        "partial": 45,
+        "irrelevant": 92,
+        "unknown": 0
+      }
+    },
+    "v5_qianlong": {
+      "dev": {
+        "relevant": 4,
+        "partial": 17,
+        "irrelevant": 34,
+        "unknown": 5
+      },
+      "test": {
+        "relevant": 2,
+        "partial": 37,
+        "irrelevant": 90,
+        "unknown": 11
+      }
+    }
+  },
+  "relevance": "All required atoms yes; compatible family variants yes; partial=grade1 and binary negative; unknown=-1 excluded with coverage and precision bounds.",
+  "review": "200 root image/source reviews, expanded deterministically into 4000 query-image judgments; not 4000 independent expert annotations.",
+  "freeze_stage": "Initial image/source review before new model rankings. v5.1 protocol correction after rankings: broad dates/materials do not establish negative fine labels; empty visual conjunction unknown. No image review retuned to model outputs.",
+  "version": "5.1"
+}

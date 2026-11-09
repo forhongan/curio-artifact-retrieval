@@ -1,0 +1,36 @@
+{
+  "version": "cv-pixels-20261104-v1",
+  "seed": "curio-cv-pixels-20261104-v1",
+  "catalog_sha256": "4dbb5e4045bbab4fd245f7fce2d2fc363aabfe41a45d31b91703ddaac5ebee68",
+  "old_annotations_sha256": "cb2d78cf16f08e9aea66ceff89da981dfc6e5a6ff0b556a6e7d77ae8b13a73f3",
+  "mapping_sha256": "5aeaefef79816f5f3d70850643812345be500d7505331dcb3d3b385cfe8f5314",
+  "queries_sha256": "0aad2c7e635acfb0017daba8308a3bba5d29138e295569cb45e8295f3bd76526",
+  "train": 218,
+  "dev": 48,
+  "test": 96,
+  "sampling": "hash order, 50/50 sources, one per official family, exclude all prior AI annotation families and reference pool families",
+  "supervision": "existing218 AI pixel-only training annotations; fresh independent GPT-6.1 Terra blind-image dev/test labels",
+  "label_limits": "AI attribute labels, not human gold; no material, chronology, or semantic fine motif claims",
+  "candidate_inputs": "image bytes only, opaque IDs; no gallery metadata/captions/labels used for prediction or ranking",
+  "evaluation": "21 fixed intents, relevance=all query attributes explicitly observed; any known contradiction negative, unknown otherwise; report unknown and zero-positive intents; no dropping after seeing method results",
+  "models": [
+    "raw HOG LR",
+    "raw HSV LR",
+    "raw LBP LR",
+    "raw concatenation LR",
+    "GrabCut concatenation LR",
+    "DINOv2 image-only LR",
+    "SigLIP image LR control",
+    "SigLIP zero-shot dot baseline"
+  ],
+  "selection": "LR balanced binary per attribute with train>=5 positive and5negative, C in[0.1,1,10] selected by dev macro average precision; no test loading during fitting",
+  "retrieval": "query atoms -> mean log attribute probability, score uses predictions only; unsupported query atoms explicitly fail coverage",
+  "workflow": "predeclare DINO attribute recall K in[10,25,50] then equal RRF classical attribute rerank; fusion weight[0,0.25,0.5,0.75,1] dev only; evaluate default and selected; no promotion of default from this small audit",
+  "timing": "single CPU thread scoring, warmup then repeated online query parse+score vs text encoder+score; feature build/loading/training separate; throughput not HTTP latency",
+  "robustness": "heldout test images fixed brightness0.65, JPEG quality25, background white compositing only when mask usable; original labels assumed invariant, no artifact used for training or choosing settings",
+  "artifacts": "new directory, original production and frozen reports preserved",
+  "source_counts": {
+    "met": 72,
+    "cleveland": 72
+  }
+}

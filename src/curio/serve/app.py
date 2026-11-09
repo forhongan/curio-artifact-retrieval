@@ -1,14 +1,18 @@
 from __future__ import annotations
 
 from datetime import datetime, timezone
+import hashlib
 import json
 import os
 from pathlib import Path
 import platform
 import re
 import threading
+import uuid
 from io import BytesIO
 from typing import Literal
+
+import numpy as np
 
 from fastapi import FastAPI, HTTPException, Request, Query
 from fastapi.responses import FileResponse
@@ -19,6 +23,8 @@ from curio.retrieve import SearchService
 from curio.retrieve.engine import load_items
 from curio.retrieve.image_search import ImageSearchService, METHODS
 from curio.retrieve.references import load_reference_bank
+from curio.retrieve.probe_sets import ProbeSetService
+from curio.retrieve.visual_sets import VisualSetService
 from PIL import Image, UnidentifiedImageError
 from starlette.concurrency import run_in_threadpool
 
@@ -91,11 +97,43 @@ class ReferenceRequest(BaseModel):
         return self
 
 
+class SetRequest(BaseModel):
+    model_config = ConfigDict(extra="forbid")
+    query: str = Field(min_length=1, max_length=1000)
+    top_k: int = Field(default=20, ge=1, le=100)
+    method: Literal['adaptive_margin', 'adaptive_graph', 'adaptive_evidence', 'dev_calibrated', 'dev_cutoff', 'dev_color'] = 'adaptive_evidence'
+
+    @model_validator(mode="after")
+    def nonempty_query(self):
+        if not self.query.strip():
+            raise ValueError("query must contain non-whitespace text")
+        return self
+
+
+class DynamicReferenceRequest(BaseModel):
+    model_config = ConfigDict(extra='forbid')
+    query: str = Field(min_length=1, max_length=1000)
+    search_text: str | None = Field(default=None, min_length=1, max_length=1000)
+    top_k: int = Field(default=24, ge=1, le=100)
+    reference_limit: int = Field(default=8, ge=1, le=12)
+    offline: bool = False
+    mode: Literal['direct', 'qualified'] = 'direct'
+    aggregation: Literal['single_best', 'uniform_mean', 'max', 'diverse', 'query_aligned'] = 'uniform_mean'
+
+    @model_validator(mode='after')
+    def nonempty_query(self):
+        if not self.query.strip():
+            raise ValueError('query must contain non-whitespace text')
+        if self.search_text is not None and not self.search_text.strip():
+            raise ValueError('search_text must contain non-whitespace text')
+        return self
+
+
 def create_app(*, service: SearchService | None = None, data_path: str | Path | None = None,
                index_dir: str | Path | None = None, encoder=None, root: str | Path | None = None,
                feedback_path: str | Path | None = None, web_dir: str | Path | None = None,
                probes_path: str | Path | None = None, probes=None, probe_report: dict | None = None,
-               probe_weight: float | None = None) -> FastAPI:
+               probe_weight: float | None = None, dynamic_runtime=None) -> FastAPI:
     root_path = Path(root or ".").resolve()
     if service is None:
         source = Path(data_path or os.getenv("CURIO_DATA", "data/snapshots/collection_v2.jsonl"))
@@ -123,6 +161,11 @@ def create_app(*, service: SearchService | None = None, data_path: str | Path | 
     public_items = {**service.by_id, **{str(row["item_id"]): row for row in expanded_items}}
     expanded_service = None
     expanded_lock = threading.Lock()
+    probe_set_service = None
+    visual_set_service = VisualSetService(service)
+    probe_set_lock = threading.Lock()
+    dynamic_reference_lock = threading.Lock()
+    dynamic_reference_root = root_path / 'artifacts/dynamic_reference_api'
     feedback_target = Path(feedback_path or os.getenv("CURIO_FEEDBACK", "data/feedback.jsonl"))
     if not feedback_target.is_absolute():
         feedback_target = root_path / feedback_target
@@ -162,6 +205,65 @@ def create_app(*, service: SearchService | None = None, data_path: str | Path | 
     def level3_search(request: Level3Request):
         return service.level3_search(request.query, request.top_k, request.recall_k)
 
+    @application.post("/api/search/set")
+    def set_search(request: SetRequest):
+        nonlocal probe_set_service
+        if not os.getenv('CURIO_SET_PROBES'):
+            try:
+                return visual_set_service.search(request.query, top_k=request.top_k, method=request.method)
+            except (OSError, ValueError, RuntimeError) as exc:
+                raise HTTPException(503, f'Visual-set index or encoder unavailable: {exc}') from exc
+        probes_path = Path(os.getenv("CURIO_SET_PROBES", str(root_path / "artifacts/catalogue_set_runtime_v5")))
+        report_path = Path(os.getenv("CURIO_SET_REPORT", str(
+            root_path / "artifacts/catalogue_set_runtime_v5/set_policy.json"
+        )))
+        if not probes_path.is_absolute():
+            probes_path = root_path / probes_path
+        if not report_path.is_absolute():
+            report_path = root_path / report_path
+        if not (probes_path / "report.json").exists() or not report_path.exists():
+            raise HTTPException(503, "Frozen probe-set artifacts unavailable")
+        with probe_set_lock:
+            if probe_set_service is None:
+                try:
+                    index_path = Path(os.getenv("CURIO_SET_INDEX", str(root_path / "artifacts/siglip")))
+                    if not index_path.is_absolute():
+                        index_path = root_path / index_path
+                    if (index_path / "image_embeddings.npy").exists():
+                        vector_file = index_path / "image_embeddings.npy"
+                        ids_file = index_path / "item_ids.json"
+                        ids = json.loads(ids_file.read_text(encoding="utf-8"))
+                        if len(ids) != len(service.items) or len(set(ids)) != len(ids) or set(ids) != set(service.by_id):
+                            raise ValueError("Set index must cover the same full gallery")
+                        vectors = np.load(vector_file, allow_pickle=False)
+                        head_report = json.loads((probes_path / "report.json").read_text(encoding="utf-8"))
+                        if head_report.get("item_ids_sha256") and head_report["item_ids_sha256"] != hashlib.sha256(ids_file.read_bytes()).hexdigest():
+                            raise ValueError("Set head item IDs do not match the index")
+                        index_sha = hashlib.sha256(vector_file.read_bytes()).hexdigest()
+                        if head_report.get("version") != "catalogue-multiclass-heads-v5":
+                            index_sha = hashlib.sha256(vectors.tobytes() + json.dumps(ids).encode()).hexdigest()
+                        vectors = vectors / np.linalg.norm(vectors, axis=1, keepdims=True)
+                        lookup = {item: i for i, item in enumerate(ids)}
+                        vectors = vectors[[lookup[str(item["item_id"])] for item in service.items]]
+                    else:
+                        if os.getenv("CURIO_SET_INDEX") or service.embeddings is None or len(service.vector_rows) != len(service.items):
+                            raise ValueError("Full image index unavailable for set search")
+                        vectors = np.empty_like(service.embeddings)
+                        vectors[service.vector_rows] = service.embeddings
+                        index_sha = service.index_sha256
+                    probe_set_service = ProbeSetService(
+                        service.items, vectors,
+                        probes_path=probes_path, set_report_path=report_path,
+                        index_sha256=index_sha,
+                    )
+                except (OSError, ValueError) as exc:
+                    raise HTTPException(503, f"Probe-set artifacts are incompatible: {exc}") from exc
+        try:
+            return probe_set_service.search(request.query, top_k=request.top_k)
+        except ValueError as exc:
+            detail = exc.args[0] if exc.args and isinstance(exc.args[0], dict) else str(exc)
+            raise HTTPException(422, detail) from exc
+
     @application.post("/api/search/reference")
     def reference_search(request: ReferenceRequest):
         try:
@@ -170,6 +272,63 @@ def create_app(*, service: SearchService | None = None, data_path: str | Path | 
             raise HTTPException(422, str(exc)) from exc
         except (OSError, RuntimeError) as exc:
             raise HTTPException(503, "Reference image model or bank unavailable") from exc
+
+    @application.post('/api/search/reference/dynamic')
+    def dynamic_reference_search(request: DynamicReferenceRequest):
+        nonlocal dynamic_runtime
+        audit_id = uuid.uuid4().hex
+        output = dynamic_reference_root / audit_id
+        try:
+            with dynamic_reference_lock:
+                if dynamic_runtime is None:
+                    from curio.retrieve.dynamic_reference_runtime import DynamicReferenceRuntime
+                    dynamic_runtime = DynamicReferenceRuntime(root_path)
+                result = dynamic_runtime.run(
+                    request.query, output, mode=request.mode, search_text=request.search_text,
+                    cache_dir=dynamic_reference_root / 'cache',
+                    offline=request.offline, reference_limit=request.reference_limit,
+                    top_k=request.top_k,
+                    **({'aggregation': request.aggregation} if request.mode == 'qualified' else {}))
+            acquisition_path = output / 'direct_acquisition.json'
+            acquired = json.loads(acquisition_path.read_text(encoding='utf-8')) if acquisition_path.exists() else {}
+            result['references'] = [
+                {key: row.get(key) for key in ('reference_id', 'title', 'source', 'source_url',
+                                               'date', 'medium', 'license', 'visual_evidence', 'attribution',
+                                               'license_url', 'source_support', 'download_verified')}
+                | {'image_url': f'/api/dynamic-references/{audit_id}/{row["reference_id"]}/image'}
+                for row in acquired.get('accepted', [])]
+            for row in result.get('results', []):
+                item_id = row['item_id']
+                item = public_items.get(item_id, {})
+                row.update(image_url=f'/api/images/{item_id}', thumb_url=f'/api/images/{item_id}?thumb=true',
+                           title=item.get('title', ''), source=item.get('source'),
+                           source_url=item.get('source_url'))
+            result.update(audit_id=audit_id, gallery_scope='collection_v2',
+                          candidate_catalogue_used_for_ranking=False,
+                          acquisition_requests=acquired.get('request_summary', {}))
+            return result
+        except ValueError as exc:
+            raise HTTPException(422, str(exc)) from exc
+        except (OSError, RuntimeError) as exc:
+            raise HTTPException(503, f'Dynamic reference acquisition or image index unavailable: {exc}') from exc
+
+    @application.get('/api/dynamic-references/{audit_id}/{reference_id}/image')
+    def dynamic_reference_image(audit_id: str, reference_id: str):
+        if not re.fullmatch(r'[a-f0-9]{32}', audit_id):
+            raise HTTPException(404, 'Reference audit not found')
+        acquisition_path = dynamic_reference_root / audit_id / 'direct_acquisition.json'
+        if not acquisition_path.exists():
+            raise HTTPException(404, 'Reference audit not found')
+        acquired = json.loads(acquisition_path.read_text(encoding='utf-8'))
+        row = next((row for row in acquired.get('accepted', []) if row['reference_id'] == reference_id), None)
+        if row is None:
+            raise HTTPException(404, 'Reference not selected')
+        path = (root_path / row['image_path']).resolve()
+        if not path.is_relative_to(dynamic_reference_root.resolve()) or not path.is_file():
+            raise HTTPException(404, 'Reference image unavailable')
+        if hashlib.sha256(path.read_bytes()).hexdigest() != row['image_sha256']:
+            raise HTTPException(503, 'Reference image differs from audited bytes')
+        return FileResponse(path, headers={'X-Content-Type-Options': 'nosniff'})
 
     @application.post("/api/search/image")
     async def image_search(request: Request, top_k: int = Query(12, ge=1, le=50), method: str = "siglip"):
