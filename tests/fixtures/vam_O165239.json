@@ -1,0 +1,265 @@
+{
+  "meta": {
+    "version": "2.1",
+    "_links": {
+      "self": {
+        "href": "https://api.vam.ac.uk/v2/object/O165239"
+      },
+      "collection_page": {
+        "href": "https://collections.vam.ac.uk/item/O165239/"
+      }
+    },
+    "images": {
+      "_primary_thumbnail": "https://framemark.vam.ac.uk/collections/2010EC3476/full/!100,100/0/default.jpg",
+      "_iiif_image": "https://framemark.vam.ac.uk/collections/2010EC3476/",
+      "_alt_iiif_image": [],
+      "imageResolution": "high",
+      "_images_meta": [
+        {
+          "assetRef": "2010EC3476",
+          "copyright": "© Victoria and Albert Museum, London",
+          "sensitiveImage": false
+        }
+      ]
+    },
+    "see_also": {
+      "_iiif_pres": "https://iiif.vam.ac.uk/collections/O165239/manifest.json",
+      "_alt_iiif_pres": []
+    }
+  },
+  "record": {
+    "systemNumber": "O165239",
+    "accessionNumber": "C.1465-1910",
+    "objectType": "Vase",
+    "titles": [],
+    "summaryDescription": "This vase was made at the imperial kilns of Jingdezhen in southern China during the Qianlong reign (1736-95). Official wares, called <i>guan yao</i> in Chinese, were produced in strictly controlled workshops supervised by imperial officers, and were destined to the court in Beijing. \r\n\r\nThis vase is an exquisite example of official ware; the paintings in the four medallions depict four different flowers - peony, chrysanthemum, plum blossoms and magnolia - symbols of the Four Seasons.",
+    "physicalDescription": "Porcelain vase with elephant heads-shaped grips and decorated with a green-celadon glaze; cloud scrolls, plantain leaves, <i>ruyi</i> and a key-fret or <i>leiwen</i> pattern are incised on the body, and four medallions reserved over the celadon ground contain peony, chrysanthemum, magnolia and plum blossoms painted in overglaze enamels of the <i>famille rose</i> colour scheme.",
+    "artistMakerPerson": [
+      {
+        "name": {
+          "text": "Unknown",
+          "id": "A1848"
+        },
+        "association": {
+          "text": "",
+          "id": ""
+        },
+        "note": ""
+      }
+    ],
+    "artistMakerOrganisations": [],
+    "artistMakerPeople": [],
+    "materials": [
+      {
+        "text": "porcelain",
+        "id": "AAT10662"
+      }
+    ],
+    "techniques": [
+      {
+        "text": "overglazing",
+        "id": "AAT53918"
+      }
+    ],
+    "materialsAndTechniques": "Porcelain decorated in polychrome overglaze enamels",
+    "categories": [
+      {
+        "text": "Ceramics",
+        "id": "THES48982"
+      }
+    ],
+    "styles": [
+      {
+        "text": "Qing",
+        "id": "AAT18478"
+      },
+      {
+        "text": "Qianlong",
+        "id": "AAT18486"
+      },
+      {
+        "text": "famille rose",
+        "id": "AAT254689"
+      }
+    ],
+    "collectionCode": {
+      "text": "EAS",
+      "id": "THES48596"
+    },
+    "images": [
+      "2010EC3476"
+    ],
+    "imageResolution": "high",
+    "galleryLocations": [
+      {
+        "current": {
+          "text": "136",
+          "id": "THES49877"
+        },
+        "free": "",
+        "case": "8",
+        "shelf": "4",
+        "box": ""
+      }
+    ],
+    "partTypes": [
+      [
+        {
+          "text": "Vase",
+          "id": ""
+        }
+      ]
+    ],
+    "contentWarnings": [
+      {
+        "apprise": "",
+        "note": ""
+      }
+    ],
+    "placesOfOrigin": [
+      {
+        "place": {
+          "text": "Jingdezhen",
+          "id": "x32230"
+        },
+        "association": {
+          "text": "made",
+          "id": "x28654"
+        },
+        "note": ""
+      }
+    ],
+    "productionDates": [
+      {
+        "date": {
+          "text": "1736-1795",
+          "earliest": "1736-01-01",
+          "latest": "1795-12-31"
+        },
+        "association": {
+          "text": "made",
+          "id": "x28654"
+        },
+        "note": ""
+      }
+    ],
+    "associatedObjects": [],
+    "creditLine": "Salting Bequest",
+    "dimensions": [
+      {
+        "dimension": "Height",
+        "value": "35.5",
+        "unit": "cm",
+        "qualifier": "",
+        "date": {
+          "text": "",
+          "earliest": null,
+          "latest": null
+        },
+        "part": "",
+        "note": ""
+      }
+    ],
+    "dimensionsNote": "",
+    "marksAndInscriptions": [
+      {
+        "content": "'Da Qing Qian long nian zhi' in seal script on the base",
+        "inscriber": {
+          "name": {
+            "text": "",
+            "id": ""
+          },
+          "association": {
+            "text": "",
+            "id": ""
+          }
+        },
+        "date": {
+          "text": "",
+          "earliest": null,
+          "latest": null
+        },
+        "description": "",
+        "interpretation": "",
+        "language": "",
+        "medium": "",
+        "method": "",
+        "position": "",
+        "script": "",
+        "translation": "Made under the Qianlong reign of the Great Qing",
+        "transliteration": "",
+        "type": "",
+        "note": ""
+      }
+    ],
+    "objectHistory": "Bequeathed by Mr. George Salting, accessioned in 1910. This acquisition information reflects that found in the Asia Department registers, as part of a 2022 provenance research project.",
+    "historicalContext": "",
+    "briefDescription": "Vase with celadon glaze and flower design in overglaze enamels of the <i>famille rose</i> type, China, Qing dynasty, Qianlong mark and period (1736-95)",
+    "bibliographicReferences": [],
+    "production": "",
+    "productionType": {
+      "text": "",
+      "id": ""
+    },
+    "contentDescription": "",
+    "contentPlaces": [],
+    "associatedPlaces": [],
+    "contentPerson": [],
+    "associatedPerson": [],
+    "contentOrganisations": [],
+    "associatedOrganisations": [],
+    "contentPeople": [],
+    "associatedPeople": [],
+    "contentEvents": [],
+    "associatedEvents": [],
+    "contentOthers": [
+      {
+        "text": "peonies",
+        "id": "x35844"
+      },
+      {
+        "text": "chrysanthemums",
+        "id": "x36183"
+      },
+      {
+        "text": "magnolias",
+        "id": "x42893"
+      },
+      {
+        "text": "plantain leaves",
+        "id": "x42894"
+      },
+      {
+        "text": "ruyi",
+        "id": "x40928"
+      }
+    ],
+    "contentConcepts": [],
+    "contentLiteraryRefs": [],
+    "galleryLabels": [
+      {
+        "text": "<b>Porcelain vase</b> with celadon glaze and overglaze decoration\r\nQianlong mark and period (1736-1795), Qing dynasty\r\nC.1465-1910 Salting Bequest",
+        "date": {
+          "text": "June 1991",
+          "earliest": "1991-06-01",
+          "latest": "1991-06-30"
+        }
+      }
+    ],
+    "partNumbers": [
+      "C.1465-1910"
+    ],
+    "accessionNumberNum": "1465",
+    "accessionNumberPrefix": "C",
+    "accessionYear": 1910,
+    "otherNumbers": [],
+    "copyNumber": "",
+    "aspects": [
+      "WHOLE"
+    ],
+    "assets": [],
+    "recordModificationDate": "2025-06-05",
+    "recordCreationDate": "2008-08-13",
+    "availableToBook": false
+  }
+}

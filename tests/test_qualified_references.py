@@ -21,10 +21,7 @@ def test_production_date_not_reign_mark_and_form_not_painted_subject():
 
 
 def test_vam_contract_distinguishes_declared_image_and_actual_decode():
-    path = (
-        Path(__file__).resolve().parents[1]
-        / "artifacts/checked_api_references_20261108/qianlong_vase/metadata/O165239.json"
-    )
+    path = Path(__file__).parent / "fixtures/vam_O165239.json"
     detail = json.loads(path.read_text(encoding="utf-8"))
     row = normalize_vam({"systemNumber": "O165239", "_primaryImageId": "2010EC3476"}, detail)
     assert row["api_reported_has_image"]
