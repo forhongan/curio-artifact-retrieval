@@ -14,6 +14,8 @@ pnpm --dir web build
 
 打开 `http://127.0.0.1:8000/`。资源恢复见 [RESOURCES](docs/RESOURCES.md)；追加研究附件见 [SHOWCASE_RELEASE](docs/SHOWCASE_RELEASE.md)。
 
+已部署的笔记本可双击 **Start Curio.cmd** 启动，双击 **Open Presentation.cmd** 打开离线演示；见 [笔记本使用说明](docs/LAPTOP_DEMO.md)。
+
 - **用文字找**：SigLIP2视觉LoRA，中英文查询展开，支持相似排序和完整匹配集合。
 - **用专业名称找**：博物馆API取得真实照片，再用SigLIP2与DINO比较图库。已核查的演示案例：梅瓶。
 - **用图片找**：上传JPG/PNG/WebP，以领域图像模型寻找相似器物。
