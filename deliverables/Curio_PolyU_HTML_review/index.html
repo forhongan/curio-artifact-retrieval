@@ -1,0 +1,897 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Curio · HTML reviewed</title>
+<style>
+:root{
+  --paper:#FAF7F4; --card:#FFFFFF; --ink:#2B2226; --crimson:#A02337; --deep:#7E1B2C;
+  --gold:#B98A2F; --grey:#8A8078; --line:#E5DCD8; --shadow:rgba(43,34,38,.10);
+  --tint:#F7ECEE; --ease:cubic-bezier(.4,0,.2,1);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{height:100%;background:#EFEAE4;font-family:Georgia,"Times New Roman","Microsoft YaHei",serif;color:var(--ink);
+  -webkit-text-size-adjust:100%;text-size-adjust:100%;overflow:hidden}
+#viewport{position:fixed;inset:0;overflow:hidden}
+#stage{position:absolute;width:1440px;height:810px;transform-origin:0 0}
+.slide{position:absolute;inset:0;background:var(--paper);opacity:0;visibility:hidden;
+  transition:opacity .45s var(--ease),transform .45s var(--ease);transform:translateY(16px);overflow:hidden;
+  padding:50px 68px 44px;display:flex;flex-direction:column}
+.slide.active{opacity:1;visibility:visible;transform:none;z-index:2}
+.slide.pre-r{transform:translateX(90px);transition:none;opacity:1;visibility:visible;z-index:1}
+.slide.pre-l{transform:translateX(-90px);transition:none;opacity:1;visibility:visible;z-index:1}
+.slide.leaving{opacity:0;visibility:visible;z-index:1}
+.slide.leaving.l-r{transform:translateX(-90px)}
+.slide.leaving.l-l{transform:translateX(90px)}
+.slide::before{content:"";position:absolute;top:0;left:0;right:0;height:6px;z-index:3;
+  background:linear-gradient(90deg,var(--crimson) 0 44%,var(--deep) 44% 78%,var(--gold) 78% 100%)}
+[data-r]{opacity:0;transform:translateY(28px);transition:opacity .6s var(--ease),transform .6s var(--ease);
+  transition-delay:calc(var(--d,0)*1ms)}
+.slide.active [data-r]{opacity:1;transform:none}
+.slide.leaving [data-r]{transition-delay:0ms}
+.kicker{font-size:13px;letter-spacing:.2em;color:var(--crimson);text-transform:uppercase;margin-bottom:10px;font-weight:600}
+.kicker::after{content:"";display:block;width:0;height:2px;background:var(--crimson);margin-top:6px;transition:width .8s var(--ease) .2s}
+.slide.active .kicker::after{width:60px}
+h1{font-size:50px;line-height:1.12;color:var(--ink);font-weight:700;margin-bottom:8px}
+h2{font-size:34px;line-height:1.22;color:var(--ink);font-weight:700;margin-bottom:8px}
+.lead{font-size:17.5px;line-height:1.62;color:#4A4046;max-width:1160px}
+.lead b{color:var(--crimson)}
+.foot{position:absolute;bottom:16px;left:68px;right:68px;display:flex;align-items:center;justify-content:space-between;font-size:11px;color:var(--grey);letter-spacing:.03em}
+.foot .fr{display:flex;align-items:center;gap:10px}
+.foot img{height:19px;opacity:.8}
+.hero{display:grid;grid-template-columns:1fr 470px;gap:40px;flex:1;align-items:center;min-height:0}
+.carousel{position:relative;height:452px;border-radius:10px;overflow:hidden;box-shadow:0 14px 44px var(--shadow);background:var(--card)}
+.carousel img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity 1s ease}
+.carousel img.on{opacity:1;animation:kb 7s var(--ease) forwards}
+@keyframes kb{from{transform:scale(1)}to{transform:scale(1.08)}}
+.carousel .cap{position:absolute;bottom:0;left:0;right:0;background:linear-gradient(transparent,rgba(126,27,44,.88));color:#fff;padding:36px 22px 13px;font-size:13.5px;font-style:italic;opacity:0;transition:opacity 1s ease}
+.carousel .cap.on{opacity:1}
+.chips{display:flex;gap:14px;margin:18px 0}
+.chip{background:var(--card);border:1px solid var(--line);border-left:3px solid var(--crimson);border-radius:8px;padding:10px 18px;font-size:16px;color:var(--ink);box-shadow:0 2px 10px var(--shadow)}
+.chip b{color:var(--crimson)}
+.lanes{display:flex;flex-direction:column;gap:14px;margin-top:6px}
+.lane{display:grid;grid-template-columns:250px 34px 250px 34px 1fr;gap:10px;align-items:center;background:var(--card);
+  border:1px solid var(--line);border-radius:10px;padding:13px 18px;box-shadow:0 4px 16px var(--shadow)}
+.lane .im{width:250px;height:152px;object-fit:contain;background:#F1ECE7;padding:5px;border-radius:8px;box-shadow:0 3px 12px var(--shadow);border:1px solid var(--line)}
+.lane .arr{font-size:22px;color:var(--crimson);text-align:center;font-weight:700}
+.lane .lab{font-size:14px;line-height:1.45}
+.lane .lab b{color:var(--crimson);display:block;font-size:15px}
+.lane .lab small{color:var(--grey);font-size:11.5px;display:block;margin-top:3px}
+.lane .head{grid-column:1/-1;font-size:12px;letter-spacing:.12em;color:var(--crimson);text-transform:uppercase;font-weight:700}
+.grid{display:grid;gap:16px}
+.g2{grid-template-columns:1fr 1fr}
+.g4{grid-template-columns:repeat(4,1fr)}
+.card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:16px 18px;box-shadow:0 3px 14px var(--shadow)}
+.card h3{font-size:15.5px;color:var(--crimson);margin-bottom:5px}
+.card p{font-size:13px;line-height:1.55;color:#4A4046}
+.card .num{font-size:32px;font-weight:700;color:var(--crimson);font-variant-numeric:tabular-nums;line-height:1.15}
+.anno{position:relative;height:178px;margin-top:10px}
+.anno .acard{position:absolute;inset:0;background:var(--card);border:1px solid var(--line);border-radius:10px;padding:14px 18px;opacity:0;transition:opacity .8s ease;box-shadow:0 3px 14px var(--shadow)}
+.anno .acard.on{opacity:1}
+.anno .acard img{width:100px;height:130px;object-fit:cover;border-radius:6px;float:left;margin-right:15px}
+.anno .acard .zc{font-size:14px;color:var(--ink);margin-bottom:5px}
+.anno .acard .ec{font-size:12px;color:var(--grey);font-style:italic}
+.anno .acard .meta{clear:both;padding-top:8px;font-size:11px;color:var(--crimson);letter-spacing:.04em}
+
+
+.demo-wrap{flex:1;display:flex;flex-direction:column;gap:10px;min-height:0}
+.demo-frame{flex:1;border:1px solid var(--line);border-radius:10px;background:#fff;box-shadow:0 6px 24px var(--shadow);overflow:hidden}
+.demo-frame iframe{width:100%;height:100%;border:0}
+.demo-note{font-size:13px;color:var(--grey)}
+.demo-note b{color:var(--crimson)}
+.probe-strip{display:flex;align-items:center;gap:9px;margin-top:16px;padding-top:12px;border-top:1px solid var(--line)}
+.probe-strip .ps-item{display:flex;flex-direction:column;align-items:center;gap:3px}
+.probe-strip .ps-item img{width:74px;height:74px;object-fit:cover;border-radius:7px;border:1px solid var(--line)}
+.probe-strip .ps-item small{font-size:8.5px;color:var(--grey)}
+.probe-strip p{margin-left:10px;font-size:10.5px;font-style:italic;color:var(--grey);line-height:1.4}
+table{border-collapse:collapse;width:100%;font-size:13.5px}
+th,td{padding:7px 11px;border-bottom:1px solid var(--line);text-align:left}
+th{color:var(--crimson);background:#F3EBE7;font-weight:600;font-size:11.5px;letter-spacing:.04em}
+td.num,th.num{text-align:right;font-variant-numeric:tabular-nums}
+tr.hl td{background:var(--tint);font-weight:700;color:var(--crimson)}
+.bchart{display:flex;flex-direction:column;gap:8px}
+.brow{display:grid;grid-template-columns:150px 1fr 52px;align-items:center;gap:10px;font-size:13px}
+.brow .bl{color:#4A4046;text-align:right;white-space:nowrap}
+.btrack{height:15px;background:#EFE7E2;border-radius:8px;overflow:hidden}
+.bfill{height:100%;border-radius:7px;background:var(--crimson);width:0;transition:width 1s var(--ease);transition-delay:calc(var(--d,0)*1ms)}
+.bfill.zh{background:var(--gold)}
+.brow .bv{font-variant-numeric:tabular-nums;color:var(--ink);font-weight:700}
+.slide.active .bfill{width:var(--w)}
+.legend{display:flex;gap:14px;font-size:10.5px;color:var(--grey);margin-top:6px}
+.legend i{display:inline-block;width:9px;height:9px;border-radius:3px;margin-right:4px;vertical-align:-1px}
+.bignum{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:18px}
+.bignum .card{text-align:center;padding:24px 12px}
+.bignum .card .v{font-size:38px;font-weight:700;color:var(--crimson);font-variant-numeric:tabular-nums}
+.bignum .card .l{font-size:12.5px;color:var(--grey);margin-top:5px;line-height:1.45}
+.strip{display:flex;gap:12px;margin-top:16px}
+.strip img{width:150px;height:112px;object-fit:cover;border-radius:8px;box-shadow:0 3px 12px var(--shadow);border:1px solid var(--line)}
+.strip .s{display:flex;flex-direction:column;gap:4px}
+.strip .s small{font-size:10px;color:var(--grey);text-align:center}
+.fig{margin-top:12px;text-align:center}
+.fig img{max-width:100%;border-radius:8px;border:1px solid var(--line);background:#fff;box-shadow:0 4px 18px var(--shadow)}
+.fig .cap{font-size:12px;color:var(--grey);margin-top:7px;font-style:italic}
+.take{border-left:4px solid var(--crimson);background:var(--tint);padding:12px 17px;font-size:14.5px;line-height:1.58;margin-top:14px;border-radius:0 8px 8px 0}
+.take b{color:var(--crimson)}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:32px;flex:1;align-items:start;min-height:0}
+.split img.rec{width:100%;max-height:440px;object-fit:cover;border-radius:10px;box-shadow:0 6px 22px var(--shadow);border:1px solid var(--line)}
+.steps{display:flex;flex-direction:column;gap:10px}
+.step{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:11px 15px;box-shadow:0 2px 10px var(--shadow)}
+.step b{display:inline-block;font-size:10px;letter-spacing:.12em;color:var(--crimson);text-transform:uppercase;margin-bottom:3px}
+.step p{font-size:13px;line-height:1.5}
+.closing{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center}
+.closing h1{font-size:56px;margin-bottom:12px}
+.closing .sub{font-size:18px;color:var(--crimson);font-style:italic;margin-bottom:26px}
+.closing .names{font-size:13.5px;color:var(--grey);letter-spacing:.07em;line-height:1.85}
+.closing img{height:52px;margin-bottom:18px;opacity:.9}
+#controls{position:fixed;bottom:0;left:0;right:0;height:42px;background:#2B2226;display:flex;align-items:center;gap:10px;padding:0 16px;color:#E3DAD4;font-size:12px;font-family:Georgia,serif;z-index:50}
+#controls button{background:none;border:1px solid #5A4C50;color:#E3DAD4;padding:4px 12px;border-radius:5px;cursor:pointer;font-family:inherit;font-size:12px}
+#controls button:hover{background:var(--crimson);border-color:var(--crimson)}
+#progress{position:fixed;bottom:42px;left:0;height:3px;background:var(--crimson);z-index:51;transition:width .4s var(--ease)}
+#notes{position:fixed;bottom:42px;left:0;right:0;height:200px;background:#221B1E;color:#EFE6E1;padding:14px 24px;overflow-y:auto;font-size:13px;line-height:1.6;z-index:49;display:none;border-top:2px solid var(--crimson)}
+#notes b.en{color:#F0B9B0}
+#notes .zh{color:#C4B4AE;margin-top:6px}
+@media print{
+  html,body{overflow:visible;background:#fff}
+  #viewport{position:static}
+  #stage{position:static;transform:none!important;width:auto;height:auto}
+  .slide{opacity:1!important;visibility:visible!important;position:relative;inset:auto;transform:none!important;
+    width:1440px;height:810px;page-break-after:always;margin:0 auto;display:flex}
+  [data-r]{opacity:1!important;transform:none!important}
+  .bfill{width:var(--w)!important}
+  #controls,#progress,#notes{display:none!important}
+}
+</style>
+<style>
+.difficulty-emphasis{display:flex;flex-direction:column;gap:10px;margin:22px 0 24px;padding:17px 22px;border-left:4px solid var(--crimson);background:var(--tint)}
+.difficulty-emphasis strong{font-size:24px;line-height:1.25;color:var(--crimson)}
+.query-progression{display:grid;grid-template-columns:1fr 40px 1fr 40px 1fr;gap:14px;align-items:center}
+.query-level{min-width:0;height:330px;border:1px solid var(--line);border-radius:10px;background:white;padding:18px 22px;text-align:center}
+.query-level.specialist{border-color:var(--crimson)}
+.level-label{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var(--grey);margin-bottom:12px}
+.query-level img{width:100%;height:165px;object-fit:contain;background:#F4EFEB;border-radius:6px}
+.query-level h3{font-size:23px;color:var(--crimson);margin:13px 0 7px;line-height:1.25}
+.query-level h3 span{font-size:20px}
+.query-level p{font-size:16px;line-height:1.45;color:#4A4046}
+.difficulty-arrow{font-size:30px;color:var(--crimson);text-align:center}
+.difficulty-caption{font-size:17px;line-height:1.5;color:#4A4046;text-align:center;margin-top:20px}
+</style></head>
+<body>
+<div id="viewport"><div id="stage">
+
+
+<section class="slide" data-title="Opening">
+  <p class="kicker" data-r>Curio · COMP5523 Group Project · Vision Bot</p>
+  <img src="img/polyu_logo.png" alt="PolyU" data-r style="--d:420;position:absolute;top:44px;right:68px;height:32px;opacity:.9">
+  <div class="hero">
+    <div>
+      <h1 data-r style="--d:80">拾遗 · Curio</h1>
+      <p class="lead" data-r style="--d:160;font-size:21px;color:var(--crimson);font-style:italic;margin-bottom:14px">Text-to-Image Retrieval for Ancient Chinese Artifacts</p>
+      <p class="lead" data-r style="--d:240">Every artifact deserves to be found — <b>not by its title, but by what it looks like.</b> We turn plain descriptions, and even specialist museum names, into visual search over 4,692 open-access objects.</p>
+      <div class="strip" data-r style="--d:340">
+        <div class="s"><img src="img/cma_128304.jpg" alt=""><small>Tang · bronze mirror</small></div>
+        <div class="s"><img src="img/met_49853.jpg" alt=""><small>Ming · dragon plate</small></div>
+        <div class="s"><img src="img/cma_284746.jpg" alt=""><small>Song · meiping</small></div>
+        <div class="s"><img src="img/met_64119.jpg" alt=""><small>Flask · dancers</small></div>
+      </div>
+    </div>
+    <div class="carousel" data-r style="--d:200">
+      <img src="img/cma_122448.jpg" class="on" alt="">
+      <img src="img/met_52765.jpg" alt="">
+      <img src="img/cma_94798.jpg" alt="">
+      <img src="img/met_42350.jpg" alt="">
+      <img src="img/cma_165426.jpg" alt="">
+      <img src="img/met_49849.jpg" alt="">
+      <img src="img/cma_137337.jpg" alt="">
+      <img src="img/cma_284746.jpg" alt="">
+      <img src="img/met_49920.jpg" alt="">
+      <img src="img/cma_98165.jpg" alt="">
+      <img src="img/met_42210.jpg" alt="">
+      <div class="cap on" id="heroCap"></div>
+    </div>
+  </div>
+  <div class="foot"><span>Vision Bot · LI Junyan · WANG Haocheng · WU Chengzhi · ZHAO Xiangyuan · ZHU Zimeng</span><span class="fr"><span>The Hong Kong Polytechnic University</span><img src="img/polyu_logo.png" alt=""></span></div>
+</section>
+
+<section class='slide' data-title='Three queries'>
+<p class='kicker' data-r>The Problem · Increasing Query Difficulty</p>
+<h2 data-r style='--d:60'>One category, increasingly demanding descriptions.</h2>
+<p class='lead' data-r style='--d:130'>Search becomes harder as a broad category gives way to visual attributes and a specialist name.</p>
+<div class='difficulty-emphasis' data-r style='--d:200'><strong>Simple forms → abstract description</strong><strong>Colloquial text → bilingual specialist names</strong></div>
+<div class='query-progression' data-r style='--d:300'>
+<article class='query-level'><div class='level-label'>01 · Broad category</div><img src='img/met_49920.jpg' alt='Porcelain vessel'><h3>Porcelain</h3><p>A general category with few constraints.</p></article>
+<span class='difficulty-arrow' aria-hidden='true'>→</span>
+<article class='query-level'><div class='level-label'>02 · Visual description</div><img src='img/met_47573.jpg' alt='Blue-and-white vase'><h3>blue-and-white vase</h3><p>Colour, decoration and form must match together.</p></article>
+<span class='difficulty-arrow' aria-hidden='true'>→</span>
+<article class='query-level specialist'><div class='level-label'>03 · Specialist name</div><img src='img/met_42190.jpg' alt='Meiping vase'><h3><i>meiping</i> <span lang='zh'>（梅瓶）</span></h3><p>A precise form: short neck, broad shoulder, tapered body.</p></article>
+</div>
+<p class='difficulty-caption' data-r style='--d:500'>Increasing difficulty: category recognition → combined visual attributes → specialist form recognition</p>
+<div class="foot"><span>Curio · COMP5523 · Module A</span><span class="fr"><span>The Hong Kong Polytechnic University</span><img src="img/polyu_logo.png" alt=""></span></div>
+</section>
+
+<section class="slide" data-title="Live demo">
+  <p class="kicker" data-r>Live Demonstration</p>
+  <h2 data-r style="--d:60">One query. Five seconds.</h2>
+  <div class="demo-rail">
+    <div class="demo-wrap" data-r style="--d:140;margin-top:8px">
+      <div class="demo-frame">
+        <div class="demo-poster">
+          <span class="dp-k">Curio · live front-end</span>
+          <span class="dp-t">Type “梅瓶” — or drop a reference image</span>
+          <span class="dp-s">Start Curio.cmd, then this frame loads 127.0.0.1:8000</span>
+        </div>
+        <iframe id="demoFrame" data-src="http://127.0.0.1:8000" loading="lazy"></iframe>
+      </div>
+      <p class="demo-note">Run <b>Start Curio.cmd</b> first — this frame then loads <b>http://127.0.0.1:8000</b>.</p>
+    </div>
+    <div class="demo-side" data-r style="--d:300">
+      <p class="ds-k">What you will see</p>
+      <div class="ds-step"><b>01</b><span>Type a plain Chinese phrase — “绿色窄口瓷瓶”.</span></div>
+      <div class="ds-step"><b>02</b><span>Watch the ranking: colour and form, not the title.</span></div>
+      <div class="ds-step"><b>03</b><span>Switch to a specialist name — “梅瓶” · <i>meiping</i>.</span></div>
+      <div class="ds-step"><b>04</b><span>Then the reference-image mode for the hard cases.</span></div>
+      <div class="ds-chips"><span>梅瓶</span><span>绿色窄口瓷瓶</span><span>军持</span></div>
+    </div>
+  </div>
+  <div class="foot"><span>Curio · COMP5523 · front-end demo</span><span class="fr"><span>The Hong Kong Polytechnic University</span><img src="img/polyu_logo.png" alt=""></span></div>
+</section>
+
+<section class="slide" data-title="Data & Evaluation">
+  <p class="kicker" data-r>Module A · Data &amp; Evaluation</p>
+  <h2 data-r style="--d:60">Data, and a meaningful definition of relevance.</h2>
+  <div class="grid g4" data-r style="--d:140;margin-top:12px">
+    <div class="card" style="text-align:center"><div class="num" data-count="4692" data-fmt=",">0</div><p>Museum images<br>Met · Cleveland · V&amp;A</p></div>
+    <div class="card" style="text-align:center"><div class="num" data-count="20">0</div><p>Bilingual queries<br>60 dev / 140 test</p></div>
+    <div class="card" style="text-align:center"><div class="num">0–3</div><p>Blind relevance grades<br>titles hidden</p></div>
+    <div class="card" style="text-align:center"><div class="num">Frozen</div><p>Test set sealed<br>before any experiment</p></div>
+  </div>
+  <div class="grid g2" data-r style="--d:280;margin-top:14px;flex:1;align-items:start">
+    <div>
+      <h3 style="font-size:15px;color:var(--crimson);margin-bottom:7px">AI-assisted labeling pipeline</h3>
+      <div class="steps">
+        <div class="step"><b>Step 1 · AI draft</b><p>Model reads pixels only — no title, no period, no collection metadata.</p></div>
+        <div class="step"><b>Step 2 · Human verification</b><p>Team members review and correct each AI-drafted label.</p></div>
+        <div class="step"><b>Step 3 · Freeze</b><p>Labels locked before evaluation; every number uses this frozen set.</p></div>
+      </div>
+    </div>
+    <div>
+      <h3 style="font-size:15px;color:var(--crimson);margin-bottom:2px">One labeled card, rotating</h3>
+      <div class="anno" id="annoCarousel">
+        <div class="acard on">
+          <img src="img/cma_128304.jpg" alt="">
+          <p class="zc">绿色边缘八角形牌饰，上有动物形浮雕。</p>
+          <p class="ec">A green-edged octagonal plaque with raised animal figures.</p>
+          <p class="meta">object_type: ornament · motifs: geometric · confidence: medium</p>
+        </div>
+        <div class="acard">
+          <img src="img/met_42210.jpg" alt="">
+          <p class="zc">蓝白色高瓶，腹部圆润，绘有花卉与果实纹样。</p>
+          <p class="ec">A blue-and-white vessel painted with flowers and fruits.</p>
+          <p class="meta">object_type: vase · colors: blue, white · motifs: floral</p>
+        </div>
+        <div class="acard">
+          <img src="img/cma_284746.jpg" alt="">
+          <p class="zc">浅青绿色短颈瓶，表面有浅浮雕纹饰。</p>
+          <p class="ec">A pale green short-necked vase with subtle carved relief.</p>
+          <p class="meta">object_type: vase · colors: green · shape: narrow_mouth, round_body</p>
+        </div>
+      </div>
+      <p style="font-size:11px;color:var(--grey);margin-top:7px;font-style:italic">Card 1: Tang bronze mirror — labeled without ever seeing the word “mirror”.</p>
+    </div>
+  </div>
+  <div class="srcstrip" data-r style="--d:420">
+    <div class="ss"><img src="img/cma_128304.jpg" alt=""><span>Bronze · Tang</span></div>
+    <div class="ss"><img src="img/cma_284746.jpg" alt=""><span>Celadon · Song</span></div>
+    <div class="ss"><img src="img/met_49853.jpg" alt=""><span>Porcelain · Ming</span></div>
+    <div class="ss"><img src="img/met_64119.jpg" alt=""><span>Glazed stoneware</span></div>
+    <div class="ss"><img src="img/met_52765.jpg" alt=""><span>Jar · Ming</span></div>
+    <div class="ss"><img src="img/cma_165426.jpg" alt=""><span>Ewer · Tang</span></div>
+    <p class="srcnote">Met · Cleveland · V&amp;A — one protocol across every material and every collection.</p>
+  </div>
+  <div class="foot"><span>v5.1 protocol · frozen before any test run</span><span class="fr"><span>The Hong Kong Polytechnic University</span><img src="img/polyu_logo.png" alt=""></span></div>
+</section>
+
+<section class="slide" data-title="One record">
+  <p class="kicker" data-r>Module A · A Concrete Example</p>
+  <h2 data-r style="--d:60">One record, step by step.</h2>
+  <div class="split" data-r style="--d:150;margin-top:10px">
+    <div>
+      <img class="rec" src="img/cma_128304.jpg" alt="">
+      <p style="font-size:10.5px;color:var(--grey);margin-top:7px;text-align:center">Mirror with Animals and Birds · Tang, early 700s · Cleveland Museum of Art · CC0</p>
+    </div>
+    <div class="steps">
+      <div class="step"><b>① Museum record</b><p><b>Mirror with Animals and Birds</b> — bronze inset with gilded-silver relief decoration, early 700s, Tang dynasty.</p></div>
+      <div class="step"><b>② AI-assisted blind caption (pixel only)</b><p>“绿色边缘八角形牌饰，上有动物形浮雕。” — no title, no period, no “mirror” keyword.</p></div>
+      <div class="step"><b>③ Human-verified label</b><p>Reviewed by a team member; object_type <i>ornament</i>, motif <i>geometric</i>, confidence <i>medium</i>.</p></div>
+      <div class="step"><b>④ Purpose</b><p>Feeds training and evaluation. Same procedure for all 4,692 images — consistent, frozen, reproducible.</p></div>
+    </div>
+  </div>
+  <div class="foot"><span>One pipeline · every image</span><span class="fr"><span>The Hong Kong Polytechnic University</span><img src="img/polyu_logo.png" alt=""></span></div>
+</section>
+
+
+<section class="slide" data-title="Representation">
+  <p class="kicker" data-r>Module B · Visual Representation &amp; Fine-tuning</p>
+  <h2 data-r style="--d:60">Adaptation closes the language gap.</h2>
+  <div class="split" data-r style="--d:140;margin-top:10px;grid-template-columns:1.06fr .94fr;align-items:start;flex:0 0 auto">
+    <div>
+      <div class="bchart">
+        <div class="brow"><span class="bl">CLIP</span><div class="btrack"><div class="bfill" style="--w:62.3%;--d:180"></div></div><span class="bv">0.623</span></div>
+        <div class="brow"><span class="bl">CLIP · ZH</span><div class="btrack"><div class="bfill zh" style="--w:14.1%;--d:300"></div></div><span class="bv">0.141</span></div>
+        <div class="brow"><span class="bl">SigLIP2</span><div class="btrack"><div class="bfill" style="--w:72.2%;--d:420"></div></div><span class="bv">0.722</span></div>
+        <div class="brow"><span class="bl">SigLIP2 · ZH</span><div class="btrack"><div class="bfill zh" style="--w:63.9%;--d:540"></div></div><span class="bv">0.639</span></div>
+        <div class="brow"><span class="bl">+ Domain LoRA</span><div class="btrack"><div class="bfill" style="--w:79.5%;--d:660"></div></div><span class="bv">0.795</span></div>
+        <div class="brow"><span class="bl">+ Domain LoRA · ZH</span><div class="btrack"><div class="bfill zh" style="--w:72.2%;--d:780"></div></div><span class="bv">0.722</span></div>
+        <div class="brow"><span class="bl"><b>+ Text-Tower LoRA</b></span><div class="btrack"><div class="bfill" style="--w:79.6%;--d:900"></div></div><span class="bv">0.796</span></div>
+        <div class="brow"><span class="bl"><b>+ Text-Tower LoRA · ZH</b></span><div class="btrack"><div class="bfill zh" style="--w:74.2%;--d:1020"></div></div><span class="bv">0.742</span></div>
+      </div>
+      <div class="legend"><span><i style="background:var(--crimson)"></i>EN nDCG@10</span><span><i style="background:var(--gold)"></i>ZH nDCG@10</span></div>
+      <p style="font-size:10.5px;color:var(--grey);margin-top:7px">v5.1 protocol · 140-image test core · bilingual_anchor = two-seed mean (seed 17 / 29); single-seed checkpoints served live over HTTP.</p>
+    </div>
+    <div>
+      <table data-r style="--d:400">
+        <thead><tr><th>Encoder</th><th class="num">EN</th><th class="num">ZH</th><th class="num">Gap</th></tr></thead>
+        <tbody>
+          <tr><td>CLIP (zero-shot)</td><td class="num">0.623</td><td class="num">0.141</td><td class="num">+0.483</td></tr>
+          <tr><td>SigLIP2 (base)</td><td class="num">0.722</td><td class="num">0.639</td><td class="num">+0.083</td></tr>
+          <tr><td>+ Domain LoRA (image tower)</td><td class="num">0.795</td><td class="num">0.722</td><td class="num">+0.074</td></tr>
+          <tr class="hl"><td>+ Text-Tower LoRA (bilingual_anchor)</td><td class="num">0.796</td><td class="num">0.742</td><td class="num">+0.054</td></tr>
+        </tbody>
+      </table>
+      <div class="card" data-r style="--d:560;margin-top:12px">
+        <h3>Where it lives</h3>
+        <p>Text-tower LoRA code, weights and HTTP interface are on branch <b>codex/text-tower-lora-handoff</b> — served at <b>/api/search/text-lora</b> with five fixed model IDs.</p>
+      </div>
+    </div>
+  </div>
+  <div class="escal" data-r style="--d:660;margin-top:auto;margin-bottom:26px">
+    <div class="es"><span class="en">CLIP</span><b>0.483</b><small>gap</small></div>
+    <span class="ea">→</span>
+    <div class="es"><span class="en">SigLIP2</span><b>0.083</b><small>gap</small></div>
+    <span class="ea">→</span>
+    <div class="es"><span class="en">+ image LoRA</span><b>0.074</b><small>gap</small></div>
+    <span class="ea">→</span>
+    <div class="es hl"><span class="en">+ text LoRA</span><b>0.054</b><small>gap</small></div>
+  </div>
+  <div class="foot"><span>Sources: artifacts/text_lora_relevance_v5 · docs/TEXT_LORA_FRONTEND_HANDOFF.md</span><span class="fr"><span>The Hong Kong Polytechnic University</span><img src="img/polyu_logo.png" alt=""></span></div>
+</section>
+
+<section class="slide" data-title="An idea from Lecture 09">
+  <p class="kicker" data-r>Module C · An idea from Lecture 09</p>
+  <h1 data-r style="--d:100;font-size:38px">“A photo of a [category]”</h1>
+  <div class="fig" data-r style="--d:220">
+    <img src="img/clip_prefix_reference.png" alt="" style="max-height:380px">
+    <p class="cap">Radford et al., “Learning Transferable Visual Models From Natural Language Supervision” — phrase templates gave +1.3% on ImageNet.</p>
+  </div>
+  <div class="qcmp" data-r style="--d:360">
+    <div class="qc"><span class="qh">CLIP · trained with phrases</span><b>+1.3%</b><small>ImageNet accuracy, phrase templates</small></div>
+    <div class="qv">Does the same heuristic help <b>SigLIP2</b>?</div>
+    <div class="qc qm"><span class="qh">SigLIP2 · our gallery</span><b id="questionValue">?</b><b id="measuredValue" class="result-value" hidden>±0.006</b><small id="resultCaption">so we measured it ourselves</small><button class="result-button" id="resultReveal" aria-controls="measuredValue" aria-expanded="false">Reveal result · Space</button></div>
+  </div>
+  <p class="lead" data-r style="--d:460;margin-top:6px;text-align:center;font-size:16px">In the experiment, we had an idea. Remember what Lecture 09 told us about CLIP? <b>So we tested it on our gallery.</b></p>
+  <div class="foot"><span>Course reference · Lecture 09 · CLIP</span><span class="fr"><span>The Hong Kong Polytechnic University</span><img src="img/polyu_logo.png" alt=""></span></div>
+</section>
+
+<section class="slide" data-title="Prompt calibration">
+  <p class="kicker" data-r>Module C · Prompt Calibration</p>
+  <h2 data-r style="--d:60">We tested 19 templates. Nothing survived.</h2>
+  <div class="grid g2" data-r style="--d:140;margin-top:8px;flex:1;align-items:start">
+    <div>
+      <div class="zbchart">
+        <div class="zrow"><span class="zl">“a photo of X” · EN</span><div class="ztrack"><div class="zbar pos" style="--w:46.6667%;--d:260"></div><i class="zx"></i></div><span class="zv good">+0.0056</span></div>
+        <div class="zrow"><span class="zl">“a photo of X” · ZH</span><div class="ztrack"><div class="zbar neg" style="--w:10%;--d:400"></div><i class="zx"></i></div><span class="zv bad">−0.0012</span></div>
+        <div class="zrow"><span class="zl">dev-selected · EN</span><div class="ztrack"><div class="zbar neg" style="--w:36.6667%;--d:540"></div><i class="zx"></i></div><span class="zv bad">−0.0044</span></div>
+        <div class="zrow"><span class="zl">dev-selected · ZH</span><div class="ztrack"><div class="zbar pos" style="--w:33.3333%;--d:680"></div><i class="zx"></i></div><span class="zv good">+0.0040</span></div>
+        <div class="zaxis"><span>−0.006</span><span>0</span><span>+0.006</span></div>
+      </div>
+      <p style="font-size:10.5px;color:var(--grey);margin-top:8px;line-height:1.5">Δ nDCG@10 versus raw query · paired sign-flip test, 10,000 resamples · every point inside ±0.006 · Holm-corrected p = 1.0000 · 24 paired EN/ZH queries, 60-image audit gallery</p>
+      <div class="card" style="margin-top:10px">
+        <h3>Template families (19 total)</h3>
+        <p style="font-size:12px">Baseline 1 · case/punctuation 4 · article 2 · prefix 8 (“a photo of …”) · suffix 2 (“museum object”) · caption-like 2 (“image showing”)</p>
+      </div>
+    </div>
+    <div>
+      <div class="card" style="margin-bottom:10px">
+        <h3>A transfer hypothesis, tested</h3>
+        <p>A CLIP prompt heuristic does <b>not guarantee a gain with SigLIP2</b>. Our experiment measures the effect in this artifact gallery; it does not identify a causal training-data explanation.</p>
+      </div>
+      <div class="take" style="margin-top:auto;font-size:16px;padding:18px 20px"><b>Takeaway:</b> the phrase effect stayed inside ±0.006 — effectively zero for this gallery.</div>
+    </div>
+  </div>
+  <div class="foot"><span>Module C · 50 s</span><span class="fr"><span>The Hong Kong Polytechnic University</span><img src="img/polyu_logo.png" alt=""></span></div>
+</section>
+
+<section class="slide" data-title="Whole-corpus sets">
+  <p class="kicker" data-r>Module C · Whole-Corpus Set Retrieval</p>
+  <h2 data-r style="--d:60">Return a set, not a quota.</h2>
+  <div class="split" data-r style="--d:140;margin-top:8px;grid-template-columns:1.1fr .9fr">
+    <div>
+      <div class="bchart">
+        <div class="brow"><span class="bl">Dense threshold</span><div class="btrack"><div class="bfill" style="--w:52.9%;--d:240"></div></div><span class="bv">0.529</span></div>
+        <div class="brow"><span class="bl">Adaptive GMM</span><div class="btrack"><div class="bfill" style="--w:46.9%;--d:380"></div></div><span class="bv">0.469</span></div>
+        <div class="brow"><span class="bl">Calibrated</span><div class="btrack"><div class="bfill" style="--w:57.3%;--d:520"></div></div><span class="bv">0.573</span></div>
+        <div class="brow"><span class="bl"><b>Calibrated + color</b></span><div class="btrack"><div class="bfill" style="--w:58.3%;--d:660"></div></div><span class="bv">0.583</span></div>
+      </div>
+      <div class="legend"><span><i style="background:var(--crimson)"></i>Macro F1 (EN; ZH in table)</span></div>
+      <table data-r style="--d:500;margin-top:10px">
+        <thead><tr><th>Boundary method</th><th class="num">EN F1</th><th class="num">ZH F1</th></tr></thead>
+        <tbody>
+          <tr><td>Dense threshold</td><td class="num">0.529</td><td class="num">0.526</td></tr>
+          <tr><td>Adaptive GMM</td><td class="num">0.469</td><td class="num">0.461</td></tr>
+          <tr><td>Calibrated threshold</td><td class="num">0.573</td><td class="num">0.515</td></tr>
+          <tr class="hl"><td>Calibrated + raw-color auxiliary</td><td class="num">0.583</td><td class="num">0.524</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div>
+      <div class="card" style="margin-bottom:10px">
+        <h3>Why sets</h3>
+        <p>A ranked list always produces a fifth result — even when it is irrelevant. We score <b>all 4,692 images</b> and make an explicit membership decision.</p>
+      </div>
+      <div class="card" style="margin-bottom:10px">
+        <h3>What that means</h3>
+        <p>The accepted set can contain <b>0, 12, or hundreds</b> of images — chosen on the development set, reported with precision and recall.</p>
+      </div>
+      <p style="font-size:10.5px;color:var(--grey)">Macro F1 · dev-selected boundary · 140-image test-core membership · Source: artifacts/research-v6.json</p>
+    </div>
+  </div>
+  <div class="foot"><span>Module C · sets</span><span class="fr"><span>The Hong Kong Polytechnic University</span><img src="img/polyu_logo.png" alt=""></span></div>
+</section>
+
+
+<section class="slide" data-title="Reference route">
+  <p class="kicker" data-r>Module D · Image–Image Matching</p>
+  <h2 data-r style="--d:60">When the text tower runs out of words.</h2>
+  <div class="split" data-r style="--d:150;grid-template-columns:.94fr 1.06fr;margin-top:4px;align-items:start">
+    <div>
+      <p class="lead" style="font-size:15px">For rare forms and compound techniques the text tower has no stable visual direction. So the system sends the <b>formal name, period and technique</b> to museum APIs, takes back real collection photographs as <b>visual prototypes</b>, and ranks the local gallery by image features.</p>
+      <div class="flow" id="flowRow">
+        <div class="fnode">Name · period · technique</div><span class="farr">→</span>
+        <div class="fnode">Museum API</div><span class="farr">→</span>
+        <div class="fnode">Visual prototype</div><span class="farr">→</span>
+        <div class="fnode hl">SigLIP / DINO</div>
+      </div>
+      <div class="chips" style="flex-wrap:wrap;gap:8px;margin:14px 0 0">
+        <div class="chip" style="font-size:12.5px;padding:7px 13px">V&amp;A · MIA · Met · Cleveland</div>
+        <div class="chip" style="font-size:12.5px;padding:7px 13px">Source-qualified</div>
+        <div class="chip" style="font-size:12.5px;padding:7px 13px">No user vocabulary needed</div>
+      </div>
+      <p style="font-size:11.5px;color:var(--grey);margin-top:12px;line-height:1.5">Every reference is checked for provenance before it may steer the ranking — a wrong prototype is worse than no prototype.</p>
+      <div class="probe-strip">
+        <div class="ps-item"><img src="img/cma_165426.jpg" alt=""><small>stoneware</small></div>
+        <div class="ps-item"><img src="img/cma_128304.jpg" alt=""><small>bronze mirror</small></div>
+        <div class="ps-item"><img src="img/met_52765.jpg" alt=""><small>enamelware</small></div>
+        <div class="ps-item"><img src="img/met_49853.jpg" alt=""><small>porcelain</small></div>
+        <p>real prototypes,<br>not a keyword list</p>
+      </div>
+      <div class="take" style="margin-top:auto;font-size:15px"><b>Key idea:</b> museum photographs turn a specialist name into visual evidence the local gallery can actually match.</div>
+    </div>
+    <div class="fig" style="margin-top:0">
+      <svg class="pipeline-svg" viewBox="0 0 760 492" role="img" aria-label="Museum reference pipeline: search, qualification, image encoding and gallery ranking"><defs><marker id="pipeArrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0 L10 5 L0 10Z" fill="#89939e"/></marker></defs><text x="22" y="37" font-size="20" font-weight="bold" fill="#2B2226">From a specialist name to a comparable appearance</text><text x="22" y="66" font-size="14" fill="#8A8078">Museum search → source qualification → visual ranking</text><rect x="22" y="110" width="145" height="140" rx="8" fill="white" stroke="#526B8D" stroke-width="1.7"/><text x="94.5" y="141" text-anchor="middle" font-size="15" font-weight="bold" fill="#526B8D">User query</text><text x="94.5" y="192" text-anchor="middle" font-size="12.5" fill="#4A4046">“Ming blue and</text><text x="94.5" y="210" text-anchor="middle" font-size="12.5" fill="#4A4046">white kendi” or an</text><text x="94.5" y="228" text-anchor="middle" font-size="12.5" fill="#4A4046">English description</text><path d="M167 180H185" stroke="#89939e" stroke-width="1.5" marker-end="url(#pipeArrow)"/><rect x="185" y="110" width="145" height="140" rx="8" fill="white" stroke="#526B8D" stroke-width="1.7"/><text x="257.5" y="141" text-anchor="middle" font-size="15" font-weight="bold" fill="#526B8D">Rule parser</text><text x="257.5" y="192" text-anchor="middle" font-size="12.5" fill="#4A4046">Era / form / technique</text><text x="257.5" y="210" text-anchor="middle" font-size="12.5" fill="#4A4046">Small rule set,</text><text x="257.5" y="228" text-anchor="middle" font-size="12.5" fill="#4A4046">not an LLM</text><path d="M330 180H348" stroke="#89939e" stroke-width="1.5" marker-end="url(#pipeArrow)"/><rect x="348" y="110" width="218" height="140" rx="8" fill="white" stroke="#526B8D" stroke-width="1.7"/><text x="457.0" y="141" text-anchor="middle" font-size="15" font-weight="bold" fill="#526B8D">Museum API search</text><text x="457.0" y="192" text-anchor="middle" font-size="12.5" fill="#4A4046">V&amp;A · MIA · Met</text><text x="457.0" y="210" text-anchor="middle" font-size="12.5" fill="#4A4046">Cleveland · Wikimedia</text><path d="M566 180H584" stroke="#89939e" stroke-width="1.5" marker-end="url(#pipeArrow)"/><rect x="584" y="110" width="154" height="140" rx="8" fill="white" stroke="#526B8D" stroke-width="1.7"/><text x="661.0" y="141" text-anchor="middle" font-size="15" font-weight="bold" fill="#526B8D">Candidate</text><text x="661.0" y="161" text-anchor="middle" font-size="15" font-weight="bold" fill="#526B8D">references</text><text x="661.0" y="192" text-anchor="middle" font-size="12.5" fill="#4A4046">Museum photographs</text><text x="661.0" y="210" text-anchor="middle" font-size="12.5" fill="#4A4046">+ full source records</text><rect x="22" y="310" width="160" height="140" rx="8" fill="white" stroke="#488E90" stroke-width="1.7"/><text x="102.0" y="341" text-anchor="middle" font-size="15" font-weight="bold" fill="#488E90">Source</text><text x="102.0" y="361" text-anchor="middle" font-size="15" font-weight="bold" fill="#488E90">qualification</text><text x="102.0" y="392" text-anchor="middle" font-size="12.5" fill="#4A4046">Direct / indirect</text><text x="102.0" y="410" text-anchor="middle" font-size="12.5" fill="#4A4046">Unknown / contradicted</text><path d="M182 380H200" stroke="#89939e" stroke-width="1.5" marker-end="url(#pipeArrow)"/><rect x="200" y="310" width="140" height="140" rx="8" fill="white" stroke="#488E90" stroke-width="1.7"/><text x="270.0" y="341" text-anchor="middle" font-size="15" font-weight="bold" fill="#488E90">Image–record</text><text x="270.0" y="361" text-anchor="middle" font-size="15" font-weight="bold" fill="#488E90">consistency</text><text x="270.0" y="392" text-anchor="middle" font-size="12.5" fill="#4A4046">Is the photo closest</text><text x="270.0" y="410" text-anchor="middle" font-size="12.5" fill="#4A4046">to its own record?</text><path d="M340 380H358" stroke="#89939e" stroke-width="1.5" marker-end="url(#pipeArrow)"/><rect x="358" y="310" width="125" height="140" rx="8" fill="white" stroke="#488E90" stroke-width="1.7"/><text x="420.5" y="341" text-anchor="middle" font-size="15" font-weight="bold" fill="#488E90">Image</text><text x="420.5" y="361" text-anchor="middle" font-size="15" font-weight="bold" fill="#488E90">encoding</text><text x="420.5" y="392" text-anchor="middle" font-size="12.5" fill="#4A4046">SigLIP2-LoRA</text><text x="420.5" y="410" text-anchor="middle" font-size="12.5" fill="#4A4046">+ DINOv2</text><path d="M483 380H501" stroke="#89939e" stroke-width="1.5" marker-end="url(#pipeArrow)"/><rect x="501" y="310" width="140" height="140" rx="8" fill="white" stroke="#488E90" stroke-width="1.7"/><text x="571.0" y="341" text-anchor="middle" font-size="15" font-weight="bold" fill="#488E90">Gallery ranking</text><text x="571.0" y="392" text-anchor="middle" font-size="12.5" fill="#4A4046">Reference weighting</text><text x="571.0" y="410" text-anchor="middle" font-size="12.5" fill="#4A4046">+ rank fusion</text><text x="571.0" y="428" text-anchor="middle" font-size="12.5" fill="#4A4046">No local titles</text><path d="M641 380H659" stroke="#89939e" stroke-width="1.5" marker-end="url(#pipeArrow)"/><rect x="659" y="310" width="79" height="140" rx="8" fill="white" stroke="#488E90" stroke-width="1.7"/><text x="698.5" y="341" text-anchor="middle" font-size="15" font-weight="bold" fill="#488E90">Local</text><text x="698.5" y="361" text-anchor="middle" font-size="15" font-weight="bold" fill="#488E90">results</text><text x="698.5" y="392" text-anchor="middle" font-size="12.5" fill="#4A4046">Sources</text><text x="698.5" y="410" text-anchor="middle" font-size="12.5" fill="#4A4046">&amp; limits</text><path d="M661 250V280H102V310" fill="none" stroke="#89939e" stroke-width="1.5" marker-end="url(#pipeArrow)"/></svg>
+      <p class="cap">Figure 1 — Two stages: museum search finds a viewable example; qualification decides whether it may act as a prototype.</p>
+    </div>
+  </div>
+  <div class="foot"><span>Module D · reference route</span><span class="fr"><span>The Hong Kong Polytechnic University</span><img src="img/polyu_logo.png" alt=""></span></div>
+</section>
+
+<section class="slide" data-title="Kendi case">
+  <p class="kicker" data-r>Module D · Typical Case</p>
+  <h2 data-r style="--d:60">A Ming kendi: zero in the top 20, then two at the top.</h2>
+  <div class="fig" data-r style="--d:150;margin-top:4px">
+    <img src="img/case_kendi_en.png" alt="Kendi case comparison" style="max-height:404px">
+    <p class="cap">Left: text-search top-3 — none is a kendi. Right: the reference route — ranks 1 and 2 are both kendi; rank 3 is a related pouring vessel and is not counted.</p>
+  </div>
+  <div class="take" data-r style="--d:320"><b>Takeaway:</b> text top-20 returns no kendi at all. The image route puts two kendi at ranks 1 and 2 — it matches appearance and form, not the title string.</div>
+  <div class="foot"><span>Module D · case study</span><span class="fr"><span>The Hong Kong Polytechnic University</span><img src="img/polyu_logo.png" alt=""></span></div>
+</section>
+
+<section class="slide" data-title="25 hard queries">
+  <p class="kicker" data-r>Module D · 25 Hard Queries</p>
+  <h2 data-r style="--d:60">SigLIP lifts top-3 precision by 8.0 points over text.</h2>
+  <div class="split" data-r style="--d:140;grid-template-columns:.78fr 1.22fr;margin-top:6px">
+    <div>
+      <table>
+        <thead><tr><th>Route</th><th class="num">HardP@3</th><th class="num">Recall@12</th><th class="num">Cat. err</th></tr></thead>
+        <tbody>
+          <tr><td>Text baseline</td><td class="num">.280</td><td class="num">.348</td><td class="num">1.3%</td></tr>
+          <tr class="hl"><td>SigLIP</td><td class="num">.360</td><td class="num">.354</td><td class="num">0.7%</td></tr>
+          <tr><td>DINOv2</td><td class="num">.333</td><td class="num">.323</td><td class="num">8.0%</td></tr>
+        </tbody>
+      </table>
+      <p style="font-size:11px;color:var(--grey);margin-top:9px;line-height:1.5">11 v9 + 14 new · all exact≥4 · same reference set · 4,692 images · text / SigLIP / DINO</p>
+      <div class="take" style="font-size:13px;margin-top:12px"><b>Takeaway:</b> SigLIP is the steadier default. DINO is stronger on bronze mirrors, jade and kesi — but carries 8.0% category error. The image route does not win everywhere.</div>
+    </div>
+    <div class="fig" style="margin-top:0">
+      <svg class="query-chart" viewBox="0 0 740 530" role="img" aria-label="Per-query SigLIP and DINO HardP at 3 comparison"><rect width="740" height="530" rx="10" fill="white"/><text x="24" y="33" font-size="21" font-weight="bold" fill="#2B2226">SigLIP vs DINO · HardP@3</text><text x="24" y="56" font-size="14" fill="#8A8078">Each row is one manually reviewed query</text><line x1="172" y1="79" x2="172" y2="465" stroke="#E8E0DB"/><text x="172" y="488" text-anchor="middle" font-size="13" fill="#8A8078">0.00</text><line x1="272.5" y1="79" x2="272.5" y2="465" stroke="#E8E0DB"/><text x="272.5" y="488" text-anchor="middle" font-size="13" fill="#8A8078">0.25</text><line x1="373" y1="79" x2="373" y2="465" stroke="#E8E0DB"/><text x="373" y="488" text-anchor="middle" font-size="13" fill="#8A8078">0.50</text><line x1="473.5" y1="79" x2="473.5" y2="465" stroke="#E8E0DB"/><text x="473.5" y="488" text-anchor="middle" font-size="13" fill="#8A8078">0.75</text><line x1="574" y1="79" x2="574" y2="465" stroke="#E8E0DB"/><text x="574" y="488" text-anchor="middle" font-size="13" fill="#8A8078">1.00</text><g class="query-row" style="--qd:0ms"><text x="160" y="101" text-anchor="end" font-size="14" fill="#4A4046">Han bronze mirror</text><line class="qline" pathLength="1" x1="440" y1="96" x2="574" y2="96" stroke="#B98A2F" stroke-width="4" opacity=".55"/><circle class="qdot" cx="440" cy="96" r="6" fill="#2F6F63" stroke="white" stroke-width="2"/><circle class="qdot" cx="574" cy="96" r="6" fill="#B98A2F" stroke="white" stroke-width="2"/><text class="qdot" x="589" y="101" font-size="14" fill="#B98A2F" font-weight="bold">DINO +0.33</text></g><g class="query-row" style="--qd:85ms"><text x="160" y="144" text-anchor="end" font-size="14" fill="#4A4046">Qing jade</text><line class="qline" pathLength="1" x1="440" y1="139" x2="574" y2="139" stroke="#B98A2F" stroke-width="4" opacity=".55"/><circle class="qdot" cx="440" cy="139" r="6" fill="#2F6F63" stroke="white" stroke-width="2"/><circle class="qdot" cx="574" cy="139" r="6" fill="#B98A2F" stroke="white" stroke-width="2"/><text class="qdot" x="589" y="144" font-size="14" fill="#B98A2F" font-weight="bold">DINO +0.33</text></g><g class="query-row" style="--qd:170ms"><text x="160" y="187" text-anchor="end" font-size="14" fill="#4A4046">Rank badge</text><line class="qline" pathLength="1" x1="436" y1="182" x2="444" y2="182" stroke="#8A8078" stroke-width="4" opacity=".55"/><circle class="qdot" cx="436" cy="182" r="6" fill="#2F6F63" stroke="white" stroke-width="2"/><circle class="qdot" cx="444" cy="182" r="6" fill="#B98A2F" stroke="white" stroke-width="2"/><text class="qdot" x="459" y="187" font-size="14" fill="#8A8078" font-weight="bold">0.00</text></g><g class="query-row" style="--qd:255ms"><text x="160" y="230" text-anchor="end" font-size="14" fill="#4A4046">Qing kesi</text><line class="qline" pathLength="1" x1="440" y1="225" x2="574" y2="225" stroke="#B98A2F" stroke-width="4" opacity=".55"/><circle class="qdot" cx="440" cy="225" r="6" fill="#2F6F63" stroke="white" stroke-width="2"/><circle class="qdot" cx="574" cy="225" r="6" fill="#B98A2F" stroke="white" stroke-width="2"/><text class="qdot" x="589" y="230" font-size="14" fill="#B98A2F" font-weight="bold">DINO +0.33</text></g><g class="query-row" style="--qd:340ms"><text x="160" y="273" text-anchor="end" font-size="14" fill="#4A4046">Jian hare’s-fur bowl</text><line class="qline" pathLength="1" x1="440" y1="268" x2="306" y2="268" stroke="#2F6F63" stroke-width="4" opacity=".55"/><circle class="qdot" cx="440" cy="268" r="6" fill="#2F6F63" stroke="white" stroke-width="2"/><circle class="qdot" cx="306" cy="268" r="6" fill="#B98A2F" stroke="white" stroke-width="2"/><text class="qdot" x="455" y="273" font-size="14" fill="#2F6F63" font-weight="bold">Sig +0.33</text></g><g class="query-row" style="--qd:425ms"><text x="160" y="316" text-anchor="end" font-size="14" fill="#4A4046">Yongzheng bowl</text><line class="qline" pathLength="1" x1="440" y1="311" x2="172" y2="311" stroke="#2F6F63" stroke-width="4" opacity=".55"/><circle class="qdot" cx="440" cy="311" r="6" fill="#2F6F63" stroke="white" stroke-width="2"/><circle class="qdot" cx="172" cy="311" r="6" fill="#B98A2F" stroke="white" stroke-width="2"/><text class="qdot" x="455" y="316" font-size="14" fill="#2F6F63" font-weight="bold">Sig +0.67</text></g><g class="query-row" style="--qd:510ms"><text x="160" y="359" text-anchor="end" font-size="14" fill="#4A4046">Tang sancai figure</text><line class="qline" pathLength="1" x1="302" y1="354" x2="310" y2="354" stroke="#8A8078" stroke-width="4" opacity=".55"/><circle class="qdot" cx="302" cy="354" r="6" fill="#2F6F63" stroke="white" stroke-width="2"/><circle class="qdot" cx="310" cy="354" r="6" fill="#B98A2F" stroke="white" stroke-width="2"/><text class="qdot" x="325" y="359" font-size="14" fill="#8A8078" font-weight="bold">0.00</text></g><g class="query-row" style="--qd:595ms"><text x="160" y="402" text-anchor="end" font-size="14" fill="#4A4046">Ming jar</text><line class="qline" pathLength="1" x1="172" y1="397" x2="306" y2="397" stroke="#B98A2F" stroke-width="4" opacity=".55"/><circle class="qdot" cx="172" cy="397" r="6" fill="#2F6F63" stroke="white" stroke-width="2"/><circle class="qdot" cx="306" cy="397" r="6" fill="#B98A2F" stroke="white" stroke-width="2"/><text class="qdot" x="321" y="402" font-size="14" fill="#B98A2F" font-weight="bold">DINO +0.33</text></g><g class="query-row" style="--qd:680ms"><text x="160" y="445" text-anchor="end" font-size="14" fill="#4A4046">Ming vase</text><line class="qline" pathLength="1" x1="168" y1="440" x2="176" y2="440" stroke="#8A8078" stroke-width="4" opacity=".55"/><circle class="qdot" cx="168" cy="440" r="6" fill="#2F6F63" stroke="white" stroke-width="2"/><circle class="qdot" cx="176" cy="440" r="6" fill="#B98A2F" stroke="white" stroke-width="2"/><text class="qdot" x="191" y="445" font-size="14" fill="#8A8078" font-weight="bold">0.00</text></g><circle cx="535" cy="510" r="5" fill="#2F6F63"/><text x="547" y="515" font-size="13">SigLIP</text><circle cx="622" cy="510" r="5" fill="#B98A2F"/><text x="634" y="515" font-size="13">DINO</text></svg>
+      <p class="cap">Figure 3 — Only SigLIP and DINO. Teal = SigLIP higher; amber = DINO higher; labels are HardP@3 differences.</p>
+    </div>
+  </div>
+  <div class="foot"><span>Module D · aggregate evidence</span><span class="fr"><span>The Hong Kong Polytechnic University</span><img src="img/polyu_logo.png" alt=""></span></div>
+</section>
+
+<section class="slide" data-title="Performance">
+  <p class="kicker" data-r>Module E · Performance</p>
+  <h2 data-r style="--d:60">Pay once offline. Stay fast online.</h2>
+  <div class="bignum" data-r style="--d:160">
+    <div class="card"><div class="v"><span data-count="103">0</span> s</div><div class="l">Offline encoding<br>4,692 images · RTX 3070<br><small>CLIP 126 s · SigLIP2 104 s</small></div></div>
+    <div class="card"><div class="v"><span data-count="1.56" data-dec="2">0</span> ms</div><div class="l">Cached cosine ranking<br>over the whole gallery<br><small>excludes text encoding</small></div></div>
+    <div class="card"><div class="v"><span data-count="4692" data-fmt=",">0</span></div><div class="l">Images indexed once<br><small>a new item needs<br>only one forward pass</small></div></div>
+  </div>
+  <div class="perf-strip" data-r style="--d:300">
+    <div class="ps"><b>Offline</b><span>encode 4,692 images once</span></div>
+    <div class="pa">→</div>
+    <div class="ps"><b>Index</b><span>one vector per object, cached</span></div>
+    <div class="pa">→</div>
+    <div class="ps hl"><b>Online</b><span>1.56 ms ranking, no re-encoding</span></div>
+  </div>
+  <div class="take" data-r style="--d:420;margin-top:18px"><b>Design choice:</b> at this gallery size an extra DINO pre-filter costs more than it saves and can drop relevant images — so the main workflow searches the full cached gallery.</div>
+  <div class="foot"><span>All timings on the full 4,692-image corpus</span><span class="fr"><span>The Hong Kong Polytechnic University</span><img src="img/polyu_logo.png" alt=""></span></div>
+</section>
+
+<section class="slide" data-title="Closing">
+  <div class="closing">
+    <img src="img/polyu_logo.png" alt="PolyU" data-r style="--d:40">
+    <p class="kicker" data-r style="--d:100;text-align:center">Curio · From Words to Visual Evidence</p>
+    <h1 data-r style="--d:160">Thank you.</h1>
+    <p class="sub" data-r style="--d:240">Three routes, one collection — and every question answered with pixels, not titles.</p>
+    <p class="names" data-r style="--d:320">Vision Bot<br>LI Junyan · WANG Haocheng · WU Chengzhi · ZHAO Xiangyuan · ZHU Zimeng<br><br>Questions are welcome.</p>
+  </div>
+  <div class="foot"><span>Curio · COMP5523 · The Hong Kong Polytechnic University</span><span class="fr"><span>Made with open museum collections</span></span></div>
+</section>
+
+<style>
+.flow{display:flex;align-items:center;gap:6px;margin-top:16px;flex-wrap:nowrap}
+.fnode{flex:1;text-align:center;font-size:11.5px;line-height:1.35;padding:9px 6px;border:1px solid var(--line);border-radius:7px;background:var(--card);color:#4A4046}
+.fnode.hl{border-color:var(--crimson);color:var(--crimson);font-weight:700;background:var(--tint)}
+.farr{color:var(--crimson);font-size:14px;flex:0 0 auto}
+.perf-strip{display:flex;align-items:center;gap:12px;margin-top:22px}
+.ps{flex:1;border:1px solid var(--line);border-radius:9px;background:var(--card);padding:12px 14px}
+.ps b{display:block;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--crimson);margin-bottom:3px}
+.ps span{font-size:12.5px;color:#4A4046}
+.ps.hl{background:var(--tint);border-color:var(--crimson)}
+.pa{color:var(--crimson);font-size:15px}
+.escal{display:flex;align-items:center;gap:9px;margin-top:auto;padding-top:12px;border-top:1px solid var(--line)}
+.escal .es{flex:1;border:1px solid var(--line);border-radius:8px;background:var(--card);padding:8px 11px;text-align:center}
+.escal .es .en{display:block;font-size:10.5px;letter-spacing:.07em;text-transform:uppercase;color:var(--grey)}
+.escal .es b{font-size:19px;color:var(--crimson);font-variant-numeric:tabular-nums}
+.escal .es small{font-size:9.5px;color:var(--grey);margin-left:4px}
+.escal .es.hl{background:var(--tint);border-color:var(--crimson)}
+.escal .ea{color:var(--crimson);font-size:13px}
+.qcmp{display:grid;grid-template-columns:1fr 250px 1fr;align-items:stretch;gap:14px;margin-top:14px}
+.qcmp .qc{flex:1;border:1px solid var(--line);border-radius:10px;background:var(--card);padding:12px 16px;text-align:center}
+.qcmp .qc .qh{display:block;font-size:11px;letter-spacing:.07em;text-transform:uppercase;color:var(--grey);margin-bottom:4px}
+.qcmp .qc b{font-size:30px;color:var(--crimson);font-variant-numeric:tabular-nums}
+.qcmp .qc small{display:block;font-size:11px;color:var(--grey);margin-top:2px}
+.qcmp .qc.qm{border-style:dashed;border-color:var(--crimson)}
+.qcmp .qv{display:flex;align-items:center;text-align:center;font-size:12.5px;line-height:1.5;color:#4A4046;padding:0 4px}
+.qcmp .qv b{color:var(--crimson)}
+.zbchart{display:flex;flex-direction:column;gap:12px;margin-top:16px}
+.zrow{display:grid;grid-template-columns:150px 1fr 62px;align-items:center;gap:10px;font-size:12.5px}
+.zrow .zl{text-align:right;color:#4A4046;white-space:nowrap}
+.zrow .ztrack{position:relative;height:22px;background:#F1EAE5;border-radius:4px;overflow:hidden}
+.zrow .ztrack .zx{position:absolute;left:50%;top:0;bottom:0;width:1px;background:#C9BDB6}
+.zrow .zbar{position:absolute;top:5px;bottom:5px;width:0;border-radius:3px;transition:width .9s var(--ease);transition-delay:calc(var(--d,0)*1ms)}
+.zbar.pos{left:50%;background:#3E8E6B}
+.zbar.neg{right:50%;background:#C0675A}
+.slide.active .zbar{width:var(--w)}
+.ztrack .zl6{position:absolute;top:0;bottom:0;width:1px;background:repeating-linear-gradient(to bottom,#D9CEC7 0 3px,transparent 3px 6px)}
+.ztrack .zl6.l{left:0}
+.ztrack .zl6.r{right:0}
+.zrow .zv{font-variant-numeric:tabular-nums;font-weight:700;text-align:right}
+.zv.good{color:#2F7D5C}
+.zv.bad{color:#B4523F}
+.zhead,.zaxis{display:flex;justify-content:space-between;font-size:9.5px;color:var(--grey);padding-left:160px;padding-right:62px}
+.zaxis{margin-top:-4px}
+.srcstrip{display:flex;align-items:center;gap:10px;margin-top:10px;margin-bottom:22px;padding-top:8px;border-top:1px solid var(--line)}
+.srcstrip .ss{display:flex;flex-direction:column;gap:3px;align-items:center}
+.srcstrip .ss img{width:66px;height:54px;object-fit:cover;border-radius:6px;border:1px solid var(--line);box-shadow:0 2px 8px var(--shadow)}
+.srcstrip .ss span{font-size:9px;color:var(--grey)}
+.srcstrip .srcnote{flex:1;font-size:11.5px;color:var(--grey);font-style:italic;line-height:1.45;padding-left:8px}
+.demo-rail{display:flex;gap:18px;flex:1;min-height:0;margin-top:6px}
+.demo-wrap{flex:1;display:flex;flex-direction:column;gap:8px;min-height:0;min-width:0}
+.demo-frame{position:relative;flex:1;border:1px solid var(--line);border-radius:10px;background:#fff;box-shadow:0 6px 24px var(--shadow);overflow:hidden}
+.demo-frame iframe{position:absolute;inset:0;width:100%;height:100%;border:0;z-index:2;background:#fff;opacity:0;transition:opacity .5s var(--ease)}
+.demo-frame iframe.live{opacity:1}
+.demo-poster{position:absolute;inset:0;z-index:1;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;
+  background:radial-gradient(120% 120% at 50% 0%,#FFF6F2 0%,#F3E7E2 55%,#E9DAD4 100%);text-align:center;padding:24px}
+.demo-poster .dp-k{font-size:11px;letter-spacing:.24em;text-transform:uppercase;color:var(--crimson)}
+.demo-poster .dp-t{font-size:22px;color:var(--ink)}
+.demo-poster .dp-s{font-size:12px;color:var(--grey)}
+.demo-side{flex:0 0 330px;display:flex;flex-direction:column;gap:9px;padding-top:6px}
+.demo-side .ds-k{font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--crimson);font-weight:700;margin-bottom:2px}
+.ds-step{display:flex;gap:10px;align-items:flex-start;background:var(--card);border:1px solid var(--line);border-radius:8px;padding:9px 11px}
+.ds-step b{font-size:11px;color:var(--crimson);letter-spacing:.06em;padding-top:1px}
+.ds-step span{font-size:12.5px;line-height:1.45;color:#4A4046}
+.ds-chips{display:flex;gap:7px;margin-top:3px;flex-wrap:wrap}
+.ds-chips span{font-size:11.5px;padding:5px 10px;border-radius:999px;background:var(--tint);color:var(--crimson);border:1px solid #E7CFD3}
+.slide.active table{animation:tblIn .6s var(--ease) both .18s}
+.slide.active .fig img{animation:figIn .75s var(--ease) both .22s}
+.slide.active .take{animation:takeIn .6s var(--ease) both .42s}
+@keyframes tblIn{from{transform:translateY(10px)}to{transform:none}}
+@keyframes figIn{from{transform:scale(.97)}to{transform:none}}
+@keyframes takeIn{from{transform:translateY(14px)}to{transform:none}}
+
+
+/* Page-specific projection layout. Original animation rules remain below. */
+.slide{padding-bottom:70px}
+.slide>.kicker,.slide>h1,.slide>h2{flex-shrink:0}
+.card p,.step p{font-size:17px;line-height:1.5}
+.card h3{font-size:19px}
+.step{padding:15px 18px}.step>b{font-size:12px}
+.step p b{font-size:inherit;letter-spacing:normal;text-transform:none;display:inline;margin:0}
+table{font-size:17px}th{font-size:13px}th,td{padding:10px 12px}
+.fig img{object-fit:contain;height:auto;display:block;margin:auto}.fig .cap{font-size:13px;line-height:1.45}
+.brow{grid-template-columns:194px 1fr 60px;font-size:16px;min-height:30px}.bchart{gap:10px}.btrack{height:20px}.legend{font-size:12px}
+.slide[data-title="Opening"] .strip small{font-size:12px}
+.lane .im{height:188px}.lane .lab{font-size:19px;line-height:1.5}.lane .lab b{font-size:21px}.lane .lab small{font-size:15px;margin-top:8px}
+.demo-side{flex-basis:360px;gap:14px}.ds-step{padding:16px;gap:12px}.ds-step span{font-size:17px;line-height:1.5}.ds-step b{font-size:13px}.ds-chips span{font-size:14px}.demo-poster .dp-s{font-size:15px}.demo-note{font-size:14px}
+.slide[data-title="Data & Evaluation"] .g2{align-items:stretch!important}.slide[data-title="Data & Evaluation"] .g2 h3{font-size:18px!important;margin-bottom:10px!important}.slide[data-title="Data & Evaluation"] .steps{gap:14px}.slide[data-title="Data & Evaluation"] .step{padding:16px 18px}
+.anno{height:270px}.anno .acard{display:grid;grid-template-columns:175px 1fr;grid-template-rows:1fr 1fr auto;gap:10px 20px;padding:20px}.anno .acard img{grid-row:1/3;width:175px;height:175px;object-fit:contain;float:none;margin:0;align-self:center}.anno .acard .zc{font-size:18px;align-self:end;margin:0;line-height:1.5}.anno .acard .ec{font-size:17px;line-height:1.5}.anno .acard .meta{grid-column:1/-1;font-size:13px;padding-top:8px;line-height:1.5;border-top:1px solid var(--line)}
+.srcstrip .ss span{font-size:11px}.srcstrip .srcnote{font-size:13px}
+.slide[data-title="One record"] .split{margin-top:22px!important;align-items:start}.slide[data-title="One record"] .rec{height:510px;max-height:none;object-fit:contain}.slide[data-title="One record"] .steps{height:510px;gap:14px}.slide[data-title="One record"] .step{flex:1;display:flex;flex-direction:column;justify-content:center;padding:16px 20px}.slide[data-title="One record"] .step p{font-size:18px}.slide[data-title="One record"] .step>b{font-size:13px}.slide[data-title="One record"] .split>div>p{font-size:12px!important}
+.slide[data-title="Representation"] .split{flex:0 0 auto!important;margin-top:26px!important;align-items:start!important;grid-template-columns:1.02fr .98fr!important;gap:30px}.slide[data-title="Representation"] .brow{grid-template-columns:210px 1fr 58px;font-size:16px;min-height:34px}.slide[data-title="Representation"] .bchart{gap:14px}.slide[data-title="Representation"] table{font-size:16px}.slide[data-title="Representation"] th,.slide[data-title="Representation"] td{padding:13px 10px}.slide[data-title="Representation"] .card{padding:20px}.slide[data-title="Representation"] .card p{font-size:17px;overflow-wrap:anywhere}.slide[data-title="Representation"] .split>div>p{font-size:12px!important;line-height:1.5}.slide[data-title="Representation"] .escal{margin:26px 0 0!important;flex-shrink:0}.escal .es{padding:14px}.escal .es b{font-size:32px}.escal .es small{font-size:12px;display:block}.escal .es .en{font-size:13px}
+.slide[data-title="An idea from Lecture 09"] .fig img{max-height:360px!important}.qcmp .qv{display:block;align-self:center;font-size:18px}.qcmp .qc{padding:15px 20px}.qcmp .qc b{font-size:36px}.qcmp .qc .qh{font-size:13px}.qcmp .qc small{font-size:13px}
+.result-button{background:transparent;border:1px solid var(--crimson);border-radius:5px;padding:6px 12px;font:14px Georgia;color:var(--crimson);cursor:pointer;margin-top:9px}.result-value{transition:opacity .35s ease}.result-value[hidden]{display:none}.reveal-hint{font-size:12px!important}
+.slide[data-title="Prompt calibration"] .g2{margin-top:32px!important;flex:0 0 auto!important;align-items:start!important;gap:36px}.slide[data-title="Prompt calibration"] .g2>div{display:block}.slide[data-title="Prompt calibration"] .zbchart{margin:16px 0 22px;gap:26px;padding:18px 0}.zrow{font-size:17px;grid-template-columns:180px 1fr 80px}.zrow .ztrack{height:32px}.zaxis{padding-left:190px;padding-right:80px;font-size:13px}.slide[data-title="Prompt calibration"] .g2>div>p{font-size:12px!important;line-height:1.55!important;margin:18px 0!important}.slide[data-title="Prompt calibration"] .card{padding:22px}.slide[data-title="Prompt calibration"] .card h3{font-size:21px;margin-bottom:9px}.slide[data-title="Prompt calibration"] .card p{font-size:18px!important;line-height:1.55}.slide[data-title="Prompt calibration"] .take{font-size:20px!important;line-height:1.55;margin-top:28px!important;padding:22px!important}.slide[data-title="Prompt calibration"] .g2>div:last-child{padding-top:34px}
+.slide[data-title="Whole-corpus sets"] .split{align-items:center;gap:40px}.slide[data-title="Whole-corpus sets"] .bchart{gap:16px}.slide[data-title="Whole-corpus sets"] table{margin-top:22px!important}.slide[data-title="Whole-corpus sets"] td{padding:15px 12px}.slide[data-title="Whole-corpus sets"] .card{padding:24px;margin-bottom:20px!important}.slide[data-title="Whole-corpus sets"] .card p{font-size:19px}.slide[data-title="Whole-corpus sets"] .split>div>p{font-size:12px!important;line-height:1.5}
+.slide[data-title="Reference route"] .split{grid-template-columns:.87fr 1.13fr!important;gap:28px;margin-top:26px!important;align-items:start!important}.slide[data-title="Reference route"] .lead{font-size:18px!important;line-height:1.6}.slide[data-title="Reference route"] .fnode{font-size:13px;padding:12px 7px}.slide[data-title="Reference route"] .probe-strip{margin-top:26px}.slide[data-title="Reference route"] .probe-strip img{width:82px;height:82px;object-fit:contain}.slide[data-title="Reference route"] .probe-strip small{font-size:11px}.slide[data-title="Reference route"] .probe-strip p{font-size:12px}.slide[data-title="Reference route"] .take{font-size:18px!important;margin-top:20px!important;padding:16px 18px}.slide[data-title="Reference route"] .split>div>p:not(.lead){font-size:12px!important;line-height:1.5}.slide[data-title="Reference route"] .fig{align-self:center}.pipeline-svg{width:100%;height:auto;display:block;background:white;border:1px solid var(--line);border-radius:10px}
+.slide[data-title="Kendi case"] .fig{margin-top:18px!important}.slide[data-title="Kendi case"] .fig img{width:1100px;max-height:470px!important}.slide[data-title="Kendi case"] .take{font-size:18px;margin-top:20px}
+.slide[data-title="25 hard queries"] .split{grid-template-columns:.84fr 1.16fr!important;align-items:center;gap:30px}.slide[data-title="25 hard queries"] td{padding:18px 12px}.slide[data-title="25 hard queries"] .take{font-size:17px!important;line-height:1.6}.slide[data-title="25 hard queries"] .split>div>p{font-size:12px!important}.slide[data-title="25 hard queries"] .fig{margin-top:0}
+.slide[data-title="Performance"] .bignum{margin-top:38px}.bignum .card{padding:34px 18px}.bignum .card .v{font-size:60px}.bignum .card .l{font-size:18px;line-height:1.6}.slide[data-title="Performance"] .perf-strip{margin-top:46px}.slide[data-title="Performance"] .ps{padding:22px}.slide[data-title="Performance"] .ps span{font-size:18px}.slide[data-title="Performance"] .ps b{font-size:13px}.slide[data-title="Performance"] .take{font-size:18px;margin-top:24px;padding:18px 20px}.closing .names{font-size:15px}
+
+.qcmp .qc{display:flex;flex-direction:column;align-items:center;justify-content:center}
+
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition-duration:.01ms!important;transition-delay:0ms!important}[data-r]{opacity:1;transform:none}}
+
+.query-chart{display:block;width:100%;height:auto;border:1px solid var(--line);border-radius:10px;box-shadow:0 4px 18px var(--shadow)}.qline{stroke-dasharray:1;stroke-dashoffset:1}.qdot{opacity:0}.slide.active .qline{animation:qdraw .75s var(--ease) var(--qd) forwards}.slide.active .qdot{animation:qshow .45s var(--ease) calc(var(--qd) + 250ms) forwards}@keyframes qdraw{to{stroke-dashoffset:0}}@keyframes qshow{to{opacity:1}}
+#modSplash{position:fixed;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;
+  background:rgba(126,27,44,.96);color:#fff;z-index:80;opacity:0;pointer-events:none;
+  transition:opacity .35s var(--ease)}
+#modSplash.on{opacity:1}
+#modSplash .ml{font-size:13px;letter-spacing:.42em;text-transform:uppercase;color:#F3C9BE}
+#modSplash .mt{font-family:Georgia,serif;font-size:44px;margin-top:14px}
+#modSplash .ms{font-size:14px;color:#F3D9D2;margin-top:10px;font-style:italic}
+#modSplash .mline{width:0;height:3px;background:#E8B27A;margin-top:20px;transition:width .55s var(--ease) .1s}
+#modSplash.on .mline{width:170px}
+</style>
+
+</div></div>
+
+<div id="progress"></div>
+<div id="modSplash"><div class="ml" id="msL"></div><div class="mt" id="msT"></div><div class="ms" id="msS"></div><div class="mline"></div></div>
+<aside id="notes"></aside>
+<div id="controls">
+  <button id="prev">← Prev</button>
+  <span id="counter">01 / 14</span>
+  <button id="next">Next →</button>
+  <span id="time">00:00 / 07:00</span>
+  <button id="timer">Start timer</button>
+  <button id="notesBtn">Notes · N</button>
+  <button id="fsBtn">Fullscreen · F</button>
+  <button onclick="window.print()">Print / PDF</button>
+  <span style="flex:1"></span>
+  <span>Curio v10 · PolyU crimson</span>
+</div>
+
+<script>
+const slides=[...document.querySelectorAll('.slide')];
+const notes={
+  "0": {
+    "en": "Good afternoon. We are Vision Bot, and this is Curio. Every object behind me is a real museum object, and every one can be found by what it looks like, not by its title. In seven minutes, we will show why that is hard—and how we solved it.",
+    "zh": "各位下午好。我们是 Vision Bot，这是 Curio。我身后的每件器物都是真实馆藏，也都能只凭外观而不是标题被找到。接下来七分钟，我们说明这件事为什么难，以及我们如何解决。"
+  },
+  "1": {
+    "en": "This is one progression of increasing query difficulty: porcelain, then a blue-and-white vase, then the specialist form meiping. Simple forms to abstract description, and colloquial text to bilingual specialist names, describe this increasing difficulty rather than separate routes.",
+    "zh": "这是一条难度逐步提升的过程：从瓷器，到青花瓷瓶，再到梅瓶。强调从简单形态到抽象描述、从通俗文本到双语学名，两组概念都描述难度递进，不是两条独立路线。"
+  },
+  "2": {
+    "en": "Rather than a recording, let us show the real front end. Run one plain Chinese query, switch to meiping, and then show the reference-image route. The ranking is based on appearance and form, not the title string.",
+    "zh": "先运行“绿色窄口瓷瓶”，再切换“梅瓶”，最后展示参考图模式。操作时只强调“同一批 4,692 张图、真实返回结果”。"
+  },
+  "3": {
+    "en": "Our gallery contains 4,692 open-access museum images and 20 bilingual query intents. Relevance is graded from zero to three with titles hidden. Labels are drafted by an AI assistant from pixels only, checked by a team member, and frozen before any experiment.",
+    "zh": "4,692 张图、20 个双语查询、0–3 盲评。AI 只读像素起草，组员人工核验，之后冻结。"
+  },
+  "4": {
+    "en": "This is one concrete record. The AI description says “a green-edged octagonal plaque with raised animal figures”; it never saw the word “mirror”. A team member verifies the label, and the same pipeline is applied to the whole gallery.",
+    "zh": "以唐代青铜镜为例，盲标注没有使用“mirror”，人工核验后才进入冻结数据集。"
+  },
+  "5": {
+    "en": "CLIP leaves a large English–Chinese gap. SigLIP2 narrows it, image-tower LoRA helps further, and the latest text-tower LoRA with the bilingual_anchor adapter brings the gap to 0.054. The code, weights and HTTP endpoint are on codex/text-tower-lora-handoff, served at /api/search/text-lora.",
+    "zh": "最新重点是文本塔 LoRA，而不是笼统写成 production。它把中英文差距降到 0.054，分支、权重和接口都已给出。"
+  },
+  "6": {
+    "en": "Remember the CLIP result from Lecture 09: phrase templates such as “A photo of a [category]” improved ImageNet accuracy by 1.3 percent. We had the same idea for SigLIP2, so we tested it on our gallery.",
+    "zh": "直接借用第九讲的页面，先制造“这次也会提升吗？”的悬念。"
+  },
+  "7": {
+    "en": "We tested 19 templates across six families. Every result stayed within ±0.006 of the raw query. The familiar phrase has essentially no effect on SigLIP2 in this gallery, so we report the measurement rather than assuming CLIP behavior transfers.",
+    "zh": "19 个模板、6 个家族，变化都在 ±0.006 内，结论是“几乎没有影响”。"
+  },
+  "8": {
+    "en": "A ranked list always returns a fifth item, even when it is irrelevant. We score all 4,692 images and make an explicit membership decision. The calibrated boundary with raw-color auxiliary gives the best balanced F1.",
+    "zh": "从“固定返回 top-k”改为“返回一个集合”，集合可以是 0、12 或数百张。"
+  },
+  "9": {
+    "en": "The text tower knows the words but not always the look. For an abstract query such as a Yongzheng-period famille-rose bowl, we send the formal name, period and technique to museum APIs, retrieve real collection photographs as visual prototypes, qualify their provenance, and search the local gallery with SigLIP or DINO.",
+    "zh": "文本塔不稳定时，先向博物馆 API 请求真实馆藏照片，把它们作为视觉原型，再检索本地图库。"
+  },
+  "10": {
+    "en": "A kendi is the clean example. The baseline text route returned zero kendi in the top twenty. With the reference route, two representative kendi ranked first and second. The route matches appearance and form, not the title string.",
+    "zh": "军持案例只保留两个数字：基线 top-20 为 0，新路线第 1、2 名都是军持。"
+  },
+  "11": {
+    "en": "One case is not enough. Across 25 hard queries reviewed by hand, SigLIP improved top-three precision by eight points over text. DINO was stronger on some shape-driven objects, but its category error reached 8.0 percent. SigLIP is the steadier default.",
+    "zh": "25 条困难查询上，SigLIP 比文本 top-3 高 8 个百分点；DINO 在部分器物上更强，但类别错误为 8.0%，所以默认仍选 SigLIP。"
+  },
+  "12": {
+    "en": "Encoding the full gallery takes about 103 seconds once. Cached cosine ranking over all 4,692 images takes 1.56 milliseconds, and a new item needs one forward pass.",
+    "zh": "离线一次编码，在线缓存排序；全库 103 秒，排序 1.56 毫秒。"
+  },
+  "13": {
+    "en": "Three routes, one collection. Every question is answered with pixels, not titles. Thank you.",
+    "zh": "三条路线，一批馆藏；每个问题都用像素回答，而不是标题。谢谢。"
+  }
+};
+const MODULES={0:'',1:'',2:'',3:'Module A · Data & Evaluation',4:'Module A · Data & Evaluation',5:'Module B · Representation',6:'Module C · Prompt Calibration',7:'Module C · Prompt Calibration',8:'Module C · Set Retrieval',9:'Module D · Visual Reference',10:'Module D · Visual Reference',11:'Module D · Visual Reference',12:'Module E · Performance',13:''};
+const MODSUB={5:'Representation & fine-tuning',6:'An idea from Lecture 09',9:'Image-to-image matching',12:'Product integration'};
+
+const stage=document.getElementById('stage');
+const counter=document.getElementById('counter'),clock=document.getElementById('time'),
+      progress=document.getElementById('progress'),notesEl=document.getElementById('notes'),
+      demoFrame=document.getElementById('demoFrame');
+let idx=0,elapsed=0,running=false,notesOpen=false,busy=false;
+
+function fit(){
+  const availH=innerHeight-42-(notesOpen?200:0);
+  const scale=Math.min(innerWidth/1440,availH/810);
+  stage.style.transform='scale('+scale+')';
+  stage.style.left=((innerWidth-1440*scale)/2)+'px';
+  stage.style.top=Math.max(0,(availH-810*scale)/2)+'px';
+}
+
+function runCounters(){
+  document.querySelectorAll('.slide.active [data-count]').forEach(function(el){
+    el.dataset.done='1';
+    const target=parseFloat(el.dataset.count),dec=parseInt(el.dataset.dec||'0',10),
+          fmt=el.dataset.fmt==',',dur=900,t0=performance.now();
+    function finalText(){
+      let f=dec?target.toFixed(dec):Math.round(target).toString();
+      if(fmt)f=Number(f).toLocaleString('en-US');
+      return f;
+    }
+    function step(t){
+      const p=Math.min(1,(t-t0)/dur),e=1-Math.pow(1-p,3),v=target*e;
+      let s=dec?v.toFixed(dec):Math.round(v).toString();
+      if(fmt)s=Number(s).toLocaleString('en-US');
+      el.textContent=s;
+      if(p<1)requestAnimationFrame(step);
+      else el.textContent=finalText();
+    }
+    requestAnimationFrame(step);
+    setTimeout(function(){el.textContent=finalText();},dur+120);
+  });
+}
+
+function setNote(){
+  const n=notes[idx];
+  notesEl.innerHTML=n?('<b class="en">'+n.en+'</b><div class="zh">'+n.zh+'</div>'):'';
+}
+
+function after(){counter.textContent=String(idx+1).padStart(2,'0')+' / '+slides.length;
+  progress.style.width=((idx+1)/slides.length*100)+'%';setNote();fit();runCounters();
+  if(idx===2)loadDemo();
+  if(idx!==2&&demoFrame.getAttribute('src'))demoFrame.removeAttribute('src');}
+
+let demoChecked=false;
+function loadDemo(){
+  const poster=document.querySelector('.demo-poster');
+  if(demoChecked&&demoFrame.getAttribute('src'))return;
+  demoChecked=true;
+  fetch(demoFrame.dataset.src,{mode:'no-cors',cache:'no-store'})
+    .then(function(){demoFrame.src=demoFrame.dataset.src;demoFrame.onload=function(){demoFrame.classList.add('live');if(poster)poster.style.display='none';};})
+    .catch(function(){if(poster)poster.style.display='flex';});
+}
+
+function go(n,dirHint){
+  n=Math.max(0,Math.min(slides.length-1,n));
+  if(n===idx&&slides[idx].classList.contains('active')){after();return;}
+  if(busy)return;
+  const dir=dirHint||(n>idx?'r':'l');
+  const old=slides[idx];
+  slides.forEach(function(s,i){s.classList.remove('pre-r','pre-l');s.style.zIndex='';});
+  const nxt=slides[n];
+  nxt.classList.remove('active','leaving','l-r','l-l');
+  nxt.classList.add(dir==='r'?'pre-r':'pre-l');
+  void nxt.offsetWidth;
+  busy=true;
+  if(n===6)resetResult();
+  idx=n;
+  requestAnimationFrame(function(){
+    nxt.classList.remove('pre-r','pre-l');
+    nxt.classList.add('active');
+    old.classList.remove('active');
+    old.classList.add('leaving',dir==='r'?'l-r':'l-l');
+    after();
+    setTimeout(function(){old.classList.remove('leaving','l-r','l-l');busy=false;},480);
+  });
+}
+
+function splash(main,sub){
+  const box=document.getElementById('modSplash');
+  document.getElementById('msL').textContent='Curio';
+  document.getElementById('msT').textContent=main;
+  document.getElementById('msS').textContent=sub||'';
+  box.classList.add('on');
+  setTimeout(function(){box.classList.remove('on');},720);
+}
+
+function goAuto(n,dirHint){
+  const cur=MODULES[idx],nx=MODULES[n];
+  if(busy||n<0||n>=slides.length)return;
+  if(nx&&nx.split(" · ")[0]!==String(cur||"").split(" · ")[0]){
+    busy=true;
+    splash(nx,MODSUB[n]||'');
+    setTimeout(function(){busy=false;go(n,dirHint);},380);
+  }else go(n,dirHint);
+}
+
+
+let resultRevealed=false;
+function resetResult(){resultRevealed=false;document.getElementById('questionValue').hidden=false;document.getElementById('measuredValue').hidden=true;document.getElementById('resultCaption').textContent='so we measured it ourselves';const b=document.getElementById('resultReveal');b.textContent='Reveal result · Space';b.setAttribute('aria-expanded','false');}
+function revealResult(){if(idx!==6||busy||resultRevealed)return false;resultRevealed=true;document.getElementById('questionValue').hidden=true;const value=document.getElementById('measuredValue');value.hidden=false;value.animate([{opacity:0,transform:'translateY(8px)'},{opacity:1,transform:'none'}],{duration:450,easing:'ease-out'});document.getElementById('resultCaption').textContent='All measured changes stayed within ±0.006';const b=document.getElementById('resultReveal');b.textContent='Replay reveal';b.setAttribute('aria-expanded','true');return true;}
+function advance(){if(!revealResult())goAuto(idx+1,'r');}
+document.getElementById('resultReveal').onclick=function(){if(resultRevealed){resetResult();return;}revealResult();};
+document.getElementById('prev').onclick=function(){goAuto(idx-1,'l');};
+document.getElementById('next').onclick=advance;
+document.getElementById('notesBtn').onclick=function(){notesOpen=!notesOpen;notesEl.style.display=notesOpen?'block':'none';fit();};
+document.getElementById('timer').onclick=function(){running=!running;this.textContent=running?'Pause timer':'Resume timer';};
+document.getElementById('fsBtn').onclick=async function(){if(document.fullscreenElement)await document.exitFullscreen();else await document.documentElement.requestFullscreen();};
+document.addEventListener('keydown',function(e){
+  if(['INPUT','TEXTAREA'].indexOf(document.activeElement.tagName)>=0)return; if(e.key===' '&&document.activeElement.tagName==='BUTTON')return;
+  if(['ArrowRight','PageDown',' '].indexOf(e.key)>=0){e.preventDefault();if(!e.repeat)advance();}
+  else if(['ArrowLeft','PageUp'].indexOf(e.key)>=0){e.preventDefault();goAuto(idx-1,'l');}
+  else if(e.key==='Home')go(0,'l');
+  else if(e.key==='End')goAuto(slides.length-1,'r');
+  else if(e.key.toLowerCase()==='n')document.getElementById('notesBtn').click();
+  else if(e.key.toLowerCase()==='f')document.getElementById('fsBtn').click();
+  else if(/^[1-9]$/.test(e.key))goAuto(parseInt(e.key,10)-1,'r');
+});
+setInterval(function(){
+  if(running){elapsed++;clock.textContent=String(Math.floor(elapsed/60)).padStart(2,'0')+':'+String(elapsed%60).padStart(2,'0')+' / 07:00';
+  clock.style.color=elapsed>420?'#ffba91':'';}
+},1000);
+window.addEventListener('resize',fit);
+
+(function(){
+  const box=document.querySelector('.carousel');
+  if(!box)return;
+  const imgs=[].slice.call(box.querySelectorAll('img'));
+  const cap=document.getElementById('heroCap');
+  const caps=['Qing · famille-rose vase · 1736–95','Ming · jar with qilin and peonies','Song · Ding-ware double gourd','Tang · chicken-headed ewer','Bird-shaped urn','Ming · plate with dragons','Bowl with Daoist immortals','Song · meiping vase','Ming · vase with peony scrolls','Song · Longquan celadon','Ming · blue-and-white kendi'];
+  let ci=0;
+  function show(k){
+    imgs[ci].classList.remove('on');
+    ci=k;
+    imgs[ci].classList.add('on');
+    if(cap){cap.textContent=caps[ci]||'';cap.classList.remove('on');void cap.offsetWidth;cap.classList.add('on');}
+  }
+  if(cap)cap.textContent=caps[0];
+  setInterval(function(){show((ci+1)%imgs.length);},2800);
+})();
+(function(){
+  const box=document.getElementById('annoCarousel');
+  if(!box)return;
+  const cards=[].slice.call(box.querySelectorAll('.acard'));
+  let ai=0;
+  setInterval(function(){cards[ai].classList.remove('on');ai=(ai+1)%cards.length;cards[ai].classList.add('on');},3400);
+})();
+
+resetResult();
+const h=Number(location.hash.slice(1))-1;
+if(Number.isInteger(h)&&h>=0&&h<slides.length)idx=h;
+slides[idx].classList.add('active');
+after();
+</script>
+</body>
+</html>
