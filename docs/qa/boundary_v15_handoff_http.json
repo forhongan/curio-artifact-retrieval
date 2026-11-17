@@ -1,0 +1,75 @@
+{
+  "passed": true,
+  "queries": [
+    {
+      "aliases": [
+        "青花瓷",
+        "blue and white porcelain"
+      ],
+      "yes": 295,
+      "no": 4397
+    },
+    {
+      "aliases": [
+        "葫芦瓶",
+        "gourd-shaped vase"
+      ],
+      "yes": 39,
+      "no": 4653
+    },
+    {
+      "aliases": [
+        "双腹葫芦瓶",
+        "a double-gourd vase"
+      ],
+      "yes": 36,
+      "no": 4656
+    },
+    {
+      "aliases": [
+        "三节葫芦瓶",
+        "a triple-gourd vase"
+      ],
+      "yes": 1,
+      "no": 4691
+    },
+    {
+      "aliases": [
+        "绿色窄口瓷瓶",
+        "green narrow-mouth porcelain vase"
+      ],
+      "yes": 10,
+      "no": 4682
+    },
+    {
+      "aliases": [
+        "绿色瓷瓶",
+        "green porcelain vase"
+      ],
+      "yes": 29,
+      "no": 4663
+    },
+    {
+      "aliases": [
+        "梅瓶",
+        "meiping vase"
+      ],
+      "yes": 90,
+      "no": 4602
+    },
+    {
+      "aliases": [
+        "红色碗",
+        "a red bowl"
+      ],
+      "yes": 3,
+      "no": 4689
+    }
+  ],
+  "binary_decisions": 37536,
+  "bilingual": true,
+  "cors": true,
+  "details_and_images": true,
+  "unknown_query_422": true,
+  "completed_cancel_noop": true
+}

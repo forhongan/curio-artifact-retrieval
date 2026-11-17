@@ -1,0 +1,12 @@
+{
+  "default_method": "strict_conditions",
+  "green_narrow_count": 6,
+  "green_narrow_pending": 37,
+  "pending_separate": true,
+  "pending_reasons": true,
+  "pending_pagination": true,
+  "unsupported_no_yes": true,
+  "legacy_v7_replay": 760,
+  "mobile_no_horizontal_overflow": true,
+  "page_errors": []
+}

@@ -1,0 +1,10 @@
+{
+  "default_method": "condition_boundary",
+  "default_result_count": 760,
+  "pagination": true,
+  "historical_notice": true,
+  "negation_fallback_notice": true,
+  "legacy_method_switch": true,
+  "mobile_no_horizontal_overflow": true,
+  "page_errors": []
+}

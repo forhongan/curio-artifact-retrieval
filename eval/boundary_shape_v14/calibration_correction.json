@@ -1,0 +1,8 @@
+{
+  "time": "2026-11-16T21:18:57.139191+00:00",
+  "reason": "Code review found candidate catalogue veto in threshold calibration. Removed from calibration to honor pixel-only research protocol. Catalogue-veto column remains an auxiliary diagnostic.",
+  "stage": "Correction authored during scoring, before heads/report creation or test-result inspection. In-flight process retains original code; --fit-only will re-fit and recalibrate from identical cached evidence before results are inspected.",
+  "completed_evidence_rows_at_correction": 250,
+  "initial_report_exists": false,
+  "updated_runner_sha256": "a59e7ce2c33a1d3fc5578fb060c9941bc6f9bfe61c729f8a47ca1445ef05e53c"
+}

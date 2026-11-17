@@ -1,0 +1,72 @@
+{
+  "protocol": {
+    "schema": "factor-stress-v11",
+    "rows": 66,
+    "labels_sha256": "4095f5c488827a2b6a781041acd8517fc57b0418339393ab41788241c326a3fd",
+    "scope": "Old accepted-only diagnostic plus one visible red-bowl positive and one monochrome catalogue-red case; no fit overlap; adaptive regression, not fresh human test. Freeze before scoring.",
+    "release_approved": false
+  },
+  "test": {
+    "n": 66,
+    "positive": 33,
+    "tp": 29,
+    "fp": 7,
+    "fn": 4,
+    "precision": 0.8055555555555556,
+    "recall": 0.8787878787878788,
+    "f1": 0.8405797101449275,
+    "unknown_accepted": 3,
+    "grayscale_accepted": 0
+  },
+  "per_query": {
+    "blue_white": {
+      "n": 16,
+      "positive": 16,
+      "tp": 16,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "unknown_accepted": 0,
+      "grayscale_accepted": 0
+    },
+    "gourd": {
+      "n": 16,
+      "positive": 9,
+      "tp": 9,
+      "fp": 1,
+      "fn": 0,
+      "precision": 0.9,
+      "recall": 1.0,
+      "f1": 0.9473684210526315,
+      "unknown_accepted": 0,
+      "grayscale_accepted": 0
+    },
+    "meiping": {
+      "n": 16,
+      "positive": 7,
+      "tp": 3,
+      "fp": 2,
+      "fn": 4,
+      "precision": 0.6,
+      "recall": 0.42857142857142855,
+      "f1": 0.5,
+      "unknown_accepted": 1,
+      "grayscale_accepted": 0
+    },
+    "red_bowl": {
+      "n": 18,
+      "positive": 1,
+      "tp": 1,
+      "fp": 4,
+      "fn": 0,
+      "precision": 0.2,
+      "recall": 1.0,
+      "f1": 0.3333333333333333,
+      "unknown_accepted": 2,
+      "grayscale_accepted": 0
+    }
+  },
+  "release_approved": false
+}

@@ -1,0 +1,96 @@
+{
+  "scope": "Same 8 intents and 140 test objects; historical AI/source-reviewed labels, exploratory comparison, not independent human validation or full-gallery precision",
+  "test_pairs": 1120,
+  "methods": {
+    "v7_zh": {
+      "tp": 96,
+      "fp": 53,
+      "fn": 17,
+      "precision": 0.6442953020134228,
+      "recall": 0.8495575221238938,
+      "f1": 0.732824427480916,
+      "unknown_accepted": 8
+    },
+    "v7_en": {
+      "tp": 107,
+      "fp": 55,
+      "fn": 6,
+      "precision": 0.6604938271604939,
+      "recall": 0.9469026548672567,
+      "f1": 0.7781818181818182,
+      "unknown_accepted": 5
+    },
+    "vqa_raw": {
+      "tp": 92,
+      "fp": 42,
+      "fn": 21,
+      "precision": 0.6865671641791045,
+      "recall": 0.8141592920353983,
+      "f1": 0.7449392712550608,
+      "unknown_accepted": 0
+    },
+    "vqa_calibrated": {
+      "tp": 78,
+      "fp": 29,
+      "fn": 35,
+      "precision": 0.7289719626168224,
+      "recall": 0.6902654867256637,
+      "f1": 0.7090909090909091,
+      "unknown_accepted": 0
+    },
+    "v8_strict_zh": {
+      "tp": 66,
+      "fp": 22,
+      "fn": 47,
+      "precision": 0.75,
+      "recall": 0.584070796460177,
+      "f1": 0.6567164179104478,
+      "unknown_accepted": 0
+    },
+    "v8_strict_en": {
+      "tp": 72,
+      "fp": 33,
+      "fn": 41,
+      "precision": 0.6857142857142857,
+      "recall": 0.6371681415929203,
+      "f1": 0.6605504587155964,
+      "unknown_accepted": 0
+    },
+    "vqa_reference_raw": {
+      "tp": 100,
+      "fp": 66,
+      "fn": 13,
+      "precision": 0.6024096385542169,
+      "recall": 0.8849557522123894,
+      "f1": 0.7168458781362007,
+      "unknown_accepted": 0
+    },
+    "vqa_reference_calibrated": {
+      "tp": 66,
+      "fp": 29,
+      "fn": 47,
+      "precision": 0.6947368421052632,
+      "recall": 0.584070796460177,
+      "f1": 0.6346153846153846,
+      "unknown_accepted": 0
+    }
+  },
+  "strict_response_sha256": {
+    "artifacts/strict_boundary_v8/benchmark_v5_porcelain_zh.json": "bcd14aadf6d8bc4311e42943c1a7cf9c44f23c0ca0ce9e57eaaf07d426133f86",
+    "artifacts/strict_boundary_v8/benchmark_v5_bottle_zh.json": "e1aa41b5e2ebc77cc2c242a2523942da36fc662321234f36a6a224658cb570d5",
+    "artifacts/strict_boundary_v8/benchmark_v5_bowl_zh.json": "f93d659a11ccf5fbac89c09575dd4ee503bfc3e6d93a47c46e991f496686d6f7",
+    "artifacts/strict_boundary_v8/benchmark_v5_blue_white_zh.json": "35e4680e04c856758d0b0ab2b567f0e4d1b04ebf89c6bf107946ad05916f4b4f",
+    "artifacts/strict_boundary_v8/benchmark_v5_green_vase_zh.json": "d56caa9f40d389267f9fd2c3e4aecf89017cb0e8cf9b704c0f7004751ce8f5ed",
+    "artifacts/strict_boundary_v8/benchmark_v5_red_vase_zh.json": "e6cb453f970faa662342c2ef9f09c15dce7f383e0b6d28fd9a8383770ebec60d",
+    "artifacts/strict_boundary_v8/benchmark_v5_dragon_zh.json": "eda80e9041c3f54f6a17f6cf94038c630490f1ac858825868abb3ca624c35862",
+    "artifacts/strict_boundary_v8/benchmark_v5_lotus_zh.json": "14f7fc516efe30632de4a90988057b50ea88584f40c2e1512a649445734297a7",
+    "artifacts/strict_boundary_v8/benchmark_v5_porcelain_en.json": "b0c25907cd7b618fe19e36b335f725a954456f176b1f02031668d6a37403f63c",
+    "artifacts/strict_boundary_v8/benchmark_v5_bottle_en.json": "1b13498686769002b8ccaf2bf3b0c557137dd3b4d49cdd055d8950dea8afb6ec",
+    "artifacts/strict_boundary_v8/benchmark_v5_bowl_en.json": "cb19c879be480b5fca00f3f4e162b158fc1c01baf6b52cf14a83f466278dbe80",
+    "artifacts/strict_boundary_v8/benchmark_v5_blue_white_en.json": "c4c8e5f0343f52e10ac8fa8b69e87b9ef456e2b2d4f71fba55c1e49d61304155",
+    "artifacts/strict_boundary_v8/benchmark_v5_green_vase_en.json": "f87938fe4c8c846189f9c770624777671a004c4b3e883c7cf43e57fe8231f917",
+    "artifacts/strict_boundary_v8/benchmark_v5_red_vase_en.json": "dbdfde027f88cef04c85f9316f1919cf9748846a30d02ffbe8f61d27c542e12f",
+    "artifacts/strict_boundary_v8/benchmark_v5_dragon_en.json": "32f23a903cbc2f491892d98dddf90ea941a56afc3c3d727bcc133385bf3a5954",
+    "artifacts/strict_boundary_v8/benchmark_v5_lotus_en.json": "11dd21ed75f851309b7d7d204cf503868e6a22aefb5237d8c368a6b5049e975a"
+  }
+}

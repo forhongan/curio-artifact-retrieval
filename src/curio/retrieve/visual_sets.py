@@ -92,6 +92,10 @@ class VisualSetService:
         self._aux_loaded = False
         self._text_scores = {}
         self._frame_colors = {}
+        from curio.retrieve.condition_runtime import ConditionBoundary
+        self._condition_boundary = ConditionBoundary(search_service)
+        from curio.retrieve.strict_boundary import StrictBoundary
+        self._strict_boundary = StrictBoundary(search_service, self._condition_boundary)
 
     def _frame_color_presence(self, index, color):
         """Weak fallback: absence of color anywhere also excludes foreground color.
@@ -293,9 +297,10 @@ class VisualSetService:
                                           for i, row in enumerate(indices)], dtype=int)
         return self._neighbors
 
-    def search(self, query, *, top_k=20, method='adaptive_evidence'):
+    def search(self, query, *, top_k=20, method='strict_conditions'):
         development_method=method in {'dev_calibrated','dev_cutoff','dev_color'}
-        if not development_method and method not in {'adaptive_margin', 'adaptive_graph', 'adaptive_evidence'}:
+        condition_method = method in {'condition_boundary', 'strict_conditions'}
+        if not development_method and not condition_method and method not in {'adaptive_margin', 'adaptive_graph', 'adaptive_evidence'}:
             raise ValueError('Unknown visual-set method')
         started = time.perf_counter()
         if self.service.embeddings is None or len(self.service.vector_rows) != len(self.service.items):
@@ -307,18 +312,34 @@ class VisualSetService:
         # rewrite is inappropriate for this metadata-free decision path.
         encoded_query = (parsed.rewritten if parsed.language == 'zh' and not parsed.negations
                          else query.strip())
-        if development_method:
+        if development_method or condition_method:
             encoded_query=query.strip()
         scores = self.service._dense(encoded_query)
         if self._generic is None:
             self._generic = self.service._dense('a photograph of a museum object')
         graph = self._graph() if method == 'adaptive_graph' else None
-        if development_method:
+        if condition_method:
+            yes,posterior,margin,diagnostics,scores=self._condition_boundary.decide(
+                query,self._generic,scores)
+        elif development_method:
             from curio.retrieve.calibrated_sets import decide
             yes,posterior,margin,diagnostics,scores=decide(self.service,query,method,self._generic)
         else:
             yes, posterior, margin, diagnostics = visual_boundary(scores, self._generic, neighbors=graph)
         evidence = []
+        uncertain = np.zeros(len(scores), dtype=bool)
+        strict_evidence = {}
+        if method == 'strict_conditions':
+            yes, uncertain, strict_evidence, policy = self._strict_boundary.apply(yes, diagnostics)
+            diagnostics['strict_verification'] = policy
+            diagnostics['status'] = 'strict_conditions_applied'
+            diagnostics['ranking_missing_conditions'] = diagnostics['missing_conditions']
+            diagnostics['missing_conditions'] = policy['unresolved_conditions']
+            diagnostics['notices'] = ['严格模式要求各项检查同时通过；证据不足的候选列入待核验，不计入匹配集合。']
+            if ['shape', 'narrow_mouth'] in diagnostics['conditions']:
+                diagnostics['notices'].append('窄口要求口沿明显窄于器身，并检查口部外观；宽口或口部证据不足时不直接入选。')
+            if any(c[0]=='tag' and c[1] in {'red','green','blue','white','black','yellow','brown','pink'} for c in diagnostics['conditions']):
+                diagnostics['notices'].append('颜色按器物前景主体颜色筛选；小块同色装饰不等同于主体颜色匹配。')
         if method == 'adaptive_evidence':
             aux_keep, evidence = self._auxiliary_evidence(parsed, yes)
             before = int(yes.sum())
@@ -327,34 +348,50 @@ class VisualSetService:
                                auxiliary_signals=[name for name, _, _, _ in evidence],
                                auxiliary_policy='require compositional visual support; reject image-derived contradictions; missing pixel descriptors abstain')
         # All matched records are returned. top_k affects only the optional preview.
-        accepted = sorted(np.flatnonzero(yes), key=lambda i: (-float(margin[i]), str(self.service.items[i]['item_id'])))
+        order_score = posterior if condition_method else margin
+        accepted = sorted(np.flatnonzero(yes), key=lambda i: (-float(order_score[i]), str(self.service.items[i]['item_id'])))
         results = []
         for i in accepted:
             item = self.service.items[int(i)]
             item_id = str(item['item_id'])
             results.append({'item_id': item_id, 'title': item.get('title', ''), 'yes': True,
-                            'rank':len(results)+1,'score':float(scores[i]),
+                            'rank':len(results)+1,'score':float(posterior[i] if condition_method else scores[i]),
                             'image_url': f'/api/images/{item_id}', 'thumb_url': f'/api/images/{item_id}?thumb=true',
                             'cosine': round(float(scores[i]), 6), 'specificity_margin': round(float(margin[i]), 6),
-                            'support_mode_posterior': round(float(posterior[i]), 6),
+                            **({'support_score': float(posterior[i])} if condition_method else
+                               {'support_mode_posterior': round(float(posterior[i]), 6)}),
+                            'condition_evidence': strict_evidence.get(int(i), []),
                             'auxiliary_evidence': [
                                 {'signal': name, 'status': 'supported' if valid[i] else 'unknown',
                                  'value': round(float(values[i]), 6) if valid[i] else None, 'floor': floor}
                                 for name, values, valid, floor in evidence]})
+        uncertain_rows = []
+        for i in sorted(np.flatnonzero(uncertain), key=lambda i: (-float(order_score[i]), str(self.service.items[i]['item_id']))):
+            item = self.service.items[int(i)]
+            item_id = str(item['item_id'])
+            uncertain_rows.append({'item_id':item_id,'title':item.get('title',''), 'yes':None,
+                                   'match_status':'uncertain','rank':len(uncertain_rows)+1,
+                                   'score':float(posterior[i]),'image_url':f'/api/images/{item_id}',
+                                   'thumb_url':f'/api/images/{item_id}?thumb=true',
+                                   'condition_evidence':strict_evidence.get(int(i),[])})
         return {
             'query': query, 'encoded_query': encoded_query, 'variant': 'visual_yes_set',
             'method': method, 'retrieval_mode': 'image_embeddings', 'gallery_count': len(scores),
-            'matched_count': len(results), 'rejected_count': len(scores) - len(results),
+            'matched_count': len(results), 'rejected_count': len(scores) - len(results) - len(uncertain_rows),
+            'uncertain_count':len(uncertain_rows), 'uncertain_results':uncertain_rows,
             'matched_item_ids': [row['item_id'] for row in results], 'results': results,
             'preview': results[:top_k], 'returned': len(results), 'no_match': not bool(results),
             'boundary': diagnostics, 'latency_ms': round((time.perf_counter() - started) * 1000, 2),
+            'notices': diagnostics.get('notices', []),
             'warnings': [
                 'Boundary and support-mode posterior are visual heuristics, not verified match probabilities.',
                 'An empty set means insufficient visual support, not proof that the gallery has no relevant image.',
                 'Historical date, hidden structure, counts and negation are not certified by this visual boundary.',
             ],
             'provenance': {'index_sha256': self.service.index_sha256,
-                           'candidate_inputs': (['image embeddings', 'image-derived attribute predictions',
+                           'candidate_inputs': (['image embeddings', 'foreground pixel colors and contours',
+                                                 'contrastive visual-text scores'] if method == 'strict_conditions' else
+                                                ['image embeddings', 'image-derived attribute predictions',
                                                  'foreground pixel descriptors', 'contrastive visual-text scores']
                                                 if method == 'adaptive_evidence' else ['image embeddings']),
                            'candidate_catalogue_used_for_decisions': False},

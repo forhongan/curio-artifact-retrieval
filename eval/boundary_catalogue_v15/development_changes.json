@@ -1,0 +1,22 @@
+{
+  "first_development_run": "archived; source changed during execution so bilingual identity assertion stopped run; final jobs regenerated with fixed source",
+  "adaptations_after_inspection": [
+    "Added image confirmation of named gourd body shape after inspecting flask counterexample.",
+    "Made double/triple gourd inherit generic gourd conditions after observing non-nested result sets.",
+    "Fixed Dish/Box singular recognition and added water coupe/brush washer category conflicts after seeing red-bowl false inclusions.",
+    "Require positive blue-white probe and negative counter probe; the learned score alone had admitted a polychrome dish despite negative direct evidence.",
+    "Added conservative 0.35 outer-rim/body ratio and a symmetric mouth-axis body measure after inspecting wide mouths and an asymmetric background-mask extension."
+  ],
+  "gourd_removed_after_body_check": [
+    "cma_140185",
+    "cma_140244",
+    "cma_97660",
+    "met_48203",
+    "met_48359",
+    "met_51179",
+    "met_52656"
+  ],
+  "known_tradeoff": "The body check removes the flat-flask counterexample but also rejects several museum-labelled gourd variants. These are retained as misses, not relabelled as negatives.",
+  "label_scope": "Assistant photo and catalogue diagnostic review after predictions; not blind human test data.",
+  "strict_mouth_policy": "Image proxy <= 0.35 plus semantic visible-opening checks; engineering threshold, not independently calibrated physical measurement."
+}

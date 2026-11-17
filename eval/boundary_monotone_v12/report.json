@@ -1,0 +1,247 @@
+{
+  "protocol": {
+    "version": "monotone-component-v12",
+    "parent": "factor-contrast-v11",
+    "reason": "V11 learned pixel weights from only 3 valid red-training masks (2 positive / 1 negative), and overrode strong negative semantic evidence. These features are not estimable from current training coverage.",
+    "features": [
+      "positive_vqa_logit",
+      "negated_counter_vqa_logit"
+    ],
+    "constraints": "All feature coefficients nonnegative; class-balanced convex logistic objective with L2 regularization=1; positive scale learned on training rows only.",
+    "color_guard": "Color components additionally require positive probe logit>0 and counter-description logit<0; monochrome always No. Learned score may reject affirmative evidence, but may not invert a negative or contradicted color judgment into Yes.",
+    "data": "Exactly the frozen v11 component labels and source-train fit partition; no new fit labels, no test-based hyperparameter search.",
+    "calibration": "Same v11 dev operating-point rule; failure remains marked, fallback .5 only for offline comparison.",
+    "evaluation": "V11 test and stress are already seen: adaptive research comparison only, not a new independent test. Preserve all v11 outputs.",
+    "release_approved": false,
+    "inputs": {
+      "eval/boundary_factors_v11/components.jsonl": "6332fd8fbbabe9677afaf345d23943990fb057ee4227e97c9182b5c6ec54fa3a",
+      "artifacts/factor_boundary_v11/component_scores.jsonl": "af0a87da4ed83c5f28f091096e5d3a402551d1140c5b0061db63009ab3c7aa52",
+      "eval/boundary_factors_v11/labels.jsonl": "e9d75f3ee148119de646877c7b21700f287d651156b34e67a0c274a98d71c77e",
+      "eval/boundary_factors_v11/stress_labels.jsonl": "4095f5c488827a2b6a781041acd8517fc57b0418339393ab41788241c326a3fd",
+      "artifacts/factor_boundary_v11/stress_scores.jsonl": "f0d72c13fe0f7f4a7ceeffd8e69ea52b9257559a4aa5940b9390b23e33c77662"
+    }
+  },
+  "release_approved": false,
+  "calibration": {
+    "blue_white": {
+      "threshold": 0.7555964013882811,
+      "goal_met": true,
+      "metrics": {
+        "n": 12,
+        "positive": 6,
+        "tp": 6,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "unknown_accepted": 0,
+        "grayscale_accepted": 0
+      },
+      "explicit_negative_count": 6,
+      "release_approved": false
+    },
+    "bowl": {
+      "threshold": 0.5,
+      "goal_met": false,
+      "metrics": {
+        "n": 48,
+        "positive": 1,
+        "tp": 1,
+        "fp": 2,
+        "fn": 0,
+        "precision": 0.3333333333333333,
+        "recall": 1.0,
+        "f1": 0.5,
+        "unknown_accepted": 0,
+        "grayscale_accepted": 0
+      },
+      "explicit_negative_count": 45,
+      "release_approved": false
+    },
+    "gourd": {
+      "threshold": 0.9743028611857907,
+      "goal_met": true,
+      "metrics": {
+        "n": 12,
+        "positive": 3,
+        "tp": 2,
+        "fp": 0,
+        "fn": 1,
+        "precision": 1.0,
+        "recall": 0.6666666666666666,
+        "f1": 0.8,
+        "unknown_accepted": 0,
+        "grayscale_accepted": 0
+      },
+      "explicit_negative_count": 8,
+      "release_approved": false
+    },
+    "meiping": {
+      "threshold": 0.8664508870278548,
+      "goal_met": true,
+      "metrics": {
+        "n": 12,
+        "positive": 6,
+        "tp": 5,
+        "fp": 0,
+        "fn": 1,
+        "precision": 1.0,
+        "recall": 0.8333333333333334,
+        "f1": 0.9090909090909091,
+        "unknown_accepted": 0,
+        "grayscale_accepted": 0
+      },
+      "explicit_negative_count": 6,
+      "release_approved": false
+    },
+    "red": {
+      "threshold": 0.5,
+      "goal_met": false,
+      "metrics": {
+        "n": 48,
+        "positive": 3,
+        "tp": 3,
+        "fp": 2,
+        "fn": 0,
+        "precision": 0.6,
+        "recall": 1.0,
+        "f1": 0.75,
+        "unknown_accepted": 1,
+        "grayscale_accepted": 0
+      },
+      "explicit_negative_count": 36,
+      "release_approved": false
+    }
+  },
+  "test": {
+    "n": 48,
+    "positive": 15,
+    "tp": 5,
+    "fp": 0,
+    "fn": 10,
+    "precision": 1.0,
+    "recall": 0.3333333333333333,
+    "f1": 0.5,
+    "unknown_accepted": 0,
+    "grayscale_accepted": 0
+  },
+  "stress": {
+    "n": 66,
+    "positive": 33,
+    "tp": 24,
+    "fp": 5,
+    "fn": 9,
+    "precision": 0.8275862068965517,
+    "recall": 0.7272727272727273,
+    "f1": 0.7741935483870968,
+    "unknown_accepted": 3,
+    "grayscale_accepted": 0
+  },
+  "per_query": {
+    "blue_white": {
+      "test": {
+        "n": 12,
+        "positive": 3,
+        "tp": 3,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "unknown_accepted": 0,
+        "grayscale_accepted": 0
+      },
+      "stress": {
+        "n": 16,
+        "positive": 16,
+        "tp": 16,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "unknown_accepted": 0,
+        "grayscale_accepted": 0
+      }
+    },
+    "gourd": {
+      "test": {
+        "n": 12,
+        "positive": 6,
+        "tp": 1,
+        "fp": 0,
+        "fn": 5,
+        "precision": 1.0,
+        "recall": 0.16666666666666666,
+        "f1": 0.2857142857142857,
+        "unknown_accepted": 0,
+        "grayscale_accepted": 0
+      },
+      "stress": {
+        "n": 16,
+        "positive": 9,
+        "tp": 4,
+        "fp": 0,
+        "fn": 5,
+        "precision": 1.0,
+        "recall": 0.4444444444444444,
+        "f1": 0.6153846153846154,
+        "unknown_accepted": 0,
+        "grayscale_accepted": 0
+      }
+    },
+    "meiping": {
+      "test": {
+        "n": 12,
+        "positive": 6,
+        "tp": 1,
+        "fp": 0,
+        "fn": 5,
+        "precision": 1.0,
+        "recall": 0.16666666666666666,
+        "f1": 0.2857142857142857,
+        "unknown_accepted": 0,
+        "grayscale_accepted": 0
+      },
+      "stress": {
+        "n": 16,
+        "positive": 7,
+        "tp": 3,
+        "fp": 2,
+        "fn": 4,
+        "precision": 0.6,
+        "recall": 0.42857142857142855,
+        "f1": 0.5,
+        "unknown_accepted": 1,
+        "grayscale_accepted": 0
+      }
+    },
+    "red_bowl": {
+      "test": {
+        "n": 12,
+        "positive": 0,
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "precision": null,
+        "recall": null,
+        "f1": null,
+        "unknown_accepted": 0,
+        "grayscale_accepted": 0
+      },
+      "stress": {
+        "n": 18,
+        "positive": 1,
+        "tp": 1,
+        "fp": 3,
+        "fn": 0,
+        "precision": 0.25,
+        "recall": 1.0,
+        "f1": 0.4,
+        "unknown_accepted": 2,
+        "grayscale_accepted": 0
+      }
+    }
+  }
+}

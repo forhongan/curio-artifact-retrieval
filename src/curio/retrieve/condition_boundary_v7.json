@@ -1,0 +1,158 @@
+{
+  "schema": "condition-boundary-v7",
+  "feature_names": [
+    "cosine",
+    "generic_margin",
+    "gallery_zscore",
+    "condition_mean",
+    "condition_min",
+    "contrast_mean",
+    "contrast_min",
+    "supported_fraction",
+    "condition_count"
+  ],
+  "vocabulary_sha256": "0c11b430af822347b6e24f129e9d572c20d74a757016c754d732643aec949d62",
+  "models": {
+    "conditions/en": {
+      "mean": [
+        -0.020892905781679936,
+        -0.04868506965612896,
+        -0.1053559491151305,
+        -0.001484179045764935,
+        -0.008241819907646235,
+        -0.01718011726188086,
+        -0.0269456797539243,
+        0.9424552429667523,
+        1.5439045183290707
+      ],
+      "scale": [
+        0.05516877326375323,
+        0.06131074094090029,
+        1.0216723171322184,
+        0.03892647905604483,
+        0.04170271530810691,
+        0.048574794589640695,
+        0.05319352624718501,
+        0.17647779533985622,
+        0.6728119899592694
+      ],
+      "coefficients": [
+        0.24969649253275944,
+        1.6230835122293912,
+        0.28946346887409535,
+        -1.1885782480945886,
+        0.7444313588204478,
+        0.9182108226859034,
+        0.7280855257617345,
+        0.08138313574370165,
+        -0.8784958605312403
+      ],
+      "intercept": -4.757278787576324,
+      "partial_weight": 1.0,
+      "C": 1.0,
+      "score_semantics": "uncalibrated support",
+      "threshold": 0.21468931901874733,
+      "threshold_source": "dev grouped out-of-fold"
+    },
+    "conditions/zh": {
+      "mean": [
+        -0.018399384026975392,
+        -0.046191547901424414,
+        -0.14661154416718442,
+        0.006622176100041971,
+        -0.000258898494891093,
+        -0.015993064066130873,
+        -0.022829877568340567,
+        0.9424552429667523,
+        1.5439045183290707
+      ],
+      "scale": [
+        0.04850039902556941,
+        0.05965437173542058,
+        1.017534458374357,
+        0.02985603007051846,
+        0.03145030316106561,
+        0.03676178785496755,
+        0.03970186152535118,
+        0.17647779533985622,
+        0.6728119899592694
+      ],
+      "coefficients": [
+        0.9502401782555262,
+        0.9389519212468299,
+        0.3163066819388097,
+        0.025761520414914234,
+        0.09176291852616121,
+        0.3538502279723291,
+        0.6436429232245411,
+        -0.2840998763505854,
+        -0.9305343115143757
+      ],
+      "intercept": -4.59887870415884,
+      "partial_weight": 1.0,
+      "C": 1.0,
+      "score_semantics": "uncalibrated support",
+      "threshold": 0.2999244651610715,
+      "threshold_source": "dev grouped out-of-fold"
+    },
+    "refit_base/en": {
+      "mean": [
+        -0.020892905781679936,
+        -0.04868506965612896,
+        -0.1053559491151305
+      ],
+      "scale": [
+        0.05516877326375323,
+        0.06131074094090029,
+        1.0216723171322184
+      ],
+      "coefficients": [
+        0.1959208604398865,
+        1.5250964723202334,
+        0.47291320652337215
+      ],
+      "intercept": -3.670623788772289,
+      "partial_weight": 1.0,
+      "C": 1.0,
+      "score_semantics": "uncalibrated support",
+      "threshold": 0.2524680140175793,
+      "threshold_source": "dev grouped out-of-fold"
+    },
+    "refit_base/zh": {
+      "mean": [
+        -0.018399384026975392,
+        -0.046191547901424414,
+        -0.14661154416718442
+      ],
+      "scale": [
+        0.04850039902556941,
+        0.05965437173542058,
+        1.017534458374357
+      ],
+      "coefficients": [
+        1.2989623072217595,
+        0.49166069077159846,
+        0.6796286680278745
+      ],
+      "intercept": -3.9084191105730506,
+      "partial_weight": 1.0,
+      "C": 1.0,
+      "score_semantics": "uncalibrated support",
+      "threshold": 0.3251678176336729,
+      "threshold_source": "dev grouped out-of-fold"
+    }
+  },
+  "index_sha256": "d7fb9f1d47dafbd116be82b6d5a34501104737216834350c283e77819e4de494",
+  "gallery_count": 4692,
+  "text_encoder": {
+    "model_id": "google/siglip2-base-patch16-224",
+    "revision": "75de2d55ec2d0b4efc50b3e9ad70dba96a7b2fa2"
+  },
+  "source_feature_manifest_sha256": "666394f9ca56e01ad7c79a96c7b975c6e0c1c60a2ae857127a347ea7f51a080f",
+  "source_models_sha256": "44674cdbecb7daf40c6f5756cb426f9090f837ff5f7a379073c9e9041450cf65",
+  "text_cache": {
+    "file": "condition_text_v7.npz",
+    "sha256": "ac0b78ff86f5430b67e4fb2241eadbc2501767db9fcdf4e7f839f95de22623b8",
+    "contents": "frozen dev-query and condition text embeddings; no candidate labels or scores"
+  }
+}

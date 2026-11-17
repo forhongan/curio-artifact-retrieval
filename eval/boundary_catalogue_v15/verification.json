@@ -1,0 +1,422 @@
+{
+  "version": "catalogue-visual-v15",
+  "gallery_count": 4692,
+  "model": {
+    "visual": {
+      "version": "joint-vqa-v1-448",
+      "repository": "mlx-community/Qwen3-VL-8B-Instruct-4bit",
+      "revision": "defcdea7cc7a4b0858fea563cbbce171d328e457",
+      "worker_sha256": "4005f48b0c6c46d87716f644841e5989966c3cbc15119696b9368badb1bac8ab"
+    },
+    "version": "catalogue-visual-v15",
+    "policy_sha256": "5fffe89803aee39d27c95bedf48b062b76594867cb3e79689e1dd1e434681093",
+    "catalogue_sha256": "fe29c7f1304d6a5b1bbe09610134cee7b59f8437706045015eca341bc8d0c4ba",
+    "artifacts": {
+      "artifacts/factor_boundary_v11/heads.json": "c0c94e27469c8368163139469d21f1e21c8c6abf59c8059dfde0ccb3568a4da1",
+      "artifacts/surface_boundary_v13/red_surface_head.json": "fbb4d693ff5bb6792441c76692a8197aaf14bde0dedf912351aded913e1bbce5",
+      "data/snapshots/collection_v2.jsonl": "4dbb5e4045bbab4fd245f7fce2d2fc363aabfe41a45d31b91703ddaac5ebee68",
+      "artifacts/targeted_boundary_v10/support_followup/meiping_gallery.jsonl": "d529772404beb3952ffb58a316b273dfcd7866b2883d1b339c86b0d7d129326e",
+      "artifacts/targeted_boundary_v10/support_followup/gourd_gallery.jsonl": "d78311fd8e39a99c013ffdf41add82aec60e8d456f084e4d98f89b4545713798"
+    }
+  },
+  "queries": {
+    "meiping": {
+      "queries": [
+        "梅瓶",
+        "meiping vase"
+      ],
+      "job_id": "cv15_21e409fa2d83f835bb9c5c289c72efda7fcfe5c0a73275c16d390a84918a7a49",
+      "yes": 90,
+      "no": 4602,
+      "binary_complete": true,
+      "same_bilingual_job": true,
+      "accepted_with_unobservable_color": null,
+      "decision_reasons": {
+        "catalogue_conflict": 2679,
+        "insufficient_visual_index_support": 1908,
+        "catalogue_and_image_supported": 90,
+        "visual_condition": 15
+      },
+      "seconds": 0.74033,
+      "sha256": "4a4e347e127ac36b903f71341295c92034dbd076d4f9a1c0b85c4df55d9c589c"
+    },
+    "gourd": {
+      "queries": [
+        "葫芦瓶",
+        "gourd-shaped vase"
+      ],
+      "job_id": "cv15_24b4be14a0f057cd020a9a8578c254425350fa7908690914befecc225229fcde",
+      "yes": 39,
+      "no": 4653,
+      "binary_complete": true,
+      "same_bilingual_job": true,
+      "accepted_with_unobservable_color": null,
+      "decision_reasons": {
+        "catalogue_conflict": 2679,
+        "insufficient_visual_index_support": 1947,
+        "visual_condition": 19,
+        "catalogue_and_image_supported": 39,
+        "image_gourd_body_conflict": 7,
+        "gourd_visual_and_counterevidence": 1
+      },
+      "seconds": 0.29881,
+      "sha256": "5d3409334878a6e49aad12b52d2ff34821eb593da9f0ff880cb910692bc1c4d7"
+    },
+    "gourd_double": {
+      "queries": [
+        "双腹葫芦瓶",
+        "a double-gourd vase"
+      ],
+      "job_id": "cv15_542cabeb91a9c08d4368241d7cc567fdb9b4e6137ea84d3f0146fb8d152ba039",
+      "yes": 36,
+      "no": 4656,
+      "binary_complete": true,
+      "same_bilingual_job": true,
+      "accepted_with_unobservable_color": null,
+      "decision_reasons": {
+        "catalogue_conflict": 2680,
+        "insufficient_visual_index_support": 1947,
+        "visual_condition": 23,
+        "catalogue_and_image_supported": 36,
+        "gourd_visual_and_counterevidence": 3,
+        "image_gourd_body_conflict": 3
+      },
+      "seconds": 0.27337,
+      "sha256": "eda223281cd3e19cc3232a5a087da8075480b3ec709aafb622738750c9ca08a8"
+    },
+    "gourd_triple": {
+      "queries": [
+        "三节葫芦瓶",
+        "a triple-gourd vase"
+      ],
+      "job_id": "cv15_990c3107969349d59762c49c9f4ee00d2df47cab851b5e331d39407a3c41926e",
+      "yes": 1,
+      "no": 4691,
+      "binary_complete": true,
+      "same_bilingual_job": true,
+      "accepted_with_unobservable_color": null,
+      "decision_reasons": {
+        "catalogue_conflict": 2700,
+        "insufficient_visual_index_support": 1947,
+        "visual_condition": 43,
+        "gourd_visual_and_counterevidence": 1,
+        "catalogue_and_image_supported": 1
+      },
+      "seconds": 0.27958999999999995,
+      "sha256": "cead586fafdd59eca7dd0e30470015e99c20e58ab65b7e1af240fd56e3c2b32c"
+    },
+    "red_bowl": {
+      "queries": [
+        "红色碗",
+        "a red bowl"
+      ],
+      "job_id": "cv15_8940eea50693b8795e946d08de661626dfc0f0a35ac0a096aafa73918b47141e",
+      "yes": 3,
+      "no": 4689,
+      "binary_complete": true,
+      "same_bilingual_job": true,
+      "accepted_with_unobservable_color": 0,
+      "decision_reasons": {
+        "catalogue_conflict": 3330,
+        "surface_color_mismatch": 1058,
+        "visual_condition": 22,
+        "surface_not_observable": 6,
+        "color_not_observable": 266,
+        "red_surface_and_visual_evidence": 7,
+        "catalogue_and_image_supported": 3
+      },
+      "seconds": 10.29538,
+      "sha256": "f4b3af04fdb586f3df0a0b962f482de2b6119a8b496b51a963fa0f17051e1ff8"
+    },
+    "blue_white": {
+      "queries": [
+        "青花瓷",
+        "blue and white porcelain"
+      ],
+      "job_id": "cv15_c7a05a43166b79de049397f75602df7fd5f943f8d9d939262d4a2e878fb8bd7b",
+      "yes": 295,
+      "no": 4397,
+      "binary_complete": true,
+      "same_bilingual_job": true,
+      "accepted_with_unobservable_color": 0,
+      "decision_reasons": {
+        "insufficient_blue_white_appearance": 1647,
+        "catalogue_conflict": 1917,
+        "catalogue_and_image_supported": 295,
+        "color_not_observable": 717,
+        "blue_white_visual_evidence": 116
+      },
+      "seconds": 23.87114,
+      "sha256": "95229f222d6780bbbc752267093fe70efdfb529b46f23fa0774663774fcc767b"
+    },
+    "green_narrow": {
+      "queries": [
+        "绿色窄口瓷瓶",
+        "green narrow-mouth porcelain vase"
+      ],
+      "job_id": "cv15_806c6aa7eb7e5be1901a6c8cbc055f989bc7ee1c825d59da8e38b68b4509aa1b",
+      "yes": 10,
+      "no": 4682,
+      "binary_complete": true,
+      "same_bilingual_job": true,
+      "accepted_with_unobservable_color": 0,
+      "decision_reasons": {
+        "catalogue_conflict": 3452,
+        "surface_color_mismatch": 890,
+        "mouth_ratio_exceeds_limit": 15,
+        "surface_not_observable": 5,
+        "color_not_observable": 309,
+        "visual_condition": 11,
+        "catalogue_and_image_supported": 10
+      },
+      "seconds": 8.68043,
+      "sha256": "0600e2fabceab0aa4d067e0345794132725ed746e4eff9e7894f9cf86a3188b7"
+    },
+    "green_vase": {
+      "queries": [
+        "绿色瓷瓶",
+        "green porcelain vase"
+      ],
+      "job_id": "cv15_0c3c017b28b6ab94e9a9131f6e44e6e3b1293bc955f17e6935790754d5dc15a1",
+      "yes": 29,
+      "no": 4663,
+      "binary_complete": true,
+      "same_bilingual_job": true,
+      "accepted_with_unobservable_color": 0,
+      "decision_reasons": {
+        "catalogue_conflict": 3452,
+        "surface_color_mismatch": 890,
+        "catalogue_and_image_supported": 29,
+        "surface_not_observable": 5,
+        "color_not_observable": 309,
+        "visual_condition": 7
+      },
+      "seconds": 16.796,
+      "sha256": "c2a515bddd66738400cbe1f64157b3345f4d04888fa235e4bc1873b5edcafd4f"
+    }
+  },
+  "gourd_subtypes_are_subsets": true,
+  "narrow_mouth_is_subset_of_green_vases": true,
+  "known_case_regressions": [
+    {
+      "query": "blue_white",
+      "item_id": "met_42303",
+      "expected": false,
+      "actual": false,
+      "passed": true,
+      "reason": "blue_white_visual_evidence"
+    },
+    {
+      "query": "green_narrow",
+      "item_id": "met_46546",
+      "expected": false,
+      "actual": false,
+      "passed": true,
+      "reason": "mouth_ratio_exceeds_limit"
+    },
+    {
+      "query": "green_narrow",
+      "item_id": "met_46957",
+      "expected": false,
+      "actual": false,
+      "passed": true,
+      "reason": "mouth_ratio_exceeds_limit"
+    },
+    {
+      "query": "green_narrow",
+      "item_id": "met_48346",
+      "expected": false,
+      "actual": false,
+      "passed": true,
+      "reason": "mouth_ratio_exceeds_limit"
+    },
+    {
+      "query": "green_narrow",
+      "item_id": "met_46989",
+      "expected": false,
+      "actual": false,
+      "passed": true,
+      "reason": "mouth_ratio_exceeds_limit"
+    },
+    {
+      "query": "green_narrow",
+      "item_id": "met_46953",
+      "expected": false,
+      "actual": false,
+      "passed": true,
+      "reason": "mouth_ratio_exceeds_limit"
+    },
+    {
+      "query": "green_narrow",
+      "item_id": "met_42228",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "reason": "catalogue_and_image_supported"
+    },
+    {
+      "query": "red_bowl",
+      "item_id": "cma_120216",
+      "expected": false,
+      "actual": false,
+      "passed": true,
+      "reason": "catalogue_conflict"
+    },
+    {
+      "query": "red_bowl",
+      "item_id": "met_46998",
+      "expected": false,
+      "actual": false,
+      "passed": true,
+      "reason": "color_not_observable"
+    },
+    {
+      "query": "red_bowl",
+      "item_id": "met_460692",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "reason": "catalogue_and_image_supported"
+    },
+    {
+      "query": "red_bowl",
+      "item_id": "met_47312",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "reason": "catalogue_and_image_supported"
+    },
+    {
+      "query": "red_bowl",
+      "item_id": "cma_154693",
+      "expected": false,
+      "actual": false,
+      "passed": true,
+      "reason": "catalogue_conflict"
+    },
+    {
+      "query": "red_bowl",
+      "item_id": "met_460694",
+      "expected": false,
+      "actual": false,
+      "passed": true,
+      "reason": "catalogue_conflict"
+    },
+    {
+      "query": "red_bowl",
+      "item_id": "met_49220",
+      "expected": false,
+      "actual": false,
+      "passed": true,
+      "reason": "catalogue_conflict"
+    },
+    {
+      "query": "red_bowl",
+      "item_id": "met_49348",
+      "expected": false,
+      "actual": false,
+      "passed": true,
+      "reason": "catalogue_conflict"
+    },
+    {
+      "query": "red_bowl",
+      "item_id": "met_49349",
+      "expected": false,
+      "actual": false,
+      "passed": true,
+      "reason": "catalogue_conflict"
+    },
+    {
+      "query": "red_bowl",
+      "item_id": "met_76119",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "reason": "catalogue_and_image_supported"
+    },
+    {
+      "query": "meiping",
+      "item_id": "met_48254",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "reason": "catalogue_and_image_supported"
+    },
+    {
+      "query": "gourd",
+      "item_id": "cma_101724",
+      "expected": false,
+      "actual": false,
+      "passed": true,
+      "reason": "visual_condition"
+    },
+    {
+      "query": "gourd",
+      "item_id": "cma_147392",
+      "expected": false,
+      "actual": false,
+      "passed": true,
+      "reason": "gourd_visual_and_counterevidence"
+    },
+    {
+      "query": "gourd",
+      "item_id": "met_50037",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "reason": "catalogue_and_image_supported"
+    },
+    {
+      "query": "gourd",
+      "item_id": "cma_97660",
+      "expected": true,
+      "actual": false,
+      "passed": false,
+      "reason": "image_gourd_body_conflict"
+    },
+    {
+      "query": "gourd",
+      "item_id": "met_42358",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "reason": "catalogue_and_image_supported"
+    },
+    {
+      "query": "gourd",
+      "item_id": "cma_140244",
+      "expected": false,
+      "actual": false,
+      "passed": true,
+      "reason": "image_gourd_body_conflict"
+    },
+    {
+      "query": "gourd_double",
+      "item_id": "met_42358",
+      "expected": false,
+      "actual": false,
+      "passed": true,
+      "reason": "catalogue_conflict"
+    },
+    {
+      "query": "gourd_triple",
+      "item_id": "met_42358",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "reason": "catalogue_and_image_supported"
+    }
+  ],
+  "known_positive_misses": [
+    {
+      "query": "gourd",
+      "item_id": "cma_97660",
+      "expected": true,
+      "actual": false,
+      "passed": false,
+      "reason": "image_gourd_body_conflict"
+    }
+  ],
+  "frozen_worker_unchanged": true,
+  "quality_scope": "Engineering checks and previously seen AI-assisted cases; not independent accuracy or gallery recall."
+}

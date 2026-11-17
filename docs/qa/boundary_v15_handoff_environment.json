@@ -1,0 +1,27 @@
+{
+  "python": "3.12.16",
+  "os": "Darwin",
+  "machine": "arm64",
+  "from_zip": true,
+  "isolated_venv": true,
+  "packages": {
+    "uvicorn": "0.54.0",
+    "starlette": "1.10.0",
+    "numpy": "2.5.5",
+    "fastapi": "0.163.1",
+    "pydantic": "2.14.3",
+    "click": "8.5.1",
+    "annotated-doc": "0.0.6",
+    "pydantic_core": "2.50.4",
+    "opentelemetry-api": "1.45.2",
+    "typing-inspection": "0.4.5",
+    "h11": "0.16.0",
+    "pip": "26.2.2",
+    "annotated-types": "0.8.0",
+    "anyio": "4.16.0",
+    "typing_extensions": "4.16.0",
+    "scipy": "1.18.1",
+    "idna": "3.20"
+  },
+  "windows_launch_executed": false
+}

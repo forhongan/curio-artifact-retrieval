@@ -1,0 +1,113 @@
+{
+  "schema": "curio-assisted-review-import-v1",
+  "validated_at_utc": "2026-11-16T11:27:56.032452+00:00",
+  "source_filename": "curio-ai-assisted-067ab168 (1).json",
+  "source_sha256": "6759252e41febaaeb66e7991b7562109d996ef804c377f7dbcb764d037aa32bc",
+  "source_bytes": 775835,
+  "archive_path": "artifacts/assisted_review_v10/imports/curio-ai-assisted-067ab168-6759252e41fe.json",
+  "bundle_id": "067ab1688fd12fe6b4445576291ece52c71484dfe0ea3498ea994c8e7e3c1d57",
+  "status": "validated_duplicate_archived",
+  "labels_added": 0,
+  "labels_changed": 0,
+  "dataset_path": "eval/boundary_assisted_v10/labels.jsonl",
+  "dataset_sha256": "3ce6cf8c8c270c60cbac8c973653536785f19be48f022e717854a91f4e4f67ab",
+  "summary": {
+    "total": 720,
+    "images_reviewed": 120,
+    "positive": 8,
+    "negative": 690,
+    "color_excluded": 14,
+    "needs_review": 8,
+    "per_query": {
+      "v8_blue_white_vase": {
+        "explicit_mismatch": 69,
+        "color_not_observable": 6,
+        "supported": 2,
+        "ambiguous": 3
+      },
+      "v8_bronze_animal": {
+        "explicit_mismatch": 40
+      },
+      "v8_bronze_handles": {
+        "explicit_mismatch": 80
+      },
+      "v8_dragon_textile": {
+        "explicit_mismatch": 80
+      },
+      "v8_floral_bowl": {
+        "explicit_mismatch": 38,
+        "ambiguous": 2
+      },
+      "v8_glass_bottle": {
+        "explicit_mismatch": 40
+      },
+      "v8_green_bowl": {
+        "explicit_mismatch": 73,
+        "color_not_observable": 5,
+        "supported": 1,
+        "ambiguous": 1
+      },
+      "v8_green_plate": {
+        "explicit_mismatch": 39,
+        "supported": 1
+      },
+      "v8_lidded_porcelain_jar": {
+        "explicit_mismatch": 39,
+        "supported": 1
+      },
+      "v8_porcelain_cup": {
+        "explicit_mismatch": 75,
+        "ambiguous": 2,
+        "supported": 3
+      },
+      "v8_red_bowl": {
+        "explicit_mismatch": 39,
+        "color_not_observable": 1
+      },
+      "v8_red_plate": {
+        "explicit_mismatch": 78,
+        "color_not_observable": 2
+      }
+    }
+  },
+  "binary_decisions": {
+    "yes": 8,
+    "no": 712
+  },
+  "split_summary": {
+    "dev": {
+      "rows": 240,
+      "images": 40,
+      "positive": 2
+    },
+    "test": {
+      "rows": 480,
+      "images": 80,
+      "positive": 6
+    }
+  },
+  "checks": {
+    "schema_matches": true,
+    "bundle_id_matches": true,
+    "unique_complete_keys": true,
+    "frozen_identity_fields_match": true,
+    "valid_grades_and_boolean_decisions": true,
+    "reasons_and_review_flags_match": true,
+    "ai_provenance_preserved": true,
+    "evidence_present": true,
+    "facts_hash_matches": true,
+    "gallery_hash_matches": true,
+    "frozen_inputs_unchanged": true,
+    "all_120_actual_images_match": true,
+    "dev_test_groups_disjoint": true,
+    "summary_recomputed": true,
+    "matches_existing_public_export": true,
+    "matches_existing_label_dataset": true,
+    "duplicate_download_identical": true,
+    "archived_bytes_verified": true
+  },
+  "human_confirmed": false,
+  "independent_human_gold": false,
+  "training_performed": false,
+  "notes": "User-supplied AI-assisted export matches the existing dataset exactly. Deduplicated without changing labels, frozen splits or human records. Original test labels remain excluded from fitting and calibration."
+}

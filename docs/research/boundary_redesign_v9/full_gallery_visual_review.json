@@ -1,0 +1,23 @@
+{
+  "reviewer": "root AI, direct contact-sheet inspection",
+  "scope": "30 deterministic SHA256-sampled accepted pictures; exploratory image review, not independent human validation; no threshold changed",
+  "visible_blue_white_support": 26,
+  "clear_multicolor_mismatch": [
+    "met_53961"
+  ],
+  "ambiguous": [
+    {
+      "item_id": "met_49363",
+      "reason": "Blue with conspicuous red medallion: category boundary needs a consistent label policy."
+    },
+    {
+      "item_id": "met_48022",
+      "reason": "Decoration is very low-chroma; gray versus blue is hard to establish from this view."
+    },
+    {
+      "item_id": "met_50938",
+      "reason": "Decoration is faint and low-chroma; color evidence is weak."
+    }
+  ],
+  "conclusion": "The grayscale exclusion works for unobservable-color photos, but global chromaticity does not guarantee visible blue decoration on the object. Polychrome false positives remain."
+}

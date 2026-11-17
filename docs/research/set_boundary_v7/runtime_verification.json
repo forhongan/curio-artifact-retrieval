@@ -1,0 +1,287 @@
+{
+  "real_http": true,
+  "method": "condition_boundary",
+  "explicit_comparison": true,
+  "checks": [
+    {
+      "qid": "v5_porcelain",
+      "language": "en",
+      "selected": 2563,
+      "latency_ms": 23.01,
+      "matches_offline": true
+    },
+    {
+      "qid": "v5_bronze",
+      "language": "en",
+      "selected": 507,
+      "latency_ms": 20.24,
+      "matches_offline": true
+    },
+    {
+      "qid": "v5_textile",
+      "language": "en",
+      "selected": 376,
+      "latency_ms": 19.47,
+      "matches_offline": true
+    },
+    {
+      "qid": "v5_glass",
+      "language": "en",
+      "selected": 135,
+      "latency_ms": 20.06,
+      "matches_offline": true
+    },
+    {
+      "qid": "v5_bottle",
+      "language": "en",
+      "selected": 1429,
+      "latency_ms": 21.72,
+      "matches_offline": true
+    },
+    {
+      "qid": "v5_bowl",
+      "language": "en",
+      "selected": 829,
+      "latency_ms": 20.99,
+      "matches_offline": true
+    },
+    {
+      "qid": "v5_plate",
+      "language": "en",
+      "selected": 760,
+      "latency_ms": 20.76,
+      "matches_offline": true
+    },
+    {
+      "qid": "v5_people",
+      "language": "en",
+      "selected": 627,
+      "latency_ms": 20.88,
+      "matches_offline": true
+    },
+    {
+      "qid": "v5_green_vase",
+      "language": "en",
+      "selected": 412,
+      "latency_ms": 20.61,
+      "matches_offline": true
+    },
+    {
+      "qid": "v5_red_vase",
+      "language": "en",
+      "selected": 438,
+      "latency_ms": 20.4,
+      "matches_offline": true
+    },
+    {
+      "qid": "v5_long_neck",
+      "language": "en",
+      "selected": 628,
+      "latency_ms": 20.63,
+      "matches_offline": true
+    },
+    {
+      "qid": "v5_handles",
+      "language": "en",
+      "selected": 307,
+      "latency_ms": 20.45,
+      "matches_offline": true
+    },
+    {
+      "qid": "v5_covered_jar",
+      "language": "en",
+      "selected": 387,
+      "latency_ms": 22.53,
+      "matches_offline": true
+    },
+    {
+      "qid": "v5_blue_white",
+      "language": "en",
+      "selected": 459,
+      "latency_ms": 21.65,
+      "matches_offline": true
+    },
+    {
+      "qid": "v5_flowers",
+      "language": "en",
+      "selected": 779,
+      "latency_ms": 21.54,
+      "matches_offline": true
+    },
+    {
+      "qid": "v5_lotus",
+      "language": "en",
+      "selected": 507,
+      "latency_ms": 21.15,
+      "matches_offline": true
+    },
+    {
+      "qid": "v5_dragon",
+      "language": "en",
+      "selected": 543,
+      "latency_ms": 23.59,
+      "matches_offline": true
+    },
+    {
+      "qid": "v5_pouring",
+      "language": "en",
+      "selected": 60,
+      "latency_ms": 20.44,
+      "matches_offline": true
+    },
+    {
+      "qid": "v5_ming_blue_white",
+      "language": "en",
+      "selected": 229,
+      "latency_ms": 20.44,
+      "matches_offline": true
+    },
+    {
+      "qid": "v5_qianlong",
+      "language": "en",
+      "selected": 1030,
+      "latency_ms": 21.97,
+      "matches_offline": true
+    },
+    {
+      "qid": "v5_porcelain",
+      "language": "zh",
+      "selected": 2073,
+      "latency_ms": 22.88,
+      "matches_offline": true
+    },
+    {
+      "qid": "v5_bronze",
+      "language": "zh",
+      "selected": 321,
+      "latency_ms": 20.73,
+      "matches_offline": true
+    },
+    {
+      "qid": "v5_textile",
+      "language": "zh",
+      "selected": 365,
+      "latency_ms": 20.48,
+      "matches_offline": true
+    },
+    {
+      "qid": "v5_glass",
+      "language": "zh",
+      "selected": 170,
+      "latency_ms": 20.2,
+      "matches_offline": true
+    },
+    {
+      "qid": "v5_bottle",
+      "language": "zh",
+      "selected": 1300,
+      "latency_ms": 22.12,
+      "matches_offline": true
+    },
+    {
+      "qid": "v5_bowl",
+      "language": "zh",
+      "selected": 812,
+      "latency_ms": 21.23,
+      "matches_offline": true
+    },
+    {
+      "qid": "v5_plate",
+      "language": "zh",
+      "selected": 826,
+      "latency_ms": 20.69,
+      "matches_offline": true
+    },
+    {
+      "qid": "v5_people",
+      "language": "zh",
+      "selected": 616,
+      "latency_ms": 20.54,
+      "matches_offline": true
+    },
+    {
+      "qid": "v5_green_vase",
+      "language": "zh",
+      "selected": 564,
+      "latency_ms": 20.15,
+      "matches_offline": true
+    },
+    {
+      "qid": "v5_red_vase",
+      "language": "zh",
+      "selected": 643,
+      "latency_ms": 19.92,
+      "matches_offline": true
+    },
+    {
+      "qid": "v5_long_neck",
+      "language": "zh",
+      "selected": 460,
+      "latency_ms": 19.43,
+      "matches_offline": true
+    },
+    {
+      "qid": "v5_handles",
+      "language": "zh",
+      "selected": 74,
+      "latency_ms": 19.24,
+      "matches_offline": true
+    },
+    {
+      "qid": "v5_covered_jar",
+      "language": "zh",
+      "selected": 25,
+      "latency_ms": 18.99,
+      "matches_offline": true
+    },
+    {
+      "qid": "v5_blue_white",
+      "language": "zh",
+      "selected": 329,
+      "latency_ms": 20.12,
+      "matches_offline": true
+    },
+    {
+      "qid": "v5_flowers",
+      "language": "zh",
+      "selected": 677,
+      "latency_ms": 20.54,
+      "matches_offline": true
+    },
+    {
+      "qid": "v5_lotus",
+      "language": "zh",
+      "selected": 581,
+      "latency_ms": 76.35,
+      "matches_offline": true
+    },
+    {
+      "qid": "v5_dragon",
+      "language": "zh",
+      "selected": 567,
+      "latency_ms": 19.63,
+      "matches_offline": true
+    },
+    {
+      "qid": "v5_pouring",
+      "language": "zh",
+      "selected": 0,
+      "latency_ms": 19.22,
+      "matches_offline": true
+    },
+    {
+      "qid": "v5_ming_blue_white",
+      "language": "zh",
+      "selected": 192,
+      "latency_ms": 20.0,
+      "matches_offline": true
+    },
+    {
+      "qid": "v5_qianlong",
+      "language": "zh",
+      "selected": 553,
+      "latency_ms": 20.31,
+      "matches_offline": true
+    }
+  ]
+}

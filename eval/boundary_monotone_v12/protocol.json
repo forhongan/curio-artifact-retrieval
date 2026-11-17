@@ -1,0 +1,22 @@
+{
+  "version": "monotone-component-v12",
+  "parent": "factor-contrast-v11",
+  "reason": "V11 learned pixel weights from only 3 valid red-training masks (2 positive / 1 negative), and overrode strong negative semantic evidence. These features are not estimable from current training coverage.",
+  "features": [
+    "positive_vqa_logit",
+    "negated_counter_vqa_logit"
+  ],
+  "constraints": "All feature coefficients nonnegative; class-balanced convex logistic objective with L2 regularization=1; positive scale learned on training rows only.",
+  "color_guard": "Color components additionally require positive probe logit>0 and counter-description logit<0; monochrome always No. Learned score may reject affirmative evidence, but may not invert a negative or contradicted color judgment into Yes.",
+  "data": "Exactly the frozen v11 component labels and source-train fit partition; no new fit labels, no test-based hyperparameter search.",
+  "calibration": "Same v11 dev operating-point rule; failure remains marked, fallback .5 only for offline comparison.",
+  "evaluation": "V11 test and stress are already seen: adaptive research comparison only, not a new independent test. Preserve all v11 outputs.",
+  "release_approved": false,
+  "inputs": {
+    "eval/boundary_factors_v11/components.jsonl": "6332fd8fbbabe9677afaf345d23943990fb057ee4227e97c9182b5c6ec54fa3a",
+    "artifacts/factor_boundary_v11/component_scores.jsonl": "af0a87da4ed83c5f28f091096e5d3a402551d1140c5b0061db63009ab3c7aa52",
+    "eval/boundary_factors_v11/labels.jsonl": "e9d75f3ee148119de646877c7b21700f287d651156b34e67a0c274a98d71c77e",
+    "eval/boundary_factors_v11/stress_labels.jsonl": "4095f5c488827a2b6a781041acd8517fc57b0418339393ab41788241c326a3fd",
+    "artifacts/factor_boundary_v11/stress_scores.jsonl": "f0d72c13fe0f7f4a7ceeffd8e69ea52b9257559a4aa5940b9390b23e33c77662"
+  }
+}

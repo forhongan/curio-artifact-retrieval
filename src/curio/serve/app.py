@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+from contextlib import asynccontextmanager
 from datetime import datetime, timezone
 import hashlib
 import json
@@ -25,6 +26,8 @@ from curio.retrieve.image_search import ImageSearchService, METHODS
 from curio.retrieve.references import load_reference_bank
 from curio.retrieve.probe_sets import ProbeSetService
 from curio.retrieve.visual_sets import VisualSetService
+from curio.retrieve.joint_sets import JointSetJobs
+from curio.retrieve.catalogue_visual import CatalogueVisualScorer
 from PIL import Image, UnidentifiedImageError
 from starlette.concurrency import run_in_threadpool
 
@@ -101,7 +104,20 @@ class SetRequest(BaseModel):
     model_config = ConfigDict(extra="forbid")
     query: str = Field(min_length=1, max_length=1000)
     top_k: int = Field(default=20, ge=1, le=100)
-    method: Literal['adaptive_margin', 'adaptive_graph', 'adaptive_evidence', 'dev_calibrated', 'dev_cutoff', 'dev_color'] = 'adaptive_evidence'
+    method: Literal['strict_conditions', 'condition_boundary', 'adaptive_margin', 'adaptive_graph', 'adaptive_evidence', 'dev_calibrated', 'dev_cutoff', 'dev_color'] = 'strict_conditions'
+
+    @model_validator(mode="after")
+    def nonempty_query(self):
+        if not self.query.strip():
+            raise ValueError("query must contain non-whitespace text")
+        return self
+
+
+class JointSetRequest(BaseModel):
+    model_config = ConfigDict(extra="forbid")
+    query: str = Field(min_length=1, max_length=1000)
+    use_references: bool = False
+    method: Literal['joint_vlm', 'catalogue_visual'] = 'joint_vlm'
 
     @model_validator(mode="after")
     def nonempty_query(self):
@@ -147,7 +163,15 @@ def create_app(*, service: SearchService | None = None, data_path: str | Path | 
                                 probes_path=probes_path or os.getenv("CURIO_PROBES") or None,
                                 probes=probes, probe_report=probe_report,
                                 probe_weight=probe_weight if probe_weight is not None else float(os.getenv("CURIO_PROBE_WEIGHT", ".15")))
-    application = FastAPI(title="拾遗 Curio", version="0.1.0", description="中英博物馆文本到图像检索；元数据证据与视觉相似度明确区分。")
+    @asynccontextmanager
+    async def lifespan(application):
+        try:
+            yield
+        finally:
+            await run_in_threadpool(application.state.catalogue_set_jobs.close)
+            await run_in_threadpool(application.state.joint_set_jobs.close)
+
+    application = FastAPI(title="拾遗 Curio", version="0.1.0", description="中英博物馆文本到图像检索；元数据证据与视觉相似度明确区分。", lifespan=lifespan)
     application.state.search_service = service
     image_service = ImageSearchService(service)
     application.state.image_search_service = image_service
@@ -163,6 +187,12 @@ def create_app(*, service: SearchService | None = None, data_path: str | Path | 
     expanded_lock = threading.Lock()
     probe_set_service = None
     visual_set_service = VisualSetService(service)
+    application.state.visual_set_service = visual_set_service
+    joint_jobs = JointSetJobs(service)
+    application.state.joint_set_jobs = joint_jobs
+    catalogue_jobs = JointSetJobs(service, CatalogueVisualScorer(service, joint_jobs.scorer),
+                                  method="catalogue_visual", pool=joint_jobs.pool)
+    application.state.catalogue_set_jobs = catalogue_jobs
     probe_set_lock = threading.Lock()
     dynamic_reference_lock = threading.Lock()
     dynamic_reference_root = root_path / 'artifacts/dynamic_reference_api'
@@ -204,6 +234,32 @@ def create_app(*, service: SearchService | None = None, data_path: str | Path | 
     @application.post("/api/search/level3")
     def level3_search(request: Level3Request):
         return service.level3_search(request.query, request.top_k, request.recall_k)
+
+    @application.post("/api/search/set/jobs", status_code=202)
+    def create_joint_set(request: JointSetRequest):
+        try:
+            manager = catalogue_jobs if request.method == 'catalogue_visual' else joint_jobs
+            return manager.create(request.query, use_references=request.use_references if request.method == 'joint_vlm' else False)
+        except ValueError as error:
+            raise HTTPException(400, str(error)) from error
+        except (OSError, RuntimeError) as error:
+            raise HTTPException(503, str(error)) from error
+
+    @application.get("/api/search/set/jobs/{job_id}")
+    def get_joint_set(job_id: str, decisions: bool = False):
+        try:
+            manager = catalogue_jobs if job_id.startswith('cv15_') else joint_jobs
+            return manager.get(job_id, include_decisions=decisions)
+        except KeyError as error:
+            raise HTTPException(404, "Unknown visual judgment job") from error
+
+    @application.post("/api/search/set/jobs/{job_id}/cancel")
+    def cancel_joint_set(job_id: str):
+        try:
+            manager = catalogue_jobs if job_id.startswith('cv15_') else joint_jobs
+            return manager.cancel(job_id)
+        except KeyError as error:
+            raise HTTPException(404, "Unknown visual judgment job") from error
 
     @application.post("/api/search/set")
     def set_search(request: SetRequest):

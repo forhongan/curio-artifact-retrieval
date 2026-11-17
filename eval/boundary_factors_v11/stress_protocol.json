@@ -1,0 +1,7 @@
+{
+  "schema": "factor-stress-v11",
+  "rows": 66,
+  "labels_sha256": "4095f5c488827a2b6a781041acd8517fc57b0418339393ab41788241c326a3fd",
+  "scope": "Old accepted-only diagnostic plus one visible red-bowl positive and one monochrome catalogue-red case; no fit overlap; adaptive regression, not fresh human test. Freeze before scoring.",
+  "release_approved": false
+}

@@ -1,0 +1,455 @@
+{
+  "version": "factor-contrast-v11",
+  "release_approved": false,
+  "bilingual_same_plan": true,
+  "probes": {
+    "red": [
+      "the main object's exterior surface is predominantly red, including coral-red or wine-red; judge the object itself, not its background or small decorative motifs",
+      "the main object's exterior is predominantly a non-red color (white, yellow, green, blue, purple, pink, or brown), with at most small red decorative motifs"
+    ],
+    "bowl": [
+      "the main object is an open bowl, with a broad open rim and a concave container body deep enough to hold food; not a flat plate, drinking cup, jar, or vase",
+      "the main object is a drinking cup, a flat plate or saucer, a jar, a bottle, a vase, or a non-vessel object, rather than an open food bowl"
+    ],
+    "meiping": [
+      "the main vessel has ALL of these visible shape features: a small mouth, a short neck, broad high shoulders close to the neck, and a body tapering toward a narrower foot (the meiping shape)",
+      "the main object has a long tubular neck, or a wide jar opening, or a nearly straight cylindrical body, or is not a bottle or vase; these are alternatives to the short-necked high-shouldered tapering meiping shape"
+    ],
+    "gourd": [
+      "the main object itself is a bottle with two distinct inflated chambers, an upper belly and a lower belly, separated by a clearly constricted waist; both are body chambers, not just a small collar on a long neck",
+      "the main object has a single belly with a plain or decorated neck, or only a small raised collar on the neck; it does not have two distinct inflated body chambers joined at a narrow waist"
+    ],
+    "blue_white": [
+      "the main object is a ceramic with visibly blue painted motifs on a white or pale ground, with no prominent added red, green, yellow, or other multicolor painted decoration; blue-and-white ceramic appearance",
+      "the main object has prominent multicolored painted decoration or a colored yellow/green ground, or has a plain monochrome surface without blue painted motifs on a pale ground"
+    ]
+  },
+  "components": {
+    "red": {
+      "calibration": {
+        "threshold": 0.5,
+        "goal_met": false,
+        "metrics": {
+          "n": 48,
+          "positive": 3,
+          "tp": 2,
+          "fp": 17,
+          "fn": 1,
+          "precision": 0.10526315789473684,
+          "recall": 0.6666666666666666,
+          "f1": 0.18181818181818182,
+          "unknown_accepted": 1,
+          "grayscale_accepted": 0
+        },
+        "explicit_negative_count": 36,
+        "release_approved": false
+      },
+      "test": {
+        "n": 48,
+        "positive": 0,
+        "tp": 0,
+        "fp": 7,
+        "fn": 0,
+        "precision": 0.0,
+        "recall": null,
+        "f1": 0.0,
+        "unknown_accepted": 0,
+        "grayscale_accepted": 0
+      }
+    },
+    "bowl": {
+      "calibration": {
+        "threshold": 0.5,
+        "goal_met": false,
+        "metrics": {
+          "n": 48,
+          "positive": 1,
+          "tp": 1,
+          "fp": 3,
+          "fn": 0,
+          "precision": 0.25,
+          "recall": 1.0,
+          "f1": 0.4,
+          "unknown_accepted": 1,
+          "grayscale_accepted": 0
+        },
+        "explicit_negative_count": 45,
+        "release_approved": false
+      },
+      "test": {
+        "n": 48,
+        "positive": 7,
+        "tp": 5,
+        "fp": 0,
+        "fn": 2,
+        "precision": 1.0,
+        "recall": 0.7142857142857143,
+        "f1": 0.8333333333333334,
+        "unknown_accepted": 0,
+        "grayscale_accepted": 0
+      }
+    },
+    "meiping": {
+      "calibration": {
+        "threshold": 0.8635194991170775,
+        "goal_met": true,
+        "metrics": {
+          "n": 12,
+          "positive": 6,
+          "tp": 5,
+          "fp": 0,
+          "fn": 1,
+          "precision": 1.0,
+          "recall": 0.8333333333333334,
+          "f1": 0.9090909090909091,
+          "unknown_accepted": 0,
+          "grayscale_accepted": 0
+        },
+        "explicit_negative_count": 6,
+        "release_approved": false
+      },
+      "test": {
+        "n": 12,
+        "positive": 6,
+        "tp": 1,
+        "fp": 0,
+        "fn": 5,
+        "precision": 1.0,
+        "recall": 0.16666666666666666,
+        "f1": 0.2857142857142857,
+        "unknown_accepted": 0,
+        "grayscale_accepted": 0
+      }
+    },
+    "gourd": {
+      "calibration": {
+        "threshold": 0.5,
+        "goal_met": false,
+        "metrics": {
+          "n": 12,
+          "positive": 3,
+          "tp": 2,
+          "fp": 1,
+          "fn": 1,
+          "precision": 0.6666666666666666,
+          "recall": 0.6666666666666666,
+          "f1": 0.6666666666666666,
+          "unknown_accepted": 1,
+          "grayscale_accepted": 0
+        },
+        "explicit_negative_count": 8,
+        "release_approved": false
+      },
+      "test": {
+        "n": 12,
+        "positive": 6,
+        "tp": 5,
+        "fp": 0,
+        "fn": 1,
+        "precision": 1.0,
+        "recall": 0.8333333333333334,
+        "f1": 0.9090909090909091,
+        "unknown_accepted": 0,
+        "grayscale_accepted": 0
+      }
+    },
+    "blue_white": {
+      "calibration": {
+        "threshold": 0.7829912560115655,
+        "goal_met": true,
+        "metrics": {
+          "n": 12,
+          "positive": 6,
+          "tp": 6,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "unknown_accepted": 0,
+          "grayscale_accepted": 0
+        },
+        "explicit_negative_count": 6,
+        "release_approved": false
+      },
+      "test": {
+        "n": 12,
+        "positive": 3,
+        "tp": 3,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "unknown_accepted": 0,
+        "grayscale_accepted": 0
+      }
+    }
+  },
+  "baseline_calibration": {
+    "blue_white": {
+      "threshold": 0.9988304972648621,
+      "goal_met": true,
+      "metrics": {
+        "n": 12,
+        "positive": 6,
+        "tp": 6,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "unknown_accepted": 0,
+        "grayscale_accepted": 0
+      },
+      "explicit_negative_count": 6,
+      "release_approved": false
+    },
+    "gourd": {
+      "threshold": 0.5,
+      "goal_met": false,
+      "metrics": {
+        "n": 12,
+        "positive": 3,
+        "tp": 3,
+        "fp": 9,
+        "fn": 0,
+        "precision": 0.25,
+        "recall": 1.0,
+        "f1": 0.4,
+        "unknown_accepted": 1,
+        "grayscale_accepted": 0
+      },
+      "explicit_negative_count": 8,
+      "release_approved": false
+    },
+    "meiping": {
+      "threshold": 0.5,
+      "goal_met": true,
+      "metrics": {
+        "n": 12,
+        "positive": 6,
+        "tp": 6,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "unknown_accepted": 0,
+        "grayscale_accepted": 0
+      },
+      "explicit_negative_count": 6,
+      "release_approved": false
+    },
+    "red_bowl": {
+      "threshold": 0.5,
+      "goal_met": false,
+      "metrics": {
+        "n": 12,
+        "positive": 0,
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "precision": null,
+        "recall": null,
+        "f1": null,
+        "unknown_accepted": 0,
+        "grayscale_accepted": 0
+      },
+      "explicit_negative_count": 12,
+      "release_approved": false
+    }
+  },
+  "test": {
+    "factors": {
+      "n": 48,
+      "positive": 15,
+      "tp": 9,
+      "fp": 2,
+      "fn": 6,
+      "precision": 0.8181818181818182,
+      "recall": 0.6,
+      "f1": 0.6923076923076923,
+      "unknown_accepted": 0,
+      "grayscale_accepted": 0
+    },
+    "raw_vqa": {
+      "n": 48,
+      "positive": 15,
+      "tp": 10,
+      "fp": 7,
+      "fn": 5,
+      "precision": 0.5882352941176471,
+      "recall": 0.6666666666666666,
+      "f1": 0.625,
+      "unknown_accepted": 0,
+      "grayscale_accepted": 0
+    },
+    "calibrated_vqa": {
+      "n": 48,
+      "positive": 15,
+      "tp": 9,
+      "fp": 7,
+      "fn": 6,
+      "precision": 0.5625,
+      "recall": 0.6,
+      "f1": 0.5806451612903226,
+      "unknown_accepted": 0,
+      "grayscale_accepted": 0
+    }
+  },
+  "per_query": {
+    "blue_white": {
+      "factors": {
+        "n": 12,
+        "positive": 3,
+        "tp": 3,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "unknown_accepted": 0,
+        "grayscale_accepted": 0
+      },
+      "raw_vqa": {
+        "n": 12,
+        "positive": 3,
+        "tp": 3,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "unknown_accepted": 0,
+        "grayscale_accepted": 0
+      },
+      "calibrated_vqa": {
+        "n": 12,
+        "positive": 3,
+        "tp": 2,
+        "fp": 0,
+        "fn": 1,
+        "precision": 1.0,
+        "recall": 0.6666666666666666,
+        "f1": 0.8,
+        "unknown_accepted": 0,
+        "grayscale_accepted": 0
+      }
+    },
+    "gourd": {
+      "factors": {
+        "n": 12,
+        "positive": 6,
+        "tp": 5,
+        "fp": 0,
+        "fn": 1,
+        "precision": 1.0,
+        "recall": 0.8333333333333334,
+        "f1": 0.9090909090909091,
+        "unknown_accepted": 0,
+        "grayscale_accepted": 0
+      },
+      "raw_vqa": {
+        "n": 12,
+        "positive": 6,
+        "tp": 6,
+        "fp": 5,
+        "fn": 0,
+        "precision": 0.5454545454545454,
+        "recall": 1.0,
+        "f1": 0.7058823529411765,
+        "unknown_accepted": 0,
+        "grayscale_accepted": 0
+      },
+      "calibrated_vqa": {
+        "n": 12,
+        "positive": 6,
+        "tp": 6,
+        "fp": 5,
+        "fn": 0,
+        "precision": 0.5454545454545454,
+        "recall": 1.0,
+        "f1": 0.7058823529411765,
+        "unknown_accepted": 0,
+        "grayscale_accepted": 0
+      }
+    },
+    "meiping": {
+      "factors": {
+        "n": 12,
+        "positive": 6,
+        "tp": 1,
+        "fp": 0,
+        "fn": 5,
+        "precision": 1.0,
+        "recall": 0.16666666666666666,
+        "f1": 0.2857142857142857,
+        "unknown_accepted": 0,
+        "grayscale_accepted": 0
+      },
+      "raw_vqa": {
+        "n": 12,
+        "positive": 6,
+        "tp": 1,
+        "fp": 1,
+        "fn": 5,
+        "precision": 0.5,
+        "recall": 0.16666666666666666,
+        "f1": 0.25,
+        "unknown_accepted": 0,
+        "grayscale_accepted": 0
+      },
+      "calibrated_vqa": {
+        "n": 12,
+        "positive": 6,
+        "tp": 1,
+        "fp": 1,
+        "fn": 5,
+        "precision": 0.5,
+        "recall": 0.16666666666666666,
+        "f1": 0.25,
+        "unknown_accepted": 0,
+        "grayscale_accepted": 0
+      }
+    },
+    "red_bowl": {
+      "factors": {
+        "n": 12,
+        "positive": 0,
+        "tp": 0,
+        "fp": 2,
+        "fn": 0,
+        "precision": 0.0,
+        "recall": null,
+        "f1": 0.0,
+        "unknown_accepted": 0,
+        "grayscale_accepted": 0
+      },
+      "raw_vqa": {
+        "n": 12,
+        "positive": 0,
+        "tp": 0,
+        "fp": 1,
+        "fn": 0,
+        "precision": 0.0,
+        "recall": null,
+        "f1": 0.0,
+        "unknown_accepted": 0,
+        "grayscale_accepted": 0
+      },
+      "calibrated_vqa": {
+        "n": 12,
+        "positive": 0,
+        "tp": 0,
+        "fp": 1,
+        "fn": 0,
+        "precision": 0.0,
+        "recall": null,
+        "f1": 0.0,
+        "unknown_accepted": 0,
+        "grayscale_accepted": 0
+      }
+    }
+  }
+}

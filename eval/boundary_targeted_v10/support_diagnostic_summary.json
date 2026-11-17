@@ -1,0 +1,33 @@
+{
+  "status": "not_approved_for_default",
+  "method": "root AI inspected all four new 16-image contact sheets and read titles/media; one object group per concept sample, selected by fixed hash from accepted unreviewed groups",
+  "scope": "accepted-only AI diagnostic; not independent human evaluation and does not measure recall",
+  "counts": {
+    "blue_white": {
+      "sample": 16,
+      "supported": 16,
+      "explicit_mismatch": 0,
+      "ambiguous": 0
+    },
+    "meiping": {
+      "sample": 16,
+      "supported": 7,
+      "explicit_mismatch": 5,
+      "ambiguous": 4
+    },
+    "gourd": {
+      "sample": 16,
+      "supported": 9,
+      "explicit_mismatch": 7,
+      "ambiguous": 0
+    },
+    "red_bowl": {
+      "sample": 16,
+      "supported": 0,
+      "explicit_mismatch": 14,
+      "ambiguous": 2
+    }
+  },
+  "training_use": "These second-audit labels have not been added to training or calibration. Stop iterative test tuning; next changes require a new protocol and evaluation set.",
+  "release_approved": false
+}

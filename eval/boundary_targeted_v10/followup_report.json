@@ -1,0 +1,188 @@
+{
+  "protocol": {
+    "version": "targeted-v10-background-support-followup",
+    "parent_labels_sha256": "3db4d0dc25ea165bb8a69790036e26b2a16a6a588e543c145087a9ef68e54b83",
+    "diagnostic_labels_sha256": "31f271934011cc9d672fc1935c95a962ecd6ae0b000729f9959de6bdcf13f0ed",
+    "fit": "Original known train labels plus known source-train diagnostic labels; one query/object group; exclude original dev/test groups and hashes.",
+    "head": "unchanged LogisticRegression C=10 balanced; frozen normalized image embeddings",
+    "support_gate": "maximum cosine similarity to training positives >= minimum leave-one-object-out positive neighbor similarity minus 0.05; computed only from train images, frozen before scoring followup",
+    "calibration": "same original dev-only empirical threshold rule applied to gated scores",
+    "test_status": "adaptive diagnostic: original test has been inspected; not fresh independent evaluation",
+    "release_approved": false
+  },
+  "release_approved": false,
+  "per_query": {
+    "blue_white": {
+      "train": 27,
+      "train_positive": 14,
+      "support_threshold": 0.3956206440925598,
+      "calibration": {
+        "threshold": 0.7526918053627014,
+        "goal_met": true,
+        "metrics": {
+          "n": 10,
+          "positive": 5,
+          "tp": 5,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "unknown_accepted": 0,
+          "grayscale_accepted": 0
+        },
+        "explicit_negative_count": 0,
+        "release_approved": false
+      },
+      "test": {
+        "n": 10,
+        "positive": 5,
+        "tp": 5,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "unknown_accepted": 0,
+        "grayscale_accepted": 0
+      },
+      "full_gallery": {
+        "total": 4692,
+        "yes": 226,
+        "no": 4466
+      }
+    },
+    "gourd": {
+      "train": 32,
+      "train_positive": 8,
+      "support_threshold": 0.45974570512771606,
+      "calibration": {
+        "threshold": 0.5569655299186707,
+        "goal_met": true,
+        "metrics": {
+          "n": 8,
+          "positive": 2,
+          "tp": 2,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "unknown_accepted": 0,
+          "grayscale_accepted": 0
+        },
+        "explicit_negative_count": 6,
+        "release_approved": false
+      },
+      "test": {
+        "n": 10,
+        "positive": 4,
+        "tp": 4,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "unknown_accepted": 0,
+        "grayscale_accepted": 0
+      },
+      "full_gallery": {
+        "total": 4692,
+        "yes": 59,
+        "no": 4633
+      }
+    },
+    "meiping": {
+      "train": 28,
+      "train_positive": 12,
+      "support_threshold": 0.6764388680458069,
+      "calibration": {
+        "threshold": 0.7122633457183838,
+        "goal_met": true,
+        "metrics": {
+          "n": 10,
+          "positive": 4,
+          "tp": 4,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "unknown_accepted": 0,
+          "grayscale_accepted": 0
+        },
+        "explicit_negative_count": 5,
+        "release_approved": false
+      },
+      "test": {
+        "n": 10,
+        "positive": 4,
+        "tp": 2,
+        "fp": 0,
+        "fn": 2,
+        "precision": 1.0,
+        "recall": 0.5,
+        "f1": 0.6666666666666666,
+        "unknown_accepted": 0,
+        "grayscale_accepted": 0
+      },
+      "full_gallery": {
+        "total": 4692,
+        "yes": 94,
+        "no": 4598
+      }
+    },
+    "red_bowl": {
+      "train": 26,
+      "train_positive": 5,
+      "support_threshold": 0.791630208492279,
+      "calibration": {
+        "threshold": 0.5,
+        "goal_met": false,
+        "metrics": {
+          "n": 7,
+          "positive": 1,
+          "tp": 1,
+          "fp": 1,
+          "fn": 0,
+          "precision": 0.5,
+          "recall": 1.0,
+          "f1": 0.6666666666666666,
+          "unknown_accepted": 0,
+          "grayscale_accepted": 0
+        },
+        "explicit_negative_count": 5,
+        "release_approved": false
+      },
+      "test": {
+        "n": 6,
+        "positive": 0,
+        "tp": 0,
+        "fp": 1,
+        "fn": 0,
+        "precision": 0.0,
+        "recall": null,
+        "f1": 0.0,
+        "unknown_accepted": 0,
+        "grayscale_accepted": 0
+      },
+      "full_gallery": {
+        "total": 4692,
+        "yes": 45,
+        "no": 4647
+      }
+    }
+  },
+  "test": {
+    "n": 36,
+    "positive": 13,
+    "tp": 11,
+    "fp": 1,
+    "fn": 2,
+    "precision": 0.9166666666666666,
+    "recall": 0.8461538461538461,
+    "f1": 0.88,
+    "unknown_accepted": 0,
+    "grayscale_accepted": 0
+  }
+}

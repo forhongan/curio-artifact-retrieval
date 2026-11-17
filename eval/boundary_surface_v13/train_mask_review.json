@@ -1,0 +1,8 @@
+{
+  "method": "Root inspected all 26 training overlays in three contact sheets before fitting surface classifier. Most vessels isolated, some shadows retained. Two images have substantial background retained and are excluded only from fitting the color histogram head.",
+  "exclude_from_surface_fit": [
+    "met_50726",
+    "met_48564"
+  ],
+  "runtime_policy": "No per-item mask exceptions at inference; mask area check is not a guarantee of segmentation accuracy."
+}

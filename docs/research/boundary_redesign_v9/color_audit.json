@@ -1,0 +1,338 @@
+[
+  {
+    "query": "黑色瓷瓶",
+    "item_id": "met_52942",
+    "rgb_spread_p99": 20.0,
+    "fraction_color_spread_over_8": 0.4559939971751412,
+    "nearly_achromatic_pixels": false
+  },
+  {
+    "query": "黑色瓷瓶",
+    "item_id": "cma_123606",
+    "rgb_spread_p99": 48.0,
+    "fraction_color_spread_over_8": 0.13999048223350255,
+    "nearly_achromatic_pixels": false
+  },
+  {
+    "query": "black porcelain vase",
+    "item_id": "met_52942",
+    "rgb_spread_p99": 20.0,
+    "fraction_color_spread_over_8": 0.4559939971751412,
+    "nearly_achromatic_pixels": false
+  },
+  {
+    "query": "白色瓶子",
+    "item_id": "met_47334",
+    "rgb_spread_p99": 0.0,
+    "fraction_color_spread_over_8": 0.0,
+    "nearly_achromatic_pixels": true
+  },
+  {
+    "query": "白色瓶子",
+    "item_id": "met_52937",
+    "rgb_spread_p99": 12.0,
+    "fraction_color_spread_over_8": 0.09204727564102565,
+    "nearly_achromatic_pixels": false
+  },
+  {
+    "query": "白色瓶子",
+    "item_id": "met_48328",
+    "rgb_spread_p99": 0.0,
+    "fraction_color_spread_over_8": 0.0,
+    "nearly_achromatic_pixels": true
+  },
+  {
+    "query": "白色瓶子",
+    "item_id": "met_48308",
+    "rgb_spread_p99": 0.0,
+    "fraction_color_spread_over_8": 0.0,
+    "nearly_achromatic_pixels": true
+  },
+  {
+    "query": "白色瓶子",
+    "item_id": "cma_145937",
+    "rgb_spread_p99": 59.0,
+    "fraction_color_spread_over_8": 0.13802083333333334,
+    "nearly_achromatic_pixels": false
+  },
+  {
+    "query": "白色瓶子",
+    "item_id": "met_48637",
+    "rgb_spread_p99": 0.0,
+    "fraction_color_spread_over_8": 0.0,
+    "nearly_achromatic_pixels": true
+  },
+  {
+    "query": "white vase",
+    "item_id": "met_47334",
+    "rgb_spread_p99": 0.0,
+    "fraction_color_spread_over_8": 0.0,
+    "nearly_achromatic_pixels": true
+  },
+  {
+    "query": "white vase",
+    "item_id": "met_48308",
+    "rgb_spread_p99": 0.0,
+    "fraction_color_spread_over_8": 0.0,
+    "nearly_achromatic_pixels": true
+  },
+  {
+    "query": "white vase",
+    "item_id": "met_52937",
+    "rgb_spread_p99": 12.0,
+    "fraction_color_spread_over_8": 0.09204727564102565,
+    "nearly_achromatic_pixels": false
+  },
+  {
+    "query": "white vase",
+    "item_id": "met_48328",
+    "rgb_spread_p99": 0.0,
+    "fraction_color_spread_over_8": 0.0,
+    "nearly_achromatic_pixels": true
+  },
+  {
+    "query": "white vase",
+    "item_id": "met_48637",
+    "rgb_spread_p99": 0.0,
+    "fraction_color_spread_over_8": 0.0,
+    "nearly_achromatic_pixels": true
+  },
+  {
+    "query": "white vase",
+    "item_id": "cma_145937",
+    "rgb_spread_p99": 59.0,
+    "fraction_color_spread_over_8": 0.13802083333333334,
+    "nearly_achromatic_pixels": false
+  },
+  {
+    "query": "blue and white porcelain",
+    "item_id": "cma_130387",
+    "rgb_spread_p99": 29.0,
+    "fraction_color_spread_over_8": 0.2077832553475936,
+    "nearly_achromatic_pixels": false
+  },
+  {
+    "query": "blue and white porcelain",
+    "item_id": "cma_134790",
+    "rgb_spread_p99": 51.0,
+    "fraction_color_spread_over_8": 0.22341145833333334,
+    "nearly_achromatic_pixels": false
+  },
+  {
+    "query": "blue and white porcelain",
+    "item_id": "cma_154733",
+    "rgb_spread_p99": 46.0,
+    "fraction_color_spread_over_8": 0.22690716911764705,
+    "nearly_achromatic_pixels": false
+  },
+  {
+    "query": "blue and white porcelain",
+    "item_id": "met_48217",
+    "rgb_spread_p99": 51.0,
+    "fraction_color_spread_over_8": 0.8817178914835165,
+    "nearly_achromatic_pixels": false
+  },
+  {
+    "query": "blue and white porcelain",
+    "item_id": "met_42352",
+    "rgb_spread_p99": 81.0,
+    "fraction_color_spread_over_8": 0.20961507161458334,
+    "nearly_achromatic_pixels": false
+  },
+  {
+    "query": "blue and white porcelain",
+    "item_id": "met_48080",
+    "rgb_spread_p99": 46.0,
+    "fraction_color_spread_over_8": 0.9569905598958334,
+    "nearly_achromatic_pixels": false
+  },
+  {
+    "query": "blue and white porcelain",
+    "item_id": "met_48218",
+    "rgb_spread_p99": 52.0,
+    "fraction_color_spread_over_8": 0.9000597677595629,
+    "nearly_achromatic_pixels": false
+  },
+  {
+    "query": "blue and white porcelain",
+    "item_id": "met_47691",
+    "rgb_spread_p99": 131.0,
+    "fraction_color_spread_over_8": 0.3604486476608187,
+    "nearly_achromatic_pixels": false
+  },
+  {
+    "query": "blue and white porcelain",
+    "item_id": "cma_134774",
+    "rgb_spread_p99": 68.0,
+    "fraction_color_spread_over_8": 0.3752077792553192,
+    "nearly_achromatic_pixels": false
+  },
+  {
+    "query": "blue and white porcelain",
+    "item_id": "met_48324",
+    "rgb_spread_p99": 106.0,
+    "fraction_color_spread_over_8": 0.19777960526315788,
+    "nearly_achromatic_pixels": false
+  },
+  {
+    "query": "blue and white porcelain",
+    "item_id": "met_47376",
+    "rgb_spread_p99": 83.0,
+    "fraction_color_spread_over_8": 0.9457693713450293,
+    "nearly_achromatic_pixels": false
+  },
+  {
+    "query": "blue and white porcelain",
+    "item_id": "met_48222",
+    "rgb_spread_p99": 84.0,
+    "fraction_color_spread_over_8": 0.3961181640625,
+    "nearly_achromatic_pixels": false
+  },
+  {
+    "query": "blue and white porcelain",
+    "item_id": "met_48224",
+    "rgb_spread_p99": 61.0,
+    "fraction_color_spread_over_8": 0.9865282012195122,
+    "nearly_achromatic_pixels": false
+  },
+  {
+    "query": "blue and white porcelain",
+    "item_id": "met_42356",
+    "rgb_spread_p99": 106.0,
+    "fraction_color_spread_over_8": 0.21744791666666666,
+    "nearly_achromatic_pixels": false
+  },
+  {
+    "query": "blue and white porcelain",
+    "item_id": "cma_134778",
+    "rgb_spread_p99": 122.0,
+    "fraction_color_spread_over_8": 0.31212649402390436,
+    "nearly_achromatic_pixels": false
+  },
+  {
+    "query": "blue and white porcelain",
+    "item_id": "met_47517",
+    "rgb_spread_p99": 41.0,
+    "fraction_color_spread_over_8": 0.6315561038011696,
+    "nearly_achromatic_pixels": false
+  },
+  {
+    "query": "blue and white porcelain",
+    "item_id": "met_48129",
+    "rgb_spread_p99": 103.0,
+    "fraction_color_spread_over_8": 0.5808919270833334,
+    "nearly_achromatic_pixels": false
+  },
+  {
+    "query": "blue and white porcelain",
+    "item_id": "met_42337",
+    "rgb_spread_p99": 93.0,
+    "fraction_color_spread_over_8": 0.09688313802083333,
+    "nearly_achromatic_pixels": false
+  },
+  {
+    "query": "blue and white porcelain",
+    "item_id": "met_48202",
+    "rgb_spread_p99": 67.0,
+    "fraction_color_spread_over_8": 0.9681631455399061,
+    "nearly_achromatic_pixels": false
+  },
+  {
+    "query": "blue and white porcelain",
+    "item_id": "met_47648",
+    "rgb_spread_p99": 37.0,
+    "fraction_color_spread_over_8": 0.9446706279342723,
+    "nearly_achromatic_pixels": false
+  },
+  {
+    "query": "blue and white porcelain",
+    "item_id": "met_42491",
+    "rgb_spread_p99": 48.0,
+    "fraction_color_spread_over_8": 0.16164143880208334,
+    "nearly_achromatic_pixels": false
+  },
+  {
+    "query": "blue and white porcelain",
+    "item_id": "met_42336",
+    "rgb_spread_p99": 118.0,
+    "fraction_color_spread_over_8": 0.16119384765625,
+    "nearly_achromatic_pixels": false
+  },
+  {
+    "query": "blue and white porcelain",
+    "item_id": "cma_135007",
+    "rgb_spread_p99": 74.0,
+    "fraction_color_spread_over_8": 0.20390625,
+    "nearly_achromatic_pixels": false
+  },
+  {
+    "query": "blue and white porcelain",
+    "item_id": "met_48203",
+    "rgb_spread_p99": 69.0,
+    "fraction_color_spread_over_8": 0.9928477112676056,
+    "nearly_achromatic_pixels": false
+  },
+  {
+    "query": "blue and white porcelain",
+    "item_id": "met_42303",
+    "rgb_spread_p99": 70.0,
+    "fraction_color_spread_over_8": 0.24119059244791666,
+    "nearly_achromatic_pixels": false
+  },
+  {
+    "query": "blue and white porcelain",
+    "item_id": "met_47533",
+    "rgb_spread_p99": 90.0,
+    "fraction_color_spread_over_8": 0.1440058479532164,
+    "nearly_achromatic_pixels": false
+  },
+  {
+    "query": "blue and white porcelain",
+    "item_id": "met_48228",
+    "rgb_spread_p99": 39.169999999998254,
+    "fraction_color_spread_over_8": 0.9881534754672897,
+    "nearly_achromatic_pixels": false
+  },
+  {
+    "query": "blue and white porcelain",
+    "item_id": "met_52605",
+    "rgb_spread_p99": 91.0,
+    "fraction_color_spread_over_8": 0.2416360294117647,
+    "nearly_achromatic_pixels": false
+  },
+  {
+    "query": "blue and white porcelain",
+    "item_id": "met_50506",
+    "rgb_spread_p99": 48.0,
+    "fraction_color_spread_over_8": 0.9708251953125,
+    "nearly_achromatic_pixels": false
+  },
+  {
+    "query": "blue and white porcelain",
+    "item_id": "met_48087",
+    "rgb_spread_p99": 118.0,
+    "fraction_color_spread_over_8": 0.12401772660818713,
+    "nearly_achromatic_pixels": false
+  },
+  {
+    "query": "blue and white porcelain",
+    "item_id": "met_49363",
+    "rgb_spread_p99": 135.25,
+    "fraction_color_spread_over_8": 0.33758223684210525,
+    "nearly_achromatic_pixels": false
+  },
+  {
+    "query": "blue and white porcelain",
+    "item_id": "met_73374",
+    "rgb_spread_p99": 75.0,
+    "fraction_color_spread_over_8": 0.3437906901041667,
+    "nearly_achromatic_pixels": false
+  },
+  {
+    "query": "blue and white porcelain",
+    "item_id": "met_47284",
+    "rgb_spread_p99": 45.0,
+    "fraction_color_spread_over_8": 0.12454312865497076,
+    "nearly_achromatic_pixels": false
+  }
+]

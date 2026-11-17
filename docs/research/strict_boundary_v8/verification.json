@@ -1,0 +1,564 @@
+{
+  "method": "strict_conditions",
+  "real_http": true,
+  "checks": [
+    {
+      "query": "窄口的瓶子",
+      "matched_count": 76,
+      "uncertain_count": 764,
+      "rejected_count": 3852,
+      "latency_ms": 9537.17,
+      "policy": {
+        "version": "strict-pixel-and-v4",
+        "policy": {
+          "mouth_yes_max": 0.45,
+          "mouth_no_min": 0.6,
+          "main_color_min": 0.5,
+          "contrast_yes_min": 0.01,
+          "contrast_no_max": -0.01
+        },
+        "candidate_count": 1280,
+        "accepted": 76,
+        "contradicted": 440,
+        "uncertain": 764,
+        "unresolved_conditions": [],
+        "semantics": "all explicit checks must support; unknown is never yes; engineering thresholds, not accuracy guarantees"
+      }
+    },
+    {
+      "query": "绿色窄口瓷瓶",
+      "matched_count": 6,
+      "uncertain_count": 37,
+      "rejected_count": 4649,
+      "latency_ms": 416.39,
+      "policy": {
+        "version": "strict-pixel-and-v4",
+        "policy": {
+          "mouth_yes_max": 0.45,
+          "mouth_no_min": 0.6,
+          "main_color_min": 0.5,
+          "contrast_yes_min": 0.01,
+          "contrast_no_max": -0.01
+        },
+        "candidate_count": 161,
+        "accepted": 6,
+        "contradicted": 118,
+        "uncertain": 37,
+        "unresolved_conditions": [],
+        "semantics": "all explicit checks must support; unknown is never yes; engineering thresholds, not accuracy guarantees"
+      }
+    },
+    {
+      "query": "绿色瓶子",
+      "matched_count": 10,
+      "uncertain_count": 60,
+      "rejected_count": 4622,
+      "latency_ms": 29.63,
+      "policy": {
+        "version": "strict-pixel-and-v4",
+        "policy": {
+          "mouth_yes_max": 0.45,
+          "mouth_no_min": 0.6,
+          "main_color_min": 0.5,
+          "contrast_yes_min": 0.01,
+          "contrast_no_max": -0.01
+        },
+        "candidate_count": 238,
+        "accepted": 10,
+        "contradicted": 168,
+        "uncertain": 60,
+        "unresolved_conditions": [],
+        "semantics": "all explicit checks must support; unknown is never yes; engineering thresholds, not accuracy guarantees"
+      }
+    },
+    {
+      "query": "红色瓶子",
+      "matched_count": 6,
+      "uncertain_count": 139,
+      "rejected_count": 4547,
+      "latency_ms": 73.23,
+      "policy": {
+        "version": "strict-pixel-and-v4",
+        "policy": {
+          "mouth_yes_max": 0.45,
+          "mouth_no_min": 0.6,
+          "main_color_min": 0.5,
+          "contrast_yes_min": 0.01,
+          "contrast_no_max": -0.01
+        },
+        "candidate_count": 264,
+        "accepted": 6,
+        "contradicted": 119,
+        "uncertain": 139,
+        "unresolved_conditions": [],
+        "semantics": "all explicit checks must support; unknown is never yes; engineering thresholds, not accuracy guarantees"
+      }
+    },
+    {
+      "query": "蓝色瓶子",
+      "matched_count": 2,
+      "uncertain_count": 52,
+      "rejected_count": 4638,
+      "latency_ms": 713.03,
+      "policy": {
+        "version": "strict-pixel-and-v4",
+        "policy": {
+          "mouth_yes_max": 0.45,
+          "mouth_no_min": 0.6,
+          "main_color_min": 0.5,
+          "contrast_yes_min": 0.01,
+          "contrast_no_max": -0.01
+        },
+        "candidate_count": 1368,
+        "accepted": 2,
+        "contradicted": 1314,
+        "uncertain": 52,
+        "unresolved_conditions": [],
+        "semantics": "all explicit checks must support; unknown is never yes; engineering thresholds, not accuracy guarantees"
+      }
+    },
+    {
+      "query": "没有龙纹的瓷瓶",
+      "matched_count": 0,
+      "uncertain_count": 1374,
+      "rejected_count": 3318,
+      "latency_ms": 21.48,
+      "policy": {
+        "version": "strict-pixel-and-v4",
+        "policy": {
+          "mouth_yes_max": 0.45,
+          "mouth_no_min": 0.6,
+          "main_color_min": 0.5,
+          "contrast_yes_min": 0.01,
+          "contrast_no_max": -0.01
+        },
+        "candidate_count": 1374,
+        "accepted": 0,
+        "contradicted": 0,
+        "uncertain": 1374,
+        "unresolved_conditions": [
+          "negation",
+          "unparsed_text"
+        ],
+        "semantics": "all explicit checks must support; unknown is never yes; engineering thresholds, not accuracy guarantees"
+      }
+    },
+    {
+      "query": "乾隆时期瓷器",
+      "matched_count": 0,
+      "uncertain_count": 553,
+      "rejected_count": 4139,
+      "latency_ms": 20.94,
+      "policy": {
+        "version": "strict-pixel-and-v4",
+        "policy": {
+          "mouth_yes_max": 0.45,
+          "mouth_no_min": 0.6,
+          "main_color_min": 0.5,
+          "contrast_yes_min": 0.01,
+          "contrast_no_max": -0.01
+        },
+        "candidate_count": 553,
+        "accepted": 0,
+        "contradicted": 0,
+        "uncertain": 553,
+        "unresolved_conditions": [
+          "era/Qianlong"
+        ],
+        "semantics": "all explicit checks must support; unknown is never yes; engineering thresholds, not accuracy guarantees"
+      }
+    }
+  ],
+  "source_hashes": {
+    "src/curio/retrieve/strict_boundary.py": "383e723a7de852974e0b62dc6dc2b0d25c311591657aadb822928fa95e13e40b",
+    "src/curio/retrieve/condition_parser.py": "85b81315b353e90d335df21cfbe5909f3c0f896d34cf899d505b993bbcc5c001",
+    "src/curio/retrieve/condition_boundary_v7.json": "bb5e8abfc839a5b77eda31428ea67638151edc9f846f68a7ca0cb7b0c9022ce1",
+    "src/curio/retrieve/visual_sets.py": "f897ec367955f9a20f9030042999f9d3a606b4048c9af0d1c33377051cd288db",
+    "eval/relevance_v5/freeze.json": "2d8e957bdee77278f0e4a1f77c586e63988d9e87c641a4c3d105714d70588321"
+  },
+  "historical_core": {
+    "scope": "Previously inspected 140-image core; 20 paired intents; not independent, not full-gallery accuracy; uncertain is not accepted; grade -1 excluded",
+    "results": {
+      "en": {
+        "tp": 142,
+        "fp": 60,
+        "fn": 110,
+        "micro_precision": 0.7029702970297029,
+        "micro_recall": 0.5634920634920635,
+        "macro_f1": 0.39717134669454257,
+        "per_query": [
+          {
+            "qid": "v5_porcelain",
+            "tp": 42,
+            "fp": 12,
+            "fn": 1,
+            "unknown_selected": 0,
+            "full_gallery_selected": 2539,
+            "pending": 23
+          },
+          {
+            "qid": "v5_bronze",
+            "tp": 10,
+            "fp": 12,
+            "fn": 0,
+            "unknown_selected": 2,
+            "full_gallery_selected": 496,
+            "pending": 9
+          },
+          {
+            "qid": "v5_textile",
+            "tp": 15,
+            "fp": 3,
+            "fn": 0,
+            "unknown_selected": 1,
+            "full_gallery_selected": 374,
+            "pending": 2
+          },
+          {
+            "qid": "v5_glass",
+            "tp": 4,
+            "fp": 2,
+            "fn": 5,
+            "unknown_selected": 0,
+            "full_gallery_selected": 108,
+            "pending": 20
+          },
+          {
+            "qid": "v5_bottle",
+            "tp": 20,
+            "fp": 1,
+            "fn": 7,
+            "unknown_selected": 0,
+            "full_gallery_selected": 957,
+            "pending": 146
+          },
+          {
+            "qid": "v5_bowl",
+            "tp": 0,
+            "fp": 0,
+            "fn": 13,
+            "unknown_selected": 0,
+            "full_gallery_selected": 0,
+            "pending": 634
+          },
+          {
+            "qid": "v5_plate",
+            "tp": 10,
+            "fp": 5,
+            "fn": 0,
+            "unknown_selected": 0,
+            "full_gallery_selected": 425,
+            "pending": 150
+          },
+          {
+            "qid": "v5_people",
+            "tp": 15,
+            "fp": 3,
+            "fn": 9,
+            "unknown_selected": 0,
+            "full_gallery_selected": 615,
+            "pending": 11
+          },
+          {
+            "qid": "v5_green_vase",
+            "tp": 0,
+            "fp": 0,
+            "fn": 5,
+            "unknown_selected": 0,
+            "full_gallery_selected": 10,
+            "pending": 67
+          },
+          {
+            "qid": "v5_red_vase",
+            "tp": 1,
+            "fp": 0,
+            "fn": 9,
+            "unknown_selected": 0,
+            "full_gallery_selected": 6,
+            "pending": 144
+          },
+          {
+            "qid": "v5_long_neck",
+            "tp": 0,
+            "fp": 0,
+            "fn": 9,
+            "unknown_selected": 0,
+            "full_gallery_selected": 4,
+            "pending": 131
+          },
+          {
+            "qid": "v5_handles",
+            "tp": 3,
+            "fp": 2,
+            "fn": 7,
+            "unknown_selected": 0,
+            "full_gallery_selected": 184,
+            "pending": 87
+          },
+          {
+            "qid": "v5_covered_jar",
+            "tp": 0,
+            "fp": 0,
+            "fn": 4,
+            "unknown_selected": 0,
+            "full_gallery_selected": 0,
+            "pending": 351
+          },
+          {
+            "qid": "v5_blue_white",
+            "tp": 1,
+            "fp": 0,
+            "fn": 4,
+            "unknown_selected": 0,
+            "full_gallery_selected": 30,
+            "pending": 370
+          },
+          {
+            "qid": "v5_flowers",
+            "tp": 12,
+            "fp": 0,
+            "fn": 28,
+            "unknown_selected": 0,
+            "full_gallery_selected": 671,
+            "pending": 104
+          },
+          {
+            "qid": "v5_lotus",
+            "tp": 2,
+            "fp": 8,
+            "fn": 2,
+            "unknown_selected": 0,
+            "full_gallery_selected": 428,
+            "pending": 74
+          },
+          {
+            "qid": "v5_dragon",
+            "tp": 6,
+            "fp": 12,
+            "fn": 0,
+            "unknown_selected": 0,
+            "full_gallery_selected": 513,
+            "pending": 27
+          },
+          {
+            "qid": "v5_pouring",
+            "tp": 1,
+            "fp": 0,
+            "fn": 2,
+            "unknown_selected": 0,
+            "full_gallery_selected": 7,
+            "pending": 35
+          },
+          {
+            "qid": "v5_ming_blue_white",
+            "tp": 0,
+            "fp": 0,
+            "fn": 3,
+            "unknown_selected": 0,
+            "full_gallery_selected": 0,
+            "pending": 229
+          },
+          {
+            "qid": "v5_qianlong",
+            "tp": 0,
+            "fp": 0,
+            "fn": 2,
+            "unknown_selected": 0,
+            "full_gallery_selected": 0,
+            "pending": 1030
+          }
+        ]
+      },
+      "zh": {
+        "tp": 130,
+        "fp": 34,
+        "fn": 122,
+        "micro_precision": 0.7926829268292683,
+        "micro_recall": 0.5158730158730159,
+        "macro_f1": 0.3614283975640621,
+        "per_query": [
+          {
+            "qid": "v5_porcelain",
+            "tp": 40,
+            "fp": 5,
+            "fn": 3,
+            "unknown_selected": 0,
+            "full_gallery_selected": 2038,
+            "pending": 33
+          },
+          {
+            "qid": "v5_bronze",
+            "tp": 8,
+            "fp": 3,
+            "fn": 2,
+            "unknown_selected": 0,
+            "full_gallery_selected": 253,
+            "pending": 17
+          },
+          {
+            "qid": "v5_textile",
+            "tp": 15,
+            "fp": 2,
+            "fn": 0,
+            "unknown_selected": 1,
+            "full_gallery_selected": 359,
+            "pending": 6
+          },
+          {
+            "qid": "v5_glass",
+            "tp": 4,
+            "fp": 0,
+            "fn": 5,
+            "unknown_selected": 0,
+            "full_gallery_selected": 65,
+            "pending": 25
+          },
+          {
+            "qid": "v5_bottle",
+            "tp": 18,
+            "fp": 1,
+            "fn": 9,
+            "unknown_selected": 0,
+            "full_gallery_selected": 919,
+            "pending": 126
+          },
+          {
+            "qid": "v5_bowl",
+            "tp": 0,
+            "fp": 0,
+            "fn": 13,
+            "unknown_selected": 0,
+            "full_gallery_selected": 0,
+            "pending": 631
+          },
+          {
+            "qid": "v5_plate",
+            "tp": 10,
+            "fp": 5,
+            "fn": 0,
+            "unknown_selected": 0,
+            "full_gallery_selected": 413,
+            "pending": 156
+          },
+          {
+            "qid": "v5_people",
+            "tp": 14,
+            "fp": 1,
+            "fn": 10,
+            "unknown_selected": 0,
+            "full_gallery_selected": 554,
+            "pending": 47
+          },
+          {
+            "qid": "v5_green_vase",
+            "tp": 0,
+            "fp": 0,
+            "fn": 5,
+            "unknown_selected": 0,
+            "full_gallery_selected": 10,
+            "pending": 54
+          },
+          {
+            "qid": "v5_red_vase",
+            "tp": 1,
+            "fp": 0,
+            "fn": 9,
+            "unknown_selected": 0,
+            "full_gallery_selected": 6,
+            "pending": 140
+          },
+          {
+            "qid": "v5_long_neck",
+            "tp": 0,
+            "fp": 0,
+            "fn": 9,
+            "unknown_selected": 0,
+            "full_gallery_selected": 4,
+            "pending": 119
+          },
+          {
+            "qid": "v5_handles",
+            "tp": 0,
+            "fp": 1,
+            "fn": 10,
+            "unknown_selected": 0,
+            "full_gallery_selected": 19,
+            "pending": 33
+          },
+          {
+            "qid": "v5_covered_jar",
+            "tp": 0,
+            "fp": 0,
+            "fn": 4,
+            "unknown_selected": 0,
+            "full_gallery_selected": 0,
+            "pending": 18
+          },
+          {
+            "qid": "v5_blue_white",
+            "tp": 1,
+            "fp": 0,
+            "fn": 4,
+            "unknown_selected": 0,
+            "full_gallery_selected": 24,
+            "pending": 262
+          },
+          {
+            "qid": "v5_flowers",
+            "tp": 13,
+            "fp": 0,
+            "fn": 27,
+            "unknown_selected": 0,
+            "full_gallery_selected": 579,
+            "pending": 80
+          },
+          {
+            "qid": "v5_lotus",
+            "tp": 1,
+            "fp": 9,
+            "fn": 3,
+            "unknown_selected": 0,
+            "full_gallery_selected": 385,
+            "pending": 143
+          },
+          {
+            "qid": "v5_dragon",
+            "tp": 5,
+            "fp": 7,
+            "fn": 1,
+            "unknown_selected": 0,
+            "full_gallery_selected": 362,
+            "pending": 69
+          },
+          {
+            "qid": "v5_pouring",
+            "tp": 0,
+            "fp": 0,
+            "fn": 3,
+            "unknown_selected": 0,
+            "full_gallery_selected": 0,
+            "pending": 0
+          },
+          {
+            "qid": "v5_ming_blue_white",
+            "tp": 0,
+            "fp": 0,
+            "fn": 3,
+            "unknown_selected": 0,
+            "full_gallery_selected": 0,
+            "pending": 192
+          },
+          {
+            "qid": "v5_qianlong",
+            "tp": 0,
+            "fp": 0,
+            "fn": 2,
+            "unknown_selected": 0,
+            "full_gallery_selected": 0,
+            "pending": 553
+          }
+        ]
+      }
+    }
+  }
+}

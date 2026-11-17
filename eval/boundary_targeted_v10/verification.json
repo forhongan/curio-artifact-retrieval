@@ -1,0 +1,30 @@
+{
+  "schema": "curio-targeted-verification-v1",
+  "pytest": {
+    "passed": 589,
+    "skipped": 13
+  },
+  "ruff": "src tests scripts passed",
+  "data_checks": {
+    "source_split_preserved": true,
+    "object_and_image_split_isolation": true,
+    "followup_fit_only_train_known_labels": true,
+    "original_720_frozen_inputs_preserved": true,
+    "all_four_bilingual_plan_keys_equal": true
+  },
+  "offline_only": true,
+  "release_approved": false,
+  "hashes": {
+    "candidates.jsonl": "929070ba94b7475386c3e795362ec5e70516cf06787c910e6c50b9de72e0cb32",
+    "followup_protocol.json": "803a104b98168678e74cae644df92de711fcced4ff2fb3ed4e80a1a71b24f096",
+    "followup_report.json": "33210bb9fcd421db21dc46edac499ad6453631a84f2bd30562d967434bba4b50",
+    "full_gallery_counts.json": "5af309e3872a74b82ba2faa74178be89485c5a659a27632f48c449480423082a",
+    "gallery_diagnostic_labels.jsonl": "31f271934011cc9d672fc1935c95a962ecd6ae0b000729f9959de6bdcf13f0ed",
+    "labels.jsonl": "3db4d0dc25ea165bb8a69790036e26b2a16a6a588e543c145087a9ef68e54b83",
+    "protocol.json": "0877b4f20af20ea687faad5498bc9fd92a32f3836d8e041cc726692b8d7914f6",
+    "report.json": "366ec803481ccadbbdc0dbcb924fa072e46969f697edc8583c2c0d8306607797",
+    "review_manifest.json": "7e968c5bc5c7189e8a6b880ca456fa310baed31c5484224eaae6a58b5dea47d6",
+    "support_diagnostic_labels.jsonl": "e5d391d99244e445787f30fbc4998ad8b3a86570258b04592b3b84dd1b120e49",
+    "support_diagnostic_summary.json": "7a9e56a5083af4462adb0b42e4688ab9489766d0ea45c82a0b3afa6fced3137b"
+  }
+}

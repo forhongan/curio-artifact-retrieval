@@ -1,0 +1,642 @@
+{
+  "protocol": {
+    "version": "shape-evidence-v14",
+    "frozen_before_scoring": true,
+    "data": "133 new candidate groups, disjoint from all v5/v9/v10/v11/v13 reviewed groups and hashes; only source-train can enter new fitting. Old source-train shape-component labels reused.",
+    "algorithm": "One extra compact shape probe per concept plus old positive and counter VQA logits; 12 GrabCut silhouette features. Balanced logistic L2=2, first three semantic coefficients constrained nonnegative; geometry free. No grid search.",
+    "topology": "Gourd requires affirmative evidence for vertically stacked chambers, not adjacent vessels.",
+    "catalogue": "Bowl-only explicit cup category veto using title/object_name head noun; no descriptions, no metadata positive override. Record image-only and metadata-assisted scores separately.",
+    "calibration": "New dev only for meiping and bowl; gourd new dev has no confirmed positives, so include frozen old v11 gourd dev as explicitly reused calibration. Empirical precision>=.9 recall>=.5 TP>=2; if failed retain .5 and mark failed. Never tune on test.",
+    "evaluation": "New test reported separately from old failure regression. Fresh gourd candidates may contain no positives; never claim recall when zero. AI visual+catalogue labels not independent human gold; metadata-assisted comparisons share catalogue evidence with labels.",
+    "deployment": "No default replacement unless precision/recall and full-gallery audit support it. Color heads and grayscale policy unchanged.",
+    "candidates_sha256": "19df3c403f0048c10580da581db4b0d019448e145996ef50dbe1f4743a6d4c9f",
+    "release_approved": false
+  },
+  "primary_path": "Visual thresholds do not use catalogue veto; catalogue-assisted output is an auxiliary diagnostic, not the production image-only algorithm.",
+  "calibration": {
+    "meiping": {
+      "threshold": 0.5,
+      "goal_met": false,
+      "metrics": {
+        "n": 15,
+        "positive": 7,
+        "tp": 7,
+        "fp": 2,
+        "fn": 0,
+        "precision": 0.7777777777777778,
+        "recall": 1.0,
+        "f1": 0.875,
+        "unknown_accepted": 2,
+        "grayscale_accepted": 0
+      },
+      "explicit_negative_count": 6,
+      "release_approved": false,
+      "dev_keys": [
+        "meiping:met_46872",
+        "meiping:met_51025",
+        "meiping:cma_153286",
+        "meiping:cma_122443",
+        "meiping:met_52021",
+        "meiping:met_48490",
+        "meiping:met_53767",
+        "meiping:met_46664",
+        "meiping:met_50735",
+        "meiping:met_48592",
+        "meiping:met_52941",
+        "meiping:met_47443",
+        "meiping:met_47686",
+        "meiping:met_51153",
+        "meiping:met_52922"
+      ],
+      "reused_old_dev": 0
+    },
+    "gourd": {
+      "threshold": 0.5,
+      "goal_met": false,
+      "metrics": {
+        "n": 24,
+        "positive": 3,
+        "tp": 3,
+        "fp": 1,
+        "fn": 0,
+        "precision": 0.75,
+        "recall": 1.0,
+        "f1": 0.8571428571428571,
+        "unknown_accepted": 1,
+        "grayscale_accepted": 0
+      },
+      "explicit_negative_count": 20,
+      "release_approved": false,
+      "dev_keys": [
+        "gourd:met_50952",
+        "gourd:met_50548",
+        "gourd:met_50908",
+        "gourd:met_48221",
+        "gourd:met_47574",
+        "gourd:met_49857",
+        "gourd:met_48280",
+        "gourd:met_42356",
+        "gourd:cma_119884",
+        "gourd:met_42237",
+        "gourd:met_48278",
+        "gourd:met_47648",
+        "gourd:cma_140185",
+        "gourd:met_48359",
+        "gourd:met_48203",
+        "gourd:met_39527",
+        "gourd:met_42551",
+        "gourd:cma_146847",
+        "gourd:met_52679",
+        "gourd:met_49352",
+        "gourd:met_48654",
+        "gourd:met_42203",
+        "gourd:met_49825",
+        "gourd:met_52960"
+      ],
+      "reused_old_dev": 12
+    },
+    "bowl": {
+      "threshold": 0.9536577572473971,
+      "goal_met": true,
+      "metrics": {
+        "n": 16,
+        "positive": 7,
+        "tp": 4,
+        "fp": 0,
+        "fn": 3,
+        "precision": 1.0,
+        "recall": 0.5714285714285714,
+        "f1": 0.7272727272727273,
+        "unknown_accepted": 0,
+        "grayscale_accepted": 0
+      },
+      "explicit_negative_count": 6,
+      "release_approved": false,
+      "dev_keys": [
+        "bowl:met_894293",
+        "bowl:met_48103",
+        "bowl:met_42471",
+        "bowl:cma_76526",
+        "bowl:met_48813",
+        "bowl:cma_154204",
+        "bowl:met_51114",
+        "bowl:met_52597",
+        "bowl:met_50744",
+        "bowl:met_51149",
+        "bowl:cma_130130",
+        "bowl:met_52582",
+        "bowl:met_76768",
+        "bowl:met_49828",
+        "bowl:met_50882",
+        "bowl:met_51116"
+      ],
+      "reused_old_dev": 0
+    }
+  },
+  "test": {
+    "v13_baseline": {
+      "n": 48,
+      "positive": 20,
+      "tp": 11,
+      "fp": 4,
+      "fn": 9,
+      "precision": 0.7333333333333333,
+      "recall": 0.55,
+      "f1": 0.6285714285714286,
+      "unknown_accepted": 2,
+      "grayscale_accepted": 0
+    },
+    "v14_visual_only": {
+      "n": 48,
+      "positive": 20,
+      "tp": 17,
+      "fp": 3,
+      "fn": 3,
+      "precision": 0.85,
+      "recall": 0.85,
+      "f1": 0.85,
+      "unknown_accepted": 2,
+      "grayscale_accepted": 0
+    },
+    "v14_catalogue_veto": {
+      "n": 48,
+      "positive": 20,
+      "tp": 17,
+      "fp": 1,
+      "fn": 3,
+      "precision": 0.9444444444444444,
+      "recall": 0.85,
+      "f1": 0.8947368421052632,
+      "unknown_accepted": 1,
+      "grayscale_accepted": 0
+    }
+  },
+  "per_atom_test": {
+    "meiping": {
+      "v13_baseline": {
+        "n": 20,
+        "positive": 13,
+        "tp": 4,
+        "fp": 0,
+        "fn": 9,
+        "precision": 1.0,
+        "recall": 0.3076923076923077,
+        "f1": 0.47058823529411764,
+        "unknown_accepted": 0,
+        "grayscale_accepted": 0
+      },
+      "v14_visual_only": {
+        "n": 20,
+        "positive": 13,
+        "tp": 13,
+        "fp": 1,
+        "fn": 0,
+        "precision": 0.9285714285714286,
+        "recall": 1.0,
+        "f1": 0.9629629629629629,
+        "unknown_accepted": 1,
+        "grayscale_accepted": 0
+      },
+      "v14_catalogue_veto": {
+        "n": 20,
+        "positive": 13,
+        "tp": 13,
+        "fp": 1,
+        "fn": 0,
+        "precision": 0.9285714285714286,
+        "recall": 1.0,
+        "f1": 0.9629629629629629,
+        "unknown_accepted": 1,
+        "grayscale_accepted": 0
+      }
+    },
+    "gourd": {
+      "v13_baseline": {
+        "n": 12,
+        "positive": 0,
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "precision": null,
+        "recall": null,
+        "f1": null,
+        "unknown_accepted": 0,
+        "grayscale_accepted": 0
+      },
+      "v14_visual_only": {
+        "n": 12,
+        "positive": 0,
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "precision": null,
+        "recall": null,
+        "f1": null,
+        "unknown_accepted": 0,
+        "grayscale_accepted": 0
+      },
+      "v14_catalogue_veto": {
+        "n": 12,
+        "positive": 0,
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "precision": null,
+        "recall": null,
+        "f1": null,
+        "unknown_accepted": 0,
+        "grayscale_accepted": 0
+      }
+    },
+    "bowl": {
+      "v13_baseline": {
+        "n": 16,
+        "positive": 7,
+        "tp": 7,
+        "fp": 4,
+        "fn": 0,
+        "precision": 0.6363636363636364,
+        "recall": 1.0,
+        "f1": 0.7777777777777778,
+        "unknown_accepted": 2,
+        "grayscale_accepted": 0
+      },
+      "v14_visual_only": {
+        "n": 16,
+        "positive": 7,
+        "tp": 4,
+        "fp": 2,
+        "fn": 3,
+        "precision": 0.6666666666666666,
+        "recall": 0.5714285714285714,
+        "f1": 0.6153846153846154,
+        "unknown_accepted": 1,
+        "grayscale_accepted": 0
+      },
+      "v14_catalogue_veto": {
+        "n": 16,
+        "positive": 7,
+        "tp": 4,
+        "fp": 0,
+        "fn": 3,
+        "precision": 1.0,
+        "recall": 0.5714285714285714,
+        "f1": 0.7272727272727273,
+        "unknown_accepted": 0,
+        "grayscale_accepted": 0
+      }
+    }
+  },
+  "regression": {
+    "old_test": {
+      "red_bowl": {
+        "v13_baseline": {
+          "n": 12,
+          "positive": 0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 0,
+          "precision": null,
+          "recall": null,
+          "f1": null,
+          "unknown_accepted": 0,
+          "grayscale_accepted": 0
+        },
+        "v14_visual_only": {
+          "n": 12,
+          "positive": 0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 0,
+          "precision": null,
+          "recall": null,
+          "f1": null,
+          "unknown_accepted": 0,
+          "grayscale_accepted": 0
+        },
+        "v14_catalogue_veto": {
+          "n": 12,
+          "positive": 0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 0,
+          "precision": null,
+          "recall": null,
+          "f1": null,
+          "unknown_accepted": 0,
+          "grayscale_accepted": 0
+        }
+      },
+      "meiping": {
+        "v13_baseline": {
+          "n": 12,
+          "positive": 6,
+          "tp": 1,
+          "fp": 0,
+          "fn": 5,
+          "precision": 1.0,
+          "recall": 0.16666666666666666,
+          "f1": 0.2857142857142857,
+          "unknown_accepted": 0,
+          "grayscale_accepted": 0
+        },
+        "v14_visual_only": {
+          "n": 12,
+          "positive": 6,
+          "tp": 6,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "unknown_accepted": 0,
+          "grayscale_accepted": 0
+        },
+        "v14_catalogue_veto": {
+          "n": 12,
+          "positive": 6,
+          "tp": 6,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "unknown_accepted": 0,
+          "grayscale_accepted": 0
+        }
+      },
+      "gourd": {
+        "v13_baseline": {
+          "n": 12,
+          "positive": 6,
+          "tp": 5,
+          "fp": 0,
+          "fn": 1,
+          "precision": 1.0,
+          "recall": 0.8333333333333334,
+          "f1": 0.9090909090909091,
+          "unknown_accepted": 0,
+          "grayscale_accepted": 0
+        },
+        "v14_visual_only": {
+          "n": 12,
+          "positive": 6,
+          "tp": 6,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "unknown_accepted": 0,
+          "grayscale_accepted": 0
+        },
+        "v14_catalogue_veto": {
+          "n": 12,
+          "positive": 6,
+          "tp": 6,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "unknown_accepted": 0,
+          "grayscale_accepted": 0
+        }
+      }
+    },
+    "old_failures": {
+      "red_bowl": {
+        "v13_baseline": {
+          "n": 18,
+          "positive": 1,
+          "tp": 1,
+          "fp": 1,
+          "fn": 0,
+          "precision": 0.5,
+          "recall": 1.0,
+          "f1": 0.6666666666666666,
+          "unknown_accepted": 1,
+          "grayscale_accepted": 0
+        },
+        "v14_visual_only": {
+          "n": 18,
+          "positive": 1,
+          "tp": 0,
+          "fp": 1,
+          "fn": 1,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "unknown_accepted": 1,
+          "grayscale_accepted": 0
+        },
+        "v14_catalogue_veto": {
+          "n": 18,
+          "positive": 1,
+          "tp": 0,
+          "fp": 0,
+          "fn": 1,
+          "precision": null,
+          "recall": 0.0,
+          "f1": 0.0,
+          "unknown_accepted": 0,
+          "grayscale_accepted": 0
+        }
+      },
+      "meiping": {
+        "v13_baseline": {
+          "n": 16,
+          "positive": 7,
+          "tp": 3,
+          "fp": 2,
+          "fn": 4,
+          "precision": 0.6,
+          "recall": 0.42857142857142855,
+          "f1": 0.5,
+          "unknown_accepted": 1,
+          "grayscale_accepted": 0
+        },
+        "v14_visual_only": {
+          "n": 16,
+          "positive": 7,
+          "tp": 7,
+          "fp": 4,
+          "fn": 0,
+          "precision": 0.6363636363636364,
+          "recall": 1.0,
+          "f1": 0.7777777777777778,
+          "unknown_accepted": 3,
+          "grayscale_accepted": 0
+        },
+        "v14_catalogue_veto": {
+          "n": 16,
+          "positive": 7,
+          "tp": 7,
+          "fp": 4,
+          "fn": 0,
+          "precision": 0.6363636363636364,
+          "recall": 1.0,
+          "f1": 0.7777777777777778,
+          "unknown_accepted": 3,
+          "grayscale_accepted": 0
+        }
+      },
+      "gourd": {
+        "v13_baseline": {
+          "n": 16,
+          "positive": 9,
+          "tp": 9,
+          "fp": 1,
+          "fn": 0,
+          "precision": 0.9,
+          "recall": 1.0,
+          "f1": 0.9473684210526315,
+          "unknown_accepted": 0,
+          "grayscale_accepted": 0
+        },
+        "v14_visual_only": {
+          "n": 16,
+          "positive": 9,
+          "tp": 9,
+          "fp": 1,
+          "fn": 0,
+          "precision": 0.9,
+          "recall": 1.0,
+          "f1": 0.9473684210526315,
+          "unknown_accepted": 0,
+          "grayscale_accepted": 0
+        },
+        "v14_catalogue_veto": {
+          "n": 16,
+          "positive": 9,
+          "tp": 9,
+          "fp": 1,
+          "fn": 0,
+          "precision": 0.9,
+          "recall": 1.0,
+          "f1": 0.9473684210526315,
+          "unknown_accepted": 0,
+          "grayscale_accepted": 0
+        }
+      }
+    },
+    "old_gallery_audit": {
+      "red_bowl": {
+        "v13_baseline": {
+          "n": 3,
+          "positive": 2,
+          "tp": 2,
+          "fp": 1,
+          "fn": 0,
+          "precision": 0.6666666666666666,
+          "recall": 1.0,
+          "f1": 0.8,
+          "unknown_accepted": 1,
+          "grayscale_accepted": 0
+        },
+        "v14_visual_only": {
+          "n": 3,
+          "positive": 2,
+          "tp": 0,
+          "fp": 1,
+          "fn": 2,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "unknown_accepted": 1,
+          "grayscale_accepted": 0
+        },
+        "v14_catalogue_veto": {
+          "n": 3,
+          "positive": 2,
+          "tp": 0,
+          "fp": 0,
+          "fn": 2,
+          "precision": null,
+          "recall": 0.0,
+          "f1": 0.0,
+          "unknown_accepted": 0,
+          "grayscale_accepted": 0
+        }
+      },
+      "meiping": {
+        "v13_baseline": {
+          "n": 12,
+          "positive": 11,
+          "tp": 11,
+          "fp": 1,
+          "fn": 0,
+          "precision": 0.9166666666666666,
+          "recall": 1.0,
+          "f1": 0.9565217391304348,
+          "unknown_accepted": 1,
+          "grayscale_accepted": 0
+        },
+        "v14_visual_only": {
+          "n": 12,
+          "positive": 11,
+          "tp": 11,
+          "fp": 1,
+          "fn": 0,
+          "precision": 0.9166666666666666,
+          "recall": 1.0,
+          "f1": 0.9565217391304348,
+          "unknown_accepted": 1,
+          "grayscale_accepted": 0
+        },
+        "v14_catalogue_veto": {
+          "n": 12,
+          "positive": 11,
+          "tp": 11,
+          "fp": 1,
+          "fn": 0,
+          "precision": 0.9166666666666666,
+          "recall": 1.0,
+          "f1": 0.9565217391304348,
+          "unknown_accepted": 1,
+          "grayscale_accepted": 0
+        }
+      },
+      "gourd": {
+        "v13_baseline": {
+          "n": 9,
+          "positive": 8,
+          "tp": 8,
+          "fp": 1,
+          "fn": 0,
+          "precision": 0.8888888888888888,
+          "recall": 1.0,
+          "f1": 0.9411764705882353,
+          "unknown_accepted": 0,
+          "grayscale_accepted": 0
+        },
+        "v14_visual_only": {
+          "n": 9,
+          "positive": 8,
+          "tp": 7,
+          "fp": 1,
+          "fn": 1,
+          "precision": 0.875,
+          "recall": 0.875,
+          "f1": 0.875,
+          "unknown_accepted": 0,
+          "grayscale_accepted": 0
+        },
+        "v14_catalogue_veto": {
+          "n": 9,
+          "positive": 8,
+          "tp": 7,
+          "fp": 1,
+          "fn": 1,
+          "precision": 0.875,
+          "recall": 0.875,
+          "f1": 0.875,
+          "unknown_accepted": 0,
+          "grayscale_accepted": 0
+        }
+      }
+    }
+  },
+  "release_approved": false,
+  "default_changed": false
+}

@@ -1,0 +1,14 @@
+{
+  "date": "2026-11-16",
+  "status": "diagnosis and proposed experiment; no new model trained or deployed",
+  "method_under_audit": "strict_conditions",
+  "version_under_audit": "strict-pixel-and-v4",
+  "gallery_count": 4692,
+  "http_queries": 14,
+  "source_hashes": {
+    "src/curio/retrieve/condition_parser.py": "85b81315b353e90d335df21cfbe5909f3c0f896d34cf899d505b993bbcc5c001",
+    "src/curio/retrieve/strict_boundary.py": "383e723a7de852974e0b62dc6dc2b0d25c311591657aadb822928fa95e13e40b",
+    "src/curio/retrieve/condition_runtime.py": "9edbe88ea6f674a7f0c7cbf8327570d530e697b8ddcd04c176ef3c6f47145e6c"
+  },
+  "audit_note": "Counts are observed API outputs, not relevance accuracy. RGB channel equality establishes lack of chromatic evidence, not the original physical color of the object."
+}

@@ -1,0 +1,91 @@
+{
+  "scope": "Adaptive audit of all 59 prefilter candidates, not all-gallery recall or fresh independent test.",
+  "before": {
+    "n": 59,
+    "positive": 38,
+    "tp": 37,
+    "fp": 4,
+    "fn": 1,
+    "precision": 0.9024390243902439,
+    "recall": 0.9736842105263158,
+    "f1": 0.9367088607594937,
+    "unknown_accepted": 2,
+    "grayscale_accepted": 0
+  },
+  "after": {
+    "n": 59,
+    "positive": 38,
+    "tp": 36,
+    "fp": 2,
+    "fn": 2,
+    "precision": 0.9473684210526315,
+    "recall": 0.9473684210526315,
+    "f1": 0.9473684210526315,
+    "unknown_accepted": 2,
+    "grayscale_accepted": 0
+  },
+  "gallery_yes_before": 41,
+  "gallery_yes_after": 38,
+  "changed": [
+    {
+      "item_id": "cma_101724",
+      "grade": 0,
+      "old_yes": true,
+      "new_yes": false,
+      "contradictions": [
+        "parallel"
+      ]
+    },
+    {
+      "item_id": "cma_147392",
+      "grade": 0,
+      "old_yes": true,
+      "new_yes": false,
+      "contradictions": [
+        "accessory"
+      ]
+    },
+    {
+      "item_id": "met_50037",
+      "grade": 3,
+      "old_yes": true,
+      "new_yes": false,
+      "contradictions": [
+        "parallel"
+      ]
+    }
+  ],
+  "remaining_errors": [
+    {
+      "item_id": "cma_146847",
+      "grade": -1,
+      "yes": true,
+      "title": "Gourd-Shaped Vase",
+      "notes": "可见三个分节鼓腹，泛称葫芦形与本轮固定 double-gourd 双腹概念之间有范围歧义，严格不收。"
+    },
+    {
+      "item_id": "cma_97660",
+      "grade": 3,
+      "yes": false,
+      "title": "Gourd-shaped Vase",
+      "notes": "照片可见同一瓶身上下膨胀双腹和连接细腰，支持葫芦瓶形。"
+    },
+    {
+      "item_id": "met_42358",
+      "grade": -1,
+      "yes": true,
+      "title": "Triple-gourd vase with floral pattern",
+      "notes": "馆藏名为 Triple-gourd，照片可见三层鼓腹；本轮固定双腹概念下严格不收。"
+    },
+    {
+      "item_id": "met_50037",
+      "grade": 3,
+      "yes": false,
+      "title": "Gourd-shaped vase with gourds",
+      "notes": "照片可见同一瓶身上下膨胀双腹和连接细腰，支持葫芦瓶形。"
+    }
+  ],
+  "release_approved": false,
+  "default_changed": false,
+  "prior_label_differences": []
+}

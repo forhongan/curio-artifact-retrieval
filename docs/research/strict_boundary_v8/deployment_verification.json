@@ -1,0 +1,22 @@
+{
+  "date": "2026-11-16",
+  "method": "strict_conditions",
+  "version": "strict-pixel-and-v4",
+  "tests": {
+    "passed": 549,
+    "skipped": 13
+  },
+  "ruff": "src tests scripts passed",
+  "web_build": "TypeScript and Vite passed",
+  "v7_explicit_replay_queries": 40,
+  "browser": "system Chrome with temporary Playwright; passed",
+  "scope": "local workspace only; not committed or pushed",
+  "source_hashes": {
+    "src/curio/retrieve/strict_boundary.py": "383e723a7de852974e0b62dc6dc2b0d25c311591657aadb822928fa95e13e40b",
+    "src/curio/retrieve/condition_parser.py": "85b81315b353e90d335df21cfbe5909f3c0f896d34cf899d505b993bbcc5c001",
+    "src/curio/retrieve/visual_sets.py": "f897ec367955f9a20f9030042999f9d3a606b4048c9af0d1c33377051cd288db",
+    "src/curio/serve/app.py": "32ee29c27ae494a32e8b2a99bca35db42fe86c04039cb63a6b4d42f1cfe7adc4",
+    "web/src/App.tsx": "84a6851614e4bcc92e587e5cd1616638961000c73455cebef23d7ee29ec77b21",
+    "web/src/museum.css": "f05a1e5901d41323e2e2323a056c9f5e9cae8e81338016520c483bddd8d73f54"
+  }
+}

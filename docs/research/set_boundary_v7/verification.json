@@ -1,0 +1,12 @@
+{
+  "replayed_full_gallery_decisions": 1126080,
+  "max_saved_float32_error": 2.9802217582641788e-08,
+  "all_selected_ids_match": true,
+  "all_test_f1_match": true,
+  "frozen_baselines_reproduced": true,
+  "loio_query_exclusion_verified": true,
+  "annotation_rows": 400,
+  "annotation_excludes_reviewed_core": true,
+  "tests": "17 passed",
+  "ruff": "passed"
+}

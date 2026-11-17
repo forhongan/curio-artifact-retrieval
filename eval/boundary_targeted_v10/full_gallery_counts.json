@@ -1,0 +1,39 @@
+{
+  "counts": {
+    "red_bowl": {
+      "total": 4692,
+      "yes": 110,
+      "no": 4582,
+      "threshold": 0.5,
+      "audit_sample": 16,
+      "excluded_reviewed_groups": 150
+    },
+    "blue_white": {
+      "total": 4692,
+      "yes": 2584,
+      "no": 2108,
+      "threshold": 0.6475571393966675,
+      "audit_sample": 16,
+      "excluded_reviewed_groups": 150
+    },
+    "meiping": {
+      "total": 4692,
+      "yes": 3583,
+      "no": 1109,
+      "threshold": 0.6400172114372253,
+      "audit_sample": 16,
+      "excluded_reviewed_groups": 150
+    },
+    "gourd": {
+      "total": 4692,
+      "yes": 3833,
+      "no": 859,
+      "threshold": 0.4274710416793823,
+      "audit_sample": 16,
+      "excluded_reviewed_groups": 150
+    }
+  },
+  "color_gate_source": "fb3fd5cf173994e75c9c4577ca2c65aee9dff1c1ae27d9783455dc1955a55bbf",
+  "color_excluded": 1063,
+  "note": "Counts are predictions, not verified matches. This exploratory head is not deployed."
+}

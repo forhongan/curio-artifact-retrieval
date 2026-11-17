@@ -1,0 +1,22 @@
+{
+  "repository": "forhongan/curio-artifact-retrieval",
+  "tag": "curio-boundary-v15-20261117",
+  "assets": [
+    {
+      "name": "curio-boundary-v15-windows.zip",
+      "bytes": 76191336,
+      "sha256": "1a47207ee7a619c79931212f5091ff10193343b8eda5597ac391781e603f12c5",
+      "mode": "snapshot_replay"
+    },
+    {
+      "name": "curio-boundary-v15-runtime.zip",
+      "bytes": 1400466,
+      "sha256": "04dd4d6316ec59612b4ffab2dd7ad3b7f5e97fdcd65414cc2a1baa55e81dc076",
+      "mode": "live_resources"
+    }
+  ],
+  "gallery_count": 4692,
+  "query_count": 8,
+  "frontend_modified": false,
+  "live_backend": "Apple Silicon MLX; Windows package replays completed decisions only"
+}

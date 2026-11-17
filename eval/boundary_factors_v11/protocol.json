@@ -1,0 +1,29 @@
+{
+  "version": "factor-boundary-v11",
+  "candidates_sha256": "006dd39a06c62b4c5e7d41e0f62b7031dc64de2d2c92d61ccc6888f402b217b7",
+  "queries": {
+    "red_bowl": [
+      "红色碗",
+      "a red bowl"
+    ],
+    "blue_white": [
+      "青花瓷",
+      "blue and white porcelain"
+    ],
+    "meiping": [
+      "梅瓶",
+      "meiping vase"
+    ],
+    "gourd": [
+      "葫芦瓶",
+      "double gourd vase"
+    ]
+  },
+  "fresh_rows": 96,
+  "holdout": "Unreviewed object groups, disjoint from v5/v9/v10 reviewed groups and hashes. Source split retained; source-train images may be held out from the new head, but were not necessarily unseen by the old image encoder.",
+  "training": "Only previously reviewed source-train objects; component labels assigned from root visual review before scoring. No new holdout group may enter fitting.",
+  "algorithm": "Per-component positive and counter-description VQA logits plus frozen pixel evidence; StandardScaler and LogisticRegression(C=1, balanced). Red bowl requires both red-surface and bowl components. Other concepts each have their own component.",
+  "thresholds": "Each component calibrated only on fresh dev: empirical precision>=.9, recall>=.5, TP>=2; fallback .5 marked failed. Queries use AND. No test-based feature or threshold changes.",
+  "limitations": "Small targeted AI-reviewed diagnostic, not independent human gold or full-gallery recall. Binary No for insufficient visible support; no pending results.",
+  "release_approved": false
+}

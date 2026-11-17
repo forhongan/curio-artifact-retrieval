@@ -1,0 +1,362 @@
+[
+  {
+    "qid": "v5_porcelain",
+    "status": "ok",
+    "average_precision": 0.813346823591784,
+    "known": 139,
+    "positive": 43,
+    "language": "en",
+    "test_oracle_f1": 0.84
+  },
+  {
+    "qid": "v5_bronze",
+    "status": "ok",
+    "average_precision": 0.951923076923077,
+    "known": 137,
+    "positive": 10,
+    "language": "en",
+    "test_oracle_f1": 0.8888888888888888
+  },
+  {
+    "qid": "v5_textile",
+    "status": "ok",
+    "average_precision": 1.0,
+    "known": 139,
+    "positive": 15,
+    "language": "en",
+    "test_oracle_f1": 1.0
+  },
+  {
+    "qid": "v5_glass",
+    "status": "ok",
+    "average_precision": 0.8693121693121693,
+    "known": 139,
+    "positive": 9,
+    "language": "en",
+    "test_oracle_f1": 0.7619047619047619
+  },
+  {
+    "qid": "v5_bottle",
+    "status": "ok",
+    "average_precision": 0.9156033793256866,
+    "known": 140,
+    "positive": 27,
+    "language": "en",
+    "test_oracle_f1": 0.8771929824561403
+  },
+  {
+    "qid": "v5_bowl",
+    "status": "ok",
+    "average_precision": 0.8612578660655583,
+    "known": 140,
+    "positive": 13,
+    "language": "en",
+    "test_oracle_f1": 0.896551724137931
+  },
+  {
+    "qid": "v5_plate",
+    "status": "ok",
+    "average_precision": 0.7772510822510823,
+    "known": 140,
+    "positive": 10,
+    "language": "en",
+    "test_oracle_f1": 0.8333333333333334
+  },
+  {
+    "qid": "v5_people",
+    "status": "ok",
+    "average_precision": 0.5386351736913786,
+    "known": 137,
+    "positive": 24,
+    "language": "en",
+    "test_oracle_f1": 0.5490196078431373
+  },
+  {
+    "qid": "v5_green_vase",
+    "status": "ok",
+    "average_precision": 0.5038095238095238,
+    "known": 135,
+    "positive": 5,
+    "language": "en",
+    "test_oracle_f1": 0.5454545454545454
+  },
+  {
+    "qid": "v5_red_vase",
+    "status": "ok",
+    "average_precision": 0.8511372399530296,
+    "known": 135,
+    "positive": 10,
+    "language": "en",
+    "test_oracle_f1": 0.782608695652174
+  },
+  {
+    "qid": "v5_long_neck",
+    "status": "ok",
+    "average_precision": 0.8226020892687558,
+    "known": 140,
+    "positive": 9,
+    "language": "en",
+    "test_oracle_f1": 0.8421052631578947
+  },
+  {
+    "qid": "v5_handles",
+    "status": "ok",
+    "average_precision": 0.41706626706626704,
+    "known": 140,
+    "positive": 10,
+    "language": "en",
+    "test_oracle_f1": 0.5454545454545454
+  },
+  {
+    "qid": "v5_covered_jar",
+    "status": "ok",
+    "average_precision": 1.0,
+    "known": 140,
+    "positive": 4,
+    "language": "en",
+    "test_oracle_f1": 1.0
+  },
+  {
+    "qid": "v5_blue_white",
+    "status": "ok",
+    "average_precision": 1.0,
+    "known": 119,
+    "positive": 5,
+    "language": "en",
+    "test_oracle_f1": 1.0
+  },
+  {
+    "qid": "v5_flowers",
+    "status": "ok",
+    "average_precision": 0.6700177612567637,
+    "known": 137,
+    "positive": 40,
+    "language": "en",
+    "test_oracle_f1": 0.6410256410256411
+  },
+  {
+    "qid": "v5_lotus",
+    "status": "ok",
+    "average_precision": 0.5277986006996501,
+    "known": 137,
+    "positive": 4,
+    "language": "en",
+    "test_oracle_f1": 0.6666666666666666
+  },
+  {
+    "qid": "v5_dragon",
+    "status": "ok",
+    "average_precision": 0.6361111111111111,
+    "known": 137,
+    "positive": 6,
+    "language": "en",
+    "test_oracle_f1": 0.625
+  },
+  {
+    "qid": "v5_pouring",
+    "status": "ok",
+    "average_precision": 1.0,
+    "known": 140,
+    "positive": 3,
+    "language": "en",
+    "test_oracle_f1": 1.0
+  },
+  {
+    "qid": "v5_ming_blue_white",
+    "status": "ok",
+    "average_precision": 0.5916666666666666,
+    "known": 140,
+    "positive": 3,
+    "language": "en",
+    "test_oracle_f1": 0.5454545454545454
+  },
+  {
+    "qid": "v5_qianlong",
+    "status": "ok",
+    "average_precision": 0.03349673202614379,
+    "known": 129,
+    "positive": 2,
+    "language": "en",
+    "test_oracle_f1": 0.07547169811320754
+  },
+  {
+    "qid": "v5_porcelain",
+    "status": "ok",
+    "average_precision": 0.9120549009686952,
+    "known": 139,
+    "positive": 43,
+    "language": "zh",
+    "test_oracle_f1": 0.8913043478260869
+  },
+  {
+    "qid": "v5_bronze",
+    "status": "ok",
+    "average_precision": 0.5623127462367061,
+    "known": 137,
+    "positive": 10,
+    "language": "zh",
+    "test_oracle_f1": 0.5806451612903226
+  },
+  {
+    "qid": "v5_textile",
+    "status": "ok",
+    "average_precision": 1.0,
+    "known": 139,
+    "positive": 15,
+    "language": "zh",
+    "test_oracle_f1": 1.0
+  },
+  {
+    "qid": "v5_glass",
+    "status": "ok",
+    "average_precision": 0.6260989010989011,
+    "known": 139,
+    "positive": 9,
+    "language": "zh",
+    "test_oracle_f1": 0.6956521739130435
+  },
+  {
+    "qid": "v5_bottle",
+    "status": "ok",
+    "average_precision": 0.9161146521955279,
+    "known": 140,
+    "positive": 27,
+    "language": "zh",
+    "test_oracle_f1": 0.847457627118644
+  },
+  {
+    "qid": "v5_bowl",
+    "status": "ok",
+    "average_precision": 0.9204248967406863,
+    "known": 140,
+    "positive": 13,
+    "language": "zh",
+    "test_oracle_f1": 0.88
+  },
+  {
+    "qid": "v5_plate",
+    "status": "ok",
+    "average_precision": 0.7531990231990231,
+    "known": 140,
+    "positive": 10,
+    "language": "zh",
+    "test_oracle_f1": 0.8333333333333334
+  },
+  {
+    "qid": "v5_people",
+    "status": "ok",
+    "average_precision": 0.7510435569787418,
+    "known": 137,
+    "positive": 24,
+    "language": "zh",
+    "test_oracle_f1": 0.72
+  },
+  {
+    "qid": "v5_green_vase",
+    "status": "ok",
+    "average_precision": 0.6359649122807017,
+    "known": 135,
+    "positive": 5,
+    "language": "zh",
+    "test_oracle_f1": 0.6666666666666666
+  },
+  {
+    "qid": "v5_red_vase",
+    "status": "ok",
+    "average_precision": 0.7593939393939395,
+    "known": 135,
+    "positive": 10,
+    "language": "zh",
+    "test_oracle_f1": 0.7619047619047619
+  },
+  {
+    "qid": "v5_long_neck",
+    "status": "ok",
+    "average_precision": 0.9297008547008547,
+    "known": 140,
+    "positive": 9,
+    "language": "zh",
+    "test_oracle_f1": 0.8421052631578947
+  },
+  {
+    "qid": "v5_handles",
+    "status": "ok",
+    "average_precision": 0.2520279256347368,
+    "known": 140,
+    "positive": 10,
+    "language": "zh",
+    "test_oracle_f1": 0.4375
+  },
+  {
+    "qid": "v5_covered_jar",
+    "status": "ok",
+    "average_precision": 0.253525641025641,
+    "known": 140,
+    "positive": 4,
+    "language": "zh",
+    "test_oracle_f1": 0.4
+  },
+  {
+    "qid": "v5_blue_white",
+    "status": "ok",
+    "average_precision": 1.0,
+    "known": 119,
+    "positive": 5,
+    "language": "zh",
+    "test_oracle_f1": 1.0
+  },
+  {
+    "qid": "v5_flowers",
+    "status": "ok",
+    "average_precision": 0.768816106225208,
+    "known": 137,
+    "positive": 40,
+    "language": "zh",
+    "test_oracle_f1": 0.676923076923077
+  },
+  {
+    "qid": "v5_lotus",
+    "status": "ok",
+    "average_precision": 0.152039124668435,
+    "known": 137,
+    "positive": 4,
+    "language": "zh",
+    "test_oracle_f1": 0.2857142857142857
+  },
+  {
+    "qid": "v5_dragon",
+    "status": "ok",
+    "average_precision": 0.45380479735318446,
+    "known": 137,
+    "positive": 6,
+    "language": "zh",
+    "test_oracle_f1": 0.5454545454545454
+  },
+  {
+    "qid": "v5_pouring",
+    "status": "ok",
+    "average_precision": 0.48739495798319327,
+    "known": 140,
+    "positive": 3,
+    "language": "zh",
+    "test_oracle_f1": 0.5
+  },
+  {
+    "qid": "v5_ming_blue_white",
+    "status": "ok",
+    "average_precision": 0.8055555555555556,
+    "known": 140,
+    "positive": 3,
+    "language": "zh",
+    "test_oracle_f1": 0.8571428571428571
+  },
+  {
+    "qid": "v5_qianlong",
+    "status": "ok",
+    "average_precision": 0.12916666666666665,
+    "known": 129,
+    "positive": 2,
+    "language": "zh",
+    "test_oracle_f1": 0.23529411764705882
+  }
+]

@@ -1,0 +1,113 @@
+{
+  "status": "exploratory reference adaptation, not independent human validation",
+  "model": {
+    "version": "joint-vqa-v1-448",
+    "repository": "mlx-community/Qwen3-VL-8B-Instruct-4bit",
+    "revision": "defcdea7cc7a4b0858fea563cbbce171d328e457",
+    "worker_sha256": "4005f48b0c6c46d87716f644841e5989966c3cbc15119696b9368badb1bac8ab"
+  },
+  "calibration_goal_met": false,
+  "threshold": 0.5,
+  "calibration": {
+    "tp": 15,
+    "fp": 7,
+    "fn": 16,
+    "precision": 0.6818181818181818,
+    "recall": 0.4838709677419355,
+    "f1": 0.5660377358490566,
+    "unknown_accepted": 0
+  },
+  "test_raw": {
+    "tp": 100,
+    "fp": 66,
+    "fn": 13,
+    "precision": 0.6024096385542169,
+    "recall": 0.8849557522123894,
+    "f1": 0.7168458781362007,
+    "unknown_accepted": 0
+  },
+  "test_calibrated": {
+    "tp": 66,
+    "fp": 29,
+    "fn": 47,
+    "precision": 0.6947368421052632,
+    "recall": 0.584070796460177,
+    "f1": 0.6346153846153846,
+    "unknown_accepted": 0
+  },
+  "per_query": {
+    "v5_porcelain": {
+      "tp": 13,
+      "fp": 0,
+      "fn": 30,
+      "precision": 1.0,
+      "recall": 0.3023255813953488,
+      "f1": 0.4642857142857143,
+      "unknown_accepted": 0
+    },
+    "v5_bottle": {
+      "tp": 24,
+      "fp": 10,
+      "fn": 3,
+      "precision": 0.7058823529411765,
+      "recall": 0.8888888888888888,
+      "f1": 0.7868852459016393,
+      "unknown_accepted": 0
+    },
+    "v5_bowl": {
+      "tp": 13,
+      "fp": 15,
+      "fn": 0,
+      "precision": 0.4642857142857143,
+      "recall": 1.0,
+      "f1": 0.6341463414634146,
+      "unknown_accepted": 0
+    },
+    "v5_blue_white": {
+      "tp": 4,
+      "fp": 0,
+      "fn": 1,
+      "precision": 1.0,
+      "recall": 0.8,
+      "f1": 0.8888888888888888,
+      "unknown_accepted": 0
+    },
+    "v5_green_vase": {
+      "tp": 3,
+      "fp": 2,
+      "fn": 2,
+      "precision": 0.6,
+      "recall": 0.6,
+      "f1": 0.6,
+      "unknown_accepted": 0
+    },
+    "v5_red_vase": {
+      "tp": 4,
+      "fp": 0,
+      "fn": 6,
+      "precision": 1.0,
+      "recall": 0.4,
+      "f1": 0.5714285714285714,
+      "unknown_accepted": 0
+    },
+    "v5_dragon": {
+      "tp": 4,
+      "fp": 2,
+      "fn": 2,
+      "precision": 0.6666666666666666,
+      "recall": 0.6666666666666666,
+      "f1": 0.6666666666666666,
+      "unknown_accepted": 0
+    },
+    "v5_lotus": {
+      "tp": 1,
+      "fp": 0,
+      "fn": 3,
+      "precision": 1.0,
+      "recall": 0.25,
+      "f1": 0.4,
+      "unknown_accepted": 0
+    }
+  },
+  "elapsed_seconds": 1477.2049086249972
+}

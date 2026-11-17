@@ -1,0 +1,22 @@
+{
+  "scope": "Post-v14 old-case exploratory counterprobe; no fresh-test or accuracy claim. No changes to frozen v14 heads.",
+  "item_ids": [
+    "met_50898",
+    "met_47497",
+    "met_48559",
+    "met_47935",
+    "met_48343",
+    "cma_101716",
+    "met_47286",
+    "met_46815",
+    "cma_101724",
+    "met_51160",
+    "cma_147392",
+    "met_47877"
+  ],
+  "probes": {
+    "parallel": "two separate vessel mouths are visible side by side, corresponding to two adjacent containers rather than a single vertical bottle",
+    "accessory": "the main work is a human or animal figurine or sculpture holding or incorporating a small vessel as an accessory, rather than a stand-alone bottle or vase"
+  },
+  "release_approved": false
+}

@@ -1,0 +1,75 @@
+{
+  "schema": "curio-targeted-review-v1",
+  "labels_sha256": "3db4d0dc25ea165bb8a69790036e26b2a16a6a588e543c145087a9ef68e54b83",
+  "candidate_sha256": "929070ba94b7475386c3e795362ec5e70516cf06787c910e6c50b9de72e0cb32",
+  "review_method": "Root AI inspected all eight contact sheets (150 images / 155 query-image pairs), read catalogue titles and media, enlarged met_52768,cma_140244,met_51232,met_50773. No local VQA predictions viewed before labeling.",
+  "color_policy": "Color must be visible in photo; monochrome is policy No with grade -1, not a proven negative of the physical object.",
+  "blue_white_policy": "Strict visible blue decoration on pale ground; prominent added polychrome or yellow ground excluded; a catalogue underglaze-blue technique mention alone is insufficient.",
+  "counts": {
+    "red_bowl": {
+      "train": {
+        "explicit_mismatch": 9,
+        "supported": 3,
+        "color_not_observable": 12
+      },
+      "dev": {
+        "supported": 1,
+        "color_not_observable": 1,
+        "explicit_mismatch": 5
+      },
+      "test": {
+        "color_not_observable": 4,
+        "explicit_mismatch": 2
+      }
+    },
+    "blue_white": {
+      "train": {
+        "supported": 13,
+        "color_not_observable": 3,
+        "explicit_mismatch": 4
+      },
+      "dev": {
+        "color_not_observable": 5,
+        "supported": 5
+      },
+      "test": {
+        "supported": 5,
+        "color_not_observable": 3,
+        "explicit_mismatch": 2
+      }
+    },
+    "meiping": {
+      "train": {
+        "supported": 12,
+        "explicit_mismatch": 7,
+        "ambiguous": 1
+      },
+      "dev": {
+        "supported": 4,
+        "explicit_mismatch": 5,
+        "ambiguous": 1
+      },
+      "test": {
+        "supported": 4,
+        "explicit_mismatch": 6
+      }
+    },
+    "gourd": {
+      "train": {
+        "supported": 8,
+        "explicit_mismatch": 11,
+        "ambiguous": 1
+      },
+      "dev": {
+        "supported": 2,
+        "explicit_mismatch": 6
+      },
+      "test": {
+        "supported": 4,
+        "explicit_mismatch": 6
+      }
+    }
+  },
+  "human_confirmed": false,
+  "release_approved": false
+}

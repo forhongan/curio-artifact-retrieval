@@ -1,0 +1,40 @@
+{
+  "scope": "Exploratory visually reviewed regression examples, not independent test labels or accuracy measurement",
+  "checks": [
+    {
+      "query": "窄口的瓶子",
+      "item_id": "met_47434",
+      "visual_review": "wide flared rim visible",
+      "before": "accepted",
+      "after": "not_selected"
+    },
+    {
+      "query": "窄口的瓶子",
+      "item_id": "met_52938",
+      "visual_review": "wide flared rim visible",
+      "before": "accepted",
+      "after": "not_selected"
+    },
+    {
+      "query": "窄口的瓶子",
+      "item_id": "met_52937",
+      "visual_review": "wide flared rim visible",
+      "before": "accepted",
+      "after": "not_selected"
+    },
+    {
+      "query": "红色瓶子",
+      "item_id": "cma_123579",
+      "visual_review": "pink surface",
+      "before": "accepted",
+      "after": "not_selected"
+    },
+    {
+      "query": "蓝色瓶子",
+      "item_id": "met_48052",
+      "visual_review": "white ground with blue decoration; also jar-shaped",
+      "before": "accepted",
+      "after": "not_selected"
+    }
+  ]
+}
