@@ -1,0 +1,73 @@
+{
+  "date": "2026-11-17",
+  "checks": {
+    "fit_counts": {
+      "meiping": 42,
+      "gourd": 43,
+      "bowl": 35
+    },
+    "train_holdout_object_overlap": 0,
+    "calibration_reproduced_without_catalogue": true,
+    "fresh_rows": 133,
+    "fresh_prior_group_and_hash_overlap": 0,
+    "original_720_inputs_preserved": true,
+    "gallery": {
+      "complete": true,
+      "rows": 4692,
+      "candidates_verified": 59,
+      "yes": 38,
+      "no": 4654,
+      "other_decisions_unchanged": 4633,
+      "same_frozen_bilingual_plan": true,
+      "scope_limitation": "Generic gourd currently narrowed to double-gourd; documented unresolved semantic issue."
+    },
+    "all_candidates_audited": 59,
+    "prior_label_differences": 0,
+    "frozen_worker_preserved": true
+  },
+  "pytest": {
+    "command": "PYTHONPATH=src .venv/bin/pytest -q",
+    "passed": 616,
+    "skipped": 13,
+    "warnings": 11,
+    "exit_code": 0,
+    "log": "artifacts/shape_boundary_v14/pytest-final.log",
+    "initial_invocation_issue": "Initial invocation omitted PYTHONPATH; one CLI subprocess import failed. Correct environment run passed without changing tests."
+  },
+  "ruff": {
+    "command": ".venv/bin/ruff check src tests scripts",
+    "exit_code": 0
+  },
+  "browser": {
+    "cards": 260,
+    "countergate_audit": 59,
+    "countergate_errors": 4,
+    "default_new_test": 48,
+    "meiping_test": 20,
+    "meiping_errors": 1,
+    "legacy_gourd_errors": 2,
+    "images_loaded": true,
+    "mobile_no_overflow": true,
+    "page_errors": []
+  },
+  "hashes": {
+    "src/curio/retrieve/shape_boundary.py": "ca610ec40da1c42cca97817d661d9dca18c374ca5ab5b36a880c5da32677e015",
+    "src/curio/retrieve/shape_counterevidence.py": "ae776fec970a5874ec52477f0a54ef1c42cfdf4f54fff9942eefa37d828be221",
+    "scripts/run_shape_boundary_v14.py": "a59e7ce2c33a1d3fc5578fb060c9941bc6f9bfe61c729f8a47ca1445ef05e53c",
+    "scripts/verify_shape_counters_v14.py": "efc6424d9d09b6dce0d4272e8e3978b68f111442ac630c06961a4ecc8e7f27df",
+    "scripts/export_shape_report_v14.py": "ea31f0b0a257a1116e268608a5c0b6f4980d2878625b1ed9e5b940353dff1d5f",
+    "eval/boundary_shape_v14/labels.jsonl": "3dcac8474459df0b4c78444a3809fb66ac86ac4bdcb7f15340e65c1b473992a4",
+    "eval/boundary_shape_v14/components.jsonl": "d8290beac1fd28da92f7b825c1933e1a852f7c0e511cd16dbb37747bcd578918",
+    "eval/boundary_shape_v14/report.json": "9b27b77d04e723d63dfdc4b905cf54a3ea7dc21e569633c902f437d2820b3f8c",
+    "eval/boundary_shape_v14/countergate_audit_labels.jsonl": "69f4b15cfa362a5d76e50e1bd9319b0af7aae02d227fdbefe7b100d4eabde9f5",
+    "eval/boundary_shape_v14/countergate_audit_report.json": "cb935ea0347973a871ddbd4c3c48f274538148d75bc268f54da015545c84c73c",
+    "artifacts/shape_boundary_v14/heads.json": "8fc1467075f130f5091d0b222b1da653cafe538ad28249a7536c0b243c873b66",
+    "artifacts/shape_boundary_v14/countergate_gallery.json": "46d1f5fa101b44d286b2da5cc982a8ef655b9a1f66c53a176b1e288953e23939",
+    "artifacts/shape_boundary_v14/report.html": "0b5023cf53c61426b8cdc0be90fc06f991e4a0066a055a8840332aa4973623dc",
+    "artifacts/shape_boundary_v14/pytest-final.log": "5257eabd6722c11fc61a11397d334808ff6220f649257019eff4092f8a385503",
+    "artifacts/shape_boundary_v14/ui-verification.json": "316d185de4fbe5d4be0f2b51574561e05eabdf3e2de98112552b35c618b6ee25"
+  },
+  "release_approved": false,
+  "default_changed": false,
+  "committed_or_pushed": false
+}

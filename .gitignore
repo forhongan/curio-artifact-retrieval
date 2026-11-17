@@ -1,4 +1,6 @@
 .venv/
+.venv-vlm/
+.cache/
 __pycache__/
 *.py[cod]
 .pytest_cache/
@@ -39,3 +41,5 @@ bae42c1b75f431bbbba9c2db8b4e5c50.png
 # Local independent repository and downloaded teammate weights.
 research/teammate_review/
 output/
+
+.venv-boundary/

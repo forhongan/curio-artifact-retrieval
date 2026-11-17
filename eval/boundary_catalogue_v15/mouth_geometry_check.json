@@ -1,0 +1,50 @@
+[
+  {
+    "item_id": "cma_101674",
+    "valid": true,
+    "initial_ratio": 0.3793103448275862,
+    "ratio": 0.39568345323741005
+  },
+  {
+    "item_id": "met_42228",
+    "valid": true,
+    "initial_ratio": 0.2857142857142857,
+    "ratio": 0.291970802919708
+  },
+  {
+    "item_id": "met_46954",
+    "valid": true,
+    "initial_ratio": 0.3693181818181818,
+    "ratio": 0.37142857142857144
+  },
+  {
+    "item_id": "met_46953",
+    "valid": true,
+    "initial_ratio": 0.4807692307692308,
+    "ratio": 0.4838709677419355
+  },
+  {
+    "item_id": "met_46546",
+    "valid": true,
+    "initial_ratio": 0.5748299319727891,
+    "ratio": 0.6259259259259259
+  },
+  {
+    "item_id": "met_46957",
+    "valid": true,
+    "initial_ratio": 0.5578231292517006,
+    "ratio": 0.5616438356164384
+  },
+  {
+    "item_id": "met_46989",
+    "valid": true,
+    "initial_ratio": 0.3443396226415094,
+    "ratio": 0.4866666666666667
+  },
+  {
+    "item_id": "met_48346",
+    "valid": true,
+    "initial_ratio": 0.6834532374100719,
+    "ratio": 0.6934306569343066
+  }
+]

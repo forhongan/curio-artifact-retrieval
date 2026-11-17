@@ -1,0 +1,18 @@
+{
+  "default_queue": 8,
+  "ai_labels": 720,
+  "positive": 8,
+  "negative": 690,
+  "color_excluded": 14,
+  "manual_separate": true,
+  "export_provenance": true,
+  "mobile_no_overflow": true,
+  "page_errors": [],
+  "backend_tests": {
+    "passed": 583,
+    "skipped": 13
+  },
+  "ruff": "passed",
+  "frontend_build": "passed",
+  "original_sample_and_human_pending_hashes_unchanged": true
+}

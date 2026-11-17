@@ -1,0 +1,158 @@
+{
+  "protocol": {
+    "version": "v14b-gourd-counterevidence",
+    "base": "Frozen v13 visual gourd head; do not use regressed v14 gourd/bowl heads.",
+    "base_sha256": "a4cac01c807ce2176d5b3f1323700dc104cd2cf211c5d721cc87f59047bd592d",
+    "probes": {
+      "parallel": "two separate vessel mouths are visible side by side, corresponding to two adjacent containers rather than a single vertical bottle",
+      "accessory": "the main work is a human or animal figurine or sculpture holding or incorporating a small vessel as an accessory, rather than a stand-alone bottle or vase"
+    },
+    "policy": "Reject if either independent counter-question has yes_no_logit >= 0; no threshold search or item-ID exceptions.",
+    "scope": "Adaptive old-case replay and full frozen candidate scan; v14 tests already inspected, so NOT independent new validation. Prefilter recall remains unknown.",
+    "target_count": 90,
+    "candidate_count": 59,
+    "release_approved": false,
+    "default_changed": false
+  },
+  "gallery_yes": 38,
+  "baseline_gallery_yes": 41,
+  "rejected_previous_yes": [
+    "cma_101724",
+    "cma_147392",
+    "met_50037"
+  ],
+  "replay": {
+    "old_failures": {
+      "v13": {
+        "n": 16,
+        "positive": 9,
+        "tp": 9,
+        "fp": 1,
+        "fn": 0,
+        "precision": 0.9,
+        "recall": 1.0,
+        "f1": 0.9473684210526315,
+        "unknown_accepted": 0,
+        "grayscale_accepted": 0
+      },
+      "countergate": {
+        "n": 16,
+        "positive": 9,
+        "tp": 9,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "unknown_accepted": 0,
+        "grayscale_accepted": 0
+      }
+    },
+    "old_gallery_audit": {
+      "v13": {
+        "n": 9,
+        "positive": 8,
+        "tp": 8,
+        "fp": 1,
+        "fn": 0,
+        "precision": 0.8888888888888888,
+        "recall": 1.0,
+        "f1": 0.9411764705882353,
+        "unknown_accepted": 0,
+        "grayscale_accepted": 0
+      },
+      "countergate": {
+        "n": 9,
+        "positive": 8,
+        "tp": 8,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "unknown_accepted": 0,
+        "grayscale_accepted": 0
+      }
+    },
+    "old_test": {
+      "v13": {
+        "n": 12,
+        "positive": 6,
+        "tp": 5,
+        "fp": 0,
+        "fn": 1,
+        "precision": 1.0,
+        "recall": 0.8333333333333334,
+        "f1": 0.9090909090909091,
+        "unknown_accepted": 0,
+        "grayscale_accepted": 0
+      },
+      "countergate": {
+        "n": 12,
+        "positive": 6,
+        "tp": 4,
+        "fp": 0,
+        "fn": 2,
+        "precision": 1.0,
+        "recall": 0.6666666666666666,
+        "f1": 0.8,
+        "unknown_accepted": 0,
+        "grayscale_accepted": 0
+      }
+    },
+    "v14_dev_replay": {
+      "v13": {
+        "n": 12,
+        "positive": 0,
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "precision": null,
+        "recall": null,
+        "f1": null,
+        "unknown_accepted": 0,
+        "grayscale_accepted": 0
+      },
+      "countergate": {
+        "n": 12,
+        "positive": 0,
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "precision": null,
+        "recall": null,
+        "f1": null,
+        "unknown_accepted": 0,
+        "grayscale_accepted": 0
+      }
+    },
+    "v14_test_replay": {
+      "v13": {
+        "n": 12,
+        "positive": 0,
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "precision": null,
+        "recall": null,
+        "f1": null,
+        "unknown_accepted": 0,
+        "grayscale_accepted": 0
+      },
+      "countergate": {
+        "n": 12,
+        "positive": 0,
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "precision": null,
+        "recall": null,
+        "f1": null,
+        "unknown_accepted": 0,
+        "grayscale_accepted": 0
+      }
+    }
+  },
+  "release_approved": false,
+  "default_changed": false
+}

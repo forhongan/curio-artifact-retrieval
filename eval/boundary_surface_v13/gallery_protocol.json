@@ -1,0 +1,13 @@
+{
+  "version": "factor-surface-gallery-v13",
+  "prefilter": "Frozen v10 support-head decisions over all 4692 images, then v13 verification only on its positives. Prefilter misses are not recovered; full-gallery recall is unknown.",
+  "candidate_hashes": {
+    "red_bowl": "90f021adb20311c489079ee65893dc0c88c9da88fae27391cfaf0b02e9e79e8d",
+    "blue_white": "d256229600a5c671896cd938c49517236878277f12dac2fab616486c5166d625",
+    "meiping": "d529772404beb3952ffb58a316b273dfcd7866b2883d1b339c86b0d7d129326e",
+    "gourd": "d78311fd8e39a99c013ffdf41add82aec60e8d456f084e4d98f89b4545713798"
+  },
+  "gallery_sha256": "4dbb5e4045bbab4fd245f7fce2d2fc363aabfe41a45d31b91703ddaac5ebee68",
+  "release_approved": false,
+  "default_changed": false
+}

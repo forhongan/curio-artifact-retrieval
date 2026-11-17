@@ -1,0 +1,59 @@
+{
+  "method": "Assistant inspected twelve contact sheets containing all 133 candidates, all titles/media, and six enlarged originals before any v14 scoring. Shape uncertainty and catalogue/appearance conflicts remain strict-No ambiguity; not human gold.",
+  "fresh_labels": 133,
+  "components": 231,
+  "counts": {
+    "meiping": {
+      "train": {
+        "3": 7,
+        "0": 7
+      },
+      "dev": {
+        "3": 7,
+        "-1": 2,
+        "0": 6
+      },
+      "test": {
+        "3": 13,
+        "-1": 1,
+        "0": 6
+      }
+    },
+    "gourd": {
+      "train": {
+        "0": 11,
+        "-1": 1
+      },
+      "dev": {
+        "0": 12
+      },
+      "test": {
+        "0": 12
+      }
+    },
+    "bowl": {
+      "train": {
+        "3": 5,
+        "-1": 7,
+        "0": 4
+      },
+      "dev": {
+        "-1": 3,
+        "3": 7,
+        "0": 6
+      },
+      "test": {
+        "3": 7,
+        "-1": 2,
+        "0": 7
+      }
+    }
+  },
+  "hashes": {
+    "candidates.jsonl": "19df3c403f0048c10580da581db4b0d019448e145996ef50dbe1f4743a6d4c9f",
+    "labels.jsonl": "3dcac8474459df0b4c78444a3809fb66ac86ac4bdcb7f15340e65c1b473992a4",
+    "components.jsonl": "d8290beac1fd28da92f7b825c1933e1a852f7c0e511cd16dbb37747bcd578918"
+  },
+  "human_confirmed": false,
+  "release_approved": false
+}

@@ -295,6 +295,10 @@ class SearchService:
                 try:
                     from curio.represent.encoders import Encoder
                     adapter_path = self.manifest.get("adapter_path") if self.manifest.get("adapted") else None
+                    if adapter_path:
+                        adapter_path = Path(adapter_path.replace("\\", "/"))
+                        if not adapter_path.is_absolute():
+                            adapter_path = self.root / adapter_path
                     self.encoder = Encoder(self.encoder_name, adapter_path=adapter_path)
                 finally:
                     if timings is not None:

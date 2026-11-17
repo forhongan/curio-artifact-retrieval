@@ -1,0 +1,23 @@
+{
+  "repository": "zhizhizhi-victor/curio-boundary-handoff",
+  "source_repository": "forhongan/curio-artifact-retrieval",
+  "tag": "curio-boundary-v15-20261117",
+  "assets": [
+    {
+      "name": "curio-boundary-v15-windows.zip",
+      "bytes": 76191522,
+      "sha256": "720cdb1acd64f9bff31d0f8a58970a10d94107430731624e51e5edbf8533106f",
+      "mode": "snapshot_replay"
+    },
+    {
+      "name": "curio-boundary-v15-runtime.zip",
+      "bytes": 1400466,
+      "sha256": "a32e25d3a02697ba545b470d1b4d18e2106fe43d9fcc4aeccdd7698f8e89998e",
+      "mode": "live_resources"
+    }
+  ],
+  "gallery_count": 4692,
+  "query_count": 8,
+  "frontend_modified": false,
+  "live_backend": "Apple Silicon MLX; Windows package replays completed decisions only"
+}

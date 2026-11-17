@@ -1,0 +1,668 @@
+{
+  "protocol": {
+    "schema": "curio-targeted-boundary-v10",
+    "queries": {
+      "red_bowl": [
+        "红色碗",
+        "a red bowl"
+      ],
+      "blue_white": [
+        "青花瓷",
+        "blue and white porcelain"
+      ],
+      "meiping": [
+        "梅瓶",
+        "meiping vase"
+      ],
+      "gourd": [
+        "葫芦瓶",
+        "double gourd vase"
+      ]
+    },
+    "candidate_sha256": "929070ba94b7475386c3e795362ec5e70516cf06787c910e6c50b9de72e0cb32",
+    "gallery_sha256": "4dbb5e4045bbab4fd245f7fce2d2fc363aabfe41a45d31b91703ddaac5ebee68",
+    "selection": "catalogue candidates plus visually similar vessels; training-only candidate centroids; labels require root AI image inspection",
+    "split_policy": "preserve source train/dev/test; exclude v5, v10 random review and v9 specialty objects and image hashes",
+    "experiment": "per-concept L2 LogisticRegression(C=10, class_weight=balanced) on frozen normalized image embeddings; compare raw VQA and equal-weight mean of the two probabilities",
+    "calibration": "dev only: precision>=0.9, recall>=0.5, at least 2 TP per concept; fallback threshold .5 with goal_met=false; never approve release from this small targeted sample",
+    "limits": "AI labels, targeted nonrepresentative sample; not full-gallery precision or recall, no general free-query claim",
+    "release_approved": false,
+    "counts": {
+      "red_bowl": 37,
+      "blue_white": 40,
+      "meiping": 40,
+      "gourd": 38
+    }
+  },
+  "labels_sha256": "3db4d0dc25ea165bb8a69790036e26b2a16a6a588e543c145087a9ef68e54b83",
+  "model": {
+    "version": "joint-vqa-v1-448",
+    "repository": "mlx-community/Qwen3-VL-8B-Instruct-4bit",
+    "revision": "defcdea7cc7a4b0858fea563cbbce171d328e457",
+    "worker_sha256": "4005f48b0c6c46d87716f644841e5989966c3cbc15119696b9368badb1bac8ab"
+  },
+  "rows": 155,
+  "images": 150,
+  "label_counts": {
+    "explicit_mismatch": 63,
+    "supported": 61,
+    "color_not_observable": 28,
+    "ambiguous": 3
+  },
+  "bilingual_same_plan": true,
+  "release_approved": false,
+  "methods": {
+    "raw_vqa": {
+      "per_query": {
+        "red_bowl": {
+          "calibration": {
+            "threshold": 0.5,
+            "goal_met": false,
+            "metrics": {
+              "n": 7,
+              "positive": 1,
+              "tp": 1,
+              "fp": 0,
+              "fn": 0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0,
+              "unknown_accepted": 0,
+              "grayscale_accepted": 0
+            },
+            "explicit_negative_count": 5,
+            "release_approved": false
+          },
+          "test": {
+            "n": 6,
+            "positive": 0,
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "precision": null,
+            "recall": null,
+            "f1": null,
+            "unknown_accepted": 0,
+            "grayscale_accepted": 0
+          },
+          "test_at_0_5": {
+            "n": 6,
+            "positive": 0,
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "precision": null,
+            "recall": null,
+            "f1": null,
+            "unknown_accepted": 0,
+            "grayscale_accepted": 0
+          }
+        },
+        "blue_white": {
+          "calibration": {
+            "threshold": 0.9947798848152161,
+            "goal_met": true,
+            "metrics": {
+              "n": 10,
+              "positive": 5,
+              "tp": 5,
+              "fp": 0,
+              "fn": 0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0,
+              "unknown_accepted": 0,
+              "grayscale_accepted": 0
+            },
+            "explicit_negative_count": 0,
+            "release_approved": false
+          },
+          "test": {
+            "n": 10,
+            "positive": 5,
+            "tp": 5,
+            "fp": 2,
+            "fn": 0,
+            "precision": 0.7142857142857143,
+            "recall": 1.0,
+            "f1": 0.8333333333333334,
+            "unknown_accepted": 0,
+            "grayscale_accepted": 0
+          },
+          "test_at_0_5": {
+            "n": 10,
+            "positive": 5,
+            "tp": 5,
+            "fp": 2,
+            "fn": 0,
+            "precision": 0.7142857142857143,
+            "recall": 1.0,
+            "f1": 0.8333333333333334,
+            "unknown_accepted": 0,
+            "grayscale_accepted": 0
+          }
+        },
+        "meiping": {
+          "calibration": {
+            "threshold": 0.9399133324623108,
+            "goal_met": true,
+            "metrics": {
+              "n": 10,
+              "positive": 4,
+              "tp": 4,
+              "fp": 0,
+              "fn": 0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0,
+              "unknown_accepted": 0,
+              "grayscale_accepted": 0
+            },
+            "explicit_negative_count": 5,
+            "release_approved": false
+          },
+          "test": {
+            "n": 10,
+            "positive": 4,
+            "tp": 1,
+            "fp": 0,
+            "fn": 3,
+            "precision": 1.0,
+            "recall": 0.25,
+            "f1": 0.4,
+            "unknown_accepted": 0,
+            "grayscale_accepted": 0
+          },
+          "test_at_0_5": {
+            "n": 10,
+            "positive": 4,
+            "tp": 2,
+            "fp": 0,
+            "fn": 2,
+            "precision": 1.0,
+            "recall": 0.5,
+            "f1": 0.6666666666666666,
+            "unknown_accepted": 0,
+            "grayscale_accepted": 0
+          }
+        },
+        "gourd": {
+          "calibration": {
+            "threshold": 0.9999833106994629,
+            "goal_met": true,
+            "metrics": {
+              "n": 8,
+              "positive": 2,
+              "tp": 2,
+              "fp": 0,
+              "fn": 0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0,
+              "unknown_accepted": 0,
+              "grayscale_accepted": 0
+            },
+            "explicit_negative_count": 6,
+            "release_approved": false
+          },
+          "test": {
+            "n": 10,
+            "positive": 4,
+            "tp": 4,
+            "fp": 0,
+            "fn": 0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "unknown_accepted": 0,
+            "grayscale_accepted": 0
+          },
+          "test_at_0_5": {
+            "n": 10,
+            "positive": 4,
+            "tp": 4,
+            "fp": 6,
+            "fn": 0,
+            "precision": 0.4,
+            "recall": 1.0,
+            "f1": 0.5714285714285714,
+            "unknown_accepted": 0,
+            "grayscale_accepted": 0
+          }
+        }
+      },
+      "test": {
+        "n": 36,
+        "positive": 13,
+        "tp": 10,
+        "fp": 2,
+        "fn": 3,
+        "precision": 0.8333333333333334,
+        "recall": 0.7692307692307693,
+        "f1": 0.8,
+        "unknown_accepted": 0,
+        "grayscale_accepted": 0
+      },
+      "test_at_0_5": {
+        "n": 36,
+        "positive": 13,
+        "tp": 11,
+        "fp": 8,
+        "fn": 2,
+        "precision": 0.5789473684210527,
+        "recall": 0.8461538461538461,
+        "f1": 0.6875,
+        "unknown_accepted": 0,
+        "grayscale_accepted": 0
+      }
+    },
+    "visual_head": {
+      "per_query": {
+        "red_bowl": {
+          "calibration": {
+            "threshold": 0.5,
+            "goal_met": false,
+            "metrics": {
+              "n": 7,
+              "positive": 1,
+              "tp": 1,
+              "fp": 0,
+              "fn": 0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0,
+              "unknown_accepted": 0,
+              "grayscale_accepted": 0
+            },
+            "explicit_negative_count": 5,
+            "release_approved": false
+          },
+          "test": {
+            "n": 6,
+            "positive": 0,
+            "tp": 0,
+            "fp": 1,
+            "fn": 0,
+            "precision": 0.0,
+            "recall": null,
+            "f1": 0.0,
+            "unknown_accepted": 0,
+            "grayscale_accepted": 0
+          },
+          "test_at_0_5": {
+            "n": 6,
+            "positive": 0,
+            "tp": 0,
+            "fp": 1,
+            "fn": 0,
+            "precision": 0.0,
+            "recall": null,
+            "f1": 0.0,
+            "unknown_accepted": 0,
+            "grayscale_accepted": 0
+          }
+        },
+        "blue_white": {
+          "calibration": {
+            "threshold": 0.6475571393966675,
+            "goal_met": true,
+            "metrics": {
+              "n": 10,
+              "positive": 5,
+              "tp": 5,
+              "fp": 0,
+              "fn": 0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0,
+              "unknown_accepted": 0,
+              "grayscale_accepted": 0
+            },
+            "explicit_negative_count": 0,
+            "release_approved": false
+          },
+          "test": {
+            "n": 10,
+            "positive": 5,
+            "tp": 4,
+            "fp": 0,
+            "fn": 1,
+            "precision": 1.0,
+            "recall": 0.8,
+            "f1": 0.8888888888888888,
+            "unknown_accepted": 0,
+            "grayscale_accepted": 0
+          },
+          "test_at_0_5": {
+            "n": 10,
+            "positive": 5,
+            "tp": 5,
+            "fp": 1,
+            "fn": 0,
+            "precision": 0.8333333333333334,
+            "recall": 1.0,
+            "f1": 0.9090909090909091,
+            "unknown_accepted": 0,
+            "grayscale_accepted": 0
+          }
+        },
+        "meiping": {
+          "calibration": {
+            "threshold": 0.6400172114372253,
+            "goal_met": true,
+            "metrics": {
+              "n": 10,
+              "positive": 4,
+              "tp": 4,
+              "fp": 0,
+              "fn": 0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0,
+              "unknown_accepted": 0,
+              "grayscale_accepted": 0
+            },
+            "explicit_negative_count": 5,
+            "release_approved": false
+          },
+          "test": {
+            "n": 10,
+            "positive": 4,
+            "tp": 4,
+            "fp": 0,
+            "fn": 0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "unknown_accepted": 0,
+            "grayscale_accepted": 0
+          },
+          "test_at_0_5": {
+            "n": 10,
+            "positive": 4,
+            "tp": 4,
+            "fp": 2,
+            "fn": 0,
+            "precision": 0.6666666666666666,
+            "recall": 1.0,
+            "f1": 0.8,
+            "unknown_accepted": 0,
+            "grayscale_accepted": 0
+          }
+        },
+        "gourd": {
+          "calibration": {
+            "threshold": 0.4274710416793823,
+            "goal_met": true,
+            "metrics": {
+              "n": 8,
+              "positive": 2,
+              "tp": 2,
+              "fp": 0,
+              "fn": 0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0,
+              "unknown_accepted": 0,
+              "grayscale_accepted": 0
+            },
+            "explicit_negative_count": 6,
+            "release_approved": false
+          },
+          "test": {
+            "n": 10,
+            "positive": 4,
+            "tp": 4,
+            "fp": 0,
+            "fn": 0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "unknown_accepted": 0,
+            "grayscale_accepted": 0
+          },
+          "test_at_0_5": {
+            "n": 10,
+            "positive": 4,
+            "tp": 4,
+            "fp": 0,
+            "fn": 0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "unknown_accepted": 0,
+            "grayscale_accepted": 0
+          }
+        }
+      },
+      "test": {
+        "n": 36,
+        "positive": 13,
+        "tp": 12,
+        "fp": 1,
+        "fn": 1,
+        "precision": 0.9230769230769231,
+        "recall": 0.9230769230769231,
+        "f1": 0.9230769230769231,
+        "unknown_accepted": 0,
+        "grayscale_accepted": 0
+      },
+      "test_at_0_5": {
+        "n": 36,
+        "positive": 13,
+        "tp": 13,
+        "fp": 4,
+        "fn": 0,
+        "precision": 0.7647058823529411,
+        "recall": 1.0,
+        "f1": 0.8666666666666667,
+        "unknown_accepted": 0,
+        "grayscale_accepted": 0
+      }
+    },
+    "equal_fusion": {
+      "per_query": {
+        "red_bowl": {
+          "calibration": {
+            "threshold": 0.5,
+            "goal_met": false,
+            "metrics": {
+              "n": 7,
+              "positive": 1,
+              "tp": 1,
+              "fp": 0,
+              "fn": 0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0,
+              "unknown_accepted": 0,
+              "grayscale_accepted": 0
+            },
+            "explicit_negative_count": 5,
+            "release_approved": false
+          },
+          "test": {
+            "n": 6,
+            "positive": 0,
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "precision": null,
+            "recall": null,
+            "f1": null,
+            "unknown_accepted": 0,
+            "grayscale_accepted": 0
+          },
+          "test_at_0_5": {
+            "n": 6,
+            "positive": 0,
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "precision": null,
+            "recall": null,
+            "f1": null,
+            "unknown_accepted": 0,
+            "grayscale_accepted": 0
+          }
+        },
+        "blue_white": {
+          "calibration": {
+            "threshold": 0.8236109018325806,
+            "goal_met": true,
+            "metrics": {
+              "n": 10,
+              "positive": 5,
+              "tp": 5,
+              "fp": 0,
+              "fn": 0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0,
+              "unknown_accepted": 0,
+              "grayscale_accepted": 0
+            },
+            "explicit_negative_count": 0,
+            "release_approved": false
+          },
+          "test": {
+            "n": 10,
+            "positive": 5,
+            "tp": 4,
+            "fp": 0,
+            "fn": 1,
+            "precision": 1.0,
+            "recall": 0.8,
+            "f1": 0.8888888888888888,
+            "unknown_accepted": 0,
+            "grayscale_accepted": 0
+          },
+          "test_at_0_5": {
+            "n": 10,
+            "positive": 5,
+            "tp": 5,
+            "fp": 2,
+            "fn": 0,
+            "precision": 0.7142857142857143,
+            "recall": 1.0,
+            "f1": 0.8333333333333334,
+            "unknown_accepted": 0,
+            "grayscale_accepted": 0
+          }
+        },
+        "meiping": {
+          "calibration": {
+            "threshold": 0.8085199296474457,
+            "goal_met": true,
+            "metrics": {
+              "n": 10,
+              "positive": 4,
+              "tp": 4,
+              "fp": 0,
+              "fn": 0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0,
+              "unknown_accepted": 0,
+              "grayscale_accepted": 0
+            },
+            "explicit_negative_count": 5,
+            "release_approved": false
+          },
+          "test": {
+            "n": 10,
+            "positive": 4,
+            "tp": 1,
+            "fp": 0,
+            "fn": 3,
+            "precision": 1.0,
+            "recall": 0.25,
+            "f1": 0.4,
+            "unknown_accepted": 0,
+            "grayscale_accepted": 0
+          },
+          "test_at_0_5": {
+            "n": 10,
+            "positive": 4,
+            "tp": 3,
+            "fp": 1,
+            "fn": 1,
+            "precision": 0.75,
+            "recall": 0.75,
+            "f1": 0.75,
+            "unknown_accepted": 0,
+            "grayscale_accepted": 0
+          }
+        },
+        "gourd": {
+          "calibration": {
+            "threshold": 0.7137271761894226,
+            "goal_met": true,
+            "metrics": {
+              "n": 8,
+              "positive": 2,
+              "tp": 2,
+              "fp": 0,
+              "fn": 0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0,
+              "unknown_accepted": 0,
+              "grayscale_accepted": 0
+            },
+            "explicit_negative_count": 6,
+            "release_approved": false
+          },
+          "test": {
+            "n": 10,
+            "positive": 4,
+            "tp": 4,
+            "fp": 0,
+            "fn": 0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "unknown_accepted": 0,
+            "grayscale_accepted": 0
+          },
+          "test_at_0_5": {
+            "n": 10,
+            "positive": 4,
+            "tp": 4,
+            "fp": 6,
+            "fn": 0,
+            "precision": 0.4,
+            "recall": 1.0,
+            "f1": 0.5714285714285714,
+            "unknown_accepted": 0,
+            "grayscale_accepted": 0
+          }
+        }
+      },
+      "test": {
+        "n": 36,
+        "positive": 13,
+        "tp": 9,
+        "fp": 0,
+        "fn": 4,
+        "precision": 1.0,
+        "recall": 0.6923076923076923,
+        "f1": 0.8181818181818182,
+        "unknown_accepted": 0,
+        "grayscale_accepted": 0
+      },
+      "test_at_0_5": {
+        "n": 36,
+        "positive": 13,
+        "tp": 12,
+        "fp": 9,
+        "fn": 1,
+        "precision": 0.5714285714285714,
+        "recall": 0.9230769230769231,
+        "f1": 0.7058823529411765,
+        "unknown_accepted": 0,
+        "grayscale_accepted": 0
+      }
+    }
+  }
+}

@@ -1,0 +1,1115 @@
+{
+  "protocol": {
+    "label_source": "root AI contact-sheet review and prior v6 review; not independent human labels",
+    "selection": "four previously reviewed positives and four near-shape negatives per form, plus four reported grayscale errors",
+    "groups": [
+      [
+        "梅瓶",
+        "meiping vase",
+        [
+          "cma_140168",
+          "cma_284746",
+          "met_49836",
+          "met_42242"
+        ],
+        [
+          "met_50235",
+          "met_46958",
+          "met_46557",
+          "met_50886"
+        ]
+      ],
+      [
+        "葫芦瓶",
+        "double gourd vase",
+        [
+          "met_48686",
+          "cma_94798",
+          "met_48516",
+          "met_47511"
+        ],
+        [
+          "cma_140168",
+          "cma_284746",
+          "met_50235",
+          "met_46958"
+        ]
+      ],
+      [
+        "白色瓶子",
+        "white vase",
+        [],
+        [
+          "met_47334",
+          "met_48328",
+          "met_48308",
+          "met_48637"
+        ]
+      ]
+    ],
+    "release_gate": false
+  },
+  "model": {
+    "version": "joint-vqa-v1-448",
+    "repository": "mlx-community/Qwen3-VL-8B-Instruct-4bit",
+    "revision": "defcdea7cc7a4b0858fea563cbbce171d328e457",
+    "worker_sha256": "4005f48b0c6c46d87716f644841e5989966c3cbc15119696b9368badb1bac8ab"
+  },
+  "count": 20,
+  "raw_correct": 14,
+  "reference_correct": 13,
+  "rows": [
+    {
+      "query": "梅瓶",
+      "paired_query": "meiping vase",
+      "query_key": "0ee8433c15089f60b4114deb07625db46c9c91fc9954c88cbade5f3be5189df0",
+      "item_id": "cma_140168",
+      "expected": true,
+      "raw_yes": true,
+      "reference_yes": false,
+      "raw": {
+        "ok": true,
+        "score": 0.9046505689620972,
+        "yes_no_logit": 2.25,
+        "answer_mass": 0.999999463558197,
+        "generated_token": "Yes",
+        "peak_memory_gb": 6.313008981,
+        "prompt_tokens": 251,
+        "latency_ms": 1505.35,
+        "reason": "model_score",
+        "color_observability": null,
+        "model": {
+          "version": "joint-vqa-v1-448",
+          "repository": "mlx-community/Qwen3-VL-8B-Instruct-4bit",
+          "revision": "defcdea7cc7a4b0858fea563cbbce171d328e457",
+          "worker_sha256": "4005f48b0c6c46d87716f644841e5989966c3cbc15119696b9368badb1bac8ab"
+        },
+        "query_key": "0ee8433c15089f60b4114deb07625db46c9c91fc9954c88cbade5f3be5189df0",
+        "cached": true
+      },
+      "with_references": {
+        "ok": true,
+        "score": 0.037326887249946594,
+        "yes_no_logit": -3.25,
+        "answer_mass": 0.9999998211860657,
+        "generated_token": "No",
+        "peak_memory_gb": 6.512833476,
+        "prompt_tokens": 558,
+        "latency_ms": 1650.11,
+        "reason": "model_score",
+        "color_observability": null,
+        "model": {
+          "version": "joint-vqa-v1-448",
+          "repository": "mlx-community/Qwen3-VL-8B-Instruct-4bit",
+          "revision": "defcdea7cc7a4b0858fea563cbbce171d328e457",
+          "worker_sha256": "4005f48b0c6c46d87716f644841e5989966c3cbc15119696b9368badb1bac8ab"
+        },
+        "query_key": "0ee8433c15089f60b4114deb07625db46c9c91fc9954c88cbade5f3be5189df0",
+        "cached": true
+      }
+    },
+    {
+      "query": "梅瓶",
+      "paired_query": "meiping vase",
+      "query_key": "0ee8433c15089f60b4114deb07625db46c9c91fc9954c88cbade5f3be5189df0",
+      "item_id": "cma_284746",
+      "expected": true,
+      "raw_yes": false,
+      "reference_yes": false,
+      "raw": {
+        "ok": true,
+        "score": 0.02931223064661026,
+        "yes_no_logit": -3.5,
+        "answer_mass": 0.9999999403953552,
+        "generated_token": "No",
+        "peak_memory_gb": 6.512833476,
+        "prompt_tokens": 251,
+        "latency_ms": 950.56,
+        "reason": "model_score",
+        "color_observability": null,
+        "model": {
+          "version": "joint-vqa-v1-448",
+          "repository": "mlx-community/Qwen3-VL-8B-Instruct-4bit",
+          "revision": "defcdea7cc7a4b0858fea563cbbce171d328e457",
+          "worker_sha256": "4005f48b0c6c46d87716f644841e5989966c3cbc15119696b9368badb1bac8ab"
+        },
+        "query_key": "0ee8433c15089f60b4114deb07625db46c9c91fc9954c88cbade5f3be5189df0",
+        "cached": true
+      },
+      "with_references": {
+        "ok": true,
+        "score": 0.037326887249946594,
+        "yes_no_logit": -3.25,
+        "answer_mass": 0.9999998211860657,
+        "generated_token": "No",
+        "peak_memory_gb": 6.512833476,
+        "prompt_tokens": 558,
+        "latency_ms": 1719.85,
+        "reason": "model_score",
+        "color_observability": null,
+        "model": {
+          "version": "joint-vqa-v1-448",
+          "repository": "mlx-community/Qwen3-VL-8B-Instruct-4bit",
+          "revision": "defcdea7cc7a4b0858fea563cbbce171d328e457",
+          "worker_sha256": "4005f48b0c6c46d87716f644841e5989966c3cbc15119696b9368badb1bac8ab"
+        },
+        "query_key": "0ee8433c15089f60b4114deb07625db46c9c91fc9954c88cbade5f3be5189df0",
+        "cached": true
+      }
+    },
+    {
+      "query": "梅瓶",
+      "paired_query": "meiping vase",
+      "query_key": "0ee8433c15089f60b4114deb07625db46c9c91fc9954c88cbade5f3be5189df0",
+      "item_id": "met_49836",
+      "expected": true,
+      "raw_yes": false,
+      "reference_yes": false,
+      "raw": {
+        "ok": true,
+        "score": 0.32082128524780273,
+        "yes_no_logit": -0.75,
+        "answer_mass": 0.9999996423721313,
+        "generated_token": "No",
+        "peak_memory_gb": 6.512833476,
+        "prompt_tokens": 223,
+        "latency_ms": 878.76,
+        "reason": "model_score",
+        "color_observability": null,
+        "model": {
+          "version": "joint-vqa-v1-448",
+          "repository": "mlx-community/Qwen3-VL-8B-Instruct-4bit",
+          "revision": "defcdea7cc7a4b0858fea563cbbce171d328e457",
+          "worker_sha256": "4005f48b0c6c46d87716f644841e5989966c3cbc15119696b9368badb1bac8ab"
+        },
+        "query_key": "0ee8433c15089f60b4114deb07625db46c9c91fc9954c88cbade5f3be5189df0",
+        "cached": true
+      },
+      "with_references": {
+        "ok": true,
+        "score": 0.04742587357759476,
+        "yes_no_logit": -3.0,
+        "answer_mass": 0.9999998807907104,
+        "generated_token": "No",
+        "peak_memory_gb": 6.573437408,
+        "prompt_tokens": 530,
+        "latency_ms": 1774.47,
+        "reason": "model_score",
+        "color_observability": null,
+        "model": {
+          "version": "joint-vqa-v1-448",
+          "repository": "mlx-community/Qwen3-VL-8B-Instruct-4bit",
+          "revision": "defcdea7cc7a4b0858fea563cbbce171d328e457",
+          "worker_sha256": "4005f48b0c6c46d87716f644841e5989966c3cbc15119696b9368badb1bac8ab"
+        },
+        "query_key": "0ee8433c15089f60b4114deb07625db46c9c91fc9954c88cbade5f3be5189df0",
+        "cached": true
+      }
+    },
+    {
+      "query": "梅瓶",
+      "paired_query": "meiping vase",
+      "query_key": "0ee8433c15089f60b4114deb07625db46c9c91fc9954c88cbade5f3be5189df0",
+      "item_id": "met_42242",
+      "expected": true,
+      "raw_yes": true,
+      "reference_yes": false,
+      "raw": {
+        "ok": true,
+        "score": 0.8175745010375977,
+        "yes_no_logit": 1.5,
+        "answer_mass": 0.9999995231628418,
+        "generated_token": "Yes",
+        "peak_memory_gb": 6.573437408,
+        "prompt_tokens": 237,
+        "latency_ms": 967.4,
+        "reason": "model_score",
+        "color_observability": null,
+        "model": {
+          "version": "joint-vqa-v1-448",
+          "repository": "mlx-community/Qwen3-VL-8B-Instruct-4bit",
+          "revision": "defcdea7cc7a4b0858fea563cbbce171d328e457",
+          "worker_sha256": "4005f48b0c6c46d87716f644841e5989966c3cbc15119696b9368badb1bac8ab"
+        },
+        "query_key": "0ee8433c15089f60b4114deb07625db46c9c91fc9954c88cbade5f3be5189df0",
+        "cached": true
+      },
+      "with_references": {
+        "ok": true,
+        "score": 0.060086652636528015,
+        "yes_no_logit": -2.75,
+        "answer_mass": 0.9999999403953552,
+        "generated_token": "No",
+        "peak_memory_gb": 6.573437408,
+        "prompt_tokens": 544,
+        "latency_ms": 1724.21,
+        "reason": "model_score",
+        "color_observability": null,
+        "model": {
+          "version": "joint-vqa-v1-448",
+          "repository": "mlx-community/Qwen3-VL-8B-Instruct-4bit",
+          "revision": "defcdea7cc7a4b0858fea563cbbce171d328e457",
+          "worker_sha256": "4005f48b0c6c46d87716f644841e5989966c3cbc15119696b9368badb1bac8ab"
+        },
+        "query_key": "0ee8433c15089f60b4114deb07625db46c9c91fc9954c88cbade5f3be5189df0",
+        "cached": true
+      }
+    },
+    {
+      "query": "梅瓶",
+      "paired_query": "meiping vase",
+      "query_key": "0ee8433c15089f60b4114deb07625db46c9c91fc9954c88cbade5f3be5189df0",
+      "item_id": "met_50235",
+      "expected": false,
+      "raw_yes": false,
+      "reference_yes": false,
+      "raw": {
+        "ok": true,
+        "score": 2.7535690605873242e-05,
+        "yes_no_logit": -10.5,
+        "answer_mass": 0.9999999403953552,
+        "generated_token": "No",
+        "peak_memory_gb": 6.573437408,
+        "prompt_tokens": 279,
+        "latency_ms": 978.65,
+        "reason": "model_score",
+        "color_observability": null,
+        "model": {
+          "version": "joint-vqa-v1-448",
+          "repository": "mlx-community/Qwen3-VL-8B-Instruct-4bit",
+          "revision": "defcdea7cc7a4b0858fea563cbbce171d328e457",
+          "worker_sha256": "4005f48b0c6c46d87716f644841e5989966c3cbc15119696b9368badb1bac8ab"
+        },
+        "query_key": "0ee8433c15089f60b4114deb07625db46c9c91fc9954c88cbade5f3be5189df0",
+        "cached": true
+      },
+      "with_references": {
+        "ok": true,
+        "score": 0.0024726230185478926,
+        "yes_no_logit": -6.0,
+        "answer_mass": 0.9999998807907104,
+        "generated_token": "No",
+        "peak_memory_gb": 6.573437408,
+        "prompt_tokens": 586,
+        "latency_ms": 1730.05,
+        "reason": "model_score",
+        "color_observability": null,
+        "model": {
+          "version": "joint-vqa-v1-448",
+          "repository": "mlx-community/Qwen3-VL-8B-Instruct-4bit",
+          "revision": "defcdea7cc7a4b0858fea563cbbce171d328e457",
+          "worker_sha256": "4005f48b0c6c46d87716f644841e5989966c3cbc15119696b9368badb1bac8ab"
+        },
+        "query_key": "0ee8433c15089f60b4114deb07625db46c9c91fc9954c88cbade5f3be5189df0",
+        "cached": true
+      }
+    },
+    {
+      "query": "梅瓶",
+      "paired_query": "meiping vase",
+      "query_key": "0ee8433c15089f60b4114deb07625db46c9c91fc9954c88cbade5f3be5189df0",
+      "item_id": "met_46958",
+      "expected": false,
+      "raw_yes": false,
+      "reference_yes": false,
+      "raw": {
+        "ok": true,
+        "score": 0.0002611903182696551,
+        "yes_no_logit": -8.25,
+        "answer_mass": 0.9999999403953552,
+        "generated_token": "No",
+        "peak_memory_gb": 6.573437408,
+        "prompt_tokens": 223,
+        "latency_ms": 939.21,
+        "reason": "model_score",
+        "color_observability": null,
+        "model": {
+          "version": "joint-vqa-v1-448",
+          "repository": "mlx-community/Qwen3-VL-8B-Instruct-4bit",
+          "revision": "defcdea7cc7a4b0858fea563cbbce171d328e457",
+          "worker_sha256": "4005f48b0c6c46d87716f644841e5989966c3cbc15119696b9368badb1bac8ab"
+        },
+        "query_key": "0ee8433c15089f60b4114deb07625db46c9c91fc9954c88cbade5f3be5189df0",
+        "cached": true
+      },
+      "with_references": {
+        "ok": true,
+        "score": 0.006692850962281227,
+        "yes_no_logit": -5.0,
+        "answer_mass": 0.9999998807907104,
+        "generated_token": "No",
+        "peak_memory_gb": 6.57343741,
+        "prompt_tokens": 530,
+        "latency_ms": 1842.63,
+        "reason": "model_score",
+        "color_observability": null,
+        "model": {
+          "version": "joint-vqa-v1-448",
+          "repository": "mlx-community/Qwen3-VL-8B-Instruct-4bit",
+          "revision": "defcdea7cc7a4b0858fea563cbbce171d328e457",
+          "worker_sha256": "4005f48b0c6c46d87716f644841e5989966c3cbc15119696b9368badb1bac8ab"
+        },
+        "query_key": "0ee8433c15089f60b4114deb07625db46c9c91fc9954c88cbade5f3be5189df0",
+        "cached": true
+      }
+    },
+    {
+      "query": "梅瓶",
+      "paired_query": "meiping vase",
+      "query_key": "0ee8433c15089f60b4114deb07625db46c9c91fc9954c88cbade5f3be5189df0",
+      "item_id": "met_46557",
+      "expected": false,
+      "raw_yes": false,
+      "reference_yes": false,
+      "raw": {
+        "ok": true,
+        "score": 5.8291261666454375e-05,
+        "yes_no_logit": -9.75,
+        "answer_mass": 1.0,
+        "generated_token": "No",
+        "peak_memory_gb": 6.57343741,
+        "prompt_tokens": 251,
+        "latency_ms": 966.86,
+        "reason": "model_score",
+        "color_observability": null,
+        "model": {
+          "version": "joint-vqa-v1-448",
+          "repository": "mlx-community/Qwen3-VL-8B-Instruct-4bit",
+          "revision": "defcdea7cc7a4b0858fea563cbbce171d328e457",
+          "worker_sha256": "4005f48b0c6c46d87716f644841e5989966c3cbc15119696b9368badb1bac8ab"
+        },
+        "query_key": "0ee8433c15089f60b4114deb07625db46c9c91fc9954c88cbade5f3be5189df0",
+        "cached": true
+      },
+      "with_references": {
+        "ok": true,
+        "score": 0.00407013762742281,
+        "yes_no_logit": -5.5,
+        "answer_mass": 0.9999998807907104,
+        "generated_token": "No",
+        "peak_memory_gb": 6.57343741,
+        "prompt_tokens": 558,
+        "latency_ms": 1773.75,
+        "reason": "model_score",
+        "color_observability": null,
+        "model": {
+          "version": "joint-vqa-v1-448",
+          "repository": "mlx-community/Qwen3-VL-8B-Instruct-4bit",
+          "revision": "defcdea7cc7a4b0858fea563cbbce171d328e457",
+          "worker_sha256": "4005f48b0c6c46d87716f644841e5989966c3cbc15119696b9368badb1bac8ab"
+        },
+        "query_key": "0ee8433c15089f60b4114deb07625db46c9c91fc9954c88cbade5f3be5189df0",
+        "cached": true
+      }
+    },
+    {
+      "query": "梅瓶",
+      "paired_query": "meiping vase",
+      "query_key": "0ee8433c15089f60b4114deb07625db46c9c91fc9954c88cbade5f3be5189df0",
+      "item_id": "met_50886",
+      "expected": false,
+      "raw_yes": false,
+      "reference_yes": false,
+      "raw": {
+        "ok": true,
+        "score": 0.00043055706191807985,
+        "yes_no_logit": -7.75,
+        "answer_mass": 0.9999999403953552,
+        "generated_token": "No",
+        "peak_memory_gb": 6.57343741,
+        "prompt_tokens": 251,
+        "latency_ms": 988.34,
+        "reason": "model_score",
+        "color_observability": null,
+        "model": {
+          "version": "joint-vqa-v1-448",
+          "repository": "mlx-community/Qwen3-VL-8B-Instruct-4bit",
+          "revision": "defcdea7cc7a4b0858fea563cbbce171d328e457",
+          "worker_sha256": "4005f48b0c6c46d87716f644841e5989966c3cbc15119696b9368badb1bac8ab"
+        },
+        "query_key": "0ee8433c15089f60b4114deb07625db46c9c91fc9954c88cbade5f3be5189df0",
+        "cached": true
+      },
+      "with_references": {
+        "ok": true,
+        "score": 0.003172682598233223,
+        "yes_no_logit": -5.75,
+        "answer_mass": 0.9999999403953552,
+        "generated_token": "No",
+        "peak_memory_gb": 6.57343741,
+        "prompt_tokens": 558,
+        "latency_ms": 1783.31,
+        "reason": "model_score",
+        "color_observability": null,
+        "model": {
+          "version": "joint-vqa-v1-448",
+          "repository": "mlx-community/Qwen3-VL-8B-Instruct-4bit",
+          "revision": "defcdea7cc7a4b0858fea563cbbce171d328e457",
+          "worker_sha256": "4005f48b0c6c46d87716f644841e5989966c3cbc15119696b9368badb1bac8ab"
+        },
+        "query_key": "0ee8433c15089f60b4114deb07625db46c9c91fc9954c88cbade5f3be5189df0",
+        "cached": true
+      }
+    },
+    {
+      "query": "葫芦瓶",
+      "paired_query": "double gourd vase",
+      "query_key": "de80d97717019a461499c64dd45a1d054951d5bb9e31fb7afc997bdf809a5b18",
+      "item_id": "met_48686",
+      "expected": true,
+      "raw_yes": true,
+      "reference_yes": true,
+      "raw": {
+        "ok": true,
+        "score": 0.9999982118606567,
+        "yes_no_logit": 13.25,
+        "answer_mass": 1.0,
+        "generated_token": "Yes",
+        "peak_memory_gb": 6.57343741,
+        "prompt_tokens": 225,
+        "latency_ms": 936.2,
+        "reason": "model_score",
+        "color_observability": null,
+        "model": {
+          "version": "joint-vqa-v1-448",
+          "repository": "mlx-community/Qwen3-VL-8B-Instruct-4bit",
+          "revision": "defcdea7cc7a4b0858fea563cbbce171d328e457",
+          "worker_sha256": "4005f48b0c6c46d87716f644841e5989966c3cbc15119696b9368badb1bac8ab"
+        },
+        "query_key": "de80d97717019a461499c64dd45a1d054951d5bb9e31fb7afc997bdf809a5b18",
+        "cached": true
+      },
+      "with_references": {
+        "ok": true,
+        "score": 0.999841570854187,
+        "yes_no_logit": 8.75,
+        "answer_mass": 1.0,
+        "generated_token": "Yes",
+        "peak_memory_gb": 6.573437444,
+        "prompt_tokens": 532,
+        "latency_ms": 1850.77,
+        "reason": "model_score",
+        "color_observability": null,
+        "model": {
+          "version": "joint-vqa-v1-448",
+          "repository": "mlx-community/Qwen3-VL-8B-Instruct-4bit",
+          "revision": "defcdea7cc7a4b0858fea563cbbce171d328e457",
+          "worker_sha256": "4005f48b0c6c46d87716f644841e5989966c3cbc15119696b9368badb1bac8ab"
+        },
+        "query_key": "de80d97717019a461499c64dd45a1d054951d5bb9e31fb7afc997bdf809a5b18",
+        "cached": true
+      }
+    },
+    {
+      "query": "葫芦瓶",
+      "paired_query": "double gourd vase",
+      "query_key": "de80d97717019a461499c64dd45a1d054951d5bb9e31fb7afc997bdf809a5b18",
+      "item_id": "cma_94798",
+      "expected": true,
+      "raw_yes": true,
+      "reference_yes": true,
+      "raw": {
+        "ok": true,
+        "score": 0.999995231628418,
+        "yes_no_logit": 12.25,
+        "answer_mass": 1.0,
+        "generated_token": "Yes",
+        "peak_memory_gb": 6.573437444,
+        "prompt_tokens": 239,
+        "latency_ms": 912.32,
+        "reason": "model_score",
+        "color_observability": null,
+        "model": {
+          "version": "joint-vqa-v1-448",
+          "repository": "mlx-community/Qwen3-VL-8B-Instruct-4bit",
+          "revision": "defcdea7cc7a4b0858fea563cbbce171d328e457",
+          "worker_sha256": "4005f48b0c6c46d87716f644841e5989966c3cbc15119696b9368badb1bac8ab"
+        },
+        "query_key": "de80d97717019a461499c64dd45a1d054951d5bb9e31fb7afc997bdf809a5b18",
+        "cached": true
+      },
+      "with_references": {
+        "ok": true,
+        "score": 0.9998766183853149,
+        "yes_no_logit": 9.0,
+        "answer_mass": 0.9999999403953552,
+        "generated_token": "Yes",
+        "peak_memory_gb": 6.573437444,
+        "prompt_tokens": 546,
+        "latency_ms": 1615.88,
+        "reason": "model_score",
+        "color_observability": null,
+        "model": {
+          "version": "joint-vqa-v1-448",
+          "repository": "mlx-community/Qwen3-VL-8B-Instruct-4bit",
+          "revision": "defcdea7cc7a4b0858fea563cbbce171d328e457",
+          "worker_sha256": "4005f48b0c6c46d87716f644841e5989966c3cbc15119696b9368badb1bac8ab"
+        },
+        "query_key": "de80d97717019a461499c64dd45a1d054951d5bb9e31fb7afc997bdf809a5b18",
+        "cached": true
+      }
+    },
+    {
+      "query": "葫芦瓶",
+      "paired_query": "double gourd vase",
+      "query_key": "de80d97717019a461499c64dd45a1d054951d5bb9e31fb7afc997bdf809a5b18",
+      "item_id": "met_48516",
+      "expected": true,
+      "raw_yes": true,
+      "reference_yes": true,
+      "raw": {
+        "ok": true,
+        "score": 0.9999921321868896,
+        "yes_no_logit": 11.75,
+        "answer_mass": 0.9999999403953552,
+        "generated_token": "Yes",
+        "peak_memory_gb": 6.573437444,
+        "prompt_tokens": 225,
+        "latency_ms": 935.02,
+        "reason": "model_score",
+        "color_observability": null,
+        "model": {
+          "version": "joint-vqa-v1-448",
+          "repository": "mlx-community/Qwen3-VL-8B-Instruct-4bit",
+          "revision": "defcdea7cc7a4b0858fea563cbbce171d328e457",
+          "worker_sha256": "4005f48b0c6c46d87716f644841e5989966c3cbc15119696b9368badb1bac8ab"
+        },
+        "query_key": "de80d97717019a461499c64dd45a1d054951d5bb9e31fb7afc997bdf809a5b18",
+        "cached": true
+      },
+      "with_references": {
+        "ok": true,
+        "score": 0.999841570854187,
+        "yes_no_logit": 8.75,
+        "answer_mass": 1.0,
+        "generated_token": "Yes",
+        "peak_memory_gb": 6.573437444,
+        "prompt_tokens": 532,
+        "latency_ms": 1748.16,
+        "reason": "model_score",
+        "color_observability": null,
+        "model": {
+          "version": "joint-vqa-v1-448",
+          "repository": "mlx-community/Qwen3-VL-8B-Instruct-4bit",
+          "revision": "defcdea7cc7a4b0858fea563cbbce171d328e457",
+          "worker_sha256": "4005f48b0c6c46d87716f644841e5989966c3cbc15119696b9368badb1bac8ab"
+        },
+        "query_key": "de80d97717019a461499c64dd45a1d054951d5bb9e31fb7afc997bdf809a5b18",
+        "cached": true
+      }
+    },
+    {
+      "query": "葫芦瓶",
+      "paired_query": "double gourd vase",
+      "query_key": "de80d97717019a461499c64dd45a1d054951d5bb9e31fb7afc997bdf809a5b18",
+      "item_id": "met_47511",
+      "expected": true,
+      "raw_yes": true,
+      "reference_yes": true,
+      "raw": {
+        "ok": true,
+        "score": 0.999997079372406,
+        "yes_no_logit": 12.75,
+        "answer_mass": 1.0,
+        "generated_token": "Yes",
+        "peak_memory_gb": 6.573437444,
+        "prompt_tokens": 239,
+        "latency_ms": 878.06,
+        "reason": "model_score",
+        "color_observability": null,
+        "model": {
+          "version": "joint-vqa-v1-448",
+          "repository": "mlx-community/Qwen3-VL-8B-Instruct-4bit",
+          "revision": "defcdea7cc7a4b0858fea563cbbce171d328e457",
+          "worker_sha256": "4005f48b0c6c46d87716f644841e5989966c3cbc15119696b9368badb1bac8ab"
+        },
+        "query_key": "de80d97717019a461499c64dd45a1d054951d5bb9e31fb7afc997bdf809a5b18",
+        "cached": true
+      },
+      "with_references": {
+        "ok": true,
+        "score": 0.9998766183853149,
+        "yes_no_logit": 9.0,
+        "answer_mass": 0.9999999403953552,
+        "generated_token": "Yes",
+        "peak_memory_gb": 6.573437444,
+        "prompt_tokens": 546,
+        "latency_ms": 1658.6,
+        "reason": "model_score",
+        "color_observability": null,
+        "model": {
+          "version": "joint-vqa-v1-448",
+          "repository": "mlx-community/Qwen3-VL-8B-Instruct-4bit",
+          "revision": "defcdea7cc7a4b0858fea563cbbce171d328e457",
+          "worker_sha256": "4005f48b0c6c46d87716f644841e5989966c3cbc15119696b9368badb1bac8ab"
+        },
+        "query_key": "de80d97717019a461499c64dd45a1d054951d5bb9e31fb7afc997bdf809a5b18",
+        "cached": true
+      }
+    },
+    {
+      "query": "葫芦瓶",
+      "paired_query": "double gourd vase",
+      "query_key": "de80d97717019a461499c64dd45a1d054951d5bb9e31fb7afc997bdf809a5b18",
+      "item_id": "cma_140168",
+      "expected": false,
+      "raw_yes": true,
+      "reference_yes": false,
+      "raw": {
+        "ok": true,
+        "score": 0.9990889430046082,
+        "yes_no_logit": 7.0,
+        "answer_mass": 0.9999999403953552,
+        "generated_token": "Yes",
+        "peak_memory_gb": 6.573437444,
+        "prompt_tokens": 253,
+        "latency_ms": 930.11,
+        "reason": "model_score",
+        "color_observability": null,
+        "model": {
+          "version": "joint-vqa-v1-448",
+          "repository": "mlx-community/Qwen3-VL-8B-Instruct-4bit",
+          "revision": "defcdea7cc7a4b0858fea563cbbce171d328e457",
+          "worker_sha256": "4005f48b0c6c46d87716f644841e5989966c3cbc15119696b9368badb1bac8ab"
+        },
+        "query_key": "de80d97717019a461499c64dd45a1d054951d5bb9e31fb7afc997bdf809a5b18",
+        "cached": true
+      },
+      "with_references": {
+        "ok": true,
+        "score": 0.09534945338964462,
+        "yes_no_logit": -2.25,
+        "answer_mass": 1.0,
+        "generated_token": "No",
+        "peak_memory_gb": 6.573437444,
+        "prompt_tokens": 560,
+        "latency_ms": 1863.09,
+        "reason": "model_score",
+        "color_observability": null,
+        "model": {
+          "version": "joint-vqa-v1-448",
+          "repository": "mlx-community/Qwen3-VL-8B-Instruct-4bit",
+          "revision": "defcdea7cc7a4b0858fea563cbbce171d328e457",
+          "worker_sha256": "4005f48b0c6c46d87716f644841e5989966c3cbc15119696b9368badb1bac8ab"
+        },
+        "query_key": "de80d97717019a461499c64dd45a1d054951d5bb9e31fb7afc997bdf809a5b18",
+        "cached": true
+      }
+    },
+    {
+      "query": "葫芦瓶",
+      "paired_query": "double gourd vase",
+      "query_key": "de80d97717019a461499c64dd45a1d054951d5bb9e31fb7afc997bdf809a5b18",
+      "item_id": "cma_284746",
+      "expected": false,
+      "raw_yes": true,
+      "reference_yes": true,
+      "raw": {
+        "ok": true,
+        "score": 0.9968273043632507,
+        "yes_no_logit": 5.75,
+        "answer_mass": 1.0,
+        "generated_token": "Yes",
+        "peak_memory_gb": 6.573437444,
+        "prompt_tokens": 253,
+        "latency_ms": 960.03,
+        "reason": "model_score",
+        "color_observability": null,
+        "model": {
+          "version": "joint-vqa-v1-448",
+          "repository": "mlx-community/Qwen3-VL-8B-Instruct-4bit",
+          "revision": "defcdea7cc7a4b0858fea563cbbce171d328e457",
+          "worker_sha256": "4005f48b0c6c46d87716f644841e5989966c3cbc15119696b9368badb1bac8ab"
+        },
+        "query_key": "de80d97717019a461499c64dd45a1d054951d5bb9e31fb7afc997bdf809a5b18",
+        "cached": true
+      },
+      "with_references": {
+        "ok": true,
+        "score": 0.8175745010375977,
+        "yes_no_logit": 1.5,
+        "answer_mass": 0.9999999403953552,
+        "generated_token": "Yes",
+        "peak_memory_gb": 6.573437444,
+        "prompt_tokens": 560,
+        "latency_ms": 1769.43,
+        "reason": "model_score",
+        "color_observability": null,
+        "model": {
+          "version": "joint-vqa-v1-448",
+          "repository": "mlx-community/Qwen3-VL-8B-Instruct-4bit",
+          "revision": "defcdea7cc7a4b0858fea563cbbce171d328e457",
+          "worker_sha256": "4005f48b0c6c46d87716f644841e5989966c3cbc15119696b9368badb1bac8ab"
+        },
+        "query_key": "de80d97717019a461499c64dd45a1d054951d5bb9e31fb7afc997bdf809a5b18",
+        "cached": true
+      }
+    },
+    {
+      "query": "葫芦瓶",
+      "paired_query": "double gourd vase",
+      "query_key": "de80d97717019a461499c64dd45a1d054951d5bb9e31fb7afc997bdf809a5b18",
+      "item_id": "met_50235",
+      "expected": false,
+      "raw_yes": true,
+      "reference_yes": true,
+      "raw": {
+        "ok": true,
+        "score": 0.9820137619972229,
+        "yes_no_logit": 4.0,
+        "answer_mass": 1.0,
+        "generated_token": "Yes",
+        "peak_memory_gb": 6.573437444,
+        "prompt_tokens": 281,
+        "latency_ms": 1012.87,
+        "reason": "model_score",
+        "color_observability": null,
+        "model": {
+          "version": "joint-vqa-v1-448",
+          "repository": "mlx-community/Qwen3-VL-8B-Instruct-4bit",
+          "revision": "defcdea7cc7a4b0858fea563cbbce171d328e457",
+          "worker_sha256": "4005f48b0c6c46d87716f644841e5989966c3cbc15119696b9368badb1bac8ab"
+        },
+        "query_key": "de80d97717019a461499c64dd45a1d054951d5bb9e31fb7afc997bdf809a5b18",
+        "cached": true
+      },
+      "with_references": {
+        "ok": true,
+        "score": 0.7772998809814453,
+        "yes_no_logit": 1.25,
+        "answer_mass": 0.9999998807907104,
+        "generated_token": "Yes",
+        "peak_memory_gb": 6.573437444,
+        "prompt_tokens": 588,
+        "latency_ms": 1815.38,
+        "reason": "model_score",
+        "color_observability": null,
+        "model": {
+          "version": "joint-vqa-v1-448",
+          "repository": "mlx-community/Qwen3-VL-8B-Instruct-4bit",
+          "revision": "defcdea7cc7a4b0858fea563cbbce171d328e457",
+          "worker_sha256": "4005f48b0c6c46d87716f644841e5989966c3cbc15119696b9368badb1bac8ab"
+        },
+        "query_key": "de80d97717019a461499c64dd45a1d054951d5bb9e31fb7afc997bdf809a5b18",
+        "cached": true
+      }
+    },
+    {
+      "query": "葫芦瓶",
+      "paired_query": "double gourd vase",
+      "query_key": "de80d97717019a461499c64dd45a1d054951d5bb9e31fb7afc997bdf809a5b18",
+      "item_id": "met_46958",
+      "expected": false,
+      "raw_yes": true,
+      "reference_yes": true,
+      "raw": {
+        "ok": true,
+        "score": 0.9914225339889526,
+        "yes_no_logit": 4.75,
+        "answer_mass": 0.9999999403953552,
+        "generated_token": "Yes",
+        "peak_memory_gb": 6.573437444,
+        "prompt_tokens": 225,
+        "latency_ms": 863.73,
+        "reason": "model_score",
+        "color_observability": null,
+        "model": {
+          "version": "joint-vqa-v1-448",
+          "repository": "mlx-community/Qwen3-VL-8B-Instruct-4bit",
+          "revision": "defcdea7cc7a4b0858fea563cbbce171d328e457",
+          "worker_sha256": "4005f48b0c6c46d87716f644841e5989966c3cbc15119696b9368badb1bac8ab"
+        },
+        "query_key": "de80d97717019a461499c64dd45a1d054951d5bb9e31fb7afc997bdf809a5b18",
+        "cached": true
+      },
+      "with_references": {
+        "ok": true,
+        "score": 0.6791787147521973,
+        "yes_no_logit": 0.75,
+        "answer_mass": 0.9999999403953552,
+        "generated_token": "Yes",
+        "peak_memory_gb": 6.573437444,
+        "prompt_tokens": 532,
+        "latency_ms": 1765.69,
+        "reason": "model_score",
+        "color_observability": null,
+        "model": {
+          "version": "joint-vqa-v1-448",
+          "repository": "mlx-community/Qwen3-VL-8B-Instruct-4bit",
+          "revision": "defcdea7cc7a4b0858fea563cbbce171d328e457",
+          "worker_sha256": "4005f48b0c6c46d87716f644841e5989966c3cbc15119696b9368badb1bac8ab"
+        },
+        "query_key": "de80d97717019a461499c64dd45a1d054951d5bb9e31fb7afc997bdf809a5b18",
+        "cached": true
+      }
+    },
+    {
+      "query": "白色瓶子",
+      "paired_query": "white vase",
+      "query_key": "0acc46b240ddb9234ab6f1a6142edc57a1a2f9a12665becdcf5cce4bd340550d",
+      "item_id": "met_47334",
+      "expected": false,
+      "raw_yes": false,
+      "reference_yes": false,
+      "raw": {
+        "score": 0.0,
+        "yes_no_logit": null,
+        "answer_mass": null,
+        "reason": "color_not_observable",
+        "color_observability": {
+          "version": "photo-color-observability-v1",
+          "observable": false,
+          "chromatic_pixel_fraction": 0.0,
+          "channel_spread_p99": 0.0
+        },
+        "latency_ms": 0.0,
+        "model": {
+          "version": "joint-vqa-v1-448",
+          "repository": "mlx-community/Qwen3-VL-8B-Instruct-4bit",
+          "revision": "defcdea7cc7a4b0858fea563cbbce171d328e457",
+          "worker_sha256": "4005f48b0c6c46d87716f644841e5989966c3cbc15119696b9368badb1bac8ab"
+        },
+        "query_key": "0acc46b240ddb9234ab6f1a6142edc57a1a2f9a12665becdcf5cce4bd340550d",
+        "cached": true
+      },
+      "with_references": {
+        "score": 0.0,
+        "yes_no_logit": null,
+        "answer_mass": null,
+        "reason": "color_not_observable",
+        "color_observability": {
+          "version": "photo-color-observability-v1",
+          "observable": false,
+          "chromatic_pixel_fraction": 0.0,
+          "channel_spread_p99": 0.0
+        },
+        "latency_ms": 0.0,
+        "model": {
+          "version": "joint-vqa-v1-448",
+          "repository": "mlx-community/Qwen3-VL-8B-Instruct-4bit",
+          "revision": "defcdea7cc7a4b0858fea563cbbce171d328e457",
+          "worker_sha256": "4005f48b0c6c46d87716f644841e5989966c3cbc15119696b9368badb1bac8ab"
+        },
+        "query_key": "0acc46b240ddb9234ab6f1a6142edc57a1a2f9a12665becdcf5cce4bd340550d",
+        "cached": true
+      }
+    },
+    {
+      "query": "白色瓶子",
+      "paired_query": "white vase",
+      "query_key": "0acc46b240ddb9234ab6f1a6142edc57a1a2f9a12665becdcf5cce4bd340550d",
+      "item_id": "met_48328",
+      "expected": false,
+      "raw_yes": false,
+      "reference_yes": false,
+      "raw": {
+        "score": 0.0,
+        "yes_no_logit": null,
+        "answer_mass": null,
+        "reason": "color_not_observable",
+        "color_observability": {
+          "version": "photo-color-observability-v1",
+          "observable": false,
+          "chromatic_pixel_fraction": 0.0,
+          "channel_spread_p99": 0.0
+        },
+        "latency_ms": 0.0,
+        "model": {
+          "version": "joint-vqa-v1-448",
+          "repository": "mlx-community/Qwen3-VL-8B-Instruct-4bit",
+          "revision": "defcdea7cc7a4b0858fea563cbbce171d328e457",
+          "worker_sha256": "4005f48b0c6c46d87716f644841e5989966c3cbc15119696b9368badb1bac8ab"
+        },
+        "query_key": "0acc46b240ddb9234ab6f1a6142edc57a1a2f9a12665becdcf5cce4bd340550d",
+        "cached": true
+      },
+      "with_references": {
+        "score": 0.0,
+        "yes_no_logit": null,
+        "answer_mass": null,
+        "reason": "color_not_observable",
+        "color_observability": {
+          "version": "photo-color-observability-v1",
+          "observable": false,
+          "chromatic_pixel_fraction": 0.0,
+          "channel_spread_p99": 0.0
+        },
+        "latency_ms": 0.0,
+        "model": {
+          "version": "joint-vqa-v1-448",
+          "repository": "mlx-community/Qwen3-VL-8B-Instruct-4bit",
+          "revision": "defcdea7cc7a4b0858fea563cbbce171d328e457",
+          "worker_sha256": "4005f48b0c6c46d87716f644841e5989966c3cbc15119696b9368badb1bac8ab"
+        },
+        "query_key": "0acc46b240ddb9234ab6f1a6142edc57a1a2f9a12665becdcf5cce4bd340550d",
+        "cached": true
+      }
+    },
+    {
+      "query": "白色瓶子",
+      "paired_query": "white vase",
+      "query_key": "0acc46b240ddb9234ab6f1a6142edc57a1a2f9a12665becdcf5cce4bd340550d",
+      "item_id": "met_48308",
+      "expected": false,
+      "raw_yes": false,
+      "reference_yes": false,
+      "raw": {
+        "score": 0.0,
+        "yes_no_logit": null,
+        "answer_mass": null,
+        "reason": "color_not_observable",
+        "color_observability": {
+          "version": "photo-color-observability-v1",
+          "observable": false,
+          "chromatic_pixel_fraction": 0.0,
+          "channel_spread_p99": 0.0
+        },
+        "latency_ms": 0.0,
+        "model": {
+          "version": "joint-vqa-v1-448",
+          "repository": "mlx-community/Qwen3-VL-8B-Instruct-4bit",
+          "revision": "defcdea7cc7a4b0858fea563cbbce171d328e457",
+          "worker_sha256": "4005f48b0c6c46d87716f644841e5989966c3cbc15119696b9368badb1bac8ab"
+        },
+        "query_key": "0acc46b240ddb9234ab6f1a6142edc57a1a2f9a12665becdcf5cce4bd340550d",
+        "cached": true
+      },
+      "with_references": {
+        "score": 0.0,
+        "yes_no_logit": null,
+        "answer_mass": null,
+        "reason": "color_not_observable",
+        "color_observability": {
+          "version": "photo-color-observability-v1",
+          "observable": false,
+          "chromatic_pixel_fraction": 0.0,
+          "channel_spread_p99": 0.0
+        },
+        "latency_ms": 0.0,
+        "model": {
+          "version": "joint-vqa-v1-448",
+          "repository": "mlx-community/Qwen3-VL-8B-Instruct-4bit",
+          "revision": "defcdea7cc7a4b0858fea563cbbce171d328e457",
+          "worker_sha256": "4005f48b0c6c46d87716f644841e5989966c3cbc15119696b9368badb1bac8ab"
+        },
+        "query_key": "0acc46b240ddb9234ab6f1a6142edc57a1a2f9a12665becdcf5cce4bd340550d",
+        "cached": true
+      }
+    },
+    {
+      "query": "白色瓶子",
+      "paired_query": "white vase",
+      "query_key": "0acc46b240ddb9234ab6f1a6142edc57a1a2f9a12665becdcf5cce4bd340550d",
+      "item_id": "met_48637",
+      "expected": false,
+      "raw_yes": false,
+      "reference_yes": false,
+      "raw": {
+        "score": 0.0,
+        "yes_no_logit": null,
+        "answer_mass": null,
+        "reason": "color_not_observable",
+        "color_observability": {
+          "version": "photo-color-observability-v1",
+          "observable": false,
+          "chromatic_pixel_fraction": 0.0,
+          "channel_spread_p99": 0.0
+        },
+        "latency_ms": 0.0,
+        "model": {
+          "version": "joint-vqa-v1-448",
+          "repository": "mlx-community/Qwen3-VL-8B-Instruct-4bit",
+          "revision": "defcdea7cc7a4b0858fea563cbbce171d328e457",
+          "worker_sha256": "4005f48b0c6c46d87716f644841e5989966c3cbc15119696b9368badb1bac8ab"
+        },
+        "query_key": "0acc46b240ddb9234ab6f1a6142edc57a1a2f9a12665becdcf5cce4bd340550d",
+        "cached": true
+      },
+      "with_references": {
+        "score": 0.0,
+        "yes_no_logit": null,
+        "answer_mass": null,
+        "reason": "color_not_observable",
+        "color_observability": {
+          "version": "photo-color-observability-v1",
+          "observable": false,
+          "chromatic_pixel_fraction": 0.0,
+          "channel_spread_p99": 0.0
+        },
+        "latency_ms": 0.0,
+        "model": {
+          "version": "joint-vqa-v1-448",
+          "repository": "mlx-community/Qwen3-VL-8B-Instruct-4bit",
+          "revision": "defcdea7cc7a4b0858fea563cbbce171d328e457",
+          "worker_sha256": "4005f48b0c6c46d87716f644841e5989966c3cbc15119696b9368badb1bac8ab"
+        },
+        "query_key": "0acc46b240ddb9234ab6f1a6142edc57a1a2f9a12665becdcf5cce4bd340550d",
+        "cached": true
+      }
+    }
+  ],
+  "free_query_plans": [
+    {
+      "query": "玉琮",
+      "canonical": "a jade cong-form tube with a square or squarish exterior surrounding a circular central opening",
+      "requires_color": false,
+      "clauses": [
+        "form/jade_cong"
+      ],
+      "origin": "concept_catalog",
+      "key": "5b76ff22df55e58b4f9af090f95192f0da12b7c73dcc943a376118363759edc8",
+      "version": "joint-query-v1"
+    },
+    {
+      "query": "jade cong",
+      "canonical": "a jade cong-form tube with a square or squarish exterior surrounding a circular central opening",
+      "requires_color": false,
+      "clauses": [
+        "form/jade_cong"
+      ],
+      "origin": "concept_catalog",
+      "key": "5b76ff22df55e58b4f9af090f95192f0da12b7c73dcc943a376118363759edc8",
+      "version": "joint-query-v1"
+    },
+    {
+      "query": "抱月瓶",
+      "canonical": "a moonflask (baoyueping): a flask with a flattened body, a broad circular front, and a neck rising from its upper edge",
+      "requires_color": false,
+      "clauses": [
+        "form/moonflask"
+      ],
+      "origin": "concept_catalog",
+      "key": "1cd5658a648fe66bf53a536b1bfa91dd4c7cea989d7254e0f58d9ce4d9ffb76b",
+      "version": "joint-query-v1"
+    },
+    {
+      "query": "moonflask",
+      "canonical": "a moonflask (baoyueping): a flask with a flattened body, a broad circular front, and a neck rising from its upper edge",
+      "requires_color": false,
+      "clauses": [
+        "form/moonflask"
+      ],
+      "origin": "concept_catalog",
+      "key": "1cd5658a648fe66bf53a536b1bfa91dd4c7cea989d7254e0f58d9ce4d9ffb76b",
+      "version": "joint-query-v1"
+    },
+    {
+      "query": "红色没有把手的罐子",
+      "canonical": "a red jar without handles",
+      "requires_color": true,
+      "clauses": [],
+      "origin": "model_translation",
+      "key": "17811c07bf5a4234f0783db96efa6db9ce7292b7e8bfb6cdb84492c92f7efd9b",
+      "version": "joint-query-v1"
+    },
+    {
+      "query": "a red jar without handles",
+      "canonical": "a red jar without handles",
+      "requires_color": true,
+      "clauses": [],
+      "origin": "model_translation",
+      "key": "17811c07bf5a4234f0783db96efa6db9ce7292b7e8bfb6cdb84492c92f7efd9b",
+      "version": "joint-query-v1"
+    }
+  ]
+}

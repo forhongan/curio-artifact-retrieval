@@ -1,0 +1,102 @@
+{
+  "date": "2026-11-17",
+  "checks": {
+    "component_rows": 403,
+    "v11_train_only_fit_counts": {
+      "red": 26,
+      "bowl": 26,
+      "meiping": 28,
+      "gourd": 32,
+      "blue_white": 27
+    },
+    "v12_train_only_fit_counts": {
+      "blue_white": 27,
+      "bowl": 26,
+      "gourd": 32,
+      "meiping": 28,
+      "red": 26
+    },
+    "v13_train_only_fit_counts": {
+      "red": 24
+    },
+    "fit_holdout_object_group_overlap": 0,
+    "original_720_source_hashes_preserved": true,
+    "frozen_vlm_worker_preserved": true,
+    "full_gallery": {
+      "red_bowl": {
+        "complete": true,
+        "rows": 4692,
+        "verified_candidates": 45,
+        "yes": 3,
+        "no": 4689,
+        "bilingual_same_plan": true
+      },
+      "blue_white": {
+        "complete": true,
+        "rows": 4692,
+        "verified_candidates": 226,
+        "yes": 209,
+        "no": 4483,
+        "bilingual_same_plan": true
+      },
+      "meiping": {
+        "complete": true,
+        "rows": 4692,
+        "verified_candidates": 94,
+        "yes": 40,
+        "no": 4652,
+        "bilingual_same_plan": true
+      },
+      "gourd": {
+        "complete": true,
+        "rows": 4692,
+        "verified_candidates": 59,
+        "yes": 41,
+        "no": 4651,
+        "bilingual_same_plan": true
+      }
+    },
+    "new_accepted_audit_fit_overlap": 0,
+    "audit_rows": 36,
+    "audit_is_human_gold": false
+  },
+  "pytest": {
+    "passed": 604,
+    "skipped": 13,
+    "warnings": 11,
+    "exit_code": 0,
+    "observed_tool_session": 21635,
+    "note": "Completed full-suite run before report-only and documentation updates; not repeated."
+  },
+  "ruff": {
+    "command": ".venv/bin/ruff check src tests scripts",
+    "exit_code": 0
+  },
+  "browser_receipt": "artifacts/surface_boundary_v13/ui-verification.json",
+  "hashes": {
+    "src/curio/retrieve/factor_boundary.py": "9c7a203ef76d60273c8ad473e2b2ebb377c0aa0a3f330c2cf28c1cf8acac6315",
+    "src/curio/evaluate/monotone_evidence.py": "cdbc109f6be6ef0270ac3e39f03f995ec63cfceca5425435e7040540bc00c5ca",
+    "src/curio/represent/object_surface.py": "af8c321a14726c2680d107fecb17d834547be0c325e149ea1eeb86bead22433a",
+    "scripts/joint_vlm_worker.py": "4005f48b0c6c46d87716f644841e5989966c3cbc15119696b9368badb1bac8ab",
+    "scripts/scan_factor_gallery_v13.py": "34b2fae1211b926d428524020240625cef379daa042717dabe0eea344a202863",
+    "artifacts/factor_boundary_v11/heads.json": "c0c94e27469c8368163139469d21f1e21c8c6abf59c8059dfde0ccb3568a4da1",
+    "artifacts/monotone_boundary_v12/heads.json": "6270c5d4ea3730a84672ceef9b5bda7d13c4761d7457f8845fb3154cbf172c46",
+    "artifacts/surface_boundary_v13/red_surface_head.json": "fbb4d693ff5bb6792441c76692a8197aaf14bde0dedf912351aded913e1bbce5",
+    "eval/boundary_factors_v11/components.jsonl": "6332fd8fbbabe9677afaf345d23943990fb057ee4227e97c9182b5c6ec54fa3a",
+    "eval/boundary_surface_v13/gallery_summary.json": "d5b893267964a431eba1a695268ab87626b691f8b6f62b863ccfa6d91af1806a",
+    "eval/boundary_surface_v13/gallery_audit_labels.jsonl": "0b33f420242883ea13c4c540f619100ea99e6082ca05a343de56079532689510",
+    "artifacts/surface_boundary_v13/report.html": "62f7e2b07580bb1b07a2b72d3990ff4499eed5d155b97f8c7332db07d1309487",
+    "artifacts/surface_boundary_v13/ui-verification.json": "84ad417619578bcb25b10d248bec92f7fa63e20dc33dcdd9a9975c6943cdffdb"
+  },
+  "release_approved": false,
+  "default_changed": false,
+  "all_changes_local": true,
+  "browser": {
+    "cards": 198,
+    "red_bowl_cards": 45,
+    "red_bowl_disagreements": 2,
+    "images_loaded": true,
+    "mobile_no_overflow": true,
+    "page_errors": []
+  }
+}

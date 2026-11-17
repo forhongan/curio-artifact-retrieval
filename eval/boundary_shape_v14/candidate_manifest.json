@@ -1,0 +1,20 @@
+{
+  "candidates_sha256": "19df3c403f0048c10580da581db4b0d019448e145996ef50dbe1f4743a6d4c9f",
+  "prior_review_sources": [
+    "relevance_v5/items.jsonl",
+    "boundary_assisted_v10/labels.jsonl",
+    "boundary_targeted_v10/labels.jsonl",
+    "boundary_targeted_v10/gallery_diagnostic_labels.jsonl",
+    "boundary_targeted_v10/support_diagnostic_labels.jsonl",
+    "boundary_factors_v11/labels.jsonl",
+    "boundary_factors_v11/components.jsonl",
+    "boundary_factors_v11/stress_labels.jsonl",
+    "boundary_surface_v13/gallery_audit_labels.jsonl"
+  ],
+  "fresh_pairs": 133,
+  "fresh_object_groups": 133,
+  "prior_reviewed_groups": 716,
+  "source_train_heldout_caveat": "Some new-head holdouts were source-train for old encoders; not necessarily unseen by every pretrained/earlier model.",
+  "human_confirmed": false,
+  "release_approved": false
+}

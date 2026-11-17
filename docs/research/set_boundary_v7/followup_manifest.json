@@ -1,0 +1,21 @@
+{
+  "version": "boundary-followup-v1",
+  "status": "unlabeled; not an evaluation result",
+  "sampling": "SHA256 order by object group; no score-based selection; one image per group",
+  "new_dev_images": 40,
+  "new_test_images": 80,
+  "new_intents": 12,
+  "pending_judgments": 720,
+  "excluded_reviewed_groups": 198,
+  "group_overlap": 0,
+  "hashes": {
+    "new_queries.json": "a6b8bb06e7f705495a24d9c321d1f00cbeae4ec7f1c27bdcc499fd0ff6198e4a",
+    "new_items.json": "7828799d1a18d549f23f3db34dd60bc0ac1e9ae6bffdc622666f085f3596bbd7",
+    "independent_labels_pending.csv": "d0b2cdb3378497e105f339c788c7b225ac154e1a78d5f2770e825efba4957f13"
+  },
+  "limitations": [
+    "New combinations of known concepts, not entirely unseen concepts.",
+    "Source split is preserved; finite sample may contain few/no positives.",
+    "Sample recall is not full-gallery recall. Labels require independent human review."
+  ]
+}

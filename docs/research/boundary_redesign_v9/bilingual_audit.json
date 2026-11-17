@@ -1,0 +1,293 @@
+[
+  {
+    "concept": "blue_white",
+    "language": "zh",
+    "query": "青花瓷",
+    "yes": 0,
+    "pending": 639,
+    "conditions": [
+      [
+        "material",
+        "porcelain"
+      ],
+      [
+        "blue_white_technique",
+        "yes"
+      ]
+    ],
+    "unresolved": [
+      "blue_white_technique/yes"
+    ]
+  },
+  {
+    "concept": "blue_white",
+    "language": "en",
+    "query": "blue and white porcelain",
+    "yes": 33,
+    "pending": 583,
+    "conditions": [
+      [
+        "material",
+        "porcelain"
+      ],
+      [
+        "tag",
+        "blue_white"
+      ]
+    ],
+    "unresolved": []
+  },
+  {
+    "concept": "blue_white",
+    "yes_set_jaccard": 0.0,
+    "both_empty": false
+  },
+  {
+    "concept": "meiping",
+    "language": "zh",
+    "query": "梅瓶",
+    "yes": 0,
+    "pending": 999,
+    "conditions": [
+      [
+        "form_family",
+        "bottle_vase"
+      ]
+    ],
+    "unresolved": [
+      "specialist_form"
+    ]
+  },
+  {
+    "concept": "meiping",
+    "language": "en",
+    "query": "meiping vase",
+    "yes": 0,
+    "pending": 1072,
+    "conditions": [
+      [
+        "form_family",
+        "bottle_vase"
+      ]
+    ],
+    "unresolved": [
+      "specialist_form",
+      "unparsed_text"
+    ]
+  },
+  {
+    "concept": "meiping",
+    "yes_set_jaccard": null,
+    "both_empty": true
+  },
+  {
+    "concept": "gourd",
+    "language": "zh",
+    "query": "葫芦瓶",
+    "yes": 0,
+    "pending": 739,
+    "conditions": [
+      [
+        "form_family",
+        "bottle_vase"
+      ]
+    ],
+    "unresolved": [
+      "specialist_form"
+    ]
+  },
+  {
+    "concept": "gourd",
+    "language": "en",
+    "query": "double gourd vase",
+    "yes": 0,
+    "pending": 869,
+    "conditions": [
+      [
+        "form_family",
+        "bottle_vase"
+      ]
+    ],
+    "unresolved": [
+      "specialist_form",
+      "unparsed_text"
+    ]
+  },
+  {
+    "concept": "gourd",
+    "yes_set_jaccard": null,
+    "both_empty": true
+  },
+  {
+    "concept": "black",
+    "language": "zh",
+    "query": "黑色瓷瓶",
+    "yes": 2,
+    "pending": 58,
+    "conditions": [
+      [
+        "material",
+        "porcelain"
+      ],
+      [
+        "form_family",
+        "bottle_vase"
+      ],
+      [
+        "tag",
+        "black"
+      ]
+    ],
+    "unresolved": []
+  },
+  {
+    "concept": "black",
+    "language": "en",
+    "query": "black porcelain vase",
+    "yes": 1,
+    "pending": 63,
+    "conditions": [
+      [
+        "material",
+        "porcelain"
+      ],
+      [
+        "form_family",
+        "bottle_vase"
+      ],
+      [
+        "tag",
+        "black"
+      ]
+    ],
+    "unresolved": []
+  },
+  {
+    "concept": "black",
+    "yes_set_jaccard": 0.5,
+    "both_empty": false
+  },
+  {
+    "concept": "white",
+    "language": "zh",
+    "query": "白色瓶子",
+    "yes": 6,
+    "pending": 325,
+    "conditions": [
+      [
+        "form_family",
+        "bottle_vase"
+      ],
+      [
+        "tag",
+        "white"
+      ]
+    ],
+    "unresolved": []
+  },
+  {
+    "concept": "white",
+    "language": "en",
+    "query": "white vase",
+    "yes": 6,
+    "pending": 305,
+    "conditions": [
+      [
+        "form_family",
+        "bottle_vase"
+      ],
+      [
+        "tag",
+        "white"
+      ]
+    ],
+    "unresolved": []
+  },
+  {
+    "concept": "white",
+    "yes_set_jaccard": 1.0,
+    "both_empty": false
+  },
+  {
+    "concept": "narrow",
+    "language": "zh",
+    "query": "窄口的瓶子",
+    "yes": 76,
+    "pending": 764,
+    "conditions": [
+      [
+        "form_family",
+        "bottle_vase"
+      ],
+      [
+        "shape",
+        "narrow_mouth"
+      ]
+    ],
+    "unresolved": []
+  },
+  {
+    "concept": "narrow",
+    "language": "en",
+    "query": "a narrow-mouthed bottle",
+    "yes": 76,
+    "pending": 734,
+    "conditions": [
+      [
+        "form_family",
+        "bottle_vase"
+      ],
+      [
+        "shape",
+        "narrow_mouth"
+      ]
+    ],
+    "unresolved": []
+  },
+  {
+    "concept": "narrow",
+    "yes_set_jaccard": 1.0,
+    "both_empty": false
+  },
+  {
+    "concept": "green",
+    "language": "zh",
+    "query": "绿色瓶子",
+    "yes": 10,
+    "pending": 60,
+    "conditions": [
+      [
+        "form_family",
+        "bottle_vase"
+      ],
+      [
+        "tag",
+        "green"
+      ]
+    ],
+    "unresolved": []
+  },
+  {
+    "concept": "green",
+    "language": "en",
+    "query": "green vase",
+    "yes": 10,
+    "pending": 58,
+    "conditions": [
+      [
+        "form_family",
+        "bottle_vase"
+      ],
+      [
+        "tag",
+        "green"
+      ]
+    ],
+    "unresolved": []
+  },
+  {
+    "concept": "green",
+    "yes_set_jaccard": 1.0,
+    "both_empty": false
+  }
+]

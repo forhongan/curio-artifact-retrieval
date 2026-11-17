@@ -1,0 +1,5 @@
+# Isolated Apple Silicon inference environment; main backend stays on its original dependencies.
+mlx-vlm==0.7.12
+mlx==0.32.4
+mlx-metal==0.32.4
+transformers==5.23.0

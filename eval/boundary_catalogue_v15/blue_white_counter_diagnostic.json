@@ -1,0 +1,1820 @@
+[
+  {
+    "item_id": "cma_119906",
+    "positive": 0.9999998211860657,
+    "counter": 1.760343138812459e-06,
+    "both": true
+  },
+  {
+    "item_id": "cma_120168",
+    "positive": 0.9999995827674866,
+    "counter": 1.4449800289639825e-07,
+    "both": true
+  },
+  {
+    "item_id": "cma_120169",
+    "positive": 0.9999995231628418,
+    "counter": 6.825602838489431e-08,
+    "both": true
+  },
+  {
+    "item_id": "cma_120170",
+    "positive": 0.9999995231628418,
+    "counter": 3.9278620533877984e-07,
+    "both": true
+  },
+  {
+    "item_id": "cma_120171",
+    "positive": 0.9999986290931702,
+    "counter": 3.7266393064783188e-06,
+    "both": true
+  },
+  {
+    "item_id": "cma_120172",
+    "positive": 0.9999997019767761,
+    "counter": 6.825602838489431e-08,
+    "both": true
+  },
+  {
+    "item_id": "cma_120173",
+    "positive": 0.9999995231628418,
+    "counter": 1.4449800289639825e-07,
+    "both": true
+  },
+  {
+    "item_id": "cma_120174",
+    "positive": 0.9999898672103882,
+    "counter": 2.7535690605873242e-05,
+    "both": true
+  },
+  {
+    "item_id": "cma_120175",
+    "positive": 0.9999995827674866,
+    "counter": 5.315785145398877e-08,
+    "both": true
+  },
+  {
+    "item_id": "cma_120176",
+    "positive": 0.9999995827674866,
+    "counter": 1.855391076333035e-07,
+    "both": true
+  },
+  {
+    "item_id": "cma_120177",
+    "positive": 0.9999977350234985,
+    "counter": 1.3709570794162573e-06,
+    "both": true
+  },
+  {
+    "item_id": "cma_120191",
+    "positive": 0.9999998211860657,
+    "counter": 8.764246928194552e-08,
+    "both": true
+  },
+  {
+    "item_id": "cma_120195",
+    "positive": 0.9999997615814209,
+    "counter": 5.04347383412096e-07,
+    "both": true
+  },
+  {
+    "item_id": "cma_122460",
+    "positive": 0.9999997615814209,
+    "counter": 1.855391076333035e-07,
+    "both": true
+  },
+  {
+    "item_id": "cma_123607",
+    "positive": 0.9999995827674866,
+    "counter": 2.3823690753488336e-07,
+    "both": true
+  },
+  {
+    "item_id": "cma_130362",
+    "positive": 0.9999986290931702,
+    "counter": 2.2603242086915998e-06,
+    "both": true
+  },
+  {
+    "item_id": "cma_130387",
+    "positive": 0.9999993443489075,
+    "counter": 8.315279842463497e-07,
+    "both": true
+  },
+  {
+    "item_id": "cma_130943",
+    "positive": 0.9999997615814209,
+    "counter": 3.0590220490012143e-07,
+    "both": true
+  },
+  {
+    "item_id": "cma_131999",
+    "positive": 0.9999997019767761,
+    "counter": 8.764246928194552e-08,
+    "both": true
+  },
+  {
+    "item_id": "cma_132001",
+    "positive": 0.9999997019767761,
+    "counter": 1.855391076333035e-07,
+    "both": true
+  },
+  {
+    "item_id": "cma_132002",
+    "positive": 0.9999997019767761,
+    "counter": 8.764246928194552e-08,
+    "both": true
+  },
+  {
+    "item_id": "cma_132003",
+    "positive": 0.9999997019767761,
+    "counter": 8.764246928194552e-08,
+    "both": true
+  },
+  {
+    "item_id": "cma_132004",
+    "positive": 0.9999995827674866,
+    "counter": 6.825602838489431e-08,
+    "both": true
+  },
+  {
+    "item_id": "cma_132005",
+    "positive": 0.9999998807907104,
+    "counter": 8.764246928194552e-08,
+    "both": true
+  },
+  {
+    "item_id": "cma_132006",
+    "positive": 0.9999997019767761,
+    "counter": 2.3823690753488336e-07,
+    "both": true
+  },
+  {
+    "item_id": "cma_132007",
+    "positive": 0.9999998211860657,
+    "counter": 8.315279842463497e-07,
+    "both": true
+  },
+  {
+    "item_id": "cma_132008",
+    "positive": 0.9999995231628418,
+    "counter": 1.855391076333035e-07,
+    "both": true
+  },
+  {
+    "item_id": "cma_132009",
+    "positive": 0.9999991655349731,
+    "counter": 2.3823690753488336e-07,
+    "both": true
+  },
+  {
+    "item_id": "cma_132010",
+    "positive": 0.9999997615814209,
+    "counter": 1.9555679742211396e-08,
+    "both": true
+  },
+  {
+    "item_id": "cma_133440",
+    "positive": 3.9278620533877984e-07,
+    "counter": 0.7310585975646973,
+    "both": false
+  },
+  {
+    "item_id": "cma_134774",
+    "positive": 0.9999995231628418,
+    "counter": 2.902311962316162e-06,
+    "both": true
+  },
+  {
+    "item_id": "cma_134778",
+    "positive": 0.9999995231628418,
+    "counter": 1.67014204635052e-05,
+    "both": true
+  },
+  {
+    "item_id": "cma_134790",
+    "positive": 0.9999997019767761,
+    "counter": 2.3823690753488336e-07,
+    "both": true
+  },
+  {
+    "item_id": "cma_135007",
+    "positive": 1.760343138812459e-06,
+    "counter": 0.006692850962281227,
+    "both": false
+  },
+  {
+    "item_id": "cma_137198",
+    "positive": 0.9999998807907104,
+    "counter": 6.825602838489431e-08,
+    "both": true
+  },
+  {
+    "item_id": "cma_137337",
+    "positive": 0.9999995827674866,
+    "counter": 5.04347383412096e-07,
+    "both": true
+  },
+  {
+    "item_id": "cma_140167",
+    "positive": 0.9999977350234985,
+    "counter": 1.0677027830752195e-06,
+    "both": true
+  },
+  {
+    "item_id": "cma_140169",
+    "positive": 0.9999995231628418,
+    "counter": 1.0677027830752195e-06,
+    "both": true
+  },
+  {
+    "item_id": "cma_140170",
+    "positive": 0.9999995827674866,
+    "counter": 5.04347383412096e-07,
+    "both": true
+  },
+  {
+    "item_id": "cma_140172",
+    "positive": 0.9999997019767761,
+    "counter": 8.315279842463497e-07,
+    "both": true
+  },
+  {
+    "item_id": "cma_140181",
+    "positive": 0.9999997615814209,
+    "counter": 2.902311962316162e-06,
+    "both": true
+  },
+  {
+    "item_id": "cma_140244",
+    "positive": 0.9999997019767761,
+    "counter": 6.825602838489431e-08,
+    "both": true
+  },
+  {
+    "item_id": "cma_143603",
+    "positive": 0.9999997019767761,
+    "counter": 1.3709570794162573e-06,
+    "both": true
+  },
+  {
+    "item_id": "cma_147038",
+    "positive": 0.9999998807907104,
+    "counter": 1.855391076333035e-07,
+    "both": true
+  },
+  {
+    "item_id": "cma_154715",
+    "positive": 0.9999995827674866,
+    "counter": 2.2603242086915998e-06,
+    "both": true
+  },
+  {
+    "item_id": "cma_154733",
+    "positive": 0.999998927116394,
+    "counter": 2.2603242086915998e-06,
+    "both": true
+  },
+  {
+    "item_id": "cma_160451",
+    "positive": 0.999995231628418,
+    "counter": 9.610241249902174e-05,
+    "both": true
+  },
+  {
+    "item_id": "cma_160452",
+    "positive": 0.9999997019767761,
+    "counter": 6.825602838489431e-08,
+    "both": true
+  },
+  {
+    "item_id": "cma_160453",
+    "positive": 0.9999995827674866,
+    "counter": 1.1253515452835927e-07,
+    "both": true
+  },
+  {
+    "item_id": "cma_318493",
+    "positive": 0.9999997019767761,
+    "counter": 1.1253515452835927e-07,
+    "both": true
+  },
+  {
+    "item_id": "cma_370220",
+    "positive": 0.9999998807907104,
+    "counter": 6.475947884609923e-07,
+    "both": true
+  },
+  {
+    "item_id": "cma_84460",
+    "positive": 0.9999995231628418,
+    "counter": 6.475947884609923e-07,
+    "both": true
+  },
+  {
+    "item_id": "cma_97532",
+    "positive": 0.9999995827674866,
+    "counter": 1.1253515452835927e-07,
+    "both": true
+  },
+  {
+    "item_id": "met_1035",
+    "positive": 0.9999997019767761,
+    "counter": 1.1253515452835927e-07,
+    "both": true
+  },
+  {
+    "item_id": "met_39533",
+    "positive": 0.9999995827674866,
+    "counter": 1.3007128472963814e-05,
+    "both": true
+  },
+  {
+    "item_id": "met_39638",
+    "positive": 0.9999998807907104,
+    "counter": 6.825602838489431e-08,
+    "both": true
+  },
+  {
+    "item_id": "met_39666",
+    "positive": 0.9999998211860657,
+    "counter": 5.315785145398877e-08,
+    "both": true
+  },
+  {
+    "item_id": "met_40518",
+    "positive": 0.9999991655349731,
+    "counter": 6.825602838489431e-08,
+    "both": true
+  },
+  {
+    "item_id": "met_42190",
+    "positive": 0.9999998211860657,
+    "counter": 8.764246928194552e-08,
+    "both": true
+  },
+  {
+    "item_id": "met_42191",
+    "positive": 0.9999995231628418,
+    "counter": 1.4449800289639825e-07,
+    "both": true
+  },
+  {
+    "item_id": "met_42194",
+    "positive": 0.9999995231628418,
+    "counter": 1.1253515452835927e-07,
+    "both": true
+  },
+  {
+    "item_id": "met_42195",
+    "positive": 0.999995231628418,
+    "counter": 4.785094461112749e-06,
+    "both": true
+  },
+  {
+    "item_id": "met_42199",
+    "positive": 0.9999997615814209,
+    "counter": 1.4449800289639825e-07,
+    "both": true
+  },
+  {
+    "item_id": "met_42200",
+    "positive": 0.9999997615814209,
+    "counter": 8.764246928194552e-08,
+    "both": true
+  },
+  {
+    "item_id": "met_42201",
+    "positive": 0.9999998807907104,
+    "counter": 1.1253515452835927e-07,
+    "both": true
+  },
+  {
+    "item_id": "met_42202",
+    "positive": 0.9999993443489075,
+    "counter": 6.475947884609923e-07,
+    "both": true
+  },
+  {
+    "item_id": "met_42204",
+    "positive": 0.9999997019767761,
+    "counter": 6.475947884609923e-07,
+    "both": true
+  },
+  {
+    "item_id": "met_42210",
+    "positive": 0.9999993443489075,
+    "counter": 1.1253515452835927e-07,
+    "both": true
+  },
+  {
+    "item_id": "met_42303",
+    "positive": 2.1444946469273418e-05,
+    "counter": 0.26894140243530273,
+    "both": false
+  },
+  {
+    "item_id": "met_42336",
+    "positive": 0.9999986290931702,
+    "counter": 5.04347383412096e-07,
+    "both": true
+  },
+  {
+    "item_id": "met_42337",
+    "positive": 0.9999997019767761,
+    "counter": 1.1253515452835927e-07,
+    "both": true
+  },
+  {
+    "item_id": "met_42340",
+    "positive": 0.9999995827674866,
+    "counter": 2.902311962316162e-06,
+    "both": true
+  },
+  {
+    "item_id": "met_42352",
+    "positive": 0.9999993443489075,
+    "counter": 6.475947884609923e-07,
+    "both": true
+  },
+  {
+    "item_id": "met_42356",
+    "positive": 0.9999995231628418,
+    "counter": 6.475947884609923e-07,
+    "both": true
+  },
+  {
+    "item_id": "met_42490",
+    "positive": 0.9999993443489075,
+    "counter": 2.2603242086915998e-06,
+    "both": true
+  },
+  {
+    "item_id": "met_42491",
+    "positive": 0.999998927116394,
+    "counter": 6.475947884609923e-07,
+    "both": true
+  },
+  {
+    "item_id": "met_42494",
+    "positive": 0.9999997615814209,
+    "counter": 1.855391076333035e-07,
+    "both": true
+  },
+  {
+    "item_id": "met_42495",
+    "positive": 0.9999997019767761,
+    "counter": 5.315785145398877e-08,
+    "both": true
+  },
+  {
+    "item_id": "met_42497",
+    "positive": 0.9999998211860657,
+    "counter": 8.315279842463497e-07,
+    "both": true
+  },
+  {
+    "item_id": "met_42499",
+    "positive": 0.9999962449073792,
+    "counter": 2.1444946469273418e-05,
+    "both": true
+  },
+  {
+    "item_id": "met_42501",
+    "positive": 0.9999998807907104,
+    "counter": 8.764246928194552e-08,
+    "both": true
+  },
+  {
+    "item_id": "met_42505",
+    "positive": 0.9999997019767761,
+    "counter": 8.764246928194552e-08,
+    "both": true
+  },
+  {
+    "item_id": "met_42506",
+    "positive": 0.9999995231628418,
+    "counter": 1.4449800289639825e-07,
+    "both": true
+  },
+  {
+    "item_id": "met_42507",
+    "positive": 0.9999995231628418,
+    "counter": 3.9278620533877984e-07,
+    "both": true
+  },
+  {
+    "item_id": "met_42508",
+    "positive": 0.9999993443489075,
+    "counter": 7.484622619813308e-05,
+    "both": true
+  },
+  {
+    "item_id": "met_42509",
+    "positive": 0.9999997019767761,
+    "counter": 1.760343138812459e-06,
+    "both": true
+  },
+  {
+    "item_id": "met_42511",
+    "positive": 0.9999995231628418,
+    "counter": 6.475947884609923e-07,
+    "both": true
+  },
+  {
+    "item_id": "met_42512",
+    "positive": 0.9999991655349731,
+    "counter": 1.0677027830752195e-06,
+    "both": true
+  },
+  {
+    "item_id": "met_42528",
+    "positive": 0.9999993443489075,
+    "counter": 1.3709570794162573e-06,
+    "both": true
+  },
+  {
+    "item_id": "met_42529",
+    "positive": 0.9999995231628418,
+    "counter": 1.0677027830752195e-06,
+    "both": true
+  },
+  {
+    "item_id": "met_42530",
+    "positive": 0.9999995827674866,
+    "counter": 1.4449800289639825e-07,
+    "both": true
+  },
+  {
+    "item_id": "met_42531",
+    "positive": 0.9999998807907104,
+    "counter": 5.315785145398877e-08,
+    "both": true
+  },
+  {
+    "item_id": "met_42532",
+    "positive": 0.9999997019767761,
+    "counter": 3.0590220490012143e-07,
+    "both": true
+  },
+  {
+    "item_id": "met_42533",
+    "positive": 0.9999991655349731,
+    "counter": 3.9278620533877984e-07,
+    "both": true
+  },
+  {
+    "item_id": "met_42536",
+    "positive": 0.9999998211860657,
+    "counter": 3.0590220490012143e-07,
+    "both": true
+  },
+  {
+    "item_id": "met_42537",
+    "positive": 0.9999993443489075,
+    "counter": 1.1253515452835927e-07,
+    "both": true
+  },
+  {
+    "item_id": "met_42544",
+    "positive": 0.9999995231628418,
+    "counter": 1.1253515452835927e-07,
+    "both": true
+  },
+  {
+    "item_id": "met_45981",
+    "positive": 0.9999998211860657,
+    "counter": 8.764246928194552e-08,
+    "both": true
+  },
+  {
+    "item_id": "met_460668",
+    "positive": 0.9999995827674866,
+    "counter": 3.9278620533877984e-07,
+    "both": true
+  },
+  {
+    "item_id": "met_460669",
+    "positive": 0.9999995231628418,
+    "counter": 2.7535690605873242e-05,
+    "both": true
+  },
+  {
+    "item_id": "met_460671",
+    "positive": 0.9999993443489075,
+    "counter": 1.855391076333035e-07,
+    "both": true
+  },
+  {
+    "item_id": "met_460677",
+    "positive": 0.9999938607215881,
+    "counter": 1.0129991096619051e-05,
+    "both": true
+  },
+  {
+    "item_id": "met_460678",
+    "positive": 0.9999995231628418,
+    "counter": 3.9278620533877984e-07,
+    "both": true
+  },
+  {
+    "item_id": "met_460931",
+    "positive": 0.9999997019767761,
+    "counter": 1.855391076333035e-07,
+    "both": true
+  },
+  {
+    "item_id": "met_460932",
+    "positive": 0.9999993443489075,
+    "counter": 2.902311962316162e-06,
+    "both": true
+  },
+  {
+    "item_id": "met_461336",
+    "positive": 0.9999993443489075,
+    "counter": 1.3709570794162573e-06,
+    "both": true
+  },
+  {
+    "item_id": "met_461497",
+    "positive": 0.999998927116394,
+    "counter": 2.2603242086915998e-06,
+    "both": true
+  },
+  {
+    "item_id": "met_46549",
+    "positive": 0.9999962449073792,
+    "counter": 1.760343138812459e-06,
+    "both": true
+  },
+  {
+    "item_id": "met_46552",
+    "positive": 0.999998927116394,
+    "counter": 0.00015843620349187404,
+    "both": true
+  },
+  {
+    "item_id": "met_46553",
+    "positive": 0.9999997019767761,
+    "counter": 2.2603242086915998e-06,
+    "both": true
+  },
+  {
+    "item_id": "met_46554",
+    "positive": 0.9999251365661621,
+    "counter": 7.889262633398175e-06,
+    "both": true
+  },
+  {
+    "item_id": "met_46586",
+    "positive": 0.9999986290931702,
+    "counter": 3.9278620533877984e-07,
+    "both": true
+  },
+  {
+    "item_id": "met_46588",
+    "positive": 0.9999995827674866,
+    "counter": 3.0590220490012143e-07,
+    "both": true
+  },
+  {
+    "item_id": "met_46747",
+    "positive": 2.64657362691878e-09,
+    "counter": 0.09534945338964462,
+    "both": false
+  },
+  {
+    "item_id": "met_47049",
+    "positive": 0.9999995231628418,
+    "counter": 5.04347383412096e-07,
+    "both": true
+  },
+  {
+    "item_id": "met_47298",
+    "positive": 0.9999991655349731,
+    "counter": 1.3709570794162573e-06,
+    "both": true
+  },
+  {
+    "item_id": "met_47376",
+    "positive": 0.9999982118606567,
+    "counter": 0.00015843620349187404,
+    "both": true
+  },
+  {
+    "item_id": "met_47404",
+    "positive": 0.9999998211860657,
+    "counter": 1.4449800289639825e-07,
+    "both": true
+  },
+  {
+    "item_id": "met_47429",
+    "positive": 0.9999997615814209,
+    "counter": 1.0677027830752195e-06,
+    "both": true
+  },
+  {
+    "item_id": "met_47459",
+    "positive": 0.9999724626541138,
+    "counter": 3.7266393064783188e-06,
+    "both": true
+  },
+  {
+    "item_id": "met_47461",
+    "positive": 0.9999995231628418,
+    "counter": 1.3007128472963814e-05,
+    "both": true
+  },
+  {
+    "item_id": "met_47517",
+    "positive": 0.9999991655349731,
+    "counter": 1.855391076333035e-07,
+    "both": true
+  },
+  {
+    "item_id": "met_47533",
+    "positive": 0.9999977350234985,
+    "counter": 0.00033535013790242374,
+    "both": true
+  },
+  {
+    "item_id": "met_47554",
+    "positive": 0.9999995827674866,
+    "counter": 5.04347383412096e-07,
+    "both": true
+  },
+  {
+    "item_id": "met_47573",
+    "positive": 0.9999982118606567,
+    "counter": 1.0677027830752195e-06,
+    "both": true
+  },
+  {
+    "item_id": "met_47574",
+    "positive": 0.999997079372406,
+    "counter": 2.902311962316162e-06,
+    "both": true
+  },
+  {
+    "item_id": "met_47575",
+    "positive": 0.9999982118606567,
+    "counter": 7.889262633398175e-06,
+    "both": true
+  },
+  {
+    "item_id": "met_47576",
+    "positive": 0.9999977350234985,
+    "counter": 2.902311962316162e-06,
+    "both": true
+  },
+  {
+    "item_id": "met_47577",
+    "positive": 0.9999993443489075,
+    "counter": 5.04347383412096e-07,
+    "both": true
+  },
+  {
+    "item_id": "met_47582",
+    "positive": 0.9999995231628418,
+    "counter": 3.0590220490012143e-07,
+    "both": true
+  },
+  {
+    "item_id": "met_47583",
+    "positive": 0.9999997615814209,
+    "counter": 1.855391076333035e-07,
+    "both": true
+  },
+  {
+    "item_id": "met_47584",
+    "positive": 0.9999991655349731,
+    "counter": 6.475947884609923e-07,
+    "both": true
+  },
+  {
+    "item_id": "met_47587",
+    "positive": 0.9999991655349731,
+    "counter": 1.760343138812459e-06,
+    "both": true
+  },
+  {
+    "item_id": "met_47609",
+    "positive": 0.999997079372406,
+    "counter": 4.785094461112749e-06,
+    "both": true
+  },
+  {
+    "item_id": "met_47621",
+    "positive": 0.9999997019767761,
+    "counter": 5.04347383412096e-07,
+    "both": true
+  },
+  {
+    "item_id": "met_47628",
+    "positive": 0.999998927116394,
+    "counter": 1.760343138812459e-06,
+    "both": true
+  },
+  {
+    "item_id": "met_47630",
+    "positive": 0.9999993443489075,
+    "counter": 3.0590220490012143e-07,
+    "both": true
+  },
+  {
+    "item_id": "met_47648",
+    "positive": 0.9999998211860657,
+    "counter": 1.1253515452835927e-07,
+    "both": true
+  },
+  {
+    "item_id": "met_47649",
+    "positive": 0.9999995827674866,
+    "counter": 3.7266393064783188e-06,
+    "both": true
+  },
+  {
+    "item_id": "met_47650",
+    "positive": 0.9999995827674866,
+    "counter": 2.2603242086915998e-06,
+    "both": true
+  },
+  {
+    "item_id": "met_47656",
+    "positive": 0.9999997615814209,
+    "counter": 1.3709570794162573e-06,
+    "both": true
+  },
+  {
+    "item_id": "met_47659",
+    "positive": 0.9999995827674866,
+    "counter": 3.9278620533877984e-07,
+    "both": true
+  },
+  {
+    "item_id": "met_47691",
+    "positive": 0.9999997019767761,
+    "counter": 5.04347383412096e-07,
+    "both": true
+  },
+  {
+    "item_id": "met_47692",
+    "positive": 0.9999995827674866,
+    "counter": 3.9278620533877984e-07,
+    "both": true
+  },
+  {
+    "item_id": "met_47697",
+    "positive": 0.9999995231628418,
+    "counter": 1.760343138812459e-06,
+    "both": true
+  },
+  {
+    "item_id": "met_47701",
+    "positive": 0.9999993443489075,
+    "counter": 1.4449800289639825e-07,
+    "both": true
+  },
+  {
+    "item_id": "met_47708",
+    "positive": 2.1444946469273418e-05,
+    "counter": 0.037326887249946594,
+    "both": false
+  },
+  {
+    "item_id": "met_47771",
+    "positive": 0.9999997615814209,
+    "counter": 5.04347383412096e-07,
+    "both": true
+  },
+  {
+    "item_id": "met_47872",
+    "positive": 0.999998927116394,
+    "counter": 2.2603242086915998e-06,
+    "both": true
+  },
+  {
+    "item_id": "met_47873",
+    "positive": 0.9999993443489075,
+    "counter": 2.902311962316162e-06,
+    "both": true
+  },
+  {
+    "item_id": "met_47874",
+    "positive": 0.999998927116394,
+    "counter": 3.7266393064783188e-06,
+    "both": true
+  },
+  {
+    "item_id": "met_47878",
+    "positive": 0.9999986290931702,
+    "counter": 2.2603242086915998e-06,
+    "both": true
+  },
+  {
+    "item_id": "met_47879",
+    "positive": 0.9999986290931702,
+    "counter": 2.902311962316162e-06,
+    "both": true
+  },
+  {
+    "item_id": "met_47880",
+    "positive": 0.9999993443489075,
+    "counter": 1.855391076333035e-07,
+    "both": true
+  },
+  {
+    "item_id": "met_47882",
+    "positive": 0.999998927116394,
+    "counter": 6.475947884609923e-07,
+    "both": true
+  },
+  {
+    "item_id": "met_47886",
+    "positive": 0.9999991655349731,
+    "counter": 8.315279842463497e-07,
+    "both": true
+  },
+  {
+    "item_id": "met_47887",
+    "positive": 0.999995231628418,
+    "counter": 3.0590220490012143e-07,
+    "both": true
+  },
+  {
+    "item_id": "met_47888",
+    "positive": 0.9999982118606567,
+    "counter": 4.785094461112749e-06,
+    "both": true
+  },
+  {
+    "item_id": "met_47890",
+    "positive": 0.999998927116394,
+    "counter": 1.3709570794162573e-06,
+    "both": true
+  },
+  {
+    "item_id": "met_47895",
+    "positive": 0.999987006187439,
+    "counter": 1.3709570794162573e-06,
+    "both": true
+  },
+  {
+    "item_id": "met_47896",
+    "positive": 0.999998927116394,
+    "counter": 3.9278620533877984e-07,
+    "both": true
+  },
+  {
+    "item_id": "met_47897",
+    "positive": 0.9999993443489075,
+    "counter": 1.0677027830752195e-06,
+    "both": true
+  },
+  {
+    "item_id": "met_47930",
+    "positive": 0.9999993443489075,
+    "counter": 2.902311962316162e-06,
+    "both": true
+  },
+  {
+    "item_id": "met_47932",
+    "positive": 0.9999995231628418,
+    "counter": 1.855391076333035e-07,
+    "both": true
+  },
+  {
+    "item_id": "met_47935",
+    "positive": 0.999987006187439,
+    "counter": 4.785094461112749e-06,
+    "both": true
+  },
+  {
+    "item_id": "met_47938",
+    "positive": 0.9999995827674866,
+    "counter": 3.0590220490012143e-07,
+    "both": true
+  },
+  {
+    "item_id": "met_47993",
+    "positive": 0.9999997615814209,
+    "counter": 1.0677027830752195e-06,
+    "both": true
+  },
+  {
+    "item_id": "met_48009",
+    "positive": 0.9999995231628418,
+    "counter": 7.889262633398175e-06,
+    "both": true
+  },
+  {
+    "item_id": "met_48020",
+    "positive": 0.9999986290931702,
+    "counter": 6.144174221844878e-06,
+    "both": true
+  },
+  {
+    "item_id": "met_48028",
+    "positive": 0.9999982118606567,
+    "counter": 4.539786823443137e-05,
+    "both": true
+  },
+  {
+    "item_id": "met_48050",
+    "positive": 0.999998927116394,
+    "counter": 5.04347383412096e-07,
+    "both": true
+  },
+  {
+    "item_id": "met_48051",
+    "positive": 0.9999986290931702,
+    "counter": 1.0677027830752195e-06,
+    "both": true
+  },
+  {
+    "item_id": "met_48052",
+    "positive": 0.9999995231628418,
+    "counter": 1.3709570794162573e-06,
+    "both": true
+  },
+  {
+    "item_id": "met_48058",
+    "positive": 0.999997079372406,
+    "counter": 3.7266393064783188e-06,
+    "both": true
+  },
+  {
+    "item_id": "met_48079",
+    "positive": 0.9999997615814209,
+    "counter": 6.475947884609923e-07,
+    "both": true
+  },
+  {
+    "item_id": "met_48080",
+    "positive": 0.9999998211860657,
+    "counter": 1.4449800289639825e-07,
+    "both": true
+  },
+  {
+    "item_id": "met_48084",
+    "positive": 0.9999995827674866,
+    "counter": 8.315279842463497e-07,
+    "both": true
+  },
+  {
+    "item_id": "met_48087",
+    "positive": 0.999998927116394,
+    "counter": 2.1444946469273418e-05,
+    "both": true
+  },
+  {
+    "item_id": "met_48128",
+    "positive": 0.9999991655349731,
+    "counter": 1.1253515452835927e-07,
+    "both": true
+  },
+  {
+    "item_id": "met_48129",
+    "positive": 0.999998927116394,
+    "counter": 5.04347383412096e-07,
+    "both": true
+  },
+  {
+    "item_id": "met_48175",
+    "positive": 0.9999938607215881,
+    "counter": 1.67014204635052e-05,
+    "both": true
+  },
+  {
+    "item_id": "met_48194",
+    "positive": 0.9999995827674866,
+    "counter": 5.04347383412096e-07,
+    "both": true
+  },
+  {
+    "item_id": "met_48195",
+    "positive": 0.9999998211860657,
+    "counter": 2.51099923076481e-08,
+    "both": true
+  },
+  {
+    "item_id": "met_48198",
+    "positive": 0.9999998807907104,
+    "counter": 1.4449800289639825e-07,
+    "both": true
+  },
+  {
+    "item_id": "met_48202",
+    "positive": 0.9999995827674866,
+    "counter": 3.0590220490012143e-07,
+    "both": true
+  },
+  {
+    "item_id": "met_48213",
+    "positive": 0.999998927116394,
+    "counter": 6.475947884609923e-07,
+    "both": true
+  },
+  {
+    "item_id": "met_48214",
+    "positive": 0.9999997019767761,
+    "counter": 3.9278620533877984e-07,
+    "both": true
+  },
+  {
+    "item_id": "met_48216",
+    "positive": 0.9999995231628418,
+    "counter": 1.855391076333035e-07,
+    "both": true
+  },
+  {
+    "item_id": "met_48217",
+    "positive": 0.9999997019767761,
+    "counter": 2.3823690753488336e-07,
+    "both": true
+  },
+  {
+    "item_id": "met_48218",
+    "positive": 0.9999997019767761,
+    "counter": 1.0677027830752195e-06,
+    "both": true
+  },
+  {
+    "item_id": "met_48220",
+    "positive": 0.9999993443489075,
+    "counter": 1.760343138812459e-06,
+    "both": true
+  },
+  {
+    "item_id": "met_48221",
+    "positive": 0.9999982118606567,
+    "counter": 2.902311962316162e-06,
+    "both": true
+  },
+  {
+    "item_id": "met_48222",
+    "positive": 0.9999993443489075,
+    "counter": 3.9278620533877984e-07,
+    "both": true
+  },
+  {
+    "item_id": "met_48223",
+    "positive": 0.9999995231628418,
+    "counter": 3.9278620533877984e-07,
+    "both": true
+  },
+  {
+    "item_id": "met_48225",
+    "positive": 0.9999995231628418,
+    "counter": 5.04347383412096e-07,
+    "both": true
+  },
+  {
+    "item_id": "met_48227",
+    "positive": 0.9999995231628418,
+    "counter": 8.315279842463497e-07,
+    "both": true
+  },
+  {
+    "item_id": "met_48228",
+    "positive": 0.9999995827674866,
+    "counter": 5.8291261666454375e-05,
+    "both": true
+  },
+  {
+    "item_id": "met_48262",
+    "positive": 0.9999995231628418,
+    "counter": 1.855391076333035e-07,
+    "both": true
+  },
+  {
+    "item_id": "met_48281",
+    "positive": 0.9999986290931702,
+    "counter": 1.3709570794162573e-06,
+    "both": true
+  },
+  {
+    "item_id": "met_48284",
+    "positive": 0.9999997019767761,
+    "counter": 1.1253515452835927e-07,
+    "both": true
+  },
+  {
+    "item_id": "met_48299",
+    "positive": 0.9999995827674866,
+    "counter": 1.855391076333035e-07,
+    "both": true
+  },
+  {
+    "item_id": "met_48301",
+    "positive": 0.9999991655349731,
+    "counter": 5.04347383412096e-07,
+    "both": true
+  },
+  {
+    "item_id": "met_48324",
+    "positive": 0.9999997615814209,
+    "counter": 6.825602838489431e-08,
+    "both": true
+  },
+  {
+    "item_id": "met_48427",
+    "positive": 0.9999991655349731,
+    "counter": 3.9278620533877984e-07,
+    "both": true
+  },
+  {
+    "item_id": "met_48429",
+    "positive": 0.9999997019767761,
+    "counter": 4.785094461112749e-06,
+    "both": true
+  },
+  {
+    "item_id": "met_48438",
+    "positive": 0.9999995827674866,
+    "counter": 5.04347383412096e-07,
+    "both": true
+  },
+  {
+    "item_id": "met_48448",
+    "positive": 0.9999997019767761,
+    "counter": 6.475947884609923e-07,
+    "both": true
+  },
+  {
+    "item_id": "met_48455",
+    "positive": 0.9999993443489075,
+    "counter": 3.7266393064783188e-06,
+    "both": true
+  },
+  {
+    "item_id": "met_48467",
+    "positive": 0.9999995827674866,
+    "counter": 1.855391076333035e-07,
+    "both": true
+  },
+  {
+    "item_id": "met_48559",
+    "positive": 0.9999997615814209,
+    "counter": 3.0590220490012143e-07,
+    "both": true
+  },
+  {
+    "item_id": "met_48572",
+    "positive": 0.9999997615814209,
+    "counter": 8.764246928194552e-08,
+    "both": true
+  },
+  {
+    "item_id": "met_48579",
+    "positive": 0.9999962449073792,
+    "counter": 2.902311962316162e-06,
+    "both": true
+  },
+  {
+    "item_id": "met_48581",
+    "positive": 0.9999995827674866,
+    "counter": 5.04347383412096e-07,
+    "both": true
+  },
+  {
+    "item_id": "met_48584",
+    "positive": 0.999998927116394,
+    "counter": 1.855391076333035e-07,
+    "both": true
+  },
+  {
+    "item_id": "met_48603",
+    "positive": 0.9999986290931702,
+    "counter": 4.785094461112749e-06,
+    "both": true
+  },
+  {
+    "item_id": "met_48607",
+    "positive": 0.9999995827674866,
+    "counter": 5.04347383412096e-07,
+    "both": true
+  },
+  {
+    "item_id": "met_48631",
+    "positive": 0.9999993443489075,
+    "counter": 1.4449800289639825e-07,
+    "both": true
+  },
+  {
+    "item_id": "met_48648",
+    "positive": 0.9999997019767761,
+    "counter": 1.4449800289639825e-07,
+    "both": true
+  },
+  {
+    "item_id": "met_48688",
+    "positive": 0.9999997019767761,
+    "counter": 2.3823690753488336e-07,
+    "both": true
+  },
+  {
+    "item_id": "met_48693",
+    "positive": 0.9999986290931702,
+    "counter": 8.315279842463497e-07,
+    "both": true
+  },
+  {
+    "item_id": "met_48716",
+    "positive": 0.9999991655349731,
+    "counter": 1.1253515452835927e-07,
+    "both": true
+  },
+  {
+    "item_id": "met_48717",
+    "positive": 0.9999995231628418,
+    "counter": 2.3823690753488336e-07,
+    "both": true
+  },
+  {
+    "item_id": "met_48729",
+    "positive": 0.9999993443489075,
+    "counter": 3.9278620533877984e-07,
+    "both": true
+  },
+  {
+    "item_id": "met_48749",
+    "positive": 0.9999995827674866,
+    "counter": 2.3823690753488336e-07,
+    "both": true
+  },
+  {
+    "item_id": "met_48756",
+    "positive": 0.9999997019767761,
+    "counter": 3.224186428951725e-08,
+    "both": true
+  },
+  {
+    "item_id": "met_48757",
+    "positive": 0.9999995827674866,
+    "counter": 4.139937104241653e-08,
+    "both": true
+  },
+  {
+    "item_id": "met_48761",
+    "positive": 0.9999785423278809,
+    "counter": 8.315279842463497e-07,
+    "both": true
+  },
+  {
+    "item_id": "met_48802",
+    "positive": 0.9999993443489075,
+    "counter": 6.475947884609923e-07,
+    "both": true
+  },
+  {
+    "item_id": "met_48803",
+    "positive": 0.9999995231628418,
+    "counter": 1.1253515452835927e-07,
+    "both": true
+  },
+  {
+    "item_id": "met_48815",
+    "positive": 0.9999995827674866,
+    "counter": 1.0677027830752195e-06,
+    "both": true
+  },
+  {
+    "item_id": "met_48816",
+    "positive": 0.9999995827674866,
+    "counter": 8.315279842463497e-07,
+    "both": true
+  },
+  {
+    "item_id": "met_49189",
+    "positive": 0.9999995827674866,
+    "counter": 6.825602838489431e-08,
+    "both": true
+  },
+  {
+    "item_id": "met_49235",
+    "positive": 1.9555679742211396e-08,
+    "counter": 0.9626731276512146,
+    "both": false
+  },
+  {
+    "item_id": "met_49846",
+    "positive": 1.5229979055675358e-08,
+    "counter": 0.9046505689620972,
+    "both": false
+  },
+  {
+    "item_id": "met_49855",
+    "positive": 0.9999993443489075,
+    "counter": 1.855391076333035e-07,
+    "both": true
+  },
+  {
+    "item_id": "met_49857",
+    "positive": 0.9999995231628418,
+    "counter": 3.9278620533877984e-07,
+    "both": true
+  },
+  {
+    "item_id": "met_49862",
+    "positive": 0.9999997019767761,
+    "counter": 3.0590220490012143e-07,
+    "both": true
+  },
+  {
+    "item_id": "met_49890",
+    "positive": 0.9999993443489075,
+    "counter": 2.902311962316162e-06,
+    "both": true
+  },
+  {
+    "item_id": "met_50021",
+    "positive": 0.9999997019767761,
+    "counter": 5.315785145398877e-08,
+    "both": true
+  },
+  {
+    "item_id": "met_50247",
+    "positive": 0.9999995827674866,
+    "counter": 6.144174221844878e-06,
+    "both": true
+  },
+  {
+    "item_id": "met_50263",
+    "positive": 0.9999997615814209,
+    "counter": 5.04347383412096e-07,
+    "both": true
+  },
+  {
+    "item_id": "met_50267",
+    "positive": 0.9999997019767761,
+    "counter": 8.764246928194552e-08,
+    "both": true
+  },
+  {
+    "item_id": "met_50278",
+    "positive": 0.9999993443489075,
+    "counter": 1.855391076333035e-07,
+    "both": true
+  },
+  {
+    "item_id": "met_50463",
+    "positive": 0.9999995827674866,
+    "counter": 3.9278620533877984e-07,
+    "both": true
+  },
+  {
+    "item_id": "met_50483",
+    "positive": 0.9999993443489075,
+    "counter": 4.139937104241653e-08,
+    "both": true
+  },
+  {
+    "item_id": "met_50518",
+    "positive": 0.9999986290931702,
+    "counter": 4.785094461112749e-06,
+    "both": true
+  },
+  {
+    "item_id": "met_50521",
+    "positive": 0.02931223064661026,
+    "counter": 0.060086652636528015,
+    "both": false
+  },
+  {
+    "item_id": "met_50524",
+    "positive": 0.9999977350234985,
+    "counter": 2.7535690605873242e-05,
+    "both": true
+  },
+  {
+    "item_id": "met_50655",
+    "positive": 0.999998927116394,
+    "counter": 7.889262633398175e-06,
+    "both": true
+  },
+  {
+    "item_id": "met_50689",
+    "positive": 0.9999997615814209,
+    "counter": 3.9278620533877984e-07,
+    "both": true
+  },
+  {
+    "item_id": "met_50891",
+    "positive": 0.9999995827674866,
+    "counter": 2.3823690753488336e-07,
+    "both": true
+  },
+  {
+    "item_id": "met_50906",
+    "positive": 0.9999995827674866,
+    "counter": 1.4449800289639825e-07,
+    "both": true
+  },
+  {
+    "item_id": "met_50921",
+    "positive": 0.9999991655349731,
+    "counter": 2.3823690753488336e-07,
+    "both": true
+  },
+  {
+    "item_id": "met_50935",
+    "positive": 0.9999997019767761,
+    "counter": 2.3823690753488336e-07,
+    "both": true
+  },
+  {
+    "item_id": "met_50936",
+    "positive": 0.9999993443489075,
+    "counter": 1.855391076333035e-07,
+    "both": true
+  },
+  {
+    "item_id": "met_50938",
+    "positive": 0.9999986290931702,
+    "counter": 4.539786823443137e-05,
+    "both": true
+  },
+  {
+    "item_id": "met_50943",
+    "positive": 0.9999998211860657,
+    "counter": 3.0590220490012143e-07,
+    "both": true
+  },
+  {
+    "item_id": "met_50950",
+    "positive": 0.9999993443489075,
+    "counter": 1.855391076333035e-07,
+    "both": true
+  },
+  {
+    "item_id": "met_50953",
+    "positive": 0.9999982118606567,
+    "counter": 1.0129991096619051e-05,
+    "both": true
+  },
+  {
+    "item_id": "met_50954",
+    "positive": 0.9999995827674866,
+    "counter": 1.4449800289639825e-07,
+    "both": true
+  },
+  {
+    "item_id": "met_51185",
+    "positive": 0.9999991655349731,
+    "counter": 1.3709570794162573e-06,
+    "both": true
+  },
+  {
+    "item_id": "met_52041",
+    "positive": 0.9999995827674866,
+    "counter": 1.3007128472963814e-05,
+    "both": true
+  },
+  {
+    "item_id": "met_52075",
+    "positive": 0.9999982118606567,
+    "counter": 3.7266393064783188e-06,
+    "both": true
+  },
+  {
+    "item_id": "met_52077",
+    "positive": 0.9999993443489075,
+    "counter": 1.0677027830752195e-06,
+    "both": true
+  },
+  {
+    "item_id": "met_52605",
+    "positive": 0.9999991655349731,
+    "counter": 1.855391076333035e-07,
+    "both": true
+  },
+  {
+    "item_id": "met_52732",
+    "positive": 0.9999986290931702,
+    "counter": 2.2603242086915998e-06,
+    "both": true
+  },
+  {
+    "item_id": "met_52753",
+    "positive": 0.9999991655349731,
+    "counter": 1.760343138812459e-06,
+    "both": true
+  },
+  {
+    "item_id": "met_52759",
+    "positive": 0.9999991655349731,
+    "counter": 8.764246928194552e-08,
+    "both": true
+  },
+  {
+    "item_id": "met_52764",
+    "positive": 0.9999997615814209,
+    "counter": 6.825602838489431e-08,
+    "both": true
+  },
+  {
+    "item_id": "met_52768",
+    "positive": 0.999995231628418,
+    "counter": 7.889262633398175e-06,
+    "both": true
+  },
+  {
+    "item_id": "met_52769",
+    "positive": 0.999998927116394,
+    "counter": 1.0129991096619051e-05,
+    "both": true
+  },
+  {
+    "item_id": "met_52772",
+    "positive": 0.9999991655349731,
+    "counter": 1.760343138812459e-06,
+    "both": true
+  },
+  {
+    "item_id": "met_52777",
+    "positive": 0.9999998211860657,
+    "counter": 4.139937104241653e-08,
+    "both": true
+  },
+  {
+    "item_id": "met_52778",
+    "positive": 0.9999997615814209,
+    "counter": 1.855391076333035e-07,
+    "both": true
+  },
+  {
+    "item_id": "met_52781",
+    "positive": 0.9999997019767761,
+    "counter": 7.889262633398175e-06,
+    "both": true
+  },
+  {
+    "item_id": "met_52794",
+    "positive": 0.9999991655349731,
+    "counter": 1.3007128472963814e-05,
+    "both": true
+  },
+  {
+    "item_id": "met_52807",
+    "positive": 0.999998927116394,
+    "counter": 1.0129991096619051e-05,
+    "both": true
+  },
+  {
+    "item_id": "met_53825",
+    "positive": 0.9999995827674866,
+    "counter": 1.760343138812459e-06,
+    "both": true
+  },
+  {
+    "item_id": "met_53828",
+    "positive": 0.9999991655349731,
+    "counter": 1.855391076333035e-07,
+    "both": true
+  },
+  {
+    "item_id": "met_629700",
+    "positive": 0.9999993443489075,
+    "counter": 6.475947884609923e-07,
+    "both": true
+  },
+  {
+    "item_id": "met_64484",
+    "positive": 0.9999995827674866,
+    "counter": 2.3823690753488336e-07,
+    "both": true
+  },
+  {
+    "item_id": "met_65599",
+    "positive": 0.999998927116394,
+    "counter": 3.535625000949949e-05,
+    "both": true
+  },
+  {
+    "item_id": "met_666569",
+    "positive": 0.9999995231628418,
+    "counter": 8.764246928194552e-08,
+    "both": true
+  },
+  {
+    "item_id": "met_684269",
+    "positive": 0.9999993443489075,
+    "counter": 6.475947884609923e-07,
+    "both": true
+  },
+  {
+    "item_id": "met_685113",
+    "positive": 0.9999995827674866,
+    "counter": 5.04347383412096e-07,
+    "both": true
+  },
+  {
+    "item_id": "met_701291",
+    "positive": 0.9999998211860657,
+    "counter": 3.9278620533877984e-07,
+    "both": true
+  },
+  {
+    "item_id": "met_712495",
+    "positive": 0.9999997019767761,
+    "counter": 8.764246928194552e-08,
+    "both": true
+  },
+  {
+    "item_id": "met_712496",
+    "positive": 0.9999997615814209,
+    "counter": 3.9278620533877984e-07,
+    "both": true
+  },
+  {
+    "item_id": "met_714952",
+    "positive": 0.9999993443489075,
+    "counter": 1.855391076333035e-07,
+    "both": true
+  },
+  {
+    "item_id": "met_72729",
+    "positive": 0.9999995827674866,
+    "counter": 3.7266393064783188e-06,
+    "both": true
+  },
+  {
+    "item_id": "met_73807",
+    "positive": 0.9999997615814209,
+    "counter": 1.855391076333035e-07,
+    "both": true
+  },
+  {
+    "item_id": "met_74336",
+    "positive": 0.9999997019767761,
+    "counter": 1.3709570794162573e-06,
+    "both": true
+  },
+  {
+    "item_id": "met_75261",
+    "positive": 0.9999995827674866,
+    "counter": 6.475947884609923e-07,
+    "both": true
+  },
+  {
+    "item_id": "met_75721",
+    "positive": 0.9999991655349731,
+    "counter": 1.760343138812459e-06,
+    "both": true
+  },
+  {
+    "item_id": "met_75822",
+    "positive": 0.9999995827674866,
+    "counter": 3.9278620533877984e-07,
+    "both": true
+  },
+  {
+    "item_id": "met_75831",
+    "positive": 0.9999998211860657,
+    "counter": 6.825602838489431e-08,
+    "both": true
+  },
+  {
+    "item_id": "met_75938",
+    "positive": 0.9999995827674866,
+    "counter": 1.855391076333035e-07,
+    "both": true
+  },
+  {
+    "item_id": "met_76734",
+    "positive": 0.9999998807907104,
+    "counter": 3.0590220490012143e-07,
+    "both": true
+  },
+  {
+    "item_id": "met_781812",
+    "positive": 0.999998927116394,
+    "counter": 1.3709570794162573e-06,
+    "both": true
+  },
+  {
+    "item_id": "met_815077",
+    "positive": 0.9999997615814209,
+    "counter": 5.04347383412096e-07,
+    "both": true
+  },
+  {
+    "item_id": "met_854455",
+    "positive": 0.9999995231628418,
+    "counter": 3.9278620533877984e-07,
+    "both": true
+  },
+  {
+    "item_id": "met_857949",
+    "positive": 0.9999995231628418,
+    "counter": 2.3823690753488336e-07,
+    "both": true
+  },
+  {
+    "item_id": "met_894293",
+    "positive": 0.9999977350234985,
+    "counter": 2.7535690605873242e-05,
+    "both": true
+  }
+]

@@ -1,0 +1,15 @@
+{
+  "version": "v14b-gourd-counterevidence",
+  "base": "Frozen v13 visual gourd head; do not use regressed v14 gourd/bowl heads.",
+  "base_sha256": "a4cac01c807ce2176d5b3f1323700dc104cd2cf211c5d721cc87f59047bd592d",
+  "probes": {
+    "parallel": "two separate vessel mouths are visible side by side, corresponding to two adjacent containers rather than a single vertical bottle",
+    "accessory": "the main work is a human or animal figurine or sculpture holding or incorporating a small vessel as an accessory, rather than a stand-alone bottle or vase"
+  },
+  "policy": "Reject if either independent counter-question has yes_no_logit >= 0; no threshold search or item-ID exceptions.",
+  "scope": "Adaptive old-case replay and full frozen candidate scan; v14 tests already inspected, so NOT independent new validation. Prefilter recall remains unknown.",
+  "target_count": 90,
+  "candidate_count": 59,
+  "release_approved": false,
+  "default_changed": false
+}

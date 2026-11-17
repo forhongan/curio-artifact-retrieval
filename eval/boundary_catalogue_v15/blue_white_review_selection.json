@@ -1,0 +1,33 @@
+{
+  "query": "blue_white",
+  "population": 303,
+  "sample": 24,
+  "selection": "lowest sha256(catalogue-v15-audit/ + item_id)",
+  "item_ids": [
+    "met_42303",
+    "cma_160452",
+    "met_629700",
+    "met_50950",
+    "met_47878",
+    "met_48802",
+    "met_42495",
+    "cma_318493",
+    "cma_120191",
+    "met_48058",
+    "cma_154733",
+    "met_48648",
+    "met_685113",
+    "met_49189",
+    "met_52768",
+    "met_75822",
+    "cma_132005",
+    "met_781812",
+    "cma_84460",
+    "cma_120172",
+    "met_48128",
+    "met_460677",
+    "met_48195",
+    "met_48217"
+  ],
+  "job_id": "cv15_fac98ef650bd2109730113f5b3ccb00828e54987a949dfba3a8cd624237f0f7f"
+}

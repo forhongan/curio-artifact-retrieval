@@ -1,0 +1,30 @@
+{
+  "date": "2026-11-15",
+  "scope": "local default method deployment",
+  "backend_suite": {
+    "passed": 530,
+    "skipped": 13
+  },
+  "additional_annotation_protection_tests": 2,
+  "ruff": "src tests scripts passed",
+  "frontend_build": "TypeScript and Vite passed",
+  "http_query_checks": 40,
+  "http_matches_offline_sets": true,
+  "browser": {
+    "default_method": "condition_boundary",
+    "default_result_count": 760,
+    "pagination": true,
+    "historical_notice": true,
+    "negation_fallback_notice": true,
+    "legacy_method_switch": true,
+    "mobile_no_horizontal_overflow": true,
+    "page_errors": []
+  },
+  "runtime_sha256": {
+    "src/curio/retrieve/condition_boundary_v7.json": "bb5e8abfc839a5b77eda31428ea67638151edc9f846f68a7ca0cb7b0c9022ce1",
+    "src/curio/retrieve/condition_text_v7.npz": "ac0b78ff86f5430b67e4fb2241eadbc2501767db9fcdf4e7f839f95de22623b8",
+    "src/curio/retrieve/condition_runtime.py": "9edbe88ea6f674a7f0c7cbf8327570d530e697b8ddcd04c176ef3c6f47145e6c",
+    "src/curio/retrieve/condition_parser.py": "c9fb4d106c3ca5d2dee0c3febdf72f2b385be169eb72d555bac50f16e7dde04f"
+  },
+  "git_remote_updated": false
+}

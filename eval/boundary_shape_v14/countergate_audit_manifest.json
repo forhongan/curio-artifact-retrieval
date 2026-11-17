@@ -1,0 +1,12 @@
+{
+  "time": "2026-11-16T21:29:15.843854+00:00",
+  "method": "Assistant inspected all four contact sheets for 59 coarse gourd candidates and enlarged three additional originals; no new countergate scores inspected before these labels. Earlier diagnostics and many images were already known, so this is an adaptive full-candidate audit, not a fresh blind test.",
+  "images": 59,
+  "object_groups": 59,
+  "image_hashes": 59,
+  "supported": 38,
+  "explicit_mismatch": 19,
+  "ambiguity_strict_no": 2,
+  "labels_sha256": "69f4b15cfa362a5d76e50e1bd9319b0af7aae02d227fdbefe7b100d4eabde9f5",
+  "release_approved": false
+}

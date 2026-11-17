@@ -1,0 +1,70 @@
+{
+  "schema": "curio-assisted-review-v1",
+  "bundle_id": "067ab1688fd12fe6b4445576291ece52c71484dfe0ea3498ea994c8e7e3c1d57",
+  "summary": {
+    "total": 720,
+    "images_reviewed": 120,
+    "positive": 8,
+    "negative": 690,
+    "color_excluded": 14,
+    "needs_review": 8,
+    "per_query": {
+      "v8_blue_white_vase": {
+        "explicit_mismatch": 69,
+        "color_not_observable": 6,
+        "supported": 2,
+        "ambiguous": 3
+      },
+      "v8_bronze_animal": {
+        "explicit_mismatch": 40
+      },
+      "v8_bronze_handles": {
+        "explicit_mismatch": 80
+      },
+      "v8_dragon_textile": {
+        "explicit_mismatch": 80
+      },
+      "v8_floral_bowl": {
+        "explicit_mismatch": 38,
+        "ambiguous": 2
+      },
+      "v8_glass_bottle": {
+        "explicit_mismatch": 40
+      },
+      "v8_green_bowl": {
+        "explicit_mismatch": 73,
+        "color_not_observable": 5,
+        "supported": 1,
+        "ambiguous": 1
+      },
+      "v8_green_plate": {
+        "explicit_mismatch": 39,
+        "supported": 1
+      },
+      "v8_lidded_porcelain_jar": {
+        "explicit_mismatch": 39,
+        "supported": 1
+      },
+      "v8_porcelain_cup": {
+        "explicit_mismatch": 75,
+        "ambiguous": 2,
+        "supported": 3
+      },
+      "v8_red_bowl": {
+        "explicit_mismatch": 39,
+        "color_not_observable": 1
+      },
+      "v8_red_plate": {
+        "explicit_mismatch": 78,
+        "color_not_observable": 2
+      }
+    }
+  },
+  "provenance": {
+    "method": "root AI directly viewed all six 20-image contact sheets and enlarged ambiguous motifs; catalogue medium used for material only; no student predictions used",
+    "facts_sha256": "555d24c0760827d6610ccc946500e52292e33ea4c5534e304e6a1074f2eae800",
+    "gallery_sha256": "4dbb5e4045bbab4fd245f7fce2d2fc363aabfe41a45d31b91703ddaac5ebee68",
+    "human_confirmed": false,
+    "test_policy": "original test split is preserved; do not use test labels to fit or calibrate; AI-assisted evaluation is not human validation"
+  }
+}

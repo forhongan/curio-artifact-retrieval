@@ -1,0 +1,10 @@
+{
+  "version": "surface-color-v13",
+  "scope": "Replace only red-surface evidence; retain frozen v11 bowl, blue-white, meiping and gourd heads and thresholds. V12 global replacement regressed recall and is not adopted.",
+  "surface": "GrabCut 5 iterations, 2% border rect, longest component filled and eroded, max side384; 24-bin chromatic hue histogram normalized by all interior pixels plus 6 saturation and 6 value bins. Hellinger sqrt features.",
+  "fit": "LogisticRegression(C=10, class_weight=balanced) on v11 known train red component labels with valid area check, excluding only two train masks rejected by visual QA; no hyperparameter search.",
+  "red_combination": "minimum of learned surface score and constrained v12 semantic red score; require affirmative positive probe and negative counter probe; monochrome or invalid surface No.",
+  "calibration": "Red threshold on original v11 dev red-component labels only, same empirical precision>=.9 recall>=.5 TP>=2 goal; other thresholds unchanged. No test tuning.",
+  "evaluation": "V11 test and stress have been inspected already; adaptive diagnostic replay, not independent human or fresh validation.",
+  "release_approved": false
+}

@@ -1,25 +1,19 @@
-# 全库yes/no集合边界
+# 全库 Yes/No 集合边界 · v15
 
-演示模块 C · 页面 5 · 讲述 50秒
+负责将查询变成全库逐图布尔判定，提供完整集合、逐条件依据及中文/英文一致的查询计划。前端接入从 [Windows 与 API 交接说明](../BOUNDARY_FRONTEND_HANDOFF.md) 开始。
 
-## 目的
+## 当前方法
 
-将固定Top-K序列扩展为数量随请求变化的入选集合。
+`catalogue_visual` 将器类/材质的馆藏证据与照片验证结合。颜色需照片可观察；窄口增加口部可见性、反例验证及口缘/器身比例门槛。任一必要条件不成立或证据不足，最终均为 No，同时保留原因。输出不是固定 Top-K。
 
-## 已完成
+核心文件为 `src/curio/retrieve/catalogue_query.py`、`catalogue_visual.py`、`joint_sets.py` 与 `joint_vlm.py`。实时入口为 `POST /api/search/set/jobs`，请求必须传 `method: "catalogue_visual"`。前端只需复制 `integration/boundary-client.ts` 并接入自己的页面；本分支不包含页面改动。
 
-比较自适应GMM、dev共享分数阈值、逻辑回归边界、HSV辅助边界。运行时对4,692张图片逐件决策，API返回完整results，preview单独截断，前端每页12张。中文推荐共享阈值，英文推荐颜色辅助；用户可切换。
+## 交付与验证范围
 
-## 可直接引用的结果
+- Windows 轻量结果包：4,692 张展示图、详情和 8 组已验证中英文查询结果，不运行新模型推理。
+- 实时模型：目前依赖 Apple Silicon MLX；Windows 前端可经代理或 SSH 转发连接该后端。
+- 8 组全库结果每组均有 4,692 个布尔决定，中英文返回相同集合。计数、接口和限制见接入说明。
+- 研究复核记录见 `eval/boundary_catalogue_v15/README.md`；AI/馆藏辅助标签并非独立人工金标准，不能由此宣称任意查询准确率。
+- 已知局限：严格筛选会漏掉部分特殊葫芦瓶；35% 的窄口几何阈值尚未独立人工校准。
 
-英文宏F1：0.4686 → 0.5292 / 0.5734 / 0.5831；中文：0.4613 → 0.5257 / 0.5149 / 0.5240。这些是test核心上的集合质量，不是全库召回率。
-
-## 代码与证据
-
-src/curio/retrieve/calibrated_sets.py；src/curio/evaluate/set_boundary.py；tests/test_relevance_v5.py；POST /api/search/set
-
-```powershell
-.venv/Scripts/python.exe scripts/verify_research_v5_api.py
-```
-
-整理报告时按“需求 → 方法 → 公平对照 → 结果 → 设计选择”展开；数字以冻结结果为准。公共小型证据见 `docs/research/`，完整实验附件见本轮Release。
+早期 GMM/共享阈值/颜色辅助方法及 v5 的 F1 属于历史对照，不代表 v15 的新评测结果。历史实验保留在 `docs/research/`，前端应使用上述异步 jobs 接口。

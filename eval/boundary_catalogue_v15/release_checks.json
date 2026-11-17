@@ -1,0 +1,55 @@
+{
+  "default": "catalogue_visual",
+  "queries": [
+    {
+      "zh": "梅瓶",
+      "en": "meiping vase",
+      "job_id": "cv15_21e409fa2d83f835bb9c5c289c72efda7fcfe5c0a73275c16d390a84918a7a49",
+      "yes": 90,
+      "no": 4602
+    },
+    {
+      "zh": "葫芦瓶",
+      "en": "gourd-shaped vase",
+      "job_id": "cv15_24b4be14a0f057cd020a9a8578c254425350fa7908690914befecc225229fcde",
+      "yes": 39,
+      "no": 4653
+    },
+    {
+      "zh": "红色碗",
+      "en": "a red bowl",
+      "job_id": "cv15_8940eea50693b8795e946d08de661626dfc0f0a35ac0a096aafa73918b47141e",
+      "yes": 3,
+      "no": 4689
+    },
+    {
+      "zh": "青花瓷",
+      "en": "blue and white porcelain",
+      "job_id": "cv15_c7a05a43166b79de049397f75602df7fd5f943f8d9d939262d4a2e878fb8bd7b",
+      "yes": 295,
+      "no": 4397
+    },
+    {
+      "zh": "绿色窄口瓷瓶",
+      "en": "green narrow-mouth porcelain vase",
+      "job_id": "cv15_806c6aa7eb7e5be1901a6c8cbc055f989bc7ee1c825d59da8e38b68b4509aa1b",
+      "yes": 10,
+      "no": 4682
+    }
+  ],
+  "pagination": true,
+  "detail_provenance": true,
+  "images_loaded": true,
+  "real_cancel": true,
+  "partial_hidden": true,
+  "mobile_no_overflow": true,
+  "page_errors": [],
+  "backend_tests": {
+    "passed": 648,
+    "skipped": 13,
+    "warnings": 11
+  },
+  "ruff_passed": true,
+  "frontend_build_passed": true,
+  "actual_screenshots_inspected": true
+}

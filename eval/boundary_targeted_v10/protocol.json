@@ -1,0 +1,35 @@
+{
+  "schema": "curio-targeted-boundary-v10",
+  "queries": {
+    "red_bowl": [
+      "红色碗",
+      "a red bowl"
+    ],
+    "blue_white": [
+      "青花瓷",
+      "blue and white porcelain"
+    ],
+    "meiping": [
+      "梅瓶",
+      "meiping vase"
+    ],
+    "gourd": [
+      "葫芦瓶",
+      "double gourd vase"
+    ]
+  },
+  "candidate_sha256": "929070ba94b7475386c3e795362ec5e70516cf06787c910e6c50b9de72e0cb32",
+  "gallery_sha256": "4dbb5e4045bbab4fd245f7fce2d2fc363aabfe41a45d31b91703ddaac5ebee68",
+  "selection": "catalogue candidates plus visually similar vessels; training-only candidate centroids; labels require root AI image inspection",
+  "split_policy": "preserve source train/dev/test; exclude v5, v10 random review and v9 specialty objects and image hashes",
+  "experiment": "per-concept L2 LogisticRegression(C=10, class_weight=balanced) on frozen normalized image embeddings; compare raw VQA and equal-weight mean of the two probabilities",
+  "calibration": "dev only: precision>=0.9, recall>=0.5, at least 2 TP per concept; fallback threshold .5 with goal_met=false; never approve release from this small targeted sample",
+  "limits": "AI labels, targeted nonrepresentative sample; not full-gallery precision or recall, no general free-query claim",
+  "release_approved": false,
+  "counts": {
+    "red_bowl": 37,
+    "blue_white": 40,
+    "meiping": 40,
+    "gourd": 38
+  }
+}

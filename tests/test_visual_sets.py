@@ -44,14 +44,14 @@ class FakeSearch:
 def test_full_set_is_returned_and_catalogue_text_does_not_change_decisions(tmp_path):
     search = FakeSearch(tmp_path)
     service = VisualSetService(search)
-    first = service.search('a vessel with unfamiliar decoration', top_k=2)
+    first = service.search('a vessel with unfamiliar decoration', top_k=2, method='adaptive_evidence')
     assert first['matched_count'] > 2
     assert first['returned'] == first['matched_count'] == len(first['results'])
     assert len(first['preview']) == 2
     for item in search.items:
         item['title'] = 'conflicting label text'
         item['material'] = ['wrong value']
-    second = service.search('a vessel with unfamiliar decoration', top_k=1)
+    second = service.search('a vessel with unfamiliar decoration', top_k=1, method='adaptive_evidence')
     assert first['matched_item_ids'] == second['matched_item_ids']
     assert second['provenance']['candidate_catalogue_used_for_decisions'] is False
 
@@ -72,7 +72,7 @@ def test_visible_motif_contradiction_removes_whole_query_match(tmp_path):
     search._dense = score
     service = VisualSetService(search)
     base = service.search('porcelain bowl with lotus flowers', method='adaptive_margin')
-    result = service.search('porcelain bowl with lotus flowers')
+    result = service.search('porcelain bowl with lotus flowers', method='adaptive_evidence')
     assert '39' in base['matched_item_ids']
     assert '39' not in result['matched_item_ids']
     assert result['matched_count'] == base['matched_count'] - 1
@@ -82,6 +82,6 @@ def test_visible_motif_contradiction_removes_whole_query_match(tmp_path):
 def test_negative_query_is_not_silently_rewritten_to_positive(tmp_path):
     service = VisualSetService(FakeSearch(tmp_path))
     query = '没有龙纹的青花瓷碗'
-    assert service.search(query)['encoded_query'] == query
+    assert service.search(query, method='adaptive_evidence')['encoded_query'] == query
     with pytest.raises(ValueError, match='non-whitespace'):
         service.search('   ')

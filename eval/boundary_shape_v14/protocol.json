@@ -1,0 +1,13 @@
+{
+  "version": "shape-evidence-v14",
+  "frozen_before_scoring": true,
+  "data": "133 new candidate groups, disjoint from all v5/v9/v10/v11/v13 reviewed groups and hashes; only source-train can enter new fitting. Old source-train shape-component labels reused.",
+  "algorithm": "One extra compact shape probe per concept plus old positive and counter VQA logits; 12 GrabCut silhouette features. Balanced logistic L2=2, first three semantic coefficients constrained nonnegative; geometry free. No grid search.",
+  "topology": "Gourd requires affirmative evidence for vertically stacked chambers, not adjacent vessels.",
+  "catalogue": "Bowl-only explicit cup category veto using title/object_name head noun; no descriptions, no metadata positive override. Record image-only and metadata-assisted scores separately.",
+  "calibration": "New dev only for meiping and bowl; gourd new dev has no confirmed positives, so include frozen old v11 gourd dev as explicitly reused calibration. Empirical precision>=.9 recall>=.5 TP>=2; if failed retain .5 and mark failed. Never tune on test.",
+  "evaluation": "New test reported separately from old failure regression. Fresh gourd candidates may contain no positives; never claim recall when zero. AI visual+catalogue labels not independent human gold; metadata-assisted comparisons share catalogue evidence with labels.",
+  "deployment": "No default replacement unless precision/recall and full-gallery audit support it. Color heads and grayscale policy unchanged.",
+  "candidates_sha256": "19df3c403f0048c10580da581db4b0d019448e145996ef50dbe1f4743a6d4c9f",
+  "release_approved": false
+}

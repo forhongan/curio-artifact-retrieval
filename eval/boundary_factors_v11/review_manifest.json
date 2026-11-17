@@ -1,0 +1,18 @@
+{
+  "method": "Root inspected eight fresh 12-image contact sheets, all titles/media and two enlarged originals; source-train component judgments reuse previously inspected v10 images. No v11 model scores inspected before labels.",
+  "queries": {
+    "explicit_mismatch": 62,
+    "supported": 30,
+    "color_not_observable": 3,
+    "ambiguous": 1
+  },
+  "components": 403,
+  "train_components": 139,
+  "human_confirmed": false,
+  "release_approved": false,
+  "hashes": {
+    "candidates.jsonl": "006dd39a06c62b4c5e7d41e0f62b7031dc64de2d2c92d61ccc6888f402b217b7",
+    "labels.jsonl": "e9d75f3ee148119de646877c7b21700f287d651156b34e67a0c274a98d71c77e",
+    "components.jsonl": "6332fd8fbbabe9677afaf345d23943990fb057ee4227e97c9182b5c6ec54fa3a"
+  }
+}

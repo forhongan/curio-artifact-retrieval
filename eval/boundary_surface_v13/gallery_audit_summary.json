@@ -1,0 +1,50 @@
+{
+  "date": "2026-11-17",
+  "method": "Assistant directly inspected all three accepted contact sheets (33 new sampled query-image pairs) and enlarged uncertain originals; also re-inspected all three previously reviewed red-bowl positives. Titles and media supplied supporting catalogue evidence. No labels inferred from model score; no human confirmation.",
+  "sampling": "Frozen hash-ordered accepted sample, at most 12 previously unreviewed object groups per query; gourd has only 9 eligible groups, red has none. Existing reviewed groups excluded. Red 3 included separately as previously reviewed case rechecks. No rejected candidates sampled.",
+  "new_sample_count": 33,
+  "red_existing_rechecks": 3,
+  "queries": {
+    "red_bowl": {
+      "reviewed": 3,
+      "supported": 2,
+      "explicit_mismatch": 0,
+      "ambiguous_strict_no": 1,
+      "scope": "previously_reviewed_recheck"
+    },
+    "blue_white": {
+      "reviewed": 12,
+      "supported": 12,
+      "explicit_mismatch": 0,
+      "ambiguous_strict_no": 0,
+      "scope": "accepted_unreviewed_sample"
+    },
+    "meiping": {
+      "reviewed": 12,
+      "supported": 11,
+      "explicit_mismatch": 0,
+      "ambiguous_strict_no": 1,
+      "scope": "accepted_unreviewed_sample"
+    },
+    "gourd": {
+      "reviewed": 9,
+      "supported": 8,
+      "explicit_mismatch": 1,
+      "ambiguous_strict_no": 0,
+      "scope": "accepted_unreviewed_sample"
+    }
+  },
+  "limitations": [
+    "Accepted-only diagnostic; no estimate of full-gallery recall.",
+    "Small selected sample, AI-assisted labels, not independent human gold.",
+    "Prior-reviewed red cases include a fit image; never combine these into independent precision.",
+    "Black-and-white photos may support shape-only queries; they cannot establish requested colors.",
+    "No model fitting, thresholds or default changes after this audit."
+  ],
+  "release_approved": false,
+  "default_changed": false,
+  "hashes": {
+    "audit_sample.json": "65a35a5c93bcf98d3adfcbb1ec9e6baa322e281305d73037fba2726a8578dfd4",
+    "gallery_audit_labels.jsonl": "0b33f420242883ea13c4c540f619100ea99e6082ca05a343de56079532689510"
+  }
+}
