@@ -1,5 +1,7 @@
 全库 Yes/No 集合边界 v15，供前端接入。
 
+[前端接入说明](https://github.com/zhizhizhi-victor/curio-boundary-handoff/blob/codex/boundary-v15-handoff/docs/BOUNDARY_FRONTEND_HANDOFF.md) · [交接源码](https://github.com/zhizhizhi-victor/curio-boundary-handoff/tree/codex/boundary-v15-handoff)
+
 - Windows：下载 curio-boundary-v15-windows.zip，安装 Python 3.12，解压后双击 run-boundary-windows.cmd；API http://127.0.0.1:8015/docs。
 - 包含 4,692 张展示图片、馆藏详情、8 组双语查询的完整二元结果和 TypeScript 调用示例。
 - Windows 包为已验证结果回放，不执行新推理；不支持的查询返回 422。实时新查询需要 Apple Silicon MLX 后端。

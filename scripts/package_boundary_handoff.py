@@ -30,6 +30,11 @@ def main():
         "--source", type=Path, required=True, help="Original verified research workspace"
     )
     parser.add_argument("--output", type=Path, default=ROOT / "_release" / TAG)
+    parser.add_argument(
+        "--repository",
+        default="forhongan/curio-artifact-retrieval",
+        help="GitHub owner/repo hosting the release assets",
+    )
     args = parser.parse_args()
     source, out = args.source.resolve(), args.output.resolve()
     stage = out / "windows"
@@ -155,7 +160,8 @@ def main():
             }
         )
     manifest = {
-        "repository": "forhongan/curio-artifact-retrieval",
+        "repository": args.repository,
+        "source_repository": "forhongan/curio-artifact-retrieval",
         "tag": TAG,
         "assets": assets,
         "gallery_count": len(items),

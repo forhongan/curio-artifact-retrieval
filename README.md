@@ -1,5 +1,7 @@
 # 拾遗 Curio
 
+**本分支为全库 Yes/No 边界 v15 的前端交接版本。** Windows 同学请先读 [接入说明](docs/BOUNDARY_FRONTEND_HANDOFF.md)，并下载 [Windows 轻量运行包](https://github.com/zhizhizhi-victor/curio-boundary-handoff/releases/tag/curio-boundary-v15-20261117)。它包含 4,692 件图库的 8 组双语查询结果回放；实时新查询需要 Mac 视觉后端。本分支不修改已有前端页面。
+
 中国古代文物视觉检索系统与课程研究项目。用中文或英文描述器物、通过专业名称寻找外部参考照片，或上传图片，在4,692张开放馆藏图像中检索。
 
 ## 运行

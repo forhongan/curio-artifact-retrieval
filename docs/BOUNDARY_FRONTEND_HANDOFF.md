@@ -2,6 +2,8 @@
 
 负责范围：集合边界算法、完整异步判定接口、双语查询计划、逐条件证据及测试。本交接分支不修改 `web/` 中已有页面、样式或组件。
 
+交付位置：[GitHub 下载页](https://github.com/zhizhizhi-victor/curio-boundary-handoff/releases/tag/curio-boundary-v15-20261117)；[算法与接口源码](https://github.com/zhizhizhi-victor/curio-boundary-handoff/tree/codex/boundary-v15-handoff)。这是原 `forhongan/curio-artifact-retrieval` 的交接副本，基于 4,692 件图库；原仓库需通过合并请求接收本模块。
+
 ## 前端同学在 Windows 上先跑通
 
 安装 **Python 3.12（64 位）**。下载 Release 附件 `curio-boundary-v15-windows.zip`，解压到普通文件夹，双击 `run-boundary-windows.cmd`。首次启动会创建 `.venv-boundary` 并从 PyPI 安装轻量依赖，保持命令窗口开启。

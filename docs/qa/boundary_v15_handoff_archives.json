@@ -3,14 +3,14 @@
   "assets": [
     {
       "name": "curio-boundary-v15-windows.zip",
-      "sha256": "1a47207ee7a619c79931212f5091ff10193343b8eda5597ac391781e603f12c5",
-      "bytes": 76191336,
+      "sha256": "720cdb1acd64f9bff31d0f8a58970a10d94107430731624e51e5edbf8533106f",
+      "bytes": 76191522,
       "crc_ok": true,
       "files": 4709
     },
     {
       "name": "curio-boundary-v15-runtime.zip",
-      "sha256": "04dd4d6316ec59612b4ffab2dd7ad3b7f5e97fdcd65414cc2a1baa55e81dc076",
+      "sha256": "a32e25d3a02697ba545b470d1b4d18e2106fe43d9fcc4aeccdd7698f8e89998e",
       "bytes": 1400466,
       "crc_ok": true,
       "files": 6
