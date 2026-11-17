@@ -1,0 +1,7 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Curio · 演讲者视图</title><link rel="stylesheet" href="presenter.css"></head>
+<body><header><h1>Curio · 演讲者视图 <span id="slideTitle"></span></h1><span id="clock">00:00 / 07:00</span><button id="timer">开始计时</button><button id="prev">← 上一页</button><button id="next">下一页 →</button><button id="fullscreen">全屏观众窗口 · F</button></header>
+<main><section class="panel"><div class="panel-title"><span>当前幻灯片（观众看不到本窗口）</span><span id="counter"></span></div><div class="screen" id="currentScreen"><iframe id="current" title="当前幻灯片"></iframe></div></section>
+<section class="panel"><div class="panel-title">下一页预览</div><div class="screen" id="nextScreen"><iframe id="nextSlide" title="下一页"></iframe></div></section>
+<section class="panel" id="notesPanel"><div class="panel-title"><span>本页讲稿</span><span>空格 / → 下一页 · ← 上一页 · F 全屏</span></div><div id="en"></div><div id="zh"></div></section></main>
+<script src="presenter.js"></script></body></html>

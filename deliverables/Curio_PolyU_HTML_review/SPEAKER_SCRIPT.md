@@ -56,25 +56,25 @@ A ranked list always returns a fifth item, even when it is irrelevant. We score 
 
 ## 10. Reference route
 
-The text tower knows the words but not always the look. For an abstract query such as a Yongzheng-period famille-rose bowl, we send the formal name, period and technique to museum APIs, retrieve real collection photographs as visual prototypes, qualify their provenance, and search the local gallery with SigLIP or DINO.
+Sometimes, an abstract search phrase, such as ‘雍正粉彩瓶’, does not tell the text tower what the object looks like. To solve this, Curio retrieves photos of real objects from museum APIs as visual prototypes. It then searches our local database with SigLIP or DINO.
 
 文本塔不稳定时，先向博物馆 API 请求真实馆藏照片，把它们作为视觉原型，再检索本地图库。
 
 ## 11. Kendi case
 
-A kendi is the clean example. The baseline text route returned zero kendi in the top twenty. With the reference route, two representative kendi ranked first and second. The route matches appearance and form, not the title string.
+For kendi (军持), the baseline text search returned no results for ‘明青花军持’. With this visual route, two representative kendi ranked first and second. This route matches appearance and shape, not the exact title text.
 
 军持案例只保留两个数字：基线 top-20 为 0，新路线第 1、2 名都是军持。
 
 ## 12. 25 hard queries
 
-One case is not enough. Across 25 hard queries reviewed by hand, SigLIP improved top-three precision by eight points over text. DINO was stronger on some shape-driven objects, but its category error reached 8.0 percent. SigLIP is the steadier default.
+In our manual review of 25 difficult queries, SigLIP improved top-three precision by eight percentage points over text-only search. DINO performed better on some shape-based objects, but its category error rate reached 8.0 percent.
 
 25 条困难查询上，SigLIP 比文本 top-3 高 8 个百分点；DINO 在部分器物上更强，但类别错误为 8.0%，所以默认仍选 SigLIP。
 
 ## 13. Performance
 
-Encoding the full gallery takes about 103 seconds once. Cached cosine ranking over all 4,692 images takes 1.56 milliseconds, and a new item needs one forward pass.
+For performance, encoding the full gallery takes about 103 seconds on our RTX 3070, and this only needs to be done once. With caching, a user search takes just 1.56 milliseconds.
 
 离线一次编码，在线缓存排序；全库 103 秒，排序 1.56 毫秒。
 

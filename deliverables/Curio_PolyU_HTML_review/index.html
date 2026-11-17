@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Curio · HTML reviewed</title>
+<title>Curio · Presentation</title>
 <style>
 :root{
   --paper:#FAF7F4; --card:#FFFFFF; --ink:#2B2226; --crimson:#A02337; --deep:#7E1B2C;
@@ -141,6 +141,23 @@ tr.hl td{background:var(--tint);font-weight:700;color:var(--crimson)}
   .bfill{width:var(--w)!important}
   #controls,#progress,#notes{display:none!important}
 }
+</style>
+<style>
+/* Opening slide only: a fuller visual hierarchy with less unused vertical space. */
+.slide[data-title="Opening"]{padding-top:36px;padding-bottom:36px}
+.slide[data-title="Opening"] .kicker{font-size:15px;margin-bottom:4px}
+.slide[data-title="Opening"] .hero{grid-template-columns:minmax(0,1fr) 510px;gap:48px}
+.slide[data-title="Opening"] h1{font-size:66px;margin-bottom:12px}
+.slide[data-title="Opening"] .hero .lead{font-size:21px;line-height:1.55}
+.slide[data-title="Opening"] .hero .lead[style]{font-size:25px!important;margin-bottom:22px!important}
+.slide[data-title="Opening"] .carousel{height:510px}
+.slide[data-title="Opening"] .strip{gap:16px;margin-top:28px}
+.slide[data-title="Opening"] .strip img{width:158px;height:125px}
+.slide[data-title="Opening"] .strip small{font-size:12px}
+.slide[data-title="Opening"] .carousel .cap{font-size:15px}
+.slide[data-title="Opening"] .foot{bottom:13px;font-size:12px}
+body.presenter-audience #controls,body.presenter-audience #notes,body.presenter-audience #progress{display:none!important}
+@media print{.slide[data-title="Opening"]{padding-top:36px;padding-bottom:36px}}
 </style>
 <style>
 .difficulty-emphasis{display:flex;flex-direction:column;gap:10px;margin:22px 0 24px;padding:17px 22px;border-left:4px solid var(--crimson);background:var(--tint)}
@@ -666,6 +683,7 @@ table{font-size:17px}th{font-size:13px}th,td{padding:10px 12px}
   <button id="next">Next →</button>
   <span id="time">00:00 / 07:00</span>
   <button id="timer">Start timer</button>
+  <button id="presenterBtn">Presenter · P</button>
   <button id="notesBtn">Notes · N</button>
   <button id="fsBtn">Fullscreen · F</button>
   <button onclick="window.print()">Print / PDF</button>
@@ -713,19 +731,19 @@ const notes={
     "zh": "从“固定返回 top-k”改为“返回一个集合”，集合可以是 0、12 或数百张。"
   },
   "9": {
-    "en": "The text tower knows the words but not always the look. For an abstract query such as a Yongzheng-period famille-rose bowl, we send the formal name, period and technique to museum APIs, retrieve real collection photographs as visual prototypes, qualify their provenance, and search the local gallery with SigLIP or DINO.",
+    "en": "Sometimes, an abstract search phrase, such as ‘雍正粉彩瓶’, does not tell the text tower what the object looks like. To solve this, Curio retrieves photos of real objects from museum APIs as visual prototypes. It then searches our local database with SigLIP or DINO.",
     "zh": "文本塔不稳定时，先向博物馆 API 请求真实馆藏照片，把它们作为视觉原型，再检索本地图库。"
   },
   "10": {
-    "en": "A kendi is the clean example. The baseline text route returned zero kendi in the top twenty. With the reference route, two representative kendi ranked first and second. The route matches appearance and form, not the title string.",
+    "en": "For kendi (军持), the baseline text search returned no results for ‘明青花军持’. With this visual route, two representative kendi ranked first and second. This route matches appearance and shape, not the exact title text.",
     "zh": "军持案例只保留两个数字：基线 top-20 为 0，新路线第 1、2 名都是军持。"
   },
   "11": {
-    "en": "One case is not enough. Across 25 hard queries reviewed by hand, SigLIP improved top-three precision by eight points over text. DINO was stronger on some shape-driven objects, but its category error reached 8.0 percent. SigLIP is the steadier default.",
+    "en": "In our manual review of 25 difficult queries, SigLIP improved top-three precision by eight percentage points over text-only search. DINO performed better on some shape-based objects, but its category error rate reached 8.0 percent.",
     "zh": "25 条困难查询上，SigLIP 比文本 top-3 高 8 个百分点；DINO 在部分器物上更强，但类别错误为 8.0%，所以默认仍选 SigLIP。"
   },
   "12": {
-    "en": "Encoding the full gallery takes about 103 seconds once. Cached cosine ranking over all 4,692 images takes 1.56 milliseconds, and a new item needs one forward pass.",
+    "en": "For performance, encoding the full gallery takes about 103 seconds on our RTX 3070, and this only needs to be done once. With caching, a user search takes just 1.56 milliseconds.",
     "zh": "离线一次编码，在线缓存排序；全库 103 秒，排序 1.56 毫秒。"
   },
   "13": {
@@ -743,7 +761,7 @@ const counter=document.getElementById('counter'),clock=document.getElementById('
 let idx=0,elapsed=0,running=false,notesOpen=false,busy=false;
 
 function fit(){
-  const availH=innerHeight-42-(notesOpen?200:0);
+  const availH=innerHeight-(document.body.classList.contains('presenter-audience')?0:42)-(notesOpen?200:0);
   const scale=Math.min(innerWidth/1440,availH/810);
   stage.style.transform='scale('+scale+')';
   stage.style.left=((innerWidth-1440*scale)/2)+'px';
@@ -779,7 +797,7 @@ function setNote(){
 }
 
 function after(){counter.textContent=String(idx+1).padStart(2,'0')+' / '+slides.length;
-  progress.style.width=((idx+1)/slides.length*100)+'%';setNote();fit();runCounters();
+  progress.style.width=((idx+1)/slides.length*100)+'%';setNote();fit();runCounters();sendPresentationState();
   if(idx===2)loadDemo();
   if(idx!==2&&demoFrame.getAttribute('src'))demoFrame.removeAttribute('src');}
 
@@ -841,11 +859,11 @@ let resultRevealed=false;
 function resetResult(){resultRevealed=false;document.getElementById('questionValue').hidden=false;document.getElementById('measuredValue').hidden=true;document.getElementById('resultCaption').textContent='so we measured it ourselves';const b=document.getElementById('resultReveal');b.textContent='Reveal result · Space';b.setAttribute('aria-expanded','false');}
 function revealResult(){if(idx!==6||busy||resultRevealed)return false;resultRevealed=true;document.getElementById('questionValue').hidden=true;const value=document.getElementById('measuredValue');value.hidden=false;value.animate([{opacity:0,transform:'translateY(8px)'},{opacity:1,transform:'none'}],{duration:450,easing:'ease-out'});document.getElementById('resultCaption').textContent='All measured changes stayed within ±0.006';const b=document.getElementById('resultReveal');b.textContent='Replay reveal';b.setAttribute('aria-expanded','true');return true;}
 function advance(){if(!revealResult())goAuto(idx+1,'r');}
-document.getElementById('resultReveal').onclick=function(){if(resultRevealed){resetResult();return;}revealResult();};
+document.getElementById('resultReveal').onclick=function(){if(resultRevealed){resetResult();sendPresentationState();return;}revealResult();sendPresentationState();};
 document.getElementById('prev').onclick=function(){goAuto(idx-1,'l');};
 document.getElementById('next').onclick=advance;
 document.getElementById('notesBtn').onclick=function(){notesOpen=!notesOpen;notesEl.style.display=notesOpen?'block':'none';fit();};
-document.getElementById('timer').onclick=function(){running=!running;this.textContent=running?'Pause timer':'Resume timer';};
+document.getElementById('timer').onclick=function(){running=!running;this.textContent=running?'Pause timer':'Resume timer';sendPresentationState();};
 document.getElementById('fsBtn').onclick=async function(){if(document.fullscreenElement)await document.exitFullscreen();else await document.documentElement.requestFullscreen();};
 document.addEventListener('keydown',function(e){
   if(['INPUT','TEXTAREA'].indexOf(document.activeElement.tagName)>=0)return; if(e.key===' '&&document.activeElement.tagName==='BUTTON')return;
@@ -853,13 +871,41 @@ document.addEventListener('keydown',function(e){
   else if(['ArrowLeft','PageUp'].indexOf(e.key)>=0){e.preventDefault();goAuto(idx-1,'l');}
   else if(e.key==='Home')go(0,'l');
   else if(e.key==='End')goAuto(slides.length-1,'r');
+  else if(e.key.toLowerCase()==='p')openPresenter();
   else if(e.key.toLowerCase()==='n')document.getElementById('notesBtn').click();
   else if(e.key.toLowerCase()==='f')document.getElementById('fsBtn').click();
   else if(/^[1-9]$/.test(e.key))goAuto(parseInt(e.key,10)-1,'r');
 });
+
+/* The separate presenter controls this audience window. Only state and
+   navigation messages cross windows; each slide keeps its native animations. */
+const presentationChannel='BroadcastChannel' in window?new BroadcastChannel('curio-polyu-presentation-v1'):null;
+let presenterWindow=null;
+function presentationState(){return {type:'state',idx:idx,elapsed:elapsed,running:running,resultRevealed:resultRevealed,title:slides[idx].dataset.title,notes:notes[idx]||{en:'',zh:''}};}
+function sendPresentationState(){if(presentationChannel)presentationChannel.postMessage(presentationState());}
+function openPresenter(){
+  if(presenterWindow&&!presenterWindow.closed){presenterWindow.focus();return;}
+  presenterWindow=window.open('presenter.html','curio-presenter','width=1280,height=850');
+  if(!presenterWindow){notesOpen=true;notesEl.style.display='block';fit();return;}
+  document.body.classList.add('presenter-audience');fit();sendPresentationState();
+}
+document.getElementById('presenterBtn').onclick=openPresenter;
+if(presentationChannel)presentationChannel.onmessage=function(e){
+  const m=e.data||{};
+  if(m.type==='ready'){document.body.classList.add('presenter-audience');fit();sendPresentationState();}
+  if(m.type==='bye'){document.body.classList.remove('presenter-audience');presenterWindow=null;fit();}
+  if(m.type==='command'){
+    if(m.action==='next')advance();
+    if(m.action==='prev')goAuto(idx-1,'l');
+    if(m.action==='timer')document.getElementById('timer').click();
+    if(m.action==='fullscreen')document.getElementById('fsBtn').click();
+    if(m.action==='home')go(0,'l');
+    if(m.action==='end')goAuto(slides.length-1,'r');
+  }
+};
 setInterval(function(){
   if(running){elapsed++;clock.textContent=String(Math.floor(elapsed/60)).padStart(2,'0')+':'+String(elapsed%60).padStart(2,'0')+' / 07:00';
-  clock.style.color=elapsed>420?'#ffba91':'';}
+  clock.style.color=elapsed>420?'#ffba91':'';}sendPresentationState();
 },1000);
 window.addEventListener('resize',fit);
 
