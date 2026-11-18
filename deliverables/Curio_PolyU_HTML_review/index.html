@@ -305,7 +305,7 @@ body.presenter-audience #controls,body.presenter-audience #notes,body.presenter-
     <div class="ss"><img src="img/cma_165426.jpg" alt=""><span>Ewer · Tang</span></div>
     <p class="srcnote">Met · Cleveland · V&amp;A — one protocol across every material and every collection.</p>
   </div>
-  <div class="foot"><span>v5.1 protocol · frozen before any test run</span><span class="fr"><span>The Hong Kong Polytechnic University</span><img src="img/polyu_logo.png" alt=""></span></div>
+  <div class="foot"><span>Evaluation protocol · frozen before any test run</span><span class="fr"><span>The Hong Kong Polytechnic University</span><img src="img/polyu_logo.png" alt=""></span></div>
 </section>
 
 <section class="slide" data-title="One record">
@@ -343,7 +343,7 @@ body.presenter-audience #controls,body.presenter-audience #notes,body.presenter-
         <div class="brow"><span class="bl"><b>+ Text-Tower LoRA · ZH</b></span><div class="btrack"><div class="bfill zh" style="--w:74.2%;--d:1020"></div></div><span class="bv">0.742</span></div>
       </div>
       <div class="legend"><span><i style="background:var(--crimson)"></i>EN nDCG@10</span><span><i style="background:var(--gold)"></i>ZH nDCG@10</span></div>
-      <p style="font-size:10.5px;color:var(--grey);margin-top:7px">v5.1 protocol · 140-image test core · bilingual_anchor = two-seed mean (seed 17 / 29); single-seed checkpoints served live over HTTP.</p>
+      <p style="font-size:10.5px;color:var(--grey);margin-top:7px">Evaluation protocol · 140-image test core · bilingual_anchor = two-seed mean (seed 17 / 29); single-seed checkpoints served live over HTTP.</p>
     </div>
     <div>
       <table data-r style="--d:400">
@@ -421,36 +421,49 @@ body.presenter-audience #controls,body.presenter-audience #notes,body.presenter-
 <section class="slide" data-title="Whole-corpus sets">
   <p class="kicker" data-r>Module C · Whole-Corpus Set Retrieval</p>
   <h2 data-r style="--d:60">Return a set, not a quota.</h2>
-  <div class="split" data-r style="--d:140;margin-top:8px;grid-template-columns:1.1fr .9fr">
-    <div>
-      <div class="bchart">
-        <div class="brow"><span class="bl">Dense threshold</span><div class="btrack"><div class="bfill" style="--w:52.9%;--d:240"></div></div><span class="bv">0.529</span></div>
-        <div class="brow"><span class="bl">Adaptive GMM</span><div class="btrack"><div class="bfill" style="--w:46.9%;--d:380"></div></div><span class="bv">0.469</span></div>
-        <div class="brow"><span class="bl">Calibrated</span><div class="btrack"><div class="bfill" style="--w:57.3%;--d:520"></div></div><span class="bv">0.573</span></div>
-        <div class="brow"><span class="bl"><b>Calibrated + color</b></span><div class="btrack"><div class="bfill" style="--w:58.3%;--d:660"></div></div><span class="bv">0.583</span></div>
-      </div>
-      <div class="legend"><span><i style="background:var(--crimson)"></i>Macro F1 (EN; ZH in table)</span></div>
-      <table data-r style="--d:500;margin-top:10px">
-        <thead><tr><th>Boundary method</th><th class="num">EN F1</th><th class="num">ZH F1</th></tr></thead>
+  <p class="lead boundary-intro" data-r style="--d:130">We score the whole gallery and return the images that meet the cutoff. The result can be empty.</p>
+
+  <div class="boundary-grid">
+    <figure class="card boundary-example" aria-labelledby="boundary-flow-title" data-r style="--d:210">
+      <h3 id="boundary-flow-title">How we decide to keep an image</h3>
+      <ol class="boundary-flow">
+        <li class="boundary-flow-step" data-r style="--d:260">
+          <h4>Score the same image against each description</h4>
+          <dl class="boundary-flow-cells boundary-queries">
+            <div><dt>Original</dt><dd>Green vase</dd></div>
+            <div><dt>Change colour</dt><dd><strong>Red</strong> vase</dd></div>
+            <div><dt>Change shape</dt><dd>Green <strong>bowl</strong></dd></div>
+          </dl>
+        </li>
+        <li class="boundary-flow-step" data-r style="--d:370">
+          <h4>Combine the evidence into one score <span>Logistic regression</span></h4>
+          <dl class="boundary-flow-cells boundary-evidence">
+            <div><dt>Original score</dt><dd>“Green vase”</dd></div>
+            <div><dt>Condition scores</dt><dd>“Green” and “vase”</dd></div>
+            <div><dt>Score gaps</dt><dd>Original − best alternative<br>for each condition</dd></div>
+          </dl>
+        </li>
+        <li class="boundary-flow-step boundary-decision" data-r style="--d:480">
+          <h4>Apply one cutoff</h4>
+          <div class="boundary-outcomes"><span><b>Keep</b> if the score passes</span><span><b>Leave out</b> otherwise</span></div>
+        </li>
+      </ol>
+    </figure>
+    <div class="card boundary-results" data-r style="--d:590">
+      <h3>Known query types</h3>
+      <table aria-label="Macro F1 on known query types">
+        <thead><tr><th scope="col">SigLIP2 + LoRA cutoff</th><th scope="col" class="boundary-value">English</th><th scope="col" class="boundary-value">Chinese</th></tr></thead>
         <tbody>
-          <tr><td>Dense threshold</td><td class="num">0.529</td><td class="num">0.526</td></tr>
-          <tr><td>Adaptive GMM</td><td class="num">0.469</td><td class="num">0.461</td></tr>
-          <tr><td>Calibrated threshold</td><td class="num">0.573</td><td class="num">0.515</td></tr>
-          <tr class="hl"><td>Calibrated + raw-color auxiliary</td><td class="num">0.583</td><td class="num">0.524</td></tr>
+          <tr><td>Baseline</td><td class="boundary-value">0.568</td><td class="boundary-value">0.522</td></tr>
+          <tr class="hl"><td>+ Condition scores</td><td class="boundary-value">0.660</td><td class="boundary-value">0.554</td></tr>
         </tbody>
       </table>
+      <p class="boundary-protocol">Macro F1 · 20 query types · 140 test images<br>Both methods used the same evaluation protocol.</p>
     </div>
-    <div>
-      <div class="card" style="margin-bottom:10px">
-        <h3>Why sets</h3>
-        <p>A ranked list always produces a fifth result — even when it is irrelevant. We score <b>all 4,692 images</b> and make an explicit membership decision.</p>
-      </div>
-      <div class="card" style="margin-bottom:10px">
-        <h3>What that means</h3>
-        <p>The accepted set can contain <b>0, 12, or hundreds</b> of images — chosen on the development set, reported with precision and recall.</p>
-      </div>
-      <p style="font-size:10.5px;color:var(--grey)">Macro F1 · dev-selected boundary · 140-image test-core membership · Source: artifacts/research-v6.json</p>
-    </div>
+  </div>
+
+  <div class="boundary-holdout" data-r style="--d:680">
+    <p class="take"><b>Held-out query types:</b> English F1 still went up. Chinese F1 went down from 0.499 to 0.478.</p>
   </div>
   <div class="foot"><span>Module C · sets</span><span class="fr"><span>The Hong Kong Polytechnic University</span><img src="img/polyu_logo.png" alt=""></span></div>
 </section>
@@ -515,7 +528,7 @@ body.presenter-audience #controls,body.presenter-audience #notes,body.presenter-
           <tr><td>DINOv2</td><td class="num">.333</td><td class="num">.323</td><td class="num">8.0%</td></tr>
         </tbody>
       </table>
-      <p style="font-size:11px;color:var(--grey);margin-top:9px;line-height:1.5">11 v9 + 14 new · all exact≥4 · same reference set · 4,692 images · text / SigLIP / DINO</p>
+      <p style="font-size:11px;color:var(--grey);margin-top:9px;line-height:1.5">11 earlier + 14 additional queries · all exact≥4 · same reference set · 4,692 images · text / SigLIP / DINO</p>
       <div class="take" style="font-size:13px;margin-top:12px"><b>Takeaway:</b> SigLIP is the steadier default. DINO is stronger on bronze mirrors, jade and kesi — but carries 8.0% category error. The image route does not win everywhere.</div>
     </div>
     <div class="fig" style="margin-top:0">
@@ -650,7 +663,37 @@ table{font-size:17px}th{font-size:13px}th,td{padding:10px 12px}
 .slide[data-title="An idea from Lecture 09"] .fig img{max-height:360px!important}.qcmp .qv{display:block;align-self:center;font-size:18px}.qcmp .qc{padding:15px 20px}.qcmp .qc b{font-size:36px}.qcmp .qc .qh{font-size:13px}.qcmp .qc small{font-size:13px}
 .result-button{background:transparent;border:1px solid var(--crimson);border-radius:5px;padding:6px 12px;font:14px Georgia;color:var(--crimson);cursor:pointer;margin-top:9px}.result-value{transition:opacity .35s ease}.result-value[hidden]{display:none}.reveal-hint{font-size:12px!important}
 .slide[data-title="Prompt calibration"] .g2{margin-top:32px!important;flex:0 0 auto!important;align-items:start!important;gap:36px}.slide[data-title="Prompt calibration"] .g2>div{display:block}.slide[data-title="Prompt calibration"] .zbchart{margin:16px 0 22px;gap:26px;padding:18px 0}.zrow{font-size:17px;grid-template-columns:180px 1fr 80px}.zrow .ztrack{height:32px}.zaxis{padding-left:190px;padding-right:80px;font-size:13px}.slide[data-title="Prompt calibration"] .g2>div>p{font-size:12px!important;line-height:1.55!important;margin:18px 0!important}.slide[data-title="Prompt calibration"] .card{padding:22px}.slide[data-title="Prompt calibration"] .card h3{font-size:21px;margin-bottom:9px}.slide[data-title="Prompt calibration"] .card p{font-size:18px!important;line-height:1.55}.slide[data-title="Prompt calibration"] .take{font-size:20px!important;line-height:1.55;margin-top:28px!important;padding:22px!important}.slide[data-title="Prompt calibration"] .g2>div:last-child{padding-top:34px}
-.slide[data-title="Whole-corpus sets"] .split{align-items:center;gap:40px}.slide[data-title="Whole-corpus sets"] .bchart{gap:16px}.slide[data-title="Whole-corpus sets"] table{margin-top:22px!important}.slide[data-title="Whole-corpus sets"] td{padding:15px 12px}.slide[data-title="Whole-corpus sets"] .card{padding:24px;margin-bottom:20px!important}.slide[data-title="Whole-corpus sets"] .card p{font-size:19px}.slide[data-title="Whole-corpus sets"] .split>div>p{font-size:12px!important;line-height:1.5}
+/* Set retrieval: use the deck's staggered reveals and existing card and takeaway styles. */
+.slide[data-title="Whole-corpus sets"] .boundary-intro{font-size:22px;margin-top:6px}
+.boundary-grid{display:grid;grid-template-columns:minmax(0,1.19fr) minmax(0,1fr);align-items:stretch;gap:26px;margin-top:25px}
+.boundary-grid .card{padding:22px 25px}
+.boundary-grid .card h3{font-size:24px;line-height:1.25;margin-bottom:13px}
+.boundary-flow{list-style:none;display:grid;gap:24px}
+.boundary-flow-step{position:relative;padding:9px 12px 10px;background:#FAF7F4;border:1px solid var(--line);border-radius:7px}
+.boundary-flow-step:not(:last-child)::after{content:"↓";position:absolute;left:50%;transform:translateX(-50%);bottom:-23px;line-height:22px;font-size:19px;font-weight:700;color:var(--crimson)}
+.boundary-flow-step h4{font-size:18px;line-height:1.25;margin-bottom:7px;display:flex;align-items:baseline;justify-content:space-between;gap:8px}
+.boundary-flow-step h4 span{font-weight:400;font-size:14px;color:#62585B}
+.boundary-flow-cells{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:9px}
+.boundary-flow-cells div{padding:6px 9px;background:white;border:1px solid var(--line);border-radius:5px}
+.boundary-flow-cells dt{font-size:14px;line-height:1.2;color:#62585B}
+.boundary-flow-cells dd{font-size:18px;line-height:1.22;margin-top:3px}
+.boundary-flow-cells dd strong,.boundary-evidence dt{color:var(--crimson)}
+.boundary-queries div:first-child{background:var(--tint);border-color:#E7CFD3}
+.boundary-evidence{grid-template-columns:minmax(0,1fr) minmax(0,1fr) minmax(0,1.34fr)}
+.boundary-evidence dd{font-size:16px}
+.boundary-evidence dt{font-weight:700}
+.boundary-decision{background:var(--tint);border-color:#E7CFD3}
+.boundary-outcomes{display:grid;grid-template-columns:1fr 1fr;gap:10px;font-size:16px;line-height:1.25}
+.boundary-outcomes span:first-child b{color:var(--crimson)}
+.boundary-results{align-self:center}
+.boundary-results table{font-size:21px;font-variant-numeric:tabular-nums}
+.boundary-results th{font-size:16px;letter-spacing:0}
+.boundary-results th,.boundary-results td{padding:13px 12px}
+.boundary-results .boundary-value{text-align:right}
+.boundary-results td.boundary-value{font-size:23px}
+.boundary-results tr.hl td{padding-top:15px;padding-bottom:15px}
+.boundary-results .boundary-protocol{font-size:16px;line-height:1.45;color:#62585B;margin-top:15px}
+.boundary-holdout .take{font-size:20px;margin-top:24px;padding:16px 20px}
 .slide[data-title="Reference route"] .split{grid-template-columns:.87fr 1.13fr!important;gap:28px;margin-top:26px!important;align-items:start!important}.slide[data-title="Reference route"] .lead{font-size:18px!important;line-height:1.6}.slide[data-title="Reference route"] .fnode{font-size:13px;padding:12px 7px}.slide[data-title="Reference route"] .probe-strip{margin-top:26px}.slide[data-title="Reference route"] .probe-strip img{width:82px;height:82px;object-fit:contain}.slide[data-title="Reference route"] .probe-strip small{font-size:11px}.slide[data-title="Reference route"] .probe-strip p{font-size:12px}.slide[data-title="Reference route"] .take{font-size:18px!important;margin-top:20px!important;padding:16px 18px}.slide[data-title="Reference route"] .split>div>p:not(.lead){font-size:12px!important;line-height:1.5}.slide[data-title="Reference route"] .fig{align-self:center}.pipeline-svg{width:100%;height:auto;display:block;background:white;border:1px solid var(--line);border-radius:10px}
 .slide[data-title="Kendi case"] .fig{margin-top:18px!important}.slide[data-title="Kendi case"] .fig img{width:1100px;max-height:470px!important}.slide[data-title="Kendi case"] .take{font-size:18px;margin-top:20px}
 .slide[data-title="25 hard queries"] .split{grid-template-columns:.84fr 1.16fr!important;align-items:center;gap:30px}.slide[data-title="25 hard queries"] td{padding:18px 12px}.slide[data-title="25 hard queries"] .take{font-size:17px!important;line-height:1.6}.slide[data-title="25 hard queries"] .split>div>p{font-size:12px!important}.slide[data-title="25 hard queries"] .fig{margin-top:0}
@@ -688,7 +731,7 @@ table{font-size:17px}th{font-size:13px}th,td{padding:10px 12px}
   <button id="fsBtn">Fullscreen · F</button>
   <button onclick="window.print()">Print / PDF</button>
   <span style="flex:1"></span>
-  <span>Curio v10 · PolyU crimson</span>
+  <span>Curio · PolyU</span>
 </div>
 
 <script>
@@ -727,8 +770,8 @@ const notes={
     "zh": "19 个模板、6 个家族，变化都在 ±0.006 内，结论是“几乎没有影响”。"
   },
   "8": {
-    "en": "A ranked list always returns a fifth item, even when it is irrelevant. We score all 4,692 images and make an explicit membership decision. The calibrated boundary with raw-color auxiliary gives the best balanced F1.",
-    "zh": "从“固定返回 top-k”改为“返回一个集合”，集合可以是 0、12 或数百张。"
+    "en": "We want to know which images belong in the set. We score the same image against ‘green vase’, ‘red vase’ and ‘green bowl’. Each comparison changes just one detail. We combine those score differences with the original score and the scores for colour and shape. One cutoff decides what to keep. F1 rose in both languages on familiar queries. On query types left out of training, English still improved and Chinese went down. Next, what if the words alone don’t give us a clear picture?",
+    "zh": "集合检索要决定哪些图片该留下。我们对同一张图打分，先用绿色瓶子，再一次只换一个条件：红色瓶子，或者绿色碗。把对照分差、原查询分数、颜色和器形的分项分数合起来，最后用一个阈值决定收不收。在已知查询类型上，中英文 F1 都提高了。留出整类查询时，英文仍提高，中文下降。接下来，如果文字本身说不清器物长什么样，我们怎么找参考图？"
   },
   "9": {
     "en": "Sometimes, an abstract search phrase, such as ‘雍正粉彩瓶’, does not tell the text tower what the object looks like. To solve this, Curio retrieves photos of real objects from museum APIs as visual prototypes. It then searches our local database with SigLIP or DINO.",

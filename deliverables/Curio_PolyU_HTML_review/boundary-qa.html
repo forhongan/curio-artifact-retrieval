@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Curio · Q&amp;A · Checking the opening</title>
+<style>
+:root{--paper:#FAF7F4;--ink:#2B2226;--crimson:#A02337;--deep:#7E1B2C;--gold:#B98A2F;--line:#E5DCD8;--tint:#F7ECEE;--muted:#62585B}
+*{box-sizing:border-box;margin:0;padding:0}
+body{overflow:hidden;background:#EFEAE4;color:var(--ink);font-family:Georgia,"Times New Roman","Microsoft YaHei",serif}
+main{position:absolute;width:1440px;height:810px;transform-origin:0 0;padding:50px 68px 70px;background:var(--paper)}
+main::before{content:"";position:absolute;inset:0 0 auto;height:6px;background:linear-gradient(90deg,var(--crimson) 0 44%,var(--deep) 44% 78%,var(--gold) 78% 100%)}
+.kicker{font-size:13px;letter-spacing:.2em;text-transform:uppercase;color:var(--crimson);font-weight:600;margin-bottom:10px}
+.kicker::after{content:"";display:block;width:60px;height:2px;margin-top:6px;background:var(--crimson)}
+h1{font-size:34px;line-height:1.22;margin-bottom:8px}
+.lead{font-size:21px;line-height:1.55;color:#4A4046;margin-bottom:28px}
+.layout{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.28fr);gap:26px}
+.card{background:#fff;border:1px solid var(--line);border-radius:10px;box-shadow:0 3px 14px rgba(43,34,38,.10);padding:24px 25px}
+h2{font-size:23px;line-height:1.25;color:var(--crimson);margin-bottom:12px}
+.checks{border-collapse:collapse;width:100%;font-size:17px;line-height:1.38}
+.checks th,.checks td{text-align:left;vertical-align:top;padding:10px 9px;border-bottom:1px solid var(--line)}
+.checks thead th{background:var(--tint);color:var(--crimson)}
+.checks tbody th{width:34%}
+.rule-value{white-space:nowrap}
+.check-summary{font-size:16px;line-height:1.45;color:#4A4046;margin-top:13px}
+.pair{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+figure{min-width:0}
+figure img{display:block;width:100%;height:272px;object-fit:contain;background:#F1EBE7;border:1px solid var(--line);border-radius:7px}
+figcaption{margin-top:10px;font-size:16px;line-height:1.5;color:var(--muted)}
+figcaption strong{display:block;font-size:21px;color:var(--ink)}
+figure:first-child strong{color:var(--crimson)}
+.take{margin-top:22px;padding:14px 18px;border-left:4px solid var(--crimson);border-radius:0 8px 8px 0;background:var(--tint);font-size:18px;line-height:1.45}
+.foot{position:absolute;bottom:16px;left:68px;right:68px;display:flex;align-items:center;justify-content:space-between;font-size:11px;color:var(--muted);letter-spacing:.03em}
+.foot span:last-child{display:flex;align-items:center;gap:10px}.foot img{height:19px;opacity:.8}
+</style>
+</head>
+<body>
+<main aria-label="Q&amp;A slide">
+  <p class="kicker">Curio · Q&amp;A</p>
+  <h1>The wider opening got the higher score.</h1>
+  <p class="lead">Query: “Green narrow-mouth porcelain vase”</p>
+  <div class="layout">
+    <div class="card">
+      <h2>Required checks for this query</h2>
+      <table class="checks" aria-label="Conditions and rule thresholds">
+        <thead><tr><th scope="col">Condition</th><th scope="col">Pass rule</th></tr></thead>
+        <tbody>
+          <tr><th scope="row">Type and material</th><td>Catalogue record and photo agree</td></tr>
+          <tr><th scope="row">Green surface</th><td>Green is visible; HSV coverage <span class="rule-value">≥ 50%</span></td></tr>
+          <tr><th scope="row">Narrow opening</th><td>Visual question: support <span class="rule-value">≥ 0.80</span> and counter-evidence <span class="rule-value">&lt; 0.20</span></td></tr>
+          <tr><th scope="row">Opening width</th><td>Rim-to-body width ratio <span class="rule-value">≤ 35%</span> in the photo</td></tr>
+        </tbody>
+      </table>
+      <p class="check-summary">Every condition must pass. A mismatch or missing evidence means rejection.</p>
+    </div>
+    <div class="card pair">
+      <figure>
+        <img src="img/met_42228.jpg" alt="Green vase with a small opening">
+        <figcaption><strong>Accepted · rim/body 29.2%</strong>Model score for narrow opening: 0.982</figcaption>
+      </figure>
+      <figure>
+        <img src="img/met_46546.jpg" alt="Green vase with a wide, flared opening">
+        <figcaption><strong>Rejected · rim/body 62.6%</strong>Model score for narrow opening: 0.989</figcaption>
+      </figure>
+    </div>
+  </div>
+  <p class="take">The wider vase was rejected by the 35% width rule. We measure this ratio in the photo, so it can change with the camera angle.</p>
+  <div class="foot"><span>Photos: The Metropolitan Museum of Art · 42228 and 46546</span><span>The Hong Kong Polytechnic University<img src="img/polyu_logo.png" alt=""></span></div>
+</main>
+<script>
+const slide=document.querySelector('main');
+function fit(){
+  const scale=Math.min(innerWidth/1440,innerHeight/810);
+  slide.style.transform=`scale(${scale})`;
+  slide.style.left=`${(innerWidth-1440*scale)/2}px`;
+  slide.style.top=`${(innerHeight-810*scale)/2}px`;
+}
+window.addEventListener('resize',fit);
+document.addEventListener('keydown',e=>{
+  if(e.key.toLowerCase()==='f'&&!e.repeat){
+    const request=document.fullscreenElement?document.exitFullscreen():document.documentElement.requestFullscreen();
+    request.catch(()=>{});
+  }
+});
+fit();
+</script>
+</body>
+</html>

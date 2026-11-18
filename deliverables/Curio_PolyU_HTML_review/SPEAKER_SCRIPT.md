@@ -50,9 +50,9 @@ We tested 19 templates across six families. Every result stayed within ±0.006 o
 
 ## 9. Whole-corpus sets
 
-A ranked list always returns a fifth item, even when it is irrelevant. We score all 4,692 images and make an explicit membership decision. The calibrated boundary with raw-color auxiliary gives the best balanced F1.
+We want to know which images belong in the set. We score the same image against ‘green vase’, ‘red vase’ and ‘green bowl’. Each comparison changes just one detail. We combine those score differences with the original score and the scores for colour and shape. One cutoff decides what to keep. F1 rose in both languages on familiar queries. On query types left out of training, English still improved and Chinese went down. Next, what if the words alone don’t give us a clear picture?
 
-从“固定返回 top-k”改为“返回一个集合”，集合可以是 0、12 或数百张。
+集合检索要决定哪些图片该留下。我们对同一张图打分，先用绿色瓶子，再一次只换一个条件：红色瓶子，或者绿色碗。把对照分差、原查询分数、颜色和器形的分项分数合起来，最后用一个阈值决定收不收。在已知查询类型上，中英文 F1 都提高了。留出整类查询时，英文仍提高，中文下降。接下来，如果文字本身说不清器物长什么样，我们怎么找参考图？
 
 ## 10. Reference route
 
